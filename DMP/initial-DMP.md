@@ -192,7 +192,7 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 
 ### To be covered in the context of the ethics review, ethics section of DoA and ethics deliverables. Include references and related technical aspects if not covered by the former 
 
-  Question not answered.
+  Link this section to the [ACTRIS Ethical Guidelines](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.2_M24.pdf?ver=2018-12-07-080117-913)
 
 ## 6. Other
 
@@ -202,8 +202,14 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 
 ## 7. Appendix
 
-	Appendix I: List of ACTRIS variables and recommended methodology
-	Appendix II: Data lifecycle/workflow for data centre unit x 
+### Appendix I: List of ACTRIS variables and recommended methodology
+
+### Appendix II: Data lifecycle/workflow for data centre unit x 
+
+
+
+
+
 
 -------------------------------------------------
 > A Data Management Plan created using DMPonline
