@@ -1,4 +1,5 @@
 <img align="right" src="https://www.actris.eu/Portals/46/Images/Logos/logo-actris_new_140.png?ver=2015-06-08-141001-817" alt="ACTRIS logo">
+
 # The ACTRIS data management plan
 
 This is the repository for the ACTRIS data management plan (DMP) 
