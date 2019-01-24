@@ -2,6 +2,30 @@
 
 ## Introduction to ACTRIS Data Centre
 
+ACTRIS-2 (Aerosols, Clouds, and Trace gases Research InfraStructure) Integrating Activity (IA) addresses
+the scope of integrating state-of-the-art European ground-based stations for long-term observations of
+aerosols, clouds and short lived gases. ACTRIS-2 is a unique research infrastructure improving the quality
+of atmospheric observations, developing new methods and protocols, and harmonizing existing
+observations of the atmospheric variables listed in Appendix I.
+
+The overall goal of the ACTRIS Data Centre is to provide scientists and other user groups with free and
+open access to all ACTRIS infrastructure data, complemented with access to innovative and mature data
+products, together with tools for quality assurance (QA), data analysis and research following the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples).
+
+The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the
+data collected. In accordance with these requirements, the ACTRIS Data Centre currently consists of five topical
+data repositories archiving the measurement data, which are all linked through the ACTRIS data portal to
+provide a single access point to all data:
+
+* ACTRIS In situ data centre unit (In-Situ): http://ebas.nilu.no/
+* ACTRIS Aerosol remote sensing data centre unit (ARES): http://access.earlinet.org/EARLINET/
+* ACTRIS Cloud remote sensing data centre unit (CLU): http://cloudnet.fmi.fi/
+* ACTRIS trace gases remote sensing data centre unit (GRES): 
+* ACTRIS Atmospheric simulation chamber data centre unit (ASC): https://data.eurochamp.org/
+
+In addition, AERIS contributes with the production and provision of satellite data that complements the
+ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
+
 ## 1. Data summary
 
 ### Data summary of the ACTRIS In situ data centre unit (In-Situ)
