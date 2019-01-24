@@ -1,36 +1,42 @@
 # ACTRIS Research Infrastructure initial outline of DMP
 
+## Introduction to ACTRIS Data Centre
+
 ## 1. Data summary
+
+### Data summary of the ACTRIS In situ data centre unit (In-Situ)
+
+### Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
+
+### Data summary of the ACTRIS Cloud remote sensing data centre unit (CLU)
+
+### Data summary of the ACTRIS trace gases remote sensing data centre unit (GRES)
+ 
+### Data summary of the ACTRIS Atmospheric simulation chamber data centre unit (ASC) 
 
 ### State the purpose of the data collection/generation
 
   Question not answered.
 
-
 ### Explain the relation to the objectives of the project
 
   Question not answered.
-
 
 ### Specify the types and formats of data generated/collected
 
   Question not answered.
 
-
 ### Specify if existing data is being re-used (if any)
 
   Question not answered.
-
 
 ### Specify the origin of the data
 
   Question not answered.
 
-
 ### State the expected size of the data (if known)
 
   Question not answered.
-
 
 ### Outline the data utility: to whom will it be useful
 
@@ -40,19 +46,19 @@
 
 ### Outline the discoverability of data (metadata provision)
 
-  Question not answered.
+  Present the discoverability of the data at ACTRIS data and services access unit (ACCESS) level.
 
 ### Outline the identifiability of data and refer to standard identification mechanism. Do you make use of persistent and unique identifiers such as Digital Object Identifiers?
 
-  Question not answered.
+  Presetn the identification mechanisms for each individual data centre unit.
 
 ### Outline naming conventions used
 
-  Question not answered.
+  Present naming conventions at the ACTRIS data and services access unit level.
 
 ### Outline the approach towards search keyword
 
-  Question not answered.
+  Approach towards search keywords at the ACTRIS data and services access unit level.
 
 ### Outline the approach for clear versioning
 
@@ -60,21 +66,21 @@
 
 ### Specify standards for metadata creation (if any). If there are no standards in your discipline describe what metadata will be created and how
 
-  Question not answered.
+  Present standard(s) for metadata at the ACTRIS data and services access unit level.
 
 ## 2.2 Making data openly accessible [FAIR data]
 
 ### Specify which data will be made openly available? If some data is kept closed provide rationale for doing so
 
-  Question not answered.
+  Specify for each individual data centre unit.
 
 ### Specify how the data will be made available
 
-  Question not answered.
+  Specify for each individual data centre unit.
 
 ### Specify what methods or software tools are needed to access the data? Is documentation about the software needed to access the data included? Is it possible to include the relevant software (e.g. in open source code)?
 
-  Question not answered.
+  Specify for each individual data centre unit and for the ACTRIS ACCESS unit.
 
 ### Specify where the data and associated metadata, documentation and code are deposited
 
@@ -148,5 +154,10 @@
 
   Question not answered.
 
+## 7. Appendix
 
+	Appendix I: List of ACTRIS variables and recommended methodology
+	Appendix II: Data lifecycle/workflow for data centre unit x 
+
+-------------------------------------------------
 > A Data Management Plan created using DMPonline
