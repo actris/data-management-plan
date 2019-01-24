@@ -1,7 +1,7 @@
 # Repository for the ACTRIS data management plan
-
-This is the repository for the ACTRIS data management plan (DMP): 
 ![alt text](https://www.actris.eu/Portals/46/Images/Logos/logo-actris_new_140.png?ver=2015-06-08-141001-817 "Logo Title Text 1")
+
+This is the repository for the ACTRIS data management plan (DMP) 
 
 The DMP should be a living document and The European Comission emphasize the importance of making the DMP machine-actionable in order to be included in a FAIR data ecosystem as a hub of information on FAIR digital objects. The goal is to make the DMP accessible for all stakeholders (repository operators, funders, researchers, publishers, infrastructure providers etc.) by making it available for both humans and machines.
 
