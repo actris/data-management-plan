@@ -6,43 +6,63 @@
 
 ### Data summary of the ACTRIS In situ data centre unit (In-Situ)
 
+* State the purpose of the data collection/generation
+* Explain the relation to the objectives of the project
+* Specify the types and formats of data generated/collected
+* Specify if existing data is being re-used (if any)
+* Specify the origin of the data
+* State the expected size of the data (if known)
+* Outline the data utility: to whom will it be useful
+
 ### Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
+
+* State the purpose of the data collection/generation
+* Explain the relation to the objectives of the project
+* Specify the types and formats of data generated/collected
+* Specify if existing data is being re-used (if any)
+* Specify the origin of the data
+* State the expected size of the data (if known)
+* Outline the data utility: to whom will it be useful
 
 ### Data summary of the ACTRIS Cloud remote sensing data centre unit (CLU)
 
+* State the purpose of the data collection/generation
+* Explain the relation to the objectives of the project
+* Specify the types and formats of data generated/collected
+* Specify if existing data is being re-used (if any)
+* Specify the origin of the data
+* State the expected size of the data (if known)
+* Outline the data utility: to whom will it be useful
+
 ### Data summary of the ACTRIS trace gases remote sensing data centre unit (GRES)
+
+* State the purpose of the data collection/generation
+* Explain the relation to the objectives of the project
+* Specify the types and formats of data generated/collected
+* Specify if existing data is being re-used (if any)
+* Specify the origin of the data
+* State the expected size of the data (if known)
+* Outline the data utility: to whom will it be useful
  
 ### Data summary of the ACTRIS Atmospheric simulation chamber data centre unit (ASC) 
 
+* State the purpose of the data collection/generation
+* Explain the relation to the objectives of the project
+* Specify the types and formats of data generated/collected
+* Specify if existing data is being re-used (if any)
+* Specify the origin of the data
+* State the expected size of the data (if known)
+* Outline the data utility: to whom will it be useful
+
 ### Data summary of the data products providers (level 3 data)
 
-### State the purpose of the data collection/generation
-
-  Question not answered.
-
-### Explain the relation to the objectives of the project
-
-  Question not answered.
-
-### Specify the types and formats of data generated/collected
-
-  Question not answered.
-
-### Specify if existing data is being re-used (if any)
-
-  Question not answered.
-
-### Specify the origin of the data
-
-  Question not answered.
-
-### State the expected size of the data (if known)
-
-  Question not answered.
-
-### Outline the data utility: to whom will it be useful
-
-  Question not answered.
+* State the purpose of the data collection/generation
+* Explain the relation to the objectives of the project
+* Specify the types and formats of data generated/collected
+* Specify if existing data is being re-used (if any)
+* Specify the origin of the data
+* State the expected size of the data (if known)
+* Outline the data utility: to whom will it be useful
   
 ## 2.1 Making data findable, including provisions for metadata [FAIR data]
 
