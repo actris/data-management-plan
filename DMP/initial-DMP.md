@@ -34,11 +34,11 @@ that fully comply with the [standard operating procedures (SOP), measurement rec
 quality guidelines](http://actris.nilu.no/Content/?pageid=2bedb8fc3d5a42a4b6d96d5fb8dfcd3b) established within ACTRIS.
 
 There are 3 levels of ACTRIS data:
-  * *ACTRIS level 0 data:* Raw sensor output, either mV or physical units. Native resolution, metadata necessary for next level.
-  * *ACTRIS level 1 data:* Calibrated and quality assured data with minimum level of quality control.
-  * *ACTRIS level 2 data:* Approved and fully quality controlled ACTRIS data product or geophysical variable.
-  * *ACTRIS level 3 data:* Elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2 data, and data from other sources. The data can be gridded or not.
-  * *ACTRIS synthesis product:* Data product from e.g. research activities, not under direct ACTRIS responsibility, but ACTRIS offer repository and access.
+  * **ACTRIS level 0 data:** Raw sensor output, either mV or physical units. Native resolution, metadata necessary for next level.
+  * **ACTRIS level 1 data:** Calibrated and quality assured data with minimum level of quality control.
+  * **ACTRIS level 2 data:** Approved and fully quality controlled ACTRIS data product or geophysical variable.
+  * **ACTRIS level 3 data:** Elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2 data, and data from other sources. The data can be gridded or not.
+  * **ACTRIS synthesis product:** Data product from e.g. research activities, not under direct ACTRIS responsibility, but ACTRIS offer repository and access.
 
 The list of variables are expected to increase during the progress of ACTRIS, particularly level 3 data products. During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilising these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available. 
 
