@@ -2,7 +2,7 @@
 
 # The ACTRIS data management plan
 
-This is the repository for the ACTRIS data management plan (DMP) 
+This is the repository for the ACTRIS data management plan (DMP). The goal of the DMP is to outline the strategy and process towards making ACTRIS data FAIR at ACTRIS Data Centre Level.
 
 The DMP should be a living document and The European Comission emphasize the importance of making the DMP machine-actionable in order to be included in a FAIR data ecosystem as a hub of information on FAIR digital objects. The goal is to make the DMP accessible for all stakeholders (repository operators, funders, researchers, publishers, infrastructure providers etc.) by making it available for both humans and machines.
 

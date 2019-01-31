@@ -37,6 +37,7 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 * Specify the origin of the data
 * State the expected size of the data (if known)
 * Outline the data utility: to whom will it be useful
+* Workflow
 
 ### Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
@@ -47,6 +48,7 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 * Specify the origin of the data
 * State the expected size of the data (if known)
 * Outline the data utility: to whom will it be useful
+* Workflow
 
 ### Data summary of the ACTRIS Cloud remote sensing data centre unit (CLU)
 
@@ -57,6 +59,7 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 * Specify the origin of the data
 * State the expected size of the data (if known)
 * Outline the data utility: to whom will it be useful
+* Workflow
 
 ### Data summary of the ACTRIS trace gases remote sensing data centre unit (GRES)
 
@@ -67,7 +70,8 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 * Specify the origin of the data
 * State the expected size of the data (if known)
 * Outline the data utility: to whom will it be useful
- 
+* Workflow 
+
 ### Data summary of the ACTRIS Atmospheric simulation chamber data centre unit (ASC) 
 
 * State the purpose of the data collection/generation
@@ -77,6 +81,7 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 * Specify the origin of the data
 * State the expected size of the data (if known)
 * Outline the data utility: to whom will it be useful
+* Workflow
 
 ### Data summary of the data products providers (level 3 data)
 
@@ -87,7 +92,8 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 * Specify the origin of the data
 * State the expected size of the data (if known)
 * Outline the data utility: to whom will it be useful
-  
+* Workflow  
+
 ## 2.1 Making data findable, including provisions for metadata [FAIR data]
 
 ### Outline the discoverability of data (metadata provision)
