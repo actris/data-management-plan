@@ -94,29 +94,31 @@ ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 * Outline the data utility: to whom will it be useful
 * Workflow  
 
-## 2.1 Making data findable, including provisions for metadata [FAIR data]
+## 2. Data Management at the ACTRIS data and services access unit (ACCESS)
 
-### Outline the discoverability of data (metadata provision)
+### 2.1 Making data findable, including provisions for metadata [FAIR data]
+
+#### Outline the discoverability of data (metadata provision)
 
   Present the discoverability of the data at ACTRIS data and services access unit (ACCESS) level.
 
-### Outline the identifiability of data and refer to standard identification mechanism. Do you make use of persistent and unique identifiers such as Digital Object Identifiers?
+#### Outline the identifiability of data and refer to standard identification mechanism. Do you make use of persistent and unique identifiers such as Digital Object Identifiers?
 
   Presetn the identification mechanisms for each individual data centre unit.
 
-### Outline naming conventions used
+#### Outline naming conventions used
 
   Present naming conventions at the ACTRIS data and services access unit level.
 
-### Outline the approach towards search keyword
+#### Outline the approach towards search keyword
 
   Approach towards search keywords at the ACTRIS data and services access unit level.
 
-### Outline the approach for clear versioning
+#### Outline the approach for clear versioning
 
   Question not answered.
 
-### Specify standards for metadata creation (if any). If there are no standards in your discipline describe what metadata will be created and how
+#### Specify standards for metadata creation (if any). If there are no standards in your discipline describe what metadata will be created and how
 
   Present standard(s) for metadata at the ACTRIS data and services access unit level.
 
