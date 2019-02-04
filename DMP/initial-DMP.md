@@ -193,13 +193,13 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
   Question not answered.
 
-### 3. Allocation of resources
+## 3. Allocation of resources
 
-#### Estimate the costs for making your data FAIR. Describe how you intend to cover these costs
+### Estimate the costs for making your data FAIR. Describe how you intend to cover these costs
 
   Question not answered.
 
-#### Clearly identify responsibilities for data management in your project
+### Clearly identify responsibilities for data management in your project
 
   Question not answered.
 
@@ -207,29 +207,29 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
   Question not answered.
 
-### 4. Data security
+## 4. Data security
 
-#### Address data recovery as well as secure storage and transfer of sensitive data 
+### Address data recovery as well as secure storage and transfer of sensitive data 
 
   Question not answered.
 
-### 5. Ethical aspects
+## 5. Ethical aspects
 
-#### To be covered in the context of the ethics review, ethics section of DoA and ethics deliverables. Include references and related technical aspects if not covered by the former 
+### To be covered in the context of the ethics review, ethics section of DoA and ethics deliverables. Include references and related technical aspects if not covered by the former 
 
   Link this section to the [ACTRIS Ethical Guidelines](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.2_M24.pdf?ver=2018-12-07-080117-913)
 
-### 6. Other
+## 6. Other
 
-#### Refer to other national/funder/sectorial/departmental procedures for data management that you are using (if any) 
+### Refer to other national/funder/sectorial/departmental procedures for data management that you are using (if any) 
 
   Question not answered.
 
-### 7. Appendix
+## 7. Appendix
 
-#### Appendix I: List of ACTRIS variables and recommended methodology
+### Appendix I: List of ACTRIS variables and recommended methodology
 
-#### Appendix II: Data lifecycle/workflow for data centre unit x 
+### Appendix II: Data lifecycle/workflow for data centre unit x 
 
 
 
