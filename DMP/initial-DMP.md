@@ -53,7 +53,7 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 * Specify the origin of the data
 * State the expected size of the data (if known)
 * Outline the data utility: to whom will it be useful
-* Outline of workflow and workflow diagram
+* Outline of Dta life cycle (workflow and workflow diagram): Appendix II: Data lifecycle/workflow for data centre unit x
 
 ### Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
@@ -197,7 +197,7 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
 ### Estimate the costs for making your data FAIR. Describe how you intend to cover these costs
 
-  Question not answered.
+  Question not answered. Draft should be provided by Cathrine.
 
 ### Clearly identify responsibilities for data management in your project
 
