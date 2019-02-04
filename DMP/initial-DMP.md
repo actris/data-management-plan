@@ -26,6 +26,8 @@ provide a single access point to all data:
 In addition, AERIS contributes with the production and provision of satellite data that complements the
 ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 
+**Add figure from application**
+
 ## ACTRIS data set descriptions and ACTRIS data levels
 
 ACTRIS data sets are atmospheric variables listed in Appendix I, measured with the corresponding
@@ -46,6 +48,7 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
 ### Data summary of the ACTRIS In situ data centre unit (In-Situ)
 
+**Richard makes draft**
 * State the purpose of the data collection/generation
 * Explain the relation to the objectives of the project
 * Specify the types and formats of data generated/collected
@@ -53,7 +56,7 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 * Specify the origin of the data
 * State the expected size of the data (if known)
 * Outline the data utility: to whom will it be useful
-* Outline of Dta life cycle (workflow and workflow diagram): Appendix II: Data lifecycle/workflow for data centre unit x
+* Outline of Data life cycle (workflow and workflow diagram): Appendix x: Data lifecycle/workflow for data centre unit x
 
 ### Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
@@ -110,14 +113,14 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 * Outline the data utility: to whom will it be useful
 * Outline of workflow and workflow diagram
 
-## 2. Data Management at the ACTRIS data and services access unit (ACCESS)
-
+## 2. Data Management at the ACTRIS data centre
+**Remove references to ACCESS**
 ### 2.1 Findable: Making data findable, including provisions for metadata [FAIR data]
 
 #### Outline the discoverability of data (metadata provision)
 
   Present the discoverability of the data at ACTRIS data and services access unit (ACCESS) level.
-
+  **mentioning of data resides at each data centre unit (maybe under i)**
 #### Outline the identifiability of data and refer to standard identification mechanism. Do you make use of persistent and unique identifiers such as Digital Object Identifiers?
 
   Present the identification mechanisms from each individual data centre unit -> ACCESS unit.
@@ -132,7 +135,7 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
 #### Outline the approach for clear versioning
 
-  Question not answered.
+  Discuss both on ACCESS and unit level.
 
 #### Specify standards for metadata creation (if any). If there are no standards in your discipline describe what metadata will be created and how
 
@@ -146,7 +149,7 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
 #### Specify how the data will be made available
 
-  Specify data availability at the ACCESS unit level.
+  Specify data availability at the ACCESS unit level. Mention hosting at each unit, formats, interfaces ++.
 
 #### Specify what methods or software tools are needed to access the data? Is documentation about the software needed to access the data included? Is it possible to include the relevant software (e.g. in open source code)?
 
@@ -229,10 +232,13 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
 ### Appendix I: List of ACTRIS variables and recommended methodology
 
-### Appendix II: Data lifecycle/workflow for data centre unit x 
+### Appendix x: List of ACTRIS level 3 data products
 
+### Appendix II: Data lifecycle/workflow for data centre unit in situ 
 
+### Appendix x: Data lifecycle and workflow for ACCESS Data Centre Unit
 
+###
 
 -------------------------------------------------
 > Initial outline of the Data Management Plan created using DMPonline
