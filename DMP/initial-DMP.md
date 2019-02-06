@@ -27,7 +27,7 @@ In addition, AERIS contributes with the production and provision of satellite da
 ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 
 ![Potential architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/actris-data-centre.png)
-> Potential architecture of the ACTRIS Data Centre
+*Figure 1: Potential architecture of the ACTRIS Data Centre*
 
 **Add figure from application**
 
@@ -51,8 +51,6 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
 ### Data summary of the ACTRIS In situ data centre unit (In-Situ)
 
-**Richard makes draft**
-
 #### The purpose of the data collection/generation
 
 The purpose of the data collection and generation of data products is to provide open access to aerosol, cloud and trace gas in situ measurements of high quality, benefiting scientists and policy makers, as well as the private sector, educators and the general public. See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217) for more information.
@@ -63,9 +61,11 @@ Data management of ACTRIS in situ data relates to the ability to predict the fut
   * Long-term archiving and preservation of ACTRIS level 1 to level 3 data and data products
   * Access to ACTRIS data, data products, and digital tools through a single point of entry, the ACTRIS data user interface
   * Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
- * Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
+  * Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
 
-#### Specify the types and formats of data generated/collected
+#### The types and formats of data generated/collected
+The ACTRIS In situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). Data submitted to EBAS need to be formatted in the EBAS NASA-Ames format by the data provider, and there is exsisting instructions and template for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [https://ebas-submit.nilu.no/](EBAS-Submit documentation) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/)(beta) and [file-submission](https://ebas-submit-tool.nilu.no/).
+
 #### Specify if existing data is being re-used (if any)
 #### Specify the origin of the data
 #### State the expected size of the data (if known)
