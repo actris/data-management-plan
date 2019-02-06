@@ -17,16 +17,16 @@ data collected. In accordance with these requirements, the ACTRIS Data Centre cu
 data repositories archiving the measurement data, which are all linked through the ACTRIS data portal to
 provide a single access point to all data:
 
-* ACTRIS In situ data centre unit (In-Situ): http://ebas.nilu.no/
-* ACTRIS Aerosol remote sensing data centre unit (ARES): http://access.earlinet.org/EARLINET/
-* ACTRIS Cloud remote sensing data centre unit (CLU): http://cloudnet.fmi.fi/
-* ACTRIS trace gases remote sensing data centre unit (GRES): 
-* ACTRIS Atmospheric simulation chamber data centre unit (ASC): https://data.eurochamp.org/
+* [ACTRIS In situ data centre unit (In-Situ)](http://ebas.nilu.no/)
+* [ACTRIS Aerosol remote sensing data centre unit (ARES)](http://access.earlinet.org/EARLINET/)
+* [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)
+* [ACTRIS trace gases remote sensing data centre unit (GRES) 
+* [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
 In addition, AERIS contributes with the production and provision of satellite data that complements the
 ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 
-![Potential architecture of the ACTRIS Data Centre](/data-management-plan/DMP/img/actris-data-centre.png)
+![Potential architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/actris-data-centre.png)
 > Potential architecture of the ACTRIS Data Centre
 
 **Add figure from application**
@@ -52,14 +52,25 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 ### Data summary of the ACTRIS In situ data centre unit (In-Situ)
 
 **Richard makes draft**
-* State the purpose of the data collection/generation
-* Explain the relation to the objectives of the project
-* Specify the types and formats of data generated/collected
-* Specify if existing data is being re-used (if any)
-* Specify the origin of the data
-* State the expected size of the data (if known)
-* Outline the data utility: to whom will it be useful
-* Outline of Data life cycle (workflow and workflow diagram): Appendix x: Data lifecycle/workflow for data centre unit x
+
+#### The purpose of the data collection/generation
+
+The purpose of the data collection and generation of data products is to provide open access to aerosol, cloud and trace gas in situ measurements of high quality, benefiting scientists and policy makers, as well as the private sector, educators and the general public. See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217) for more information.
+
+#### The relation to the objectives of the project
+
+Data management of ACTRIS in situ data relates to the ability to predict the future behaviour of the atmosphere over all time scales. High quality observation data facilitates this and needs to be supported by:
+  * Long-term archiving and preservation of ACTRIS level 1 to level 3 data and data products
+  * Access to ACTRIS data, data products, and digital tools through a single point of entry, the ACTRIS data user interface
+  * Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
+ * Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
+
+#### Specify the types and formats of data generated/collected
+#### Specify if existing data is being re-used (if any)
+#### Specify the origin of the data
+#### State the expected size of the data (if known)
+#### Outline the data utility: to whom will it be useful
+#### Outline of Data life cycle (workflow and workflow diagram): Appendix x: Data lifecycle/workflow for data centre unit x
 
 ### Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
