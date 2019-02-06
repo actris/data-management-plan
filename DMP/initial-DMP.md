@@ -76,121 +76,26 @@ The origin of the data is derived from instrument raw data, either through onlin
 
 #### The expected size of the data
 
-<table width="604" cellspacing="0" cellpadding="7">
-<tbody>
-<tr>
-<td rowspan="3" width="100" height="26">
-<p class="western" lang="en-GB" align="center">&nbsp;</p>
-</td>
-<td colspan="3" width="225">
-<p class="western" align="center"><span lang="en-GB"><strong>Number of annual data sets</strong></span></p>
-</td>
-<td colspan="3" width="235">
-<p class="western" align="center"><span lang="en-GB"><strong>Data volume</strong></span></p>
-</td>
-</tr>
-<tr>
-<td rowspan="2" width="66">
-<p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p>
-</td>
-<td colspan="2" width="145">
-<p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p>
-</td>
-<td rowspan="2" width="69">
-<p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p>
-</td>
-<td colspan="2" width="152">
-<p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p>
-</td>
-</tr>
-<tr>
-<td width="66">
-<p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p>
-</td>
-</tr>
-<tr>
-<td width="100">
-<p class="western" align="left"><span lang="en-GB">ACTRIS in situ aerosol data</span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">60</span></span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">50</span></span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">120</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">18&nbsp;000 MB</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">15&nbsp;000 MB</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">50&nbsp;000 MB</span></span></p>
-</td>
-</tr>
-<tr>
-<td width="100">
-<p class="western" align="left"><span lang="en-GB">ACTRIS in situ cloud data</span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">35</span></span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">105</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">1 GB</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">3 GB</span></span></p>
-</td>
-</tr>
-<tr>
-<td width="100">
-<p class="western" align="left"><span lang="en-GB">ACTRIS in situ trace gas data</span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">27</span></span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">30</span></span></p>
-</td>
-<td width="66">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">60</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">300 MB</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">200 MB</span></span></p>
-</td>
-<td width="69">
-<p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">400 MB</span></span></p>
-</td>
-</tr>
-</tbody>
-</table>
-
+<table width="604" cellspacing="0" cellpadding="7"> <tbody> <tr> <td rowspan="3" width="100" height="26"> <p class="western" lang="en-GB" align="center">&nbsp;</p> </td> <td colspan="3" width="225"> <p class="western" align="center"><span lang="en-GB"><strong>Number of annual data sets</strong></span></p> </td> <td colspan="3" width="235"> <p class="western" align="center"><span lang="en-GB"><strong>Data volume</strong></span></p> </td> </tr> <tr> <td rowspan="2" width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p> </td> <td colspan="2" width="145"> <p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p> </td> <td rowspan="2" width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p> </td> <td colspan="2" width="152"> <p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p> </td> </tr> <tr> <td width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p> </td> <td width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p> </td> <td width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p> </td> <td width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ aerosol data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">60</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">50</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">120</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">18&nbsp;000 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">15&nbsp;000 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">50&nbsp;000 MB</span></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ cloud data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">35</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">105</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">1 GB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">3 GB</span></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ trace gas data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">27</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">30</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">60</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">300 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">200 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">400 MB</span></span></p> </td> </tr> </tbody> </table>
 
 #### Data utility: to whom will it be useful
+
+ACTRIS will produce data and data products essential to a wide range of communities, including:
+
+  * Atmospheric science research communities world-wide (climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations); 
+  * Environmental science research communities and communities from other neighbouring fields: hydro-marine, bio-ecosystem, geosciences, space physics, energy, health, and food domain, to study interactions and processes in across different disciplines;
+
+  * Instrument manufacturers and sensor industries for development, testing, prototyping and demonstration;
+
+  * Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
+
+  * Space agencies for validation and the development of new satellite missions; 
+
+  * National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution
+models; 
+
+  * Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
+
 #### Outline of data life cycle (workflow and workflow diagram)
 
 Detail on the data life cycle and workflow diagram for In situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-aerosol-cloud-and-trace-gas-data-lifecycle-and-workflow-draft).
