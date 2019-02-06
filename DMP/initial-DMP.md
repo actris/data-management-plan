@@ -230,11 +230,14 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
 ## 7. Appendix
 
-### Appendix I: List of ACTRIS variables and recommended methodology
+### Appendix 1: List of ACTRIS variables and recommended methodology
+https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx
 
-### Appendix x: List of ACTRIS level 3 data products
+### Appendix 2: List of ACTRIS level 3 data products
+https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx
 
-### Appendix II: Data lifecycle/workflow for data centre unit in situ 
+### Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)
+![ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow](https://folk.nilu.no/~richard/actris-ri-variables/ACTRIS_surface_insitu_workflow.jpg)
 
 ### Appendix x: Data lifecycle and workflow for ACCESS Data Centre Unit
 
