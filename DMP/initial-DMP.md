@@ -1,21 +1,15 @@
 # ACTRIS Research Infrastructure initial outline of DMP
 
-## 1. Introduction to ACTRIS Data Centre
+## 1. Introduction to ACTRIS and The ACTRIS Data Centre
 
-ACTRIS-2 (Aerosols, Clouds, and Trace gases Research InfraStructure) Integrating Activity (IA) addresses
-the scope of integrating state-of-the-art European ground-based stations for long-term observations of
-aerosols, clouds and short lived gases. ACTRIS-2 is a unique research infrastructure improving the quality
-of atmospheric observations, developing new methods and protocols, and harmonizing existing
-observations of the atmospheric variables listed in Appendix I.
+The Research Infrastructure (RI) ACTRIS – Aerosols, Clouds, and Trace Gases is the pan-European RI that consolidates activities amongst European partners for observations of aerosols, clouds, and trace gases and for understanding of the related atmospheric processes, as well as to provide RI services to wide user groups. ACTRIS is a unique research infrastructure improving the quality of atmospheric observations, developing new methods and protocols, and harmonizing existing observations of the atmospheric variables listed in Appendix 1.
 
-The overall goal of the ACTRIS Data Centre is to provide scientists and other user groups with free and
-open access to all ACTRIS infrastructure data, complemented with access to innovative and mature data
+ACTRIS (Aerosols, Clouds, and Trace gases Research Infrastructure) was adopted to the ESFRI roadmap in 2016. During the ongoing preparation phase (2017-2019), ACTRIS shall achieve maturity at organizational, operational, and strategic levels. The preparation phase is supported by the European Commission (ACTRIS Preparatory Phase Project, PPP) and partner countries and organizations at the national level. The ACTRIS Central Facilities (CFs) host selection will be an essential outcome of ACTRIS PPP.
+During the implementation phase (expected 2020-2024), the CFs are constructed and their services are tested. ACTRIS operations will start step-by-step by ramping up the service provision. After the necessary legal preparations, ACTRIS shall become a legal entity (ERIC, European Research Infrastructure Consortium) funded by the Member countries. The target is to launch ACTRIS ERIC in the beginning of 2021. It is foreseen that ACTRIS will be fully operational by 2025.
+
+The overall goal of the ACTRIS Data Centre is to provide scientists and other user groups with free and open access to all ACTRIS infrastructure data, complemented with access to innovative and mature data
 products, together with tools for quality assurance (QA), data analysis and research following the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples).
-
-The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the
-data collected. In accordance with these requirements, the ACTRIS Data Centre currently consists of five topical
-data repositories archiving the measurement data, which are all linked through the ACTRIS data portal to
-provide a single access point to all data:
+The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS Data Centre currently consists of five topical data repositories archiving the measurement data, which are all linked through the [ACTRIS data portal](http://actris.nilu.no/) to provide a single access point to all data and related information:
 
 * [ACTRIS In situ data centre unit (In-Situ)](http://ebas.nilu.no/)
 * [ACTRIS Aerosol remote sensing data centre unit (ARES)](http://access.earlinet.org/EARLINET/)
@@ -23,11 +17,10 @@ provide a single access point to all data:
 * ACTRIS trace gases remote sensing data centre unit (GRES) 
 * [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
-In addition, AERIS contributes with the production and provision of satellite data that complements the
-ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
+In addition, AERIS contributes with the production and provision of satellite data that complements the ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 
-![Potential architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_centre_elements_phase2.jpg)
-*Figure 1: Potential architecture of the ACTRIS Data Centre*
+![Architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_centre_elements_phase2.jpg)
+*Figure 1: Architecture of the ACTRIS Data Centre*
 
 **Add figure from application**
 
@@ -77,6 +70,7 @@ The origin of the data is derived from instrument raw data, either through onlin
 #### The expected size of the data
 
 <table width="604" cellspacing="0" cellpadding="7"> <tbody> <tr> <td rowspan="3" width="100" height="26"> <p class="western" lang="en-GB" align="center">&nbsp;</p> </td> <td colspan="3" width="225"> <p class="western" align="center"><span lang="en-GB"><strong>Number of annual data sets</strong></span></p> </td> <td colspan="3" width="235"> <p class="western" align="center"><span lang="en-GB"><strong>Data volume</strong></span></p> </td> </tr> <tr> <td rowspan="2" width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p> </td> <td colspan="2" width="145"> <p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p> </td> <td rowspan="2" width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p> </td> <td colspan="2" width="152"> <p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p> </td> </tr> <tr> <td width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p> </td> <td width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p> </td> <td width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p> </td> <td width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ aerosol data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">60</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">50</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">120</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">18&nbsp;000 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">15&nbsp;000 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">50&nbsp;000 MB</span></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ cloud data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">35</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">105</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">1 GB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">3 GB</span></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ trace gas data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">27</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">30</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">60</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">300 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">200 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">400 MB</span></span></p> </td> </tr> </tbody> </table>
+*Table 1: Expected size of the data coming from the in situ data center unit*
 
 #### Data utility: to whom will it be useful
 
@@ -97,8 +91,7 @@ models;
   * Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
 
 #### Outline of data life cycle (workflow and workflow diagram)
-
-Detail on the data life cycle and workflow diagram for In situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-aerosol-cloud-and-trace-gas-data-lifecycle-and-workflow-draft).
+Detail on the data life cycle and workflow (workflow diagrams for data production) for In situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-aerosol-cloud-and-trace-gas-data-lifecycle-and-workflow-draft).
 
 ### 2.2. Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
@@ -278,13 +271,20 @@ https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables
 ### Appendix 2: List of ACTRIS level 3 data products
 https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx
 
-### Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)
-![ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow](https://folk.nilu.no/~richard/actris-ri-variables/ACTRIS_surface_insitu_workflow.jpg)
+### Appendix 3: ACTRIS In situ data centre unit (In-Situ) data life cycle and workflow diagram
+![ACTRIS In situ data centre unit workflow diagram](https://folk.nilu.no/~richard/actris-ri-variables/ACTRIS_surface_insitu_workflow.jpg)
 
-### Appendix x: Data lifecycle and workflow for ACCESS Data Centre Unit
+### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
+![ACTRIS Aerosol remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_Aerosol_Remote_Sensing_workflow.jpg)
 
-### Appendix x: Data lifecycle and workflow for ACTRIS trace gases remote sensing data centre unit
-![Data lifecycle and workflow for ACTRIS trace gases remote sensing data centre unit](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/workflow_gres.png)
+### Appendix 5: ACTRIS Cloud remote sensing data centre unit (CLU) data life cycle and workflow diagram
+![ACTRIS Cloud remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_cloud_remote_Sensing_workflow.png)
 
--------------------------------------------------
-> Initial outline of the Data Management Plan created using DMPonline
+### Appendix 6: ACTRIS trace gases remote sensing data centre unit (GRES) data life cycle and workflow diagram
+![ACTRIS trace gases remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/workflow_gres.png)
+
+### Appendix 7: ACTRIS Atmospheric simulation chamber data centre unit (ASC) data life cycle and workflow diagram
+![ACTRIS Atmospheric simulation chamber data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/atm_simulation_chamber_workflow.png)
+
+### Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit
+
