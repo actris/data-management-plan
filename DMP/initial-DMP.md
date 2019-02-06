@@ -26,6 +26,9 @@ provide a single access point to all data:
 In addition, AERIS contributes with the production and provision of satellite data that complements the
 ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 
+![Potential architecture of the ACTRIS Data Centre](/data-management-plan/DMP/img/actris-data-centre.png)
+> Potential architecture of the ACTRIS Data Centre
+
 **Add figure from application**
 
 ## ACTRIS data set descriptions and ACTRIS data levels
