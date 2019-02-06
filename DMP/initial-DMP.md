@@ -20,13 +20,13 @@ provide a single access point to all data:
 * [ACTRIS In situ data centre unit (In-Situ)](http://ebas.nilu.no/)
 * [ACTRIS Aerosol remote sensing data centre unit (ARES)](http://access.earlinet.org/EARLINET/)
 * [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)
-* [ACTRIS trace gases remote sensing data centre unit (GRES) 
+* ACTRIS trace gases remote sensing data centre unit (GRES) 
 * [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
 In addition, AERIS contributes with the production and provision of satellite data that complements the
 ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
 
-![Potential architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/actris-data-centre.png)
+![Potential architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_centre_elements_phase2.jpg)
 *Figure 1: Potential architecture of the ACTRIS Data Centre*
 
 **Add figure from application**
@@ -283,7 +283,8 @@ https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_v
 
 ### Appendix x: Data lifecycle and workflow for ACCESS Data Centre Unit
 
-###
+### Appendix x: Data lifecycle and workflow for ACTRIS trace gases remote sensing data centre unit
+![Data lifecycle and workflow for ACTRIS trace gases remote sensing data centre unit](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/workflow_gres.png)
 
 -------------------------------------------------
 > Initial outline of the Data Management Plan created using DMPonline
