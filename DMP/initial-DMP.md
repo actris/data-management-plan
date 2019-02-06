@@ -78,20 +78,15 @@ ACTRIS will produce data and data products essential to a wide range of communit
 
   * Atmospheric science research communities world-wide (climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations); 
   * Environmental science research communities and communities from other neighbouring fields: hydro-marine, bio-ecosystem, geosciences, space physics, energy, health, and food domain, to study interactions and processes in across different disciplines;
-
   * Instrument manufacturers and sensor industries for development, testing, prototyping and demonstration;
-
   * Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
-
   * Space agencies for validation and the development of new satellite missions; 
-
   * National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution
 models; 
-
   * Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
 
 #### Outline of data life cycle (workflow and workflow diagram)
-Detail on the data life cycle and workflow (workflow diagrams for data production) for In situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-aerosol-cloud-and-trace-gas-data-lifecycle-and-workflow-draft).
+Detail on the data life cycle and workflow (workflow diagrams for data production) for In situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle-and-workflow-diagram).
 
 ### 2.2. Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
