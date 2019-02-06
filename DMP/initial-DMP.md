@@ -1,6 +1,6 @@
 # ACTRIS Research Infrastructure initial outline of DMP
 
-## Introduction to ACTRIS Data Centre
+## 1. Introduction to ACTRIS Data Centre
 
 ACTRIS-2 (Aerosols, Clouds, and Trace gases Research InfraStructure) Integrating Activity (IA) addresses
 the scope of integrating state-of-the-art European ground-based stations for long-term observations of
@@ -47,9 +47,9 @@ There are 3 levels of ACTRIS data:
 
 The list of variables are expected to increase during the progress of ACTRIS, particularly level 3 data products. During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilising these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available. 
 
-## 1. Data summary for the different data centre units
+## 2. Data summary for the different data centre units
 
-### Data summary of the ACTRIS In situ data centre unit (In-Situ)
+### 2.1.Data summary of the ACTRIS In situ data centre unit (In-Situ)
 
 #### The purpose of the data collection/generation
 
@@ -66,24 +66,20 @@ Data management of ACTRIS in situ data relates to the ability to predict the fut
 #### The types and formats of data generated/collected
 The ACTRIS In situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). Data submitted to EBAS need to be formatted in the EBAS NASA-Ames format by the data provider, and there is exsisting instructions and template for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
 
-#### Specify if existing data is being re-used (if any)
-#### Specify the origin of the data
-#### State the expected size of the data (if known)
-#### Outline the data utility: to whom will it be useful
-#### Outline of Data life cycle (workflow and workflow diagram): Appendix x: Data lifecycle/workflow for data centre unit x
+#### Re-use of existing data
 
-### Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
+The ACTRIS data user interface will include access to ACTRIS In situ legacy data resulting from ACTRIS pre-projects.
 
-* State the purpose of the data collection/generation
-* Explain the relation to the objectives of the project
-* Specify the types and formats of data generated/collected
-* Specify if existing data is being re-used (if any)
-* Specify the origin of the data
-* State the expected size of the data (if known)
-* Outline the data utility: to whom will it be useful
-* Outline of workflow and workflow diagram
+#### The origin of the data
 
-### Data summary of the ACTRIS Cloud remote sensing data centre unit (CLU)
+#### The expected size of the data
+
+#### Data utility: to whom will it be useful
+#### Outline of data life cycle (workflow and workflow diagram)
+
+Detail on the data life cycle and workflow diagram for In situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*.](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-aerosol-cloud-and-trace-gas-data-lifecycle-and-workflow-draft).
+
+### 2.2. Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
 * State the purpose of the data collection/generation
 * Explain the relation to the objectives of the project
@@ -94,7 +90,7 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 * Outline the data utility: to whom will it be useful
 * Outline of workflow and workflow diagram
 
-### Data summary of the ACTRIS trace gases remote sensing data centre unit (GRES)
+### 2.3. Data summary of the ACTRIS Cloud remote sensing data centre unit (CLU)
 
 * State the purpose of the data collection/generation
 * Explain the relation to the objectives of the project
@@ -105,7 +101,7 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 * Outline the data utility: to whom will it be useful
 * Outline of workflow and workflow diagram
 
-### Data summary of the ACTRIS Atmospheric simulation chamber data centre unit (ASC) 
+### 2.4. Data summary of the ACTRIS trace gases remote sensing data centre unit (GRES)
 
 * State the purpose of the data collection/generation
 * Explain the relation to the objectives of the project
@@ -116,7 +112,7 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 * Outline the data utility: to whom will it be useful
 * Outline of workflow and workflow diagram
 
-### Data summary of the data products providers (level 3 data/abbreviation missing)
+### 2.5. Data summary of the ACTRIS Atmospheric simulation chamber data centre unit (ASC) 
 
 * State the purpose of the data collection/generation
 * Explain the relation to the objectives of the project
@@ -127,9 +123,20 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 * Outline the data utility: to whom will it be useful
 * Outline of workflow and workflow diagram
 
-## 2. Data Management at the ACTRIS data centre
+### 2.6. Data summary of the data products providers (level 3 data/abbreviation missing)
+
+* State the purpose of the data collection/generation
+* Explain the relation to the objectives of the project
+* Specify the types and formats of data generated/collected
+* Specify if existing data is being re-used (if any)
+* Specify the origin of the data
+* State the expected size of the data (if known)
+* Outline the data utility: to whom will it be useful
+* Outline of workflow and workflow diagram
+
+## 3. Data Management at the ACTRIS data centre
 **Remove references to ACCESS**
-### 2.1 Findable: Making data findable, including provisions for metadata [FAIR data]
+### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
 
 #### Outline the discoverability of data (metadata provision)
 
@@ -155,7 +162,7 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 
    ACTRIS aiming at following the [INSPIRE](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32007L0002) directive for metadata formatting. Present standard(s) for metadata at the ACTRIS data and services access unit level. Must decide if data centre units should provide metadata according to a specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
 
-### 2.2 Accessible: Making data openly accessible [FAIR data]
+### 3.2. Accessible: Making data openly accessible [FAIR data]
 
 #### Specify which data will be made openly available? If some data is kept closed provide rationale for doing so
 
@@ -177,7 +184,7 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 
   Question not answered.
 
-### 2.3 Interoperable: Making data interoperable [FAIR data]
+### 3.3. Interoperable: Making data interoperable [FAIR data]
 
 #### Assess the interoperability of your data. Specify what data and metadata vocabularies, standards or methodologies you will follow to facilitate interoperability. 
 
@@ -187,7 +194,7 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 
   Standard vocabulary will not always be used, but in all cases these will be mapped to standard vocabulary where exisitng at the DC ACCESS unit.
 
-### 2.4 Reuseable: Increase data re-use (through clarifying licenses) [FAIR data]
+### 3.4. Reuseable: Increase data re-use (through clarifying licenses) [FAIR data]
 
 #### Specify how the data will be licenced to permit the widest reuse possible
 
@@ -210,7 +217,7 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 
   Question not answered.
 
-## 3. Allocation of resources
+## 4. Allocation of resources
 
 ### Estimate the costs for making your data FAIR. Describe how you intend to cover these costs
 
@@ -224,25 +231,25 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 
   Question not answered.
 
-## 4. Data security
+## 5. Data security
 
 ### Address data recovery as well as secure storage and transfer of sensitive data 
 
   Question not answered.
 
-## 5. Ethical aspects
+## 6. Ethical aspects
 
 ### To be covered in the context of the ethics review, ethics section of DoA and ethics deliverables. Include references and related technical aspects if not covered by the former 
 
   Link this section to the [ACTRIS Ethical Guidelines](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.2_M24.pdf?ver=2018-12-07-080117-913)
 
-## 6. Other
+## 7. Other
 
 ### Refer to other national/funder/sectorial/departmental procedures for data management that you are using (if any) 
 
   Question not answered.
 
-## 7. Appendix
+## 8. Appendix
 
 ### Appendix 1: List of ACTRIS variables and recommended methodology
 https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx
