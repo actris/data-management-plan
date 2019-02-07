@@ -25,3 +25,5 @@ We use Markdown as a the [markup language](https://github.com/adam-p/markdown-he
 [Ten simple rules for machine-actionable data management plans](http://doi.org/10.5281/zenodo.1172673)
 
 [GO-FAIR starter kit for research data management](https://www.go-fair.org/resources/rdm-starter-kit/)
+
+[Converting excel tables to HTML](https://divtable.com/generator/)
