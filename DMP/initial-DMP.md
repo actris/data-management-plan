@@ -131,7 +131,9 @@ There are 3 levels of ACTRIS data:
 
 The list of variables are expected to increase during the progress of ACTRIS, particularly level 3 data products. During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilising these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available. 
 
-## 2. Data summary for the different data centre units
+## 2. Data summary for ACTRIS data centre
+
+**Move general content here from data centre unit text**
 
 ### 2.1.Data summary of the ACTRIS In situ data centre unit (In-Situ)
 
@@ -142,6 +144,7 @@ The purpose of the data collection and generation of data products is to provide
 #### The relation to the objectives of the project
 
 Data management of ACTRIS in situ data relates to the ability to predict the future behaviour of the atmosphere over all time scales. High quality observation data facilitates this and needs to be supported by:
+  * Documentation of archiving procedures and access to level 0 data
   * Long-term archiving and preservation of ACTRIS level 1 to level 3 data and data products
   * Access to ACTRIS data, data products, and digital tools through a single point of entry, the ACTRIS data user interface
   * Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
@@ -152,7 +155,7 @@ The ACTRIS In situ data centre unit is supported by the [EBAS database infrastru
 
 #### Re-use of existing data
 
-The ACTRIS data user interface will include access to ACTRIS In situ legacy data resulting from ACTRIS pre-projects.
+The ACTRIS data user interface will include access to ACTRIS In situ data and legacy data resulting from ACTRIS pre-projects.
 
 #### The origin of the data
 
