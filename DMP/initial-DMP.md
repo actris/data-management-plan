@@ -4,12 +4,7 @@
 
 The Research Infrastructure (RI) ACTRIS – Aerosols, Clouds, and Trace Gases is the pan-European RI that consolidates activities amongst European partners for observations of aerosols, clouds, and trace gases and for understanding of the related atmospheric processes, as well as to provide RI services to wide user groups. ACTRIS is a unique research infrastructure improving the quality of atmospheric observations, developing new methods and protocols, and harmonizing existing observations of the atmospheric variables listed in Appendix 1.
 
-ACTRIS (Aerosols, Clouds, and Trace gases Research Infrastructure) was adopted to the ESFRI roadmap in 2016. During the ongoing preparation phase (2017-2019), ACTRIS shall achieve maturity at organizational, operational, and strategic levels. The preparation phase is supported by the European Commission (ACTRIS Preparatory Phase Project, PPP) and partner countries and organizations at the national level. The ACTRIS Central Facilities (CFs) host selection will be an essential outcome of ACTRIS PPP.
-During the implementation phase (expected 2020-2024), the CFs are constructed and their services are tested. ACTRIS operations will start step-by-step by ramping up the service provision. After the necessary legal preparations, ACTRIS shall become a legal entity (ERIC, European Research Infrastructure Consortium) funded by the Member countries. The target is to launch ACTRIS ERIC in the beginning of 2021. It is foreseen that ACTRIS will be fully operational by 2025.
-
-The overall goal of the ACTRIS Data Centre is to provide scientists and other user groups with free and open access to all ACTRIS infrastructure data, complemented with access to innovative and mature data
-products, together with tools for quality assurance (QA), data analysis and research following the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples).
-The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS Data Centre currently consists of five topical data repositories archiving the measurement data, which are all linked through the [ACTRIS data portal](http://actris.nilu.no/) to provide a single access point to all data and related information:
+The overall goal of the ACTRIS Data Centre is to provide scientists and other user groups with free and open access to all ACTRIS infrastructure data, complemented with access to innovative and mature data products, together with tools for quality assurance (QA), data analysis and research, following the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples). The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS Data Centre will be organized in 6 Units, with clear links and procedures for interaction between the data center Units, National Facilities (NFs) and topical centres (TCs). The ACTRIS DC will be coordinated by the ACCESS unit leader and all data is linked through the [ACTRIS data portal](http://actris.nilu.no/) to provide a single access point to all data and related information. The units are:
 
 * [ACTRIS In situ data centre unit (In-Situ)](http://ebas.nilu.no/)
 * [ACTRIS Aerosol remote sensing data centre unit (ARES)](http://access.earlinet.org/EARLINET/)
@@ -17,12 +12,108 @@ The numerous measurement methodologies applied in ACTRIS result in a considerabl
 * ACTRIS trace gases remote sensing data centre unit (GRES) 
 * [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
-In addition, AERIS contributes with the production and provision of satellite data that complements the ACTRIS ground-based data: http://www.icare.univ-lille1.fr/catalogue.
-
 ![Architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_centre_elements_phase2.jpg)
 *Figure 1: Architecture of the ACTRIS Data Centre*
 
-**Add figure from application**
+During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities are constructed and their services are tested. ACTRIS operations will start step-by-step by ramping up the service provision. After the necessary legal preparations, ACTRIS shall become a legal entity (ERIC, European Research Infrastructure Consortium) funded by the Member countries. The target is to launch ACTRIS ERIC in the beginning of 2021. It is foreseen that ACTRIS will be fully operational by 2025. The ACTRIS Central Facilities host selection was a part of ACTRIS PPP, and the following consortium is selected to host the ACTRIS Data Center, and the various units with services to data producers and data users.
+
+<table width="100%" cellspacing="0" cellpadding="7">
+<tbody>
+<tr valign="top">
+<td width="17%" height="70">
+<p lang="nb-NO" align="justify"><span lang="en-GB"><strong>Name of Central Facility Unit</strong></span></p>
+</td>
+<td width="16%">
+<p lang="nb-NO" align="justify"><span lang="en-GB"><strong>Hosting institution and contribution</strong></span></p>
+</td>
+<td width="67%">
+<p lang="nb-NO" align="justify"><span lang="en-GB"><strong>Main activities</strong></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="17%" height="48">
+<p lang="nb-NO" align="justify"><span lang="en-GB">ACTRIS Data Centre</span></p>
+</td>
+<td width="16%">
+<p lang="nb-NO" align="justify"><span lang="en-GB">Lead NILU, contributions by all.</span></p>
+</td>
+<td width="67%">
+<p lang="en-GB" align="justify"><br /><br /></p>
+<p lang="nb-NO" align="justify"><span lang="en-GB">Coordinate the work and the interaction and reporting to the Head Office</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="17%" height="20">
+<p align="justify"><span lang="en-GB">ACTRIS data and services access unit (ACCESS)</span></p>
+<p lang="en-GB" align="justify">&nbsp;</p>
+</td>
+<td width="16%">
+<p lang="nb-NO" align="justify"><span style="color: #000000;"><span lang="en-GB"><strong>NILU (lead)</strong></span></span><span style="color: #000000;"><span lang="en-GB"> CNRS </span></span><span lang="en-GB">MetNo, </span><span style="color: #000000;"><span lang="en-GB">BSC</span></span></p>
+</td>
+<td width="67%">
+<p lang="nb-NO" align="justify"><span style="color: #000000;"><span lang="en-GB">ACTRIS web interface for data, services and tools, called &ldquo;</span></span><span style="color: #000000;"><span lang="en-GB"><em>The ACTRIS Data Centre</em></span></span><span style="color: #000000;"><span lang="en-GB">&rdquo;. </span></span><span lang="en-GB">Main activities are </span><span lang="en-GB"><strong>Discovery and access </strong></span><span lang="en-GB">to</span> <span lang="en-GB">ACTRIS data and data products, digital tools provided by the topic centres and the data centre units, documentation, software and tools for data production. </span><span lang="en-GB"><strong>Visualisation </strong></span><span lang="en-GB">of</span> <span lang="en-GB">ACTRIS data products. </span><span lang="en-GB"><strong>Data production </strong></span><span lang="en-GB">of selected</span> <span lang="en-GB">Level 3 data and synergy data products. The data centre will offer </span><span lang="en-GB"><strong>bridge to external data bases and sources</strong></span><span lang="en-GB">.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="17%" height="100">
+<p align="justify"><span lang="en-GB">ACTRIS In situ data centre unit (In-Situ)</span></p>
+</td>
+<td width="16%">
+<p lang="nb-NO" align="justify"><span style="color: #000000;"><span lang="en-GB"><strong>NILU</strong></span></span></p>
+</td>
+<td width="67%">
+<p lang="nb-NO" align="justify"><span lang="en-GB">Data curation service for In situ data: all aerosol, cloud and trace gas in situ data. This comprises inclusion of data in the data base EBAS, archiving and documentation. Support for centralized data processing, harmonization, traceability, quality control and product generation. Training and online tools for QA, QC. The activity enables RRT and NRT delivery.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="17%" height="54">
+<p align="justify"><span lang="en-GB">ACTRIS Aerosol remote sensing data centre unit (ARES)</span></p>
+</td>
+<td width="16%">
+<p lang="nb-NO" align="justify"><span lang="en-GB"><strong>CNR (Lead)</strong></span><span lang="en-GB"> CNRS</span></p>
+<p lang="en-GB" align="justify">&nbsp;</p>
+</td>
+<td width="67%">
+<p lang="nb-NO" align="justify"><span lang="en-GB">Aerosol remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data provision and archiving, and documentation. The activity enables RRT and NRT delivery. Tutorial activities. Production of level 3 data for climatological analysis and new products</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="17%" height="80">
+<p align="justify"><span lang="en-GB">ACTRIS Cloud remote sensing data centre unit (CLU)</span></p>
+</td>
+<td width="16%">
+<p lang="nb-NO" align="justify"><span lang="en-GB"><strong>FMI</strong></span></p>
+</td>
+<td width="67%">
+<p lang="nb-NO" align="justify"><span lang="en-GB">Data curation service for cloud remote sensing data. Support for centralized cloud remote sensing data processing, harmonization, automated quality control and product generation. Enables RRT and NRT delivery. Production of level 3 data for NWP model evaluation</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="17%">
+<p align="justify"><span lang="en-GB">ACTRIS Atmospheric simulation chamber data centre unit (ASC)</span></p>
+</td>
+<td width="16%">
+<p lang="nb-NO" align="justify"><span lang="en-GB"><strong>CNRS</strong></span></p>
+</td>
+<td width="67%">
+<p lang="nb-NO" align="justify"><span lang="en-GB">Atmospheric simulation chamber data services curation, provision, standardized process for data submission</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td bgcolor="#ffffff" width="17%">
+<p align="justify"><span style="color: #000000;"><span lang="en-GB">ACTRIS trace gases remote sensing data centre unit</span></span></p>
+<p align="justify"><span style="color: #000000;"><span lang="en-GB">(GRES)</span></span></p>
+</td>
+<td bgcolor="#ffffff" width="16%">
+<p lang="nb-NO" align="justify"><span style="color: #000000;"><span lang="en-GB"><strong>CNRS</strong></span></span></p>
+</td>
+<td bgcolor="#ffffff" width="67%">
+<p align="justify"><span style="color: #000000;"><span lang="en-GB">Data curation service for reactive trace gases remote sensing data. This comprises standardized process for data submission, quality control, inclusion of data in the data base, search metadata creation and provision and archiving.</span></span></p>
+<p lang="nb-NO" align="justify"><span style="color: #000000;"><span lang="en-GB">Production of level 3 data for climatological analysis, and added values products (quicklooks, links to EVDC - ESA Atmospheric Validation Data Centre).</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## ACTRIS data set descriptions and ACTRIS data levels
 
