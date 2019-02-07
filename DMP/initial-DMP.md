@@ -357,8 +357,15 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 ### Appendix 2: List of ACTRIS level 3 data products
 [List of ACTRIS level 3 data products](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx)
 
-### Appendix 3: ACTRIS In situ data centre unit (In-Situ) data life cycle and workflow diagram
+### Appendix 3: ACTRIS In situ data centre unit (In-Situ) data life cycle
+
+#### Data Life Cycle Description
+
 ![ACTRIS In situ data centre unit workflow diagram](https://folk.nilu.no/~richard/actris-ri-variables/ACTRIS_surface_insitu_workflow.jpg)
+
+#### Workflow Tasks Responsibilities
+
+<table style="height: 254px;" width="826"> <tbody> <tr> <th style="width: 206.25px;">&nbsp;</th> <th style="width: 206.25px;" colspan="3">&nbsp;Responsible for</th> </tr> <tr> <th style="width: 206.25px;">&nbsp;Workflow Task ID</th> <th style="width: 206.25px;">&nbsp;Specification</th> <th style="width: 206.25px;">&nbsp;Implementation</th> <th style="width: 206.25px;">&nbsp;Operation</th> </tr> <tr> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> </tr> <tr> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> </tr> </tbody> </table> <p>&nbsp;</p> #### Workflow Tasks Short Specification <table style="height: 254px; width: 826px;"> <tbody> <tr> <th style="width: 16.1667px;">&nbsp;Workflow Task ID</th> <th style="width: 395.833px;">&nbsp;Short Specification</th> </tr> <tr> <td style="width: 16.1667px;">&nbsp;</td> <td style="width: 395.833px;">&nbsp;</td> </tr> <tr> <td style="width: 16.1667px;">&nbsp;</td> <td style="width: 395.833px;">&nbsp;</td> </tr> </tbody> </table> <p>&nbsp;</p>
 
 ### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
 ![ACTRIS Aerosol remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_Aerosol_Remote_Sensing_workflow.jpg)
