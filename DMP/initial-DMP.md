@@ -1,8 +1,8 @@
 # ACTRIS Research Infrastructure initial outline of DMP
 
 # Table of Contents
-1. [1. Introduction to ACTRIS and The ACTRIS Data Centre](#1. Introduction to ACTRIS and The ACTRIS Data Centre)
-2. [2. Data summary for ACTRIS data centre](## 2. Data summary for ACTRIS data centre)
+[1. Introduction to ACTRIS and The ACTRIS Data Centre](#1-Introduction-to-ACTRIS-and-The-ACTRIS-Data-Centre)
+[2. Data summary for ACTRIS data centre](#2-Data-summary-for-ACTRIS-data-centre)
 
 ## 1. Introduction to ACTRIS and The ACTRIS Data Centre
 
