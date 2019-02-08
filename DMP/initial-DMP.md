@@ -1,8 +1,8 @@
 # ACTRIS Research Infrastructure initial outline of DMP
 
 # Table of Contents
-1. [Introduction to ACTRIS and The ACTRIS Data Centre](#1-Introduction-to-ACTRIS-and-The-ACTRIS-Data-Centre)
-		1.1. [ACTRIS data set descriptions and ACTRIS data levels](#1-1ACTRIS-data-set-descriptions-and-ACTRIS-data-levels)
+* [Introduction to ACTRIS and The ACTRIS Data Centre](#1-Introduction-to-ACTRIS-and-The-ACTRIS-Data-Centre)
+  * [ACTRIS data set descriptions and ACTRIS data levels](#1-1ACTRIS-data-set-descriptions-and-ACTRIS-data-levels)
 2. [Data summary for ACTRIS data centre](#2-Data-summary-for-ACTRIS-data-centre)
 		2.1. [Data summary of the ACTRIS In situ data centre unit (In-Situ)](#in-situ-summary)
 		2.2. [Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)](#ares-summary)
@@ -392,6 +392,8 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 ### Appendix 3: ACTRIS In situ data centre unit (In-Situ) data life cycle
 
 #### Data Life Cycle Description
+
+**More tables to be added regarding the workflow, currently this is an example draft**
 
 ![ACTRIS In situ data centre unit workflow diagram](https://folk.nilu.no/~richard/actris-ri-variables/ACTRIS_surface_insitu_workflow.jpg)
 
