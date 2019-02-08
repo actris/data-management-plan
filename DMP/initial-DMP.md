@@ -393,7 +393,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 #### Data Life Cycle Description
 
-**More tables to be added regarding the workflow, currently this is an example draft**
+*More tables to be added regarding the workflow, currently this is an example draft*
 
 ![ACTRIS In situ data centre unit workflow diagram](https://folk.nilu.no/~richard/actris-ri-variables/ACTRIS_surface_insitu_workflow.jpg)
 
