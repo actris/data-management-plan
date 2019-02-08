@@ -1,5 +1,9 @@
 # ACTRIS Research Infrastructure initial outline of DMP
 
+# Table of Contents
+1. [1. Introduction to ACTRIS and The ACTRIS Data Centre](#1. Introduction to ACTRIS and The ACTRIS Data Centre)
+2. [2. Data summary for ACTRIS data centre](## 2. Data summary for ACTRIS data centre)
+
 ## 1. Introduction to ACTRIS and The ACTRIS Data Centre
 
 The Research Infrastructure (RI) ACTRIS – Aerosols, Clouds, and Trace Gases is the pan-European RI that consolidates activities amongst European partners for observations of aerosols, clouds, and trace gases and for understanding of the related atmospheric processes, as well as to provide RI services to wide user groups. ACTRIS is a unique research infrastructure improving the quality of atmospheric observations, developing new methods and protocols, and harmonizing existing observations of the atmospheric variables listed in Appendix 1.
