@@ -2,7 +2,21 @@
 
 # Table of Contents
 [1. Introduction to ACTRIS and The ACTRIS Data Centre](#1-Introduction-to-ACTRIS-and-The-ACTRIS-Data-Centre)
+
 [2. Data summary for ACTRIS data centre](#2-Data-summary-for-ACTRIS-data-centre)
+
+[3. Data Management at the ACTRIS data centre](#3-Data-Management-at-the-ACTRIS-data-centre)
+
+[4. Allocation of resources](#4-Allocation-of-resources)
+
+[5. Data security](#5-Data-security)
+
+[6. Ethical aspects](#6-Ethical-aspects)
+
+[7. Other](#7-Other)
+
+[8. Appendix](#8-Appendix)
+
 
 ## 1. Introduction to ACTRIS and The ACTRIS Data Centre
 
