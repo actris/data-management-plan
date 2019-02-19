@@ -6,13 +6,11 @@ This is the repository for the ACTRIS data management plan (DMP). The goal of th
 
 The DMP should be a living document and The European Comission emphasize the importance of making the DMP machine-actionable in order to be included in a FAIR data ecosystem as a hub of information on FAIR digital objects. The goal is to make the DMP accessible for all stakeholders (repository operators, funders, researchers, publishers, infrastructure providers etc.) by making it available for both humans and machines.
 
-
-
 Below is a list of resources to get you started. The [initial outline](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md) of the DMP is available in the DMP folder.
 
-All contributions are welcome.
-
 We use Markdown as a the [markup language](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for the text. This is open for discussion.
+
+All contributions are welcome.
 
 # Resources
 
@@ -27,3 +25,5 @@ We use Markdown as a the [markup language](https://github.com/adam-p/markdown-he
 [GO-FAIR starter kit for research data management](https://www.go-fair.org/resources/rdm-starter-kit/)
 
 [Converting excel tables to HTML](https://divtable.com/generator/)
+
+[Using Git and GitHub](https://help.github.com/)
