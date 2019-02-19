@@ -4,7 +4,7 @@ Table of contents
 =================
 
 * [1. Introduction to ACTRIS and The ACTRIS Data Centre](#1-Introduction-to-ACTRIS-and-The-ACTRIS-Data-Centre)
-  * [1.1. ACTRIS data set descriptions and ACTRIS data levels](#1.1-ACTRIS-data-set-descriptions-and-ACTRIS-data-levels)
+  * [1.1. ACTRIS data set descriptions and ACTRIS data levels](#ACTRIS-data-set-descriptions-and-ACTRIS-data-levels)
 * [2. Data summary for ACTRIS data centre](#2-Data-summary-for-ACTRIS-data-centre)
   * [2.1. Data summary of the ACTRIS In situ data centre unit (In-Situ)](#in-situ-summary)
   * [2.2. Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)](#ares-summary)
