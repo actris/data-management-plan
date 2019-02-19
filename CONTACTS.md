@@ -33,6 +33,8 @@ Jonas Gliss - Norwegian Meteorological Institute - Norway
 
 Caroline Blanke - CNRS/AERIS - France
 
+Nicolas Pascal - AERIS/ICARE
 
+Guillaume Brissebrat - CNRS
 
 

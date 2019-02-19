@@ -268,7 +268,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 * Outline of workflow and workflow diagram
 
 ## 3. Data Management at the ACTRIS data centre
-**Remove references to ACCESS**
+**ACCESS unit takes the lead on this section**
 ### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
 
 #### Outline the discoverability of data (metadata provision)
@@ -344,7 +344,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 #### Describe data quality assurance processes
 
-  Question not answered.
+  **Describe the data quality assurance processes for each data center unit**
 
 #### Specify the length of time for which the data will remain re-usable
 
@@ -352,9 +352,11 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ## 4. Allocation of resources
 
+**Cathrine takes the lead on this section. Draft should be more like an abstract of the cost book**
+
 ### Estimate the costs for making your data FAIR. Describe how you intend to cover these costs
 
-  Question not answered. Draft should be provided by Cathrine.
+  Question not answered.
 
 ### Clearly identify responsibilities for data management in your project
 
@@ -368,7 +370,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### Address data recovery as well as secure storage and transfer of sensitive data 
 
-  Question not answered.
+  **Address data security related issues for each data centre unit.**
 
 ## 6. Ethical aspects
 
@@ -407,9 +409,11 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 <table style="height: 254px; width: 826px;"> <tbody> <tr> <th style="width: 16.1667px;">&nbsp;Workflow Task ID</th> <th style="width: 395.833px;">&nbsp;Short Specification</th> </tr> <tr> <td style="width: 16.1667px;">&nbsp;</td> <td style="width: 395.833px;">&nbsp;</td> </tr> <tr> <td style="width: 16.1667px;">&nbsp;</td> <td style="width: 395.833px;">&nbsp;</td> </tr> </tbody> </table>
 
 ### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
+**Will also link to seperate document describing the workflow in more detail.**
 ![ACTRIS Aerosol remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_Aerosol_Remote_Sensing_workflow.jpg)
 
 ### Appendix 5: ACTRIS Cloud remote sensing data centre unit (CLU) data life cycle and workflow diagram
+**Will also link to seperate document describing the workflow in more detail.**
 ![ACTRIS Cloud remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_cloud_remote_Sensing_workflow.png)
 
 ### Appendix 6: ACTRIS trace gases remote sensing data centre unit (GRES) data life cycle and workflow diagram
