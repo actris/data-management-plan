@@ -18,9 +18,9 @@ Antti Hyvärinen	FMI - Finland
 
 Ewan O'Connor - FMI - Finland
 
-Simo Tukiainen - FMI - simo.tukiainen@fmi.fi
+Simo Tukiainen - FMI - Finland
 
-Anniina Korpinen - FMI - anniina.korpinen@fmi.fi
+Anniina Korpinen - FMI - Finland
 
 ## ACTRIS trace gases remote sensing data centre unit (GRES)
 Cathy - Boone - IPSL/CNRS - France
