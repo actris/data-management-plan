@@ -268,8 +268,35 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 * Outline of workflow and workflow diagram
 
 ## 3. Data Management at the ACTRIS data centre
+
+**Describe briefly data management for each data center unit. (Could we move this up to section 2 and include this as a part of the data summary for the data center units)**
+
+![Core structure of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/architecture_actris_data_portal.png)
+*Figure x Overview of the core structure of the ACTRIS Data Centre (uppder panel) and technical solution of the meta data transfer and access of data through the ACTRIS data portal (lower panel).*
+
+
+**Currently Clodunet, Earlient and the EBAS database are connected to the ACTRIS data portal. In the future the goal is to connect all five data repositories mentioned above, including Eurochamp and the unit on remote sensing of trace gases?
+All data repositories mentioned above are linked in the ACTRIS data portal: http://actris.nilu.no/, and the portal is built as a metadata catalogue. Primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day.
+
+Mention also NRT and seconday data (level 3 data products)**
+
+
 **ACCESS unit takes the lead on this section**
 ### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
+
+ACTRIS will collect data and metadata from a large range of observations from multiple different data center covering different types of data both in terms of size and time coverage. 
+
+For discovery metadata, metadata should be provided for all data, using a standard that is WIS compliant such as ISO19139 or ISO19115.
+
+Future efforts should make it possible for the ACCESS unit to harvest all metadata from the data center within the infrastructure and collect this in the central ACTRIS metadata catalog.
+
+There migh be instances where standards does not cover the need for describing the data at the data center unit. In this case, one should still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
+
+The core responsibility of metadata provisioning is at the data center unit level. The role of the ACCESS unit is to harvest metadata records for the ACTRIS metadata catalog as well as putting in place instruments for monitoring data/metadata provisioning as well as collecting metrics on inspections, plotting and download of data that goes via the ACTRIS metadata catalog.
+
+Generally, ACTRIS data set names aim to be compliant with CF (Climate and Forecast) conventions. In the case where no standard CF names are defined, an application will be sent to establish these.
+
+ACTRIS works towards establishing traceability for all applicable variables using persistent identifiers (PIDs). This is to assure proper attribution is given to data originators adequately reflecting their contributions. Currently ACTRIS is using  digital object identifiers (DOIs) for all secondary datasets though the Data Cite Metadata Store API (https://mds.datacite.org/).
 
 #### Outline the discoverability of data (metadata provision)
 
