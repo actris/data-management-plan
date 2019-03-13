@@ -306,25 +306,30 @@ As a guiding principle, all data submitted to ACTRIS passing quality assurance s
 
 ### 3.2. Accessible: Making data openly accessible [FAIR data]
 
-#### Specify which data will be made openly available? If some data is kept closed provide rationale for doing so
+The main access point to ACTRIS data will be through the [ACTRIS data portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyse and download data produced within ACTRIS. Access to data and metadata should also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog, for example setting up a ACTRIS OAI-PMH server.
 
-  Specify data access policy at the ACCESS unit level and possibly link this section to the existing access policy document: Deliverable 2.6:ACTRIS access and service policy
+The guiding principle is free and open access to data abd data products.
 
-#### Specify how the data will be made available
+There might also be data available through the actris data portal that is not directly actris data, but used in the interpretation of ACTRIS data.
 
-  Specify data availability at the ACCESS unit level. Mention hosting at each unit, formats, interfaces ++.
+**The following types of data is provided:**
 
-#### Specify what methods or software tools are needed to access the data? Is documentation about the software needed to access the data included? Is it possible to include the relevant software (e.g. in open source code)?
+* **Type 1: The ACTRIS data**
+   * Data are funded and produced within the context of the ACTRIS project. Every dataset created within ACTRIS is owned by the ACTRIS partner(s) who created this dataset, and the ACTRIS data policy can be found here. A description of ACTRIS data is provided in the "ACTRIS Data management Plan".
+    
+* **Type 2: Other data available through the portal**
+  * Data are archived and owned by other organisations or data providers and are hosted at other databases. Type 2 data are provided with the permission of each organisation or data provider contributing to the data archive. Each dataset of type II may have its own data policy that will supersede the ACTRIS data policy.
 
-  Specify for each individual data centre unit and for the ACTRIS ACCESS unit, or only at the ACCESS unit level?
+Still individual data center units will also serve as access points for ACTRIS data. But that is out of scope for this document.
 
-#### Specify where the data and associated metadata, documentation and code are deposited
+General guidelines for access to ACTRIS data and services are available in the current [ACTRIS access and service policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467). Conditions of use should be indicated in section 3.4, and is covered by the attached licence, unless stated otherwise. 
 
-  Specify technical details related to the ACCESS unit.
+Some data requires a username and password in order to gain access, e.g. the usage of aerosol profile data.**(If some data is kept closed, we must provide rationale for doing so)**
+Apart from [Quiklooks (simple plots of data from the In Situ and CLU unit)](http://ebas-nrt-showcase.nilu.no/), Near-Real-Time (NRT) data is mostly access protected.
+For all data that requires username and password, a Single-Sign-On service should be implemented, and used by all Data Centre units. 
+In all cases where access is restricted, information on how to access the data should be available through the metadata.
 
-#### Specify how access will be provided in case there are any restrictions
-
-  Question not answered.
+If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) should be available through open access repositories like GitHub. A open source licence for software should be encouraged and applied when possible. The aformentioned guidelines are related to ACTRIS [level 2 data](#11-actris-data-set-descriptions-and-actris-data-levels). This is primarily intended as guidelines for software that is needed to access data that is available through the data center. Software related to ACTRIS level 0 and level 1 data is out of scope for this section.
 
 ### 3.3. Interoperable: Making data interoperable [FAIR data]
 
