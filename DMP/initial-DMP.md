@@ -329,17 +329,22 @@ Apart from [Quiklooks (simple plots of data from the In Situ and CLU unit)](http
 For all data that requires username and password, a Single-Sign-On service should be implemented, and used by all Data Centre units. 
 In all cases where access is restricted, information on how to access the data should be available through the metadata.
 
-If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) should be available through open access repositories like GitHub. A open source licence for software should be encouraged and applied when possible. The aformentioned guidelines are related to ACTRIS [level 2 data](#11-actris-data-set-descriptions-and-actris-data-levels). This is primarily intended as guidelines for software that is needed to access data that is available through the data center. Software related to ACTRIS level 0 and level 1 data is out of scope for this section.
+If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) should be available through open access repositories like GitHub. A open source licence for software should be encouraged and applied when possible. The aformentioned guidelines are related to ACTRIS [level 2 data](#11-actris-data-set-descriptions-and-actris-data-levels). This is primarily intended as guidelines for software that is needed to access data that is available through the data center. Software related to ACTRIS level 0 and level 1 data is out of scope for this section. 
 
 ### 3.3. Interoperable: Making data interoperable [FAIR data]
 
-#### Assess the interoperability of your data. Specify what data and metadata vocabularies, standards or methodologies you will follow to facilitate interoperability. 
+Making data interoperable is the guiding principle of the ACTRIS DC. The ACTRIS DC handles a large variety of data and there is currently no common approach towards interoperability.
 
-  Present data and metadata standards. E.g. NetCDF/CF and iso19115/iso19113.
+By some of the DC units the Thredds Data Server (TDS) is used for serving data as netCDF and through OPeNDAP (EBAS, Earlinet, others?). ACTRIS DC needs to specify what data standards the ACTRIS DC should choose, in order to facilitate interoperability. Still, work remains to see if a common solution could be agreed upon. The intricate nature of the data, might require the use of different solutions to suit the needs of each individual DC unit.
 
-#### Specify whether you will be using standard vocabulary for all data types present in your data set, to allow inter-disciplinary interoperability? If not, will you provide mapping to more commonly used ontologies?
+As mention in section 3.1 metadata standard and vocabularies commonly used in the atmospheric domain should be applied, unless the common solutions do not address the specific need for the DC unit.
 
-  Standard vocabulary will not always be used, but in all cases these will be mapped to standard vocabulary where exisitng at the DC ACCESS unit.
+Implementation of new standards for data and metadata used in the context of ACTRIS should be discussed by all the DC units. This is especially important for the ACCESS unit, coordinating the access to all of the ACTRIS data. Therefore the aim should be to harmonize data and metadata as much as possible, both in terms of technical aspects related to implementation, but also making it easier for the end user to make use of the data. 
+
+Standard vocabulary might not always be used, but in all cases they should be mapped to standard vocabulary if existing by the DC ACCESS unit. 
+
+As an overarching goal, ACTRIS DC will take part in discussions that takes place in forums/groups such as ENVRI FAIR across the different environmental domains and strive to use cross-environmental standards and solutions in order to allow for inter-disciplinary interoperability.
+
 
 ### 3.4. Reuseable: Increase data re-use (through clarifying licenses) [FAIR data]
 
