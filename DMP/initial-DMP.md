@@ -276,7 +276,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 
 **Currently Clodunet, Earlient and the EBAS database are connected to the ACTRIS data portal. In the future the goal is to connect all five data repositories mentioned above, including Eurochamp and the unit on remote sensing of trace gases?
-All data repositories mentioned above are linked in the ACTRIS data portal: http://actris.nilu.no/, and the portal is built as a metadata catalogue. Primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day.
+All data repositories mentioned above are linked in the [ACTRIS data portal](http://actris.nilu.no/), and the portal is built as a metadata catalogue. Primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day.
 
 Mention also NRT and seconday data (level 3 data products)**
 
@@ -284,43 +284,25 @@ Mention also NRT and seconday data (level 3 data products)**
 **ACCESS unit takes the lead on this section**
 ### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
 
-ACTRIS will collect data and metadata from a large range of observations from multiple different data center covering different types of data both in terms of size and time coverage. 
+ACTRIS will collect data and metadata from a large range of observations provided by multiple data center units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit should provide discovery metadata for all ACTRIS data, using a common standard that is WIS compliant such as ISO19139 or ISO19115.
 
-For discovery metadata, metadata should be provided for all data, using a standard that is WIS compliant such as ISO19139 or ISO19115.
-
-Future efforts should make it possible for the ACCESS unit to harvest all metadata from the data center within the infrastructure and collect this in the central ACTRIS metadata catalog.
+Future efforts should make it possible for the ACCESS unit to harvest all metadata from the different data center units and collect this in the a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
 
 There migh be instances where standards does not cover the need for describing the data at the data center unit. In this case, one should still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
-The core responsibility of metadata provisioning is at the data center unit level. The role of the ACCESS unit is to harvest metadata records for the ACTRIS metadata catalog as well as putting in place instruments for monitoring data/metadata provisioning as well as collecting metrics on inspections, plotting and download of data that goes via the ACTRIS metadata catalog.
+The core responsibility of metadata provisioning is at the data center unit level. The role of the ACCESS unit is to harvest metadata records for the ACTRIS metadata catalog as well as putting in place instruments for monitoring data/metadata provisioning as well as collecting user statistics (inspections, plotting and download of data) related to the ACTRIS Data Portal and the ACTRIS metadata catalog.
 
-Generally, ACTRIS data set names aim to be compliant with CF (Climate and Forecast) conventions. In the case where no standard CF names are defined, an application will be sent to establish these.
+Generally, ACTRIS data set names aims to be compliant with [CF (Climate and Forecast) metadata conventions](http://cfconventions.org/standard-names.html). In the case where no standard CF names are defined, an application will be sent to establish these.
 
-ACTRIS works towards establishing traceability for all applicable variables using persistent identifiers (PIDs). This is to assure proper attribution is given to data originators adequately reflecting their contributions. Currently ACTRIS is using  digital object identifiers (DOIs) for all secondary datasets though the Data Cite Metadata Store API (https://mds.datacite.org/).
+ACTRIS works towards establishing traceability for all applicable variables using persistent identifiers (PIDs). This is to assure proper attribution is given to data originators adequately reflecting their contributions. Currently ACTRIS is using  digital object identifiers (DOIs) for all secondary datasets though the [Data Cite Metadata Store API](https://mds.datacite.org/).
 
-#### Outline the discoverability of data (metadata provision)
+Currently there is no search model used by the ACCESS unit (ACTRIS data portal). Still search keywords are implemented to varying degrees on the individual data center unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data center should in the future use a controlled set of vocabularies for search keywords like [Global Change Master Directory (GCMD)](https://earthdata.nasa.gov/about/gcmd/global-change-master-directory-gcmd-keywords) or similar.
 
-  Present the discoverability of the data at ACTRIS data and services access unit (ACCESS) level.
-  **mentioning of data resides at each data centre unit (maybe under i)**
-#### Outline the identifiability of data and refer to standard identification mechanism. Do you make use of persistent and unique identifiers such as Digital Object Identifiers?
+ACTRIS aiming at following the [INSPIRE](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32007L0002) directive for metadata formatting. Present standard(s) for metadata at the ACTRIS data and services access unit level. Must decide if data centre units should provide metadata according to a specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
 
-  Present the identification mechanisms from each individual data centre unit -> ACCESS unit.
+The ACTRIS DC aims at providing clear versioning of its data and metadata, due to the decentralised nature of the Data Centre, this varies between the different data centre units.
 
-#### Outline naming conventions used
-
-  Present naming conventions at both the data centre unit level and the ACCESS level.
-
-#### Outline the approach towards search keyword
-
-  Approach towards search keywords at the ACTRIS data and services access unit level. E.g. mapping of keywords in relation to the metadata standards (iso19115/iso19139)?
-
-#### Outline the approach for clear versioning
-
-  Discuss both on ACCESS and unit level.
-
-#### Specify standards for metadata creation (if any). If there are no standards in your discipline describe what metadata will be created and how
-
-   ACTRIS aiming at following the [INSPIRE](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32007L0002) directive for metadata formatting. Present standard(s) for metadata at the ACTRIS data and services access unit level. Must decide if data centre units should provide metadata according to a specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
+As a guiding principle, all data submitted to ACTRIS passing quality assurance should be uniquely identified. In case of updates, a ID-number is generated, and previous data versions should be identifiable and kept available upon request while the latest version is served through the ACTRIS data portal web-interface.
 
 ### 3.2. Accessible: Making data openly accessible [FAIR data]
 
