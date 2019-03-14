@@ -345,29 +345,17 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 As an overarching goal, ACTRIS DC will take part in discussions that takes place in forums/groups such as ENVRI FAIR across the different environmental domains and strive to use cross-environmental standards and solutions in order to allow for inter-disciplinary interoperability.
 
-
 ### 3.4. Reuseable: Increase data re-use (through clarifying licenses) [FAIR data]
 
-#### Specify how the data will be licenced to permit the widest reuse possible
+The ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the ACTRIS data and access policy and the open research data initiative of the European Commission. As a result, the ACTRIS DC will implement one or multiple licences for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to ensure the visibility of ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably end of 2020 or early 2021). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
 
-  The main principle of ACTRIS, and also ACTRIS PPP, is to have as open data policy as possible, without compromising the protection of personal and confidential data. The ACTRIS PPP data policy described here affects data collected and produced within the framework of ACTRIS PPP. It does not affect other ACTRIS data.
-  Link this section to the existing data policy document: Deliverable 2.3: ACTRIS data policy
+Availability of data might vary between the different data center units. As an example, In situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but this might vary for other data center units, there might be campaigns, or the delivery of NRT data that is available at a more frequent basis. ACTRIS legacy data should also be kept available for the users, but the data might follow a different data policy then the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
-#### Specify when the data will be made available for re-use. If applicable, specify why and for what period a data embargo is needed 
+**Consider adding a table giving an overview of when data is made available, level 2, NRT, campaign data and how this differs among the DC units**
 
-  Question not answered.
+Data quality assurance is provided by the data submitter and national facilities, the topical centers as well as by each individual data center unit. 
 
-#### Specify whether the data produced and/or used in the project is useable by third parties, in particular after the end of the project? If the re-use of some data is restricted, explain why
-
-  Question not answered.
-
-#### Describe data quality assurance processes
-
-  **Describe the data quality assurance processes for each data center unit**
-
-#### Specify the length of time for which the data will remain re-usable
-
-  Question not answered.
+ACTRIS as an Research infrastructure is in its preparation phase, and is expected to be fully operational within 2025. The project will aim at providing open-access to data throughout the lifetime of the infrastructure.
 
 ## 4. Allocation of resources
 
