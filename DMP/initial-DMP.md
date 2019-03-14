@@ -271,14 +271,27 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 **Describe briefly data management for each data center unit. (Could we move this up to section 2 and include this as a part of the data summary for the data center units)**
 
+Data management is handled by the individual data center unit:
+
+* ACTRIS In situ data centre unit for all aerosol, cloud and trace gas in situ data
+* ACTRIS Aerosol remote sensing data centre unit
+* ACTRIS Cloud remote sensing data centre unit
+* ACTRIS Trace gases remote sensing data centre unit
+* ACTRIS Atmospheric simulation chamber data centre unit. 
+
+Access to quality controlled data from the data center units above is provided by the ACTRIS data and service access unit (ACCESS). The ACCESS unit is not only responsible for access to measurement data, but also services, tools and providing documentation, all which is based on metadata provided by the data center units. Currently there are 3 data center units providing metadata (including details on how to access measurement data), this includes data from the Cloudnet (Cloud remote sensing) database, Earlient (Aerosol remote sensing) database and the EBAS (aerosol, cloud and trace gas in situ data) database. The metadata is used as input to the current ACTRIS metadata catalog providing access to data throught the [ACTRIS data portal](http://actris.nilu.no/). Primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day. 
+
+Furthermore the ACCESS unit is showcasing NRT data providing quicklook images for the following:
+
+* [near surface and cloud data](http://actris.nilu.no/Content/?pageid=844fe06802f04a83a2d6b0e8b2a59fe2)
+* [aerosol profiles](http://actris.nilu.no/Content/?pageid=ae1bf05f1fa54ba8bae735a2420e6c8d)
+
+ACTRIS level 3 data are elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2, and data from other sources. The data can be gridded or not. Level 3 datasets are derived from measurement data, where the measurements are reported to the ACTRIS topic data repositories. The datasets are derived by e.g. averaging, filtering of events, interpolation of measurement data and are usually the a result of analysis for special studies or processed for model experiments. The [secondary data archive](http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa) stores secondary data sets to provide long term access for all users, including the possibility to issue a Digital Object Identifier (DOI). Secondary datasets are normally not updated over time.
+
 ![Core structure of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/architecture_actris_data_portal.png)
-*Figure x Overview of the core structure of the ACTRIS Data Centre (uppder panel) and technical solution of the meta data transfer and access of data through the ACTRIS data portal (lower panel).*
 
+*Figure x: Overview of the core structure of the ACTRIS Data Centre (uppder panel) and technical solution of the meta data transfer and access of data through the ACTRIS data portal (lower panel).*
 
-**Currently Clodunet, Earlient and the EBAS database are connected to the ACTRIS data portal. In the future the goal is to connect all five data repositories mentioned above, including Eurochamp and the unit on remote sensing of trace gases?
-All data repositories mentioned above are linked in the [ACTRIS data portal](http://actris.nilu.no/), and the portal is built as a metadata catalogue. Primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day.
-
-Mention also NRT and seconday data (level 3 data products)**
 
 
 **ACCESS unit takes the lead on this section**
@@ -345,7 +358,7 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 As an overarching goal, ACTRIS DC will take part in discussions that takes place in forums/groups such as ENVRI FAIR across the different environmental domains and strive to use cross-environmental standards and solutions in order to allow for inter-disciplinary interoperability.
 
-### 3.4. Reuseable: Increase data re-use (through clarifying licenses) [FAIR data]
+### 3.4. Reuseable: Increase data re-use [FAIR data]
 
 The ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the ACTRIS data and access policy and the open research data initiative of the European Commission. As a result, the ACTRIS DC will implement one or multiple licences for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to ensure the visibility of ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably end of 2020 or early 2021). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
 
