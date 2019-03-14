@@ -281,17 +281,9 @@ Data management is handled by the individual data center unit:
 
 Access to quality controlled data from the data center units above is provided by the ACTRIS data and service access unit (ACCESS). The ACCESS unit is not only responsible for access to measurement data, but also services, tools and providing documentation, all which is based on metadata provided by the data center units. Currently there are 3 data center units providing metadata (including details on how to access measurement data), this includes data from the Cloudnet (Cloud remote sensing) database, Earlient (Aerosol remote sensing) database and the EBAS (aerosol, cloud and trace gas in situ data) database. The metadata is used as input to the current ACTRIS metadata catalog providing access to data throught the [ACTRIS data portal](http://actris.nilu.no/). Primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day. 
 
-Furthermore the ACCESS unit is showcasing NRT data providing quicklook images for the following:
-
-* [near surface and cloud data](http://actris.nilu.no/Content/?pageid=844fe06802f04a83a2d6b0e8b2a59fe2)
-* [aerosol profiles](http://actris.nilu.no/Content/?pageid=ae1bf05f1fa54ba8bae735a2420e6c8d)
-
-ACTRIS level 3 data are elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2, and data from other sources. The data can be gridded or not. Level 3 datasets are derived from measurement data, where the measurements are reported to the ACTRIS topic data repositories. The datasets are derived by e.g. averaging, filtering of events, interpolation of measurement data and are usually the a result of analysis for special studies or processed for model experiments. The [secondary data archive](http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa) stores secondary data sets to provide long term access for all users, including the possibility to issue a Digital Object Identifier (DOI). Secondary datasets are normally not updated over time.
-
 ![Core structure of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/architecture_actris_data_portal.png)
 
 *Figure x: Overview of the core structure of the ACTRIS Data Centre (uppder panel) and technical solution of the meta data transfer and access of data through the ACTRIS data portal (lower panel).*
-
 
 
 **ACCESS unit takes the lead on this section**
@@ -328,12 +320,15 @@ There might also be data available through the actris data portal that is not di
 **The following types of data is provided:**
 
 * **Type 1: The ACTRIS data**
-   * Data are funded and produced within the context of the ACTRIS project. Every dataset created within ACTRIS is owned by the ACTRIS partner(s) who created this dataset, and the ACTRIS data policy can be found here. A description of ACTRIS data is provided in the "ACTRIS Data management Plan".
+   * Data are funded and produced within the context of the ACTRIS project. Every dataset created within ACTRIS is owned by the ACTRIS partner(s) who created this dataset, and the ACTRIS data policy can be found here. A description of ACTRIS data is provided in the "ACTRIS Data management Plan". This includes access to NRT data. The ACCESS unit is currently showcasing NRT data providing quicklook images for [Near surface and cloud data](http://actris.nilu.no/Content/?pageid=844fe06802f04a83a2d6b0e8b2a59fe2) and [Aerosol profiles](http://actris.nilu.no/Content/?pageid=ae1bf05f1fa54ba8bae735a2420e6c8d).
     
 * **Type 2: Other data available through the portal**
   * Data are archived and owned by other organisations or data providers and are hosted at other databases. Type 2 data are provided with the permission of each organisation or data provider contributing to the data archive. Each dataset of type II may have its own data policy that will supersede the ACTRIS data policy.
 
-Still individual data center units will also serve as access points for ACTRIS data. But that is out of scope for this document.
+* **Type 3: ACTRIS level 3 data:**
+  * Data are elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2, and data from other sources. The data can be gridded or not. Level 3 datasets are derived from measurement data, where the measurements are reported to the ACTRIS topic data repositories. The datasets are derived by e.g. averaging, filtering of events, interpolation of measurement data and are usually the a result of analysis for special studies or processed for model experiments. The [secondary data archive](http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa) stores secondary data sets to provide long term access for all users, including the possibility to issue a Digital Object Identifier (DOI). Secondary datasets are normally not updated over time.
+
+Still, individual data center units will also serve as access points for ACTRIS data. But that is out of scope for this document.
 
 General guidelines for access to ACTRIS data and services are available in the current [ACTRIS access and service policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467). Conditions of use should be indicated in section 3.4, and is covered by the attached licence, unless stated otherwise. 
 
