@@ -27,3 +27,5 @@ All contributions are welcome.
 [Converting excel tables to HTML](https://divtable.com/generator/)
 
 [Using Git and GitHub](https://help.github.com/)
+
+[Getting started with Git and GitHub: the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
