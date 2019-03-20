@@ -147,8 +147,8 @@ During the ACTRIS implementation phase (expected 2020-2024), the Central Facilit
 
 ### 1.1. ACTRIS data set descriptions and ACTRIS data levels
 
-ACTRIS data sets are atmospheric variables listed in Appendix I, measured with the corresponding
-recommended methodology. ACTRIS data - comprises ACTRIS variables resulting from measurements
+ACTRIS data are data from observational National Facilities and exploratory National Facilities complying with the procedures established within ACTRIS. The ACTRIS  atmospheric variables are listed in Appendix I, associated the corresponding
+recommended methodology. ACTRIS data comprises ACTRIS variables resulting from measurements
 that fully comply with the [standard operating procedures (SOP), measurement recommendations, and
 quality guidelines](http://actris.nilu.no/Content/?pageid=2bedb8fc3d5a42a4b6d96d5fb8dfcd3b) established within ACTRIS.
 
@@ -158,6 +158,8 @@ There are 3 levels of ACTRIS data:
   * **ACTRIS level 2 data:** Approved and fully quality controlled ACTRIS data product or geophysical variable.
   * **ACTRIS level 3 data:** Elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2 data, and data from other sources. The data can be gridded or not.
   * **ACTRIS synthesis product:** Data product from e.g. research activities, not under direct ACTRIS responsibility, but ACTRIS offer repository and access.
+  
+  Richard add here the figure I sent
 
 The list of variables are expected to increase during the progress of ACTRIS, particularly level 3 data products. During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilising these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available. 
 
