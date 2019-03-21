@@ -220,10 +220,10 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 2.2. Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
-## The purpose of the data collection/generation
+#### The purpose of the data collection/generation
 The purpose of the data collection and generation of data products is to provide open access to aerosol remote sensing measurements of high and traceable quality, benefiting scientists and policy makers, as well as the private sector, educators and the general public. See the Stakeholder Handbook for more information.
 
-## The relation to the objectives of the project
+#### The relation to the objectives of the project
 
 Data management of ACTRIS aerosol remote sensing data relates to the description of  the aerosol content in the whole troposphere and upper stratosphere over all time scales and to investigate its relationship with near surface mechanisms (as pollution and air quality issue) and to address the challenging issue of the not-well assessed indirect effects of aerosol in the climate change.
 
@@ -236,19 +236,19 @@ High quality observation data facilitates this and needs to be supported by:
 * Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
 * Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
 
-## The types and formats of data generated/collected
+#### The types and formats of data generated/collected
 
 The ACTRIS ARES data centre unit provides data in netCDF 4 format compliant as much as possible with CF 1.7 standards.  The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. 
 Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data center automatically produces Level 2 and Level 3 climatological products.
 
-## Re-use of existing data
+#### Re-use of existing data
 The ACTRIS data user interface will include access to ACTRIS ARES data and legacy data resulting from ACTRIS pre-projects.
 
-## The origin of the data
+#### The origin of the data
 
 The origin of the data is derived from instrument raw data.
 
-## The expected size of the data
+#### The expected size of the data
 
 <table width="604" cellspacing="0" cellpadding="7">
 <tbody>
@@ -317,7 +317,7 @@ The origin of the data is derived from instrument raw data.
 </tbody>
 </table>
 
-## Data utility: to whom will it be useful
+#### Data utility: to whom will it be useful
 
 ACTRIS will produce data and data products essential to a wide range of communities as decribed in the Stakeholder Handbook, including:
 
@@ -329,7 +329,7 @@ ACTRIS will produce data and data products essential to a wide range of communit
 * National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution models;
 * Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
 
-## Outline of data life cycle (workflow and workflow diagram)
+#### Outline of data life cycle (workflow and workflow diagram)
 
 Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in Appendix 3: ACTRIS aerosol remote sensing  data lifecycle and workflow (draft)
 
