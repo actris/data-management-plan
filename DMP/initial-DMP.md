@@ -220,14 +220,118 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 2.2. Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
 
-* State the purpose of the data collection/generation
-* Explain the relation to the objectives of the project
-* Specify the types and formats of data generated/collected
-* Specify if existing data is being re-used (if any)
-* Specify the origin of the data
-* State the expected size of the data (if known)
-* Outline the data utility: to whom will it be useful
-* Outline of workflow and workflow diagram
+## The purpose of the data collection/generation
+The purpose of the data collection and generation of data products is to provide open access to aerosol remote sensing measurements of high and traceable quality, benefiting scientists and policy makers, as well as the private sector, educators and the general public. See the Stakeholder Handbook for more information.
+
+## The relation to the objectives of the project
+
+Data management of ACTRIS aerosol remote sensing data relates to the description of  the aerosol content in the whole troposphere and upper stratosphere over all time scales and to investigate its relationship with near surface mechanisms (as pollution and air quality issue) and to address the challenging issue of the not-well assessed indirect effects of aerosol in the climate change.
+
+High quality observation data facilitates this and needs to be supported by:
+
+* Documentation of archiving procedures and access to level 0 data
+* Centralized and traceable processing chain of aerosol Leve0 data
+* Long-term archiving and preservation of ACTRIS level 1 to level 3 data and data products
+* Access to ACTRIS data, data products, and digital tools through a single point of entry, the ACTRIS data user interface
+* Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
+* Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
+
+## The types and formats of data generated/collected
+
+The ACTRIS ARES data centre unit provides data in netCDF 4 format compliant as much as possible with CF 1.7 standards.  The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. 
+Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data center automatically produces Level 2 and Level 3 climatological products.
+
+## Re-use of existing data
+The ACTRIS data user interface will include access to ACTRIS ARES data and legacy data resulting from ACTRIS pre-projects.
+
+## The origin of the data
+
+The origin of the data is derived from instrument raw data.
+
+## The expected size of the data
+
+<table width="604" cellspacing="0" cellpadding="7">
+<tbody>
+<tr>
+<td rowspan="3" width="94">
+<p align="center">&nbsp;</p>
+</td>
+<td colspan="4" width="229">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Number of annual data sets</strong></span></span></span></p>
+</td>
+<td colspan="3" width="240">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Data volume</strong></span></span></span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="57">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
+</td>
+<td colspan="2" width="157">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
+</td>
+<td colspan="2" rowspan="2" width="60">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
+</td>
+<td colspan="2" width="165">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
+</td>
+<td width="86">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
+</td>
+<td width="60">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
+</td>
+<td width="91">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="94">
+<p>ACTRIS aerosol remote sensing data</p>
+</td>
+<td width="57">
+<p>28</p>
+</td>
+<td width="57">
+<p>30</p>
+</td>
+<td width="86">
+<p>70</p>
+</td>
+<td colspan="2" width="60">
+<p>4 GB</p>
+</td>
+<td width="60">
+<p>2.5 TB</p>
+</td>
+<td width="91">
+<p>25 TB</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## Data utility: to whom will it be useful
+
+ACTRIS will produce data and data products essential to a wide range of communities as decribed in the Stakeholder Handbook, including:
+
+* Atmospheric science research communities world-wide (climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations);
+* Environmental science research communities and communities from other neighbouring fields: hydro-marine, bio-ecosystem, geosciences, space physics, energy, health, and food domain, to study interactions and processes in across different disciplines;
+* Instrument manufacturers and sensor industries for development, testing, prototyping and demonstration;
+* Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
+* Space agencies for validation and the development of new satellite missions;
+* National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution models;
+* Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
+
+## Outline of data life cycle (workflow and workflow diagram)
+
+Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in Appendix 3: ACTRIS aerosol remote sensing  data lifecycle and workflow (draft)
 
 ### 2.3. Data summary of the ACTRIS Cloud remote sensing data centre unit (CLU)
 
