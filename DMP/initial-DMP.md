@@ -321,7 +321,7 @@ As a guiding principle, all data submitted to ACTRIS passing quality assurance s
 
 The main access point to ACTRIS data will be through the [ACTRIS data portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyse and download data produced within ACTRIS. Access to data and metadata should also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog, for example setting up a ACTRIS OAI-PMH server.
 
-The guiding principle is free and open access to data abd data products.
+The guiding principle is free and open access to data and data products.
 
 There might also be data available through the actris data portal that is not directly actris data, but used in the interpretation of ACTRIS data.
 
