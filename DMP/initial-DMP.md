@@ -275,8 +275,6 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ## 3. Data Management at the ACTRIS data centre
 
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
-
 **Describe briefly data management for each data center unit. (Could we move this up to section 2 and include this as a part of the data summary for the data center units)**
 
 Data management is handled by the individual data center unit:
@@ -294,7 +292,7 @@ Access to quality controlled data from the data center units is provided by the 
 
 *Figure x: current_overview_topical_databases.png*
 
-**Cathrine will update figure above in the near future**
+  > **Cathrine will update figure above in the near future**
 
 **ACCESS unit takes the lead on this section**
 ### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
