@@ -303,9 +303,9 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 - [ ] Cloud occurence at cloud in situ observational platforms
 - [x] Direct Sun/Moon Extinction Aerosol Optical Depth (column)
 - [x] Spectral Downward Sky Radiances
-- [x] **? GARRLIC / GRASP-AOD ?** Aerosol columnar  properties
+- [x] **? GRASP-AOD ?** Aerosol columnar  properties
 - [x] ReOBS  
-- [ ] Aerosol profile microphysical and optical properties
+- [x] **? GRASP/GARRLiC ?** Aerosol profile microphysical and optical properties
 - [x] Satellite data – combined with ground based ACTRIS data
 - [x] Aerosol and Gas trend assessment
 - [x] Data Interpretation and Outlier Identification Tool
@@ -405,7 +405,6 @@ models;
 #### Outline of data life cycle (workflow and workflow diagram)
 
 Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in **TODO**
-
 
 ## 3. Data Management at the ACTRIS data centre
 
