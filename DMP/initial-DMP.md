@@ -275,6 +275,8 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ## 3. Data Management at the ACTRIS data centre
 
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
+
 **Describe briefly data management for each data center unit. (Could we move this up to section 2 and include this as a part of the data summary for the data center units)**
 
 Data management is handled by the individual data center unit:
