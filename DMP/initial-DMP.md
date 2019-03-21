@@ -262,6 +262,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 * Outline the data utility: to whom will it be useful
 * Outline of workflow and workflow diagram
 
+
 ### 2.6. Data summary of the data products providers (level 3 data/abbreviation missing)
 
 #### The purpose of the data collection/generation
@@ -285,6 +286,35 @@ The objective is that most of the level 3 data generated will be in [NetCDF data
 Nevertheless, the collected data can come from external sources and so, can be in non standard formats. In these cases, they will be rather kept in their original format.
 Here is the summary of the collected/generated level 3 datasets:
 
+##### TO BE DELETED / CHECKED: list of variables in Annex II
+
+Below is a list of all lev3 variables that are listed in Annex II and the checkbox indicates whether they are included in the lists below or not:
+
+- [ ] Column Water Vapor Content
+- [ ] Climatology products for ACTRIS variables @ ACTRIS National Facilities across Europe
+- [ ] Calculated Particle light scattering coefficients
+- [x] Collocation service of data from contributing networks
+- [ ] PM retrieval  @GAW sites
+- [ ] Single Scattering Albedo @ACTRIS National Facilities
+- [ ] Calculated particle light extinction coefficient
+- [ ] Integrated full-range particle number size distribution
+- [ ] Source apportionment of submicron organic aerosols in Europe
+- [ ] Volatile Organic Compounds (VOC) source attribution across Europe
+- [ ] Cloud occurence at cloud in situ observational platforms
+- [x] Direct Sun/Moon Extinction Aerosol Optical Depth (column)
+- [x] Spectral Downward Sky Radiances
+- [x] **? GARRLIC / GRASP-AOD ?** Aerosol columnar  properties
+- [x] ReOBS  
+- [ ] Aerosol profile microphysical and optical properties
+- [x] Satellite data – combined with ground based ACTRIS data
+- [x] Aerosol and Gas trend assessment
+- [x] Data Interpretation and Outlier Identification Tool
+- [x] Optimal interpolation and Gap filling tool
+- [x] Model Evaluation Service
+- [x] NWP Model Evaluation Service
+- [x] Transport modelling products for assessment of source regions
+- [x] Alert Service for National Facilities
+
 ##### Collected (other than ACTRIS L0-1-2)
 
 | Product          | format  | source    | description                                                                                                                                                                                                  |
@@ -307,6 +337,10 @@ Here is the summary of the collected/generated level 3 datasets:
 | GRASP/GARRLiC                                       | NetCDF-CF            | ACTRIS-2 GARRLiC Data Product Description. Link to be added                                                                                                                                  |
 | GRASP-AOD                                           | NetCDF-CF            | Aerosol size distribution retrieval from optical depth                                                                                                                                       |
 | ReOBS                                               | NetCDF-CF            | Long-term (> 10 years) multi-parameter (all available) homogenized and harmonized dataset: Re-calibrated, Re-quality controlled, Re-expertized, Re-averaged, Re-formatted, Re-nomenclatured. |
+| Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
+| Data Interpretation and Outlier Identification Tool                 | NetCDF-CF                            | Quicklooks for time series data, compared to Copernicus Analysis and Reanalysis model products                                                                                                                   |
+| **?** Optimal interpolation and Gap filling tool                    | NetCDF-CF                            | modal/data integration products which fill measurement gaps, eg in a time series, profile or field.                                                                                                              |
+| Alert Service for National Facilities                               | [geoJSON](http://geojson.org/) **?** | Provide near real time update of special weather situations of interest for research activities at national facilities                                                                                           |
 
 ##### Generated (on-demand services)
 
@@ -315,14 +349,10 @@ Some products will be generated through on-line services, and will generate data
 | Product                                                             | format                               | description                                                                                                                                                                                                      |
 | ------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Satellite data subsets                                              | NetCDF-CF                            | Satellite data subsets, spatially and temporally colocated with ACTRIS ground-based measurements                                                                                                                 |
+| **?** Transport modelling products for assessment of source regions | NetCDF-CF                            | Backward transport modelling with FLEXPART to analyse air transirt and impact of various soucres. Develop tools to run FLEXPART operationally and automatically on a regular basis, e.g. monthly, for every site |
 | Colocation service of data from contributing networks               | NetCDF-CF                            | Benchmark data products including relevant EMEP and ACTRIS data: PM and/or sulphate with  ACTRIS National Facilities  compiled in one data product                                                               |
-| Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
-| Data Interpretation and Outlier Identification Tool                 | NetCDF-CF                            | Quicklooks for time series data, compared to Copernicus Analysis and Reanalysis model products                                                                                                                   |
-| **?** Optimal interpolation and Gap filling tool                    | NetCDF-CF                            | modal/data integration products which fill measurement gaps, eg in a time series, profile or field.                                                                                                              |
 | Model Evaluation Service                                            | NetCDF-CF                            | Automated model evaluation workflow, Evaluation reports of different complexity, NRT and reanalysis, climate models                                                                                              |
 | NWP Model Evaluation Service                                        | NetCDF-CF                            | Automated model evaluation workflow, evaluation reports of different complexity for NWP models, NRT and reanalysis, NWP models                                                                                   |
-| **?** Transport modelling products for assessment of source regions | NetCDF-CF                            | Backward transport modelling with FLEXPART to analyse air transirt and impact of various soucres. Develop tools to run FLEXPART operationally and automatically on a regular basis, e.g. monthly, for every site |
-| Alert Service for National Facilities                               | [geoJSON](http://geojson.org/) **?** | Provide near real time update of special weather situations of interest for research activities at national facilities                                                                                           |
 
 #### Re-use of existing data
 
@@ -350,11 +380,14 @@ The origin of the data is derived from ground-based and satellite observations, 
 
 ##### Generated (on-demand services)
 
-| Product               |Typical dataset per day | Typical volume per day |
-|-----------------------|------------------------|------------------------|
-|Satellite data subsets |100                     | 100 MB
-|Back-trajectories      |...
-| ...
+| Product                                                       | Typical dataset per day | Typical volume per day |
+| ------------------------------------------------------------- | ----------------------- | ---------------------- |
+| Satellite data subsets                                        | 100                     | 100 MB                 |
+| Transport modelling products for assessment of source regions | ...                     |                        |
+| Colocation service of data from contributing networks         | TBD                     | TBD                    |
+| Model Evaluation Service                                      | TBD                     | TBD                    |
+| NWP Model Evaluation Service                                  | TBD                     | TBD                    |
+
 
 #### Data utility: to whom will it be useful
 
