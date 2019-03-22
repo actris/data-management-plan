@@ -238,7 +238,7 @@ High quality observation data facilitates this and needs to be supported by:
 
 #### The types and formats of data generated/collected
 
-The ACTRIS ARES data centre unit provides data in netCDF 4 format compliant as much as possible with CF 1.7 standards.  The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. 
+The ACTRIS ARES data centre unit provides data in netCDF 4 format compliant as much as possible with CF 1.7 standards.  The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator.
 Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data center automatically produces Level 2 and Level 3 climatological products.
 
 #### Re-use of existing data
@@ -352,7 +352,7 @@ Trace gases remote sensing data produced are organized within one unique databas
 -   FTIR: Fourier Transform Infra-Red Spectrometry,
 -   UVVIS including UV-VIS zenith-sky or UVVIS ZS and UVVIS MAXDOAS (Multi-AXis Differential Optical Absorption Spectroscopy  instruments),
 -   LIDAR DIAL: Differential Absorption Lidar.
-   
+
 This database provides access to level 2b and level 3 data of trace gases profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …). The level 2b data are produced from the consolidation of level 2a data using quality assurance and quality control procedures.
 The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
 
@@ -362,11 +362,11 @@ The purpose of the data collection and generation by the GRES unit is to provide
 #### The relation to the objectives of the project
 Trace gases remote sensing data are necessary to monitor the evolution of atmospheric composition in relation to air quality, climate change and ozone depletion issues. High quality and fully documented data facilitate this and needs to be supported by:
 
-* Documentation of archiving procedures and access to level 0 and level 1 data by the NFs and TC, 
+* Documentation of archiving procedures and access to level 0 and level 1 data by the NFs and TC,
 * Long-term archiving and preservation of ACTRIS level 2 to level 3 data and data products,   
-* Access to ACTRIS data, data products, and digital tools (for data providers and users) through a single point of entry, the ACTRIS data user interface, 
+* Access to ACTRIS data, data products, and digital tools (for data providers and users) through a single point of entry, the ACTRIS data user interface,
 * Documentation of data, data workflow, citation service, and data attribution, data traceability, and interoperability.
- 
+
 #### The types and formats of data generated/collected
 The ACTRIS trace gases remote sensing data centre unit is supported by AERIS database. All providers will submit level 2 data following the GEOMS data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) and following the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements. The GEOMS data format allows the necessary requirements to setup the ACTRIS data curation service for trace gas remote sensing data.
 
@@ -493,7 +493,7 @@ The origin of the data is derived from instrument raw data, through offline obse
 </table>
 
 #### Data utility: to whom will it be useful
-ACTRIS-GRES data unit will produce data and data products essential to a wide range of communities as well as: 
+ACTRIS-GRES data unit will produce data and data products essential to a wide range of communities as well as:
 -   Science community working on air quality, climate change and stratospheric ozone depletion issues
 -   Copernicus Gas atmospheric service (ECMWF)
 -   Validation of new satellite missions
@@ -509,11 +509,11 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 The ACTRIS-ASC unit is structured in three pilars:
 
 * The _Database of Atmospheric Simulation Chamber Studies_ (DASCS): This database provides access to level 2 data which are experimental and modelled data obtained from experiments in simulation chambers (exploratory platforms).
-    
+
 * The _Library of Analytical Resources_ (LAR): This database provides quantitative analytical resources that include infrared spectra, UV-visible spectra and mass spectra of molecules and derivatives. These data products (level 3) are obtained by processing of level 2 data.
-    
+
 * The _Library of Advanced Data Products_ (LADP): This database provides different types of mature data products (level 3) obtained by processing of level 2 data: rate constants of reactions in gas and condensed phases, quantum yields, secondary organic aerosol (SOA) yields, photolysis frequencies, mass extinction coefficients of aerosols, complex refractive index of aerosols, growth factors of aerosols and modelling tools.
-    
+
 
 #### The purpose of the data collection/generation
 
@@ -524,15 +524,15 @@ The purpose of the data collection/generation by the ASC unit is to provide free
 Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes which affect air quality and climate change. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. High quality and fully documented data facilitate this and needs to be supported by:
 
 * Documentation of archiving procedures and access to level 0 and level 1 data by the NFs,
-    
+
 * Long-term archiving and preservation of ACTRIS level 2 to level 3 data and data products,
-    
+
 * Access to ACTRIS data, data products, and digital tools (for data providers and users) through a single point of entry, the ACTRIS data user interface,
-    
+
 * Access to detailed information on the infrastructures (i.e. simulation chambers) used for the generation of the data; this includes a technical description of the chambers (size, volume, walls, irradiation system …) and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations.
-    
+
 * Documentation of data, data workflow, citation service, and data attribution, data traceability, and interoperability.
-    
+
 
 #### The types and formats of data generated/collected
 
@@ -663,17 +663,17 @@ Not clear for me what is expected here … Should we explain in details how data
 </tr>
 </tbody>
 </table>
-  
+
 #### Data utility: to whom will it be useful
 
 ACTRIS-ASC unit will produce different types of data and data products essential to a wide range of communities.
 
 * Level 2 data provided in the DASCS: These data are of high interest for a large community of users in atmospheric science research and related areas, as well as the private sector. In particular, they are largely used for modelling activities to develop and/or validate chemical schemes of atmospheric models.
-    
+
 * Level 3 data provided in the LAR: These data are of high interest for a large community of users in atmospheric sciences, analytical chemistry and related areas, as well as the private sector. Indeed, quantitative chemical analysis of infrared spectra for complex mixtures requires access to standards for the calibration of instruments. However, as the chemical species formed by these processes are often very complex (and not commercially available), their spectra are not available in the “classical” databases of analytical chemistry, or are not useful due to their low resolution. To tackle this issue, the EUROCHAMP consortium has developed its own Library of infrared spectra and has made it freely available to the scientific communities.
 
 * Level 3 data products provided in the LADP: These data are especially useful for researchers working on atmospheric observations, as well as atmospheric model development and validation. It includes products for the development of chemical mechanisms in atmospheric models (e.g. rate coefficients, photolysis frequencies, SOA yields, vapor pressures, etc.), products for the retrieval of satellite data and for radiative transfer modelling (e.g.), and tools to generate oxidation schemes which are very useful to interpret field measurements as well as laboratory studies.
-    
+
 #### Outline of data life cycle (workflow and workflow diagram)
 
 Detail on the data life cycle and workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in annex 7.
@@ -801,7 +801,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 | Satellite data subsets                                        | 100                     | 100 MB                 |
 | Transport modelling products for assessment of source regions | ...                     |                        |
 | Colocation service of data from contributing networks         | TBD                     | TBD                    |
-| Model Evaluation Service                                      | TBD                     | TBD                    |
+| Model Evaluation Service                                      | 30                      | 300 MB                 |
 | NWP Model Evaluation Service                                  | TBD                     | TBD                    |
 
 
