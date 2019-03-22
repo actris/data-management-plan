@@ -346,25 +346,337 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 2.4. Data summary of the ACTRIS trace gases remote sensing data centre unit (GRES)
 
-* State the purpose of the data collection/generation
-* Explain the relation to the objectives of the project
-* Specify the types and formats of data generated/collected
-* Specify if existing data is being re-used (if any)
-* Specify the origin of the data
-* State the expected size of the data (if known)
-* Outline the data utility: to whom will it be useful
-* Outline of workflow and workflow diagram
+#### Description of the ACTRIS-GRES unit
+Trace gases remote sensing data produced are organized within one unique database and are issued from measurements using three types of instruments located at different observatory stations. The three types of instruments are:
+
+-   FTIR: Fourier Transform Infra-Red Spectrometry,
+-   UVVIS including UV-VIS zenith-sky or UVVIS ZS and UVVIS MAXDOAS (Multi-AXis Differential Optical Absorption Spectroscopy  instruments),
+-   LIDAR DIAL: Differential Absorption Lidar.
+   
+This database provides access to level 2b and level 3 data of trace gases profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …). The level 2b data are produced from the consolidation of level 2a data using quality assurance and quality control procedures.
+The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
+
+#### The purpose of the data collection/generation
+The purpose of the data collection and generation by the GRES unit is to provide free and open access to trace gases profiles and columns data products (levels 2b and 3) of high quality for the benefit of a large community of scientists involved in atmospheric chemistry science and related areas, as well as general public and private sector.
+
+#### The relation to the objectives of the project
+Trace gases remote sensing data are necessary to monitor the evolution of atmospheric composition in relation to air quality, climate change and ozone depletion issues. High quality and fully documented data facilitate this and needs to be supported by:
+
+* Documentation of archiving procedures and access to level 0 and level 1 data by the NFs and TC, 
+* Long-term archiving and preservation of ACTRIS level 2 to level 3 data and data products,   
+* Access to ACTRIS data, data products, and digital tools (for data providers and users) through a single point of entry, the ACTRIS data user interface, 
+* Documentation of data, data workflow, citation service, and data attribution, data traceability, and interoperability.
+ 
+#### The types and formats of data generated/collected
+The ACTRIS trace gases remote sensing data centre unit is supported by AERIS database. All providers will submit level 2 data following the GEOMS data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) and following the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements. The GEOMS data format allows the necessary requirements to setup the ACTRIS data curation service for trace gas remote sensing data.
+
+The level 2 and level 3 data will be also converted in NetCDF ([https://www.unidata.ucar.edu/software/netcdf/](https://www.unidata.ucar.edu/software/netcdf/)) version 4 format following the CF (Climate Forecast) conventions and be disseminated. The Climate and Forecast conventions are metadata conventions for earth science data. The conventions define metadata that are included in the same file as the data making the file "self-describing".
+
+#### Re-use of existing data
+The ACTRIS data user interface will include access to ACTRIS trace gases remote sensing data and legacy data resulting from ACTRIS pre-projects.
+
+#### The origin of the data
+The origin of the data is derived from instrument raw data, through offline observations.
+
+#### The expected size of the data
+<table width="604" cellspacing="0" cellpadding="7">
+<tbody>
+<tr>
+<td rowspan="3" width="94">
+<p align="center">&nbsp;</p>
+</td>
+<td colspan="4" width="229">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Number of annual data sets</strong></span></span></span></p>
+</td>
+<td colspan="3" width="240">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Data volume</strong></span></span></span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="57">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
+</td>
+<td colspan="2" width="157">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
+</td>
+<td colspan="2" rowspan="2" width="60">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
+</td>
+<td colspan="2" width="165">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
+</td>
+<td width="86">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
+</td>
+<td width="60">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
+</td>
+<td width="91">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="94">
+<p>ACTRIS-GRES <br>FTIR</p>
+</td>
+<td width="57">
+<p>TBD</p>
+</td>
+<td width="57">
+<p>TBD</p>
+</td>
+<td width="86">
+<p>TBD</p>
+</td>
+<td colspan="2" width="60">
+<p>TBD</p>
+</td>
+<td width="60">
+<p>TBD</p>
+</td>
+<td width="91">
+<p>TBD</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="94">
+<p>ACTRIS-GRES <br>UV-VIS</p>
+</td>
+<td width="57">
+<p>TBD</p>
+</td>
+<td width="57">
+<p>TBD</p>
+</td>
+<td width="86">
+<p>TBD</p>
+</td>
+<td colspan="2" width="60">
+<p>TBD</p>
+</td>
+<td width="60">
+<p>TBD</p>
+</td>
+<td width="91">
+<p>TBD</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="94">
+<p>ACTRIS-GRES <br>LIDAR DIAL</p>
+</td>
+<td width="57">
+<p>57</p>
+</td>
+<td width="57">
+<p>60</p>
+</td>
+<td width="86">
+<p>80</p>
+</td>
+<td colspan="2" width="60">
+<p>400 MB</p>
+</td>
+<td width="60">
+<p>400 MB</p>
+</td>
+<td width="91">
+<p>550 MB</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Data utility: to whom will it be useful
+ACTRIS-GRES data unit will produce data and data products essential to a wide range of communities as well as: 
+-   Science community working on air quality, climate change and stratospheric ozone depletion issues
+-   Copernicus Gas atmospheric service (ECMWF)
+-   Validation of new satellite missions
+-   Air quality agencies
+
+#### Outline of data life cycle (workflow and workflow diagram)
+Detail on the data life cycle and workflow (workflow diagrams for data production) for trace gases remote sensing data can be found in annex 6.
 
 ### 2.5. Data summary of the ACTRIS Atmospheric simulation chamber data centre unit (ASC)
 
-* State the purpose of the data collection/generation
-* Explain the relation to the objectives of the project
-* Specify the types and formats of data generated/collected
-* Specify if existing data is being re-used (if any)
-* Specify the origin of the data
-* State the expected size of the data (if known)
-* Outline the data utility: to whom will it be useful
-* Outline of workflow and workflow diagram
+#### Description of the ACTRIS-ASC unit
+
+The ACTRIS-ASC unit is structured in three pilars:
+
+* The _Database of Atmospheric Simulation Chamber Studies_ (DASCS): This database provides access to level 2 data which are experimental and modelled data obtained from experiments in simulation chambers (exploratory platforms).
+    
+* The _Library of Analytical Resources_ (LAR): This database provides quantitative analytical resources that include infrared spectra, UV-visible spectra and mass spectra of molecules and derivatives. These data products (level 3) are obtained by processing of level 2 data.
+    
+* The _Library of Advanced Data Products_ (LADP): This database provides different types of mature data products (level 3) obtained by processing of level 2 data: rate constants of reactions in gas and condensed phases, quantum yields, secondary organic aerosol (SOA) yields, photolysis frequencies, mass extinction coefficients of aerosols, complex refractive index of aerosols, growth factors of aerosols and modelling tools.
+    
+
+#### The purpose of the data collection/generation
+
+The purpose of the data collection/generation by the ASC unit is to provide free and open access to simulation chambers data and data products (levels 2 and 3) for use by a large community of users in atmospheric science research and related areas, as well as the private sector.
+
+#### The relation to the objectives of the project
+
+Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes which affect air quality and climate change. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. High quality and fully documented data facilitate this and needs to be supported by:
+
+* Documentation of archiving procedures and access to level 0 and level 1 data by the NFs,
+    
+* Long-term archiving and preservation of ACTRIS level 2 to level 3 data and data products,
+    
+* Access to ACTRIS data, data products, and digital tools (for data providers and users) through a single point of entry, the ACTRIS data user interface,
+    
+* Access to detailed information on the infrastructures (i.e. simulation chambers) used for the generation of the data; this includes a technical description of the chambers (size, volume, walls, irradiation system …) and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations.
+    
+* Documentation of data, data workflow, citation service, and data attribution, data traceability, and interoperability.
+    
+
+#### The types and formats of data generated/collected
+
+Level 2 data provided in the DASCS are approved and fully quality controlled time series of the targeted properties measured during experiments in simulation chambers. This quality control includes data gathering from different instruments and check for internal consistency and disregard of invalid data. Chambers characteristics, experimental protocol and metadata are attached. These data are produced by NFs and are made available in the DASCS pilar of the ACTRIS-ASC unit.They are provided within a standardized format which was developed during EUROCHAMP-2 project and which allows the distribution of common tools based on a common format. The EUROCHAMP data format (*.EDF) is based on an ASCII text format but contains additional metadata in a header. This format is intended to be easily readable by humans and by computer programs and is a compromise between strictly formatted binary netCDF files and the user defined xls or text files. Widespread programs like Excel and Origin cannot create netCDF and user defined files cannot be easily read into models or converted into emerging formats of the scientific community. The use of this format allows the easy application of routines and software that can be disseminated among partners and toward users. Tools for file generation (e.g. conversion into the EDF format) and on-line file submission are available for data providers. In addition, a library of scripts available in various programming languages (both commercial and free-access) dedicated to ACTRIS Atmospheric simulation chamber data handling is provided through the ACTRIS data user interface.
+
+Level 3 data provided in the LAR are spectra (IR, UV-visible and mass) in JCAMP-DX format which is the standard format recommended by IUPAC for spectra. It is a 2D graphic format based on ASCII format. Metadata are attached and made available through the ACTRIS data user interface.
+
+Level 3 data provided in the DASCS are of different types and have thus different formats. Most of them are provided as a unique value with metadata attached. These metadata include information on the level 2 data processing, a link to the level 2 data in the DASCS and the reference paper where this data has been published.
+
+#### Re-use of existing data
+
+The ACTRIS data user interface will include access to ACTRIS Atmospheric Simulation Chambers data and legacy data resulting from EUROCHAMP-2 and EUROCHAMP-2020 projects.
+
+#### The origin of the data
+
+Not clear for me what is expected here … Should we explain in details how data are generated?
+
+#### The expected size of the data
+<table width="604" cellspacing="0" cellpadding="7">
+<tbody>
+<tr>
+<td rowspan="3" width="94">
+<p align="center">&nbsp;</p>
+</td>
+<td colspan="4" width="229">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Number of annual data sets</strong></span></span></span></p>
+</td>
+<td colspan="3" width="240">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Data volume</strong></span></span></span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="57">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
+</td>
+<td colspan="2" width="157">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
+</td>
+<td colspan="2" rowspan="2" width="60">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
+</td>
+<td colspan="2" width="165">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
+</td>
+</tr>
+<tr>
+<td width="57">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
+</td>
+<td width="86">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
+</td>
+<td width="60">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
+</td>
+<td width="91">
+<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="94">
+<p>ACTRIS-ASC <br>DASCS</p>
+</td>
+<td width="57">
+<p>100</p>
+</td>
+<td width="57">
+<p>50</p>
+</td>
+<td width="86">
+<p>200</p>
+</td>
+<td colspan="2" width="60">
+<p></p>
+</td>
+<td width="60">
+<p></p>
+</td>
+<td width="91">
+<p></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="94">
+<p>ACTRIS-ASC <br>LAR</p>
+</td>
+<td width="57">
+<p>20</p>
+</td>
+<td width="57">
+<p>10</p>
+</td>
+<td width="86">
+<p>50</p>
+</td>
+<td colspan="2" width="60">
+<p></p>
+</td>
+<td width="60">
+<p></p>
+</td>
+<td width="91">
+<p></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="94">
+<p>ACTRIS-ASC<br>LADP</p>
+</td>
+<td width="57">
+<p>0</p>
+</td>
+<td width="57">
+<p>30</p>
+</td>
+<td width="86">
+<p>100</p>
+</td>
+<td colspan="2" width="60">
+<p></p>
+</td>
+<td width="60">
+<p></p>
+</td>
+<td width="91">
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+  
+#### Data utility: to whom will it be useful
+
+ACTRIS-ASC unit will produce different types of data and data products essential to a wide range of communities.
+
+* Level 2 data provided in the DASCS: These data are of high interest for a large community of users in atmospheric science research and related areas, as well as the private sector. In particular, they are largely used for modelling activities to develop and/or validate chemical schemes of atmospheric models.
+    
+* Level 3 data provided in the LAR: These data are of high interest for a large community of users in atmospheric sciences, analytical chemistry and related areas, as well as the private sector. Indeed, quantitative chemical analysis of infrared spectra for complex mixtures requires access to standards for the calibration of instruments. However, as the chemical species formed by these processes are often very complex (and not commercially available), their spectra are not available in the “classical” databases of analytical chemistry, or are not useful due to their low resolution. To tackle this issue, the EUROCHAMP consortium has developed its own Library of infrared spectra and has made it freely available to the scientific communities.
+
+* Level 3 data products provided in the LADP: These data are especially useful for researchers working on atmospheric observations, as well as atmospheric model development and validation. It includes products for the development of chemical mechanisms in atmospheric models (e.g. rate coefficients, photolysis frequencies, SOA yields, vapor pressures, etc.), products for the retrieval of satellite data and for radiative transfer modelling (e.g.), and tools to generate oxidation schemes which are very useful to interpret field measurements as well as laboratory studies.
+    
+#### Outline of data life cycle (workflow and workflow diagram)
+
+Detail on the data life cycle and workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in annex 7.
 
 
 ### 2.6. Data summary of the data products providers (level 3 data/abbreviation missing)
