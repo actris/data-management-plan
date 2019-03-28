@@ -5,12 +5,12 @@
 * [1. Introduction to ACTRIS and The ACTRIS Data Centre](#1-Introduction-to-ACTRIS-and-The-ACTRIS-Data-Centre)
   * [1.1. ACTRIS data set descriptions and ACTRIS data levels](#11-actris-data-set-descriptions-and-actris-data-levels)
 * [2. Data summary for ACTRIS data centre](#2-Data-summary-for-ACTRIS-data-centre)
-  * [2.1. Data summary of the ACTRIS data centre unit (In-Situ)](#21data-summary-of-the-actris-in-situ-data-centre-unit-in-situ)
-  * [2.2. Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)](#22-data-summary-of-the-actris-aerosol-remote-sensing-data-centre-unit-ares)
-  * [2.3. Data summary of the ACTRIS Cloud remote sensing data centre unit (CLU)](#23-data-summary-of-the-actris-cloud-remote-sensing-data-centre-unit-clu)
-  * [2.4. Data summary of the ACTRIS trace gases remote sensing data centre unit (GRES)](#24-data-summary-of-the-actris-trace-gases-remote-sensing-data-centre-unit-gres)
-  * [2.5. Data summary of the ACTRIS Atmospheric simulation chamber data centre unit (ASC)](#25-data-summary-of-the-actris-atmospheric-simulation-chamber-data-centre-unit-asc)
-  * [2.6. Data summary of the data products providers (level 3 data/abbreviation missing)](#26-data-summary-of-the-data-products-providers-level-3-dataabbreviation-missing)
+  * [2.1. ACTRIS data centre unit (In-Situ)](#21data-summary-of-the-actris-in-situ-data-centre-unit-in-situ)
+  * [2.2. ACTRIS Aerosol remote sensing data centre unit (ARES)](#22-actris-aerosol-remote-sensing-data-centre-unit-ares)
+  * [2.3. ACTRIS Cloud remote sensing data centre unit (CLU)](#23-actris-cloud-remote-sensing-data-centre-unit-clu)
+  * [2.4. ACTRIS trace gases remote sensing data centre unit (GRES)](#24-actris-trace-gases-remote-sensing-data-centre-unit-gres)
+  * [2.5. ACTRIS Atmospheric simulation chamber data centre unit (ASC)](#25-actris-atmospheric-simulation-chamber-data-centre-unit-asc)
+  * [2.6. ACTRIS data and services (ACCESS)](#26-actris-data-and-services-unit-access)
 * [3. Data Management at the ACTRIS data centre](#3-Data-Management-at-the-ACTRIS-data-centre)
   * [Findable: Making data findable, including provisions for metadata [FAIR data]](#31-findable-making-data-findable-including-provisions-for-metadata-fair-data)
   * [Accessible: Making data openly accessible [FAIR data]](#32-accessible-making-data-openly-accessible-fair-data)
@@ -167,11 +167,11 @@ There are 3 levels of ACTRIS data:
 
 The list of variables are expected to increase during the progress of ACTRIS, particularly level 3 data products. During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilising these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available.
 
-## 2. Data summary for ACTRIS data centre
+## 2. Data summary for of the ACTRIS data centre
 
 **Move general content here from data centre unit text, Cathrine write this section when this is ready**
 
-### 2.1.Data summary of the ACTRIS In situ data centre unit (In-Situ)
+### 2.1. ACTRIS In situ data centre unit (In-Situ)
 
 #### The purpose of the data collection/generation
 
@@ -218,7 +218,7 @@ models;
 #### Outline of data life cycle (workflow and workflow diagram)
 Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle-and-workflow-diagram).
 
-### 2.2. Data summary of the ACTRIS Aerosol remote sensing data centre unit (ARES)
+### 2.2. ACTRIS Aerosol remote sensing data centre unit (ARES)
 
 #### The purpose of the data collection/generation
 The purpose of the data collection and generation of data products is to provide open access to aerosol remote sensing measurements of high and traceable quality, benefiting scientists and policy makers, as well as the private sector, educators and the general public. See the Stakeholder Handbook for more information.
@@ -333,7 +333,7 @@ ACTRIS will produce data and data products essential to a wide range of communit
 
 Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in Appendix 3: ACTRIS aerosol remote sensing  data lifecycle and workflow (draft)
 
-### 2.3. Data summary of the ACTRIS Cloud remote sensing data centre unit (CLU)
+### 2.3. ACTRIS Cloud remote sensing data centre unit (CLU)
 
 * State the purpose of the data collection/generation
 * Explain the relation to the objectives of the project
@@ -344,7 +344,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 * Outline the data utility: to whom will it be useful
 * Outline of workflow and workflow diagram
 
-### 2.4. Data summary of the ACTRIS trace gases remote sensing data centre unit (GRES)
+### 2.4. ACTRIS trace gases remote sensing data centre unit (GRES)
 
 #### Description of the ACTRIS-GRES unit
 Trace gases remote sensing data produced are organized within one unique database and are issued from measurements using three types of instruments located at different observatory stations. The three types of instruments are:
@@ -502,7 +502,7 @@ ACTRIS-GRES data unit will produce data and data products essential to a wide ra
 #### Outline of data life cycle (workflow and workflow diagram)
 Detail on the data life cycle and workflow (workflow diagrams for data production) for trace gases remote sensing data can be found in annex 6.
 
-### 2.5. Data summary of the ACTRIS Atmospheric simulation chamber data centre unit (ASC)
+### 2.5. ACTRIS Atmospheric simulation chamber data centre unit (ASC)
 
 #### Description of the ACTRIS-ASC unit
 
@@ -679,7 +679,7 @@ ACTRIS-ASC unit will produce different types of data and data products essential
 Detail on the data life cycle and workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in annex 7.
 
 
-### 2.6. Data summary of the data products providers (level 3 data/abbreviation missing)
+### 2.6. ACTRIS data and services (ACCESS)
 
 #### The purpose of the data collection/generation
 
