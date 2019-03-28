@@ -169,22 +169,24 @@ The list of variables are expected to increase during the progress of ACTRIS, pa
 
 ## 2. Data summary for of the ACTRIS data centre
 
-**Move general content here from data centre unit text, Cathrine write this section when this is ready**
-
-### 2.1. ACTRIS In situ data centre unit (In-Situ)
-
 #### The purpose of the data collection/generation
 
-The purpose of the data collection and generation of data products is to provide open access to aerosol, cloud and trace gas in situ measurements of high quality, benefiting scientists and policy makers, as well as the private sector, educators and the general public. See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217) for more information.
+The purpose of the data collection and generation of data products in ACTRIS is to provide open access to aerosol, cloud and trace gas in-situ and remote sensing measurements of high quality, benefiting a large community of scientists involved in atmospheric science and related areas as well as policy makers, the private sector, educators and the general public. See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217) for more information.
 
 #### The relation to the objectives of the project
 
-Data management of ACTRIS in situ data relates to the ability to predict the future behaviour of the atmosphere over all time scales. High quality observation data facilitates this and needs to be supported by:
-  * Documentation of archiving procedures and access to level 0 data
+Management of ACTRIS data relates to measuring atmospheric composition and the ability to predict the future behaviour of the atmosphere over all time scales. High quality observation data facilitates this and needs to be supported by:
+  * Documentation of archiving procedures and access to level 0 -> level 3 data by the National Facilities (NFs), Topical Centres (TCs), and Centeral Facilities (CFs)
+  * Centralized and traceable processing chain of leve 0 data
   * Long-term archiving and preservation of ACTRIS level 1 to level 3 data and data products
   * Access to ACTRIS data, data products, and digital tools through a single point of entry, the ACTRIS data user interface
   * Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
   * Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
+
+### 2.1. ACTRIS In situ data centre unit (In-Situ)
+
+The In-Situ unit provides a data curation service for aerosol, cloud and trace gas in-situ data and inclusion of data in EBAS database. 
+Measuring the ...
 
 #### The types and formats of data generated/collected
 The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format by the data originator, and there are exsisting instructions and templates for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
@@ -204,7 +206,7 @@ The origin of the data is derived from instrument raw data, either through onlin
 
 #### Data utility: to whom will it be useful
 
-ACTRIS will produce data and data products essential to a wide range of communities as decribed in the [Stakegolder Handbook](http://www.actris.eu/Outreach/Publications/ACTRISStakeholderHandbook.aspx), including:
+ACTRIS will produce data and data products essential to a wide range of communities as decribed in the [Stakeholder Handbook](http://www.actris.eu/Outreach/Publications/ACTRISStakeholderHandbook.aspx), including:
 
   * Atmospheric science research communities world-wide (climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations);
   * Environmental science research communities and communities from other neighbouring fields: hydro-marine, bio-ecosystem, geosciences, space physics, energy, health, and food domain, to study interactions and processes in across different disciplines;
@@ -220,21 +222,10 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 2.2. ACTRIS Aerosol remote sensing data centre unit (ARES)
 
-#### The purpose of the data collection/generation
-The purpose of the data collection and generation of data products is to provide open access to aerosol remote sensing measurements of high and traceable quality, benefiting scientists and policy makers, as well as the private sector, educators and the general public. See the Stakeholder Handbook for more information.
+The ARES data center unit handles provision of aerosol remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data provision and archiving, and documentation. The activity enables RRT and NRT delivery. Tutorial activities. Production of level 3 data for climatological analysis and new products. 
 
-#### The relation to the objectives of the project
+Further more the goal is to measure the aerosol content in the whole troposphere and upper stratosphere over all time scales and to investigate its relationship with near surface mechanisms (as pollution and air quality issue) and to address the challenging issue of the not-well assessed indirect effects of aerosol in the climate change.
 
-Data management of ACTRIS aerosol remote sensing data relates to the description of  the aerosol content in the whole troposphere and upper stratosphere over all time scales and to investigate its relationship with near surface mechanisms (as pollution and air quality issue) and to address the challenging issue of the not-well assessed indirect effects of aerosol in the climate change.
-
-High quality observation data facilitates this and needs to be supported by:
-
-* Documentation of archiving procedures and access to level 0 data
-* Centralized and traceable processing chain of aerosol Leve0 data
-* Long-term archiving and preservation of ACTRIS level 1 to level 3 data and data products
-* Access to ACTRIS data, data products, and digital tools through a single point of entry, the ACTRIS data user interface
-* Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
-* Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
 
 #### The types and formats of data generated/collected
 
@@ -346,6 +337,8 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 2.4. ACTRIS trace gases remote sensing data centre unit (GRES)
 
+The GRES data center unit provides data curation service for reactive trace gases remote sensing data, added values products, standardized process for data submission and QC. Trace gases remote sensing data are necessary to monitor the evolution of atmospheric composition in relation to air quality, climate change and ozone depletion issues. 
+
 #### Description of the ACTRIS-GRES unit
 Trace gases remote sensing data produced are organized within one unique database and are issued from measurements using three types of instruments located at different observatory stations. The three types of instruments are:
 
@@ -355,17 +348,6 @@ Trace gases remote sensing data produced are organized within one unique databas
 
 This database provides access to level 2b and level 3 data of trace gases profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …). The level 2b data are produced from the consolidation of level 2a data using quality assurance and quality control procedures.
 The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
-
-#### The purpose of the data collection/generation
-The purpose of the data collection and generation by the GRES unit is to provide free and open access to trace gases profiles and columns data products (levels 2b and 3) of high quality for the benefit of a large community of scientists involved in atmospheric chemistry science and related areas, as well as general public and private sector.
-
-#### The relation to the objectives of the project
-Trace gases remote sensing data are necessary to monitor the evolution of atmospheric composition in relation to air quality, climate change and ozone depletion issues. High quality and fully documented data facilitate this and needs to be supported by:
-
-* Documentation of archiving procedures and access to level 0 and level 1 data by the NFs and TC,
-* Long-term archiving and preservation of ACTRIS level 2 to level 3 data and data products,   
-* Access to ACTRIS data, data products, and digital tools (for data providers and users) through a single point of entry, the ACTRIS data user interface,
-* Documentation of data, data workflow, citation service, and data attribution, data traceability, and interoperability.
 
 #### The types and formats of data generated/collected
 The ACTRIS trace gases remote sensing data centre unit is supported by AERIS database. All providers will submit level 2 data following the GEOMS data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) and following the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements. The GEOMS data format allows the necessary requirements to setup the ACTRIS data curation service for trace gas remote sensing data.
@@ -504,6 +486,9 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 2.5. ACTRIS Atmospheric simulation chamber data centre unit (ASC)
 
+The ASC data center unit provides atmospheric simulation chamber data services curation, provision and standardized process for data submission.
+Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes which affect air quality and climate change. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. Furthermore, ASC provides access to detailed information on the infrastructures (i.e. simulation chambers) used for the generation of the data; this includes a technical description of the chambers (size, volume, walls, irradiation system …) and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations.
+
 #### Description of the ACTRIS-ASC unit
 
 The ACTRIS-ASC unit is structured in three pilars:
@@ -513,26 +498,6 @@ The ACTRIS-ASC unit is structured in three pilars:
 * The _Library of Analytical Resources_ (LAR): This database provides quantitative analytical resources that include infrared spectra, UV-visible spectra and mass spectra of molecules and derivatives. These data products (level 3) are obtained by processing of level 2 data.
 
 * The _Library of Advanced Data Products_ (LADP): This database provides different types of mature data products (level 3) obtained by processing of level 2 data: rate constants of reactions in gas and condensed phases, quantum yields, secondary organic aerosol (SOA) yields, photolysis frequencies, mass extinction coefficients of aerosols, complex refractive index of aerosols, growth factors of aerosols and modelling tools.
-
-
-#### The purpose of the data collection/generation
-
-The purpose of the data collection/generation by the ASC unit is to provide free and open access to simulation chambers data and data products (levels 2 and 3) for use by a large community of users in atmospheric science research and related areas, as well as the private sector.
-
-#### The relation to the objectives of the project
-
-Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes which affect air quality and climate change. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. High quality and fully documented data facilitate this and needs to be supported by:
-
-* Documentation of archiving procedures and access to level 0 and level 1 data by the NFs,
-
-* Long-term archiving and preservation of ACTRIS level 2 to level 3 data and data products,
-
-* Access to ACTRIS data, data products, and digital tools (for data providers and users) through a single point of entry, the ACTRIS data user interface,
-
-* Access to detailed information on the infrastructures (i.e. simulation chambers) used for the generation of the data; this includes a technical description of the chambers (size, volume, walls, irradiation system …) and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations.
-
-* Documentation of data, data workflow, citation service, and data attribution, data traceability, and interoperability.
-
 
 #### The types and formats of data generated/collected
 
@@ -678,23 +643,12 @@ ACTRIS-ASC unit will produce different types of data and data products essential
 
 Detail on the data life cycle and workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in annex 7.
 
-
 ### 2.6. ACTRIS data and services (ACCESS)
 
-#### The purpose of the data collection/generation
+The access unit provides provision of ACTRIS web interface for data, services and digital tools as well as data production of selected Level 3 data, quality control tools, and synergy data products.
+Data management of ACTRIS level 3 data relates to the ability to predict the future behaviour of the atmosphere over all time scales. This is facilitated by post-processed ACTRIS level 0-1-2 observations, advanced multi-instrument synergistic algorithms, long term reanalysis against model results and satellite data.
 
-The purpose of the data collection and generation of data products is to provide open access to elaborated aerosol, cloud and trace gas parameters, issued of advaced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources.
-It intends to benefit to scientists and policy makers, as well as the private sector, educators and the general public. See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217) for more information.
-The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx).
-
-#### The relation to the objectives of the project
-
-Data management of ACTRIS level 3 data relates to the ability to predict the future behaviour of the atmosphere over all time scales. This is facilitated by post-processed ACTRIS level 0-1-2 observations, advanced multi-instrument synergistic algorithms, long term reanalysis against model results and satellite data and it needs to be supported by:
-  * Documentation of archiving procedures and access to level 3 data.
-  * Long-term archiving and preservation of ACTRIS level 3 data and data products.
-  * Access to ACTRIS data, data products, and digital tools through a single point of entry, the ACTRIS data user interface.
-  * Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability.
-  * Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
+The ACTRIS ACCESS unit will provide elaborated aerosol, cloud and trace gas parameters, issued of advaced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources. The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx).
 
 #### The types and formats of data generated/collected
 
