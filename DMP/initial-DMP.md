@@ -695,7 +695,7 @@ ACTRIS as an Research infrastructure is in its preparation phase, and is expecte
 
 
 | Workflow Task ID           | Responsible for specification   | REsponsible for implementation | Responsible for operation |
-|----------------------------|---------------------------------|---------------------- ---------|---------------------------|
+|----------------------------|---------------------------------|--------------------------------|---------------------------|
 |         				     |                                 |                   			    |                           |
 |              				 |                                 |                                |                           |
 |                  			 |                                 |                                |                           |
