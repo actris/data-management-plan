@@ -183,17 +183,32 @@ Management of ACTRIS data relates to measuring atmospheric composition and the a
   * Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
   * Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
 
+#### Main users of ACTRIS data and software
+
+ACTRIS will produce data and data products essential to a wide range of communities as decribed in the Stakeholder Handbook, including:
+
+* Atmospheric science research communities world-wide (climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations);
+* Environmental science research communities and communities from other neighbouring fields: hydro-marine, bio-ecosystem, geosciences, space physics, energy, health, and food domain, to study interactions and processes in across different disciplines;
+* Instrument manufacturers and sensor industries for development, testing, prototyping and demonstration;
+* Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
+* Space agencies for validation and the development of new satellite missions;
+* National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution models;
+* Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
+* Copernicus Gas atmospheric service (ECMWF)
+* Science community working on air quality, climate change and stratospheric ozone depletion issues
+
 ### 2.1. ACTRIS In situ data centre unit (In-Situ)
 
-The In-Situ unit provides a data curation service for aerosol, cloud and trace gas in-situ data and inclusion of data in EBAS database. 
-Measuring the ...
+The In-Situ unit provides a data curation service for aerosol, cloud and trace gas in-situ data and inclusion of data in EBAS database.
 
 #### The types and formats of data generated/collected
-The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format by the data originator, and there are exsisting instructions and templates for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
+The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format (ASCII file) by the data originator, and there are exsisting instructions and templates for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
+
+Currently, work is being conducted with regards to providing data in the netCDF 4 format, making it compliant with the [CF 1.7 convention](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html) and the [Attribute Convention for Data Discovery 1-3 (ACDD)](http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery_1-3).
 
 #### Re-use of existing data
 
-The ACTRIS data user interface will include access to ACTRIS In situ data and legacy data resulting from ACTRIS pre-projects.
+Legacy data resulting from ACTRIS pre-projects will also be included as a part of the ACTRIS In Situ data center unit.
 
 #### The origin of the data
 
@@ -202,20 +217,11 @@ The origin of the data is derived from instrument raw data, either through onlin
 #### The expected size of the data
 
 <table width="604" cellspacing="0" cellpadding="7"> <tbody> <tr> <td rowspan="3" width="100" height="26"> <p class="western" lang="en-GB" align="center">&nbsp;</p> </td> <td colspan="3" width="225"> <p class="western" align="center"><span lang="en-GB"><strong>Number of annual data sets</strong></span></p> </td> <td colspan="3" width="235"> <p class="western" align="center"><span lang="en-GB"><strong>Data volume</strong></span></p> </td> </tr> <tr> <td rowspan="2" width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p> </td> <td colspan="2" width="145"> <p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p> </td> <td rowspan="2" width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p> </td> <td colspan="2" width="152"> <p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p> </td> </tr> <tr> <td width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p> </td> <td width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p> </td> <td width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p> </td> <td width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ aerosol data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">60</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">50</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">120</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">18&nbsp;000 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">15&nbsp;000 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">50&nbsp;000 MB</span></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ cloud data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">35</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">105</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">1 GB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">3 GB</span></span></p> </td> </tr> <tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ACTRIS in situ trace gas data</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">27</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">30</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">60</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">300 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">200 MB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">400 MB</span></span></p> </td> </tr> </tbody> </table>
-*Table 1: Expected size of the data coming from the in situ data center unit*
+**Table 1:** *Expected size of the data coming from the in situ data center unit*
 
-#### Data utility: to whom will it be useful
+#### Data utility
 
-ACTRIS will produce data and data products essential to a wide range of communities as decribed in the [Stakeholder Handbook](http://www.actris.eu/Outreach/Publications/ACTRISStakeholderHandbook.aspx), including:
-
-  * Atmospheric science research communities world-wide (climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations);
-  * Environmental science research communities and communities from other neighbouring fields: hydro-marine, bio-ecosystem, geosciences, space physics, energy, health, and food domain, to study interactions and processes in across different disciplines;
-  * Instrument manufacturers and sensor industries for development, testing, prototyping and demonstration;
-  * Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
-  * Space agencies for validation and the development of new satellite missions;
-  * National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution
-models;
-  * Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
+Data utility specifically related to the DC unit (see data summary at ASC for example)
 
 #### Outline of data life cycle (workflow and workflow diagram)
 Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle-and-workflow-diagram).
@@ -308,17 +314,9 @@ The origin of the data is derived from instrument raw data.
 </tbody>
 </table>
 
-#### Data utility: to whom will it be useful
+#### Data utility
 
-ACTRIS will produce data and data products essential to a wide range of communities as decribed in the Stakeholder Handbook, including:
-
-* Atmospheric science research communities world-wide (climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations);
-* Environmental science research communities and communities from other neighbouring fields: hydro-marine, bio-ecosystem, geosciences, space physics, energy, health, and food domain, to study interactions and processes in across different disciplines;
-* Instrument manufacturers and sensor industries for development, testing, prototyping and demonstration;
-* Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
-* Space agencies for validation and the development of new satellite missions;
-* National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution models;
-* Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
+Data utility specifically related to the DC unit (see data summary at ASC for example)
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
@@ -332,7 +330,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 * Specify if existing data is being re-used (if any)
 * Specify the origin of the data
 * State the expected size of the data (if known)
-* Outline the data utility: to whom will it be useful
+* Data utility
 * Outline of workflow and workflow diagram
 
 ### 2.4. ACTRIS trace gases remote sensing data centre unit (GRES)
@@ -474,12 +472,9 @@ The origin of the data is derived from instrument raw data, through offline obse
 </tbody>
 </table>
 
-#### Data utility: to whom will it be useful
-ACTRIS-GRES data unit will produce data and data products essential to a wide range of communities as well as:
--   Science community working on air quality, climate change and stratospheric ozone depletion issues
--   Copernicus Gas atmospheric service (ECMWF)
--   Validation of new satellite missions
--   Air quality agencies
+#### Data utility
+
+Data utility specifically related to the DC unit (see data summary at ASC for example)
 
 #### Outline of data life cycle (workflow and workflow diagram)
 Detail on the data life cycle and workflow (workflow diagrams for data production) for trace gases remote sensing data can be found in annex 6.
@@ -629,7 +624,7 @@ Not clear for me what is expected here … Should we explain in details how data
 </tbody>
 </table>
 
-#### Data utility: to whom will it be useful
+#### Data utility
 
 ACTRIS-ASC unit will produce different types of data and data products essential to a wide range of communities.
 
@@ -758,19 +753,9 @@ The origin of the data is derived from ground-based and satellite observations, 
 | Model Evaluation Service                                      | 30                      | 300 MB                 |
 | NWP Model Evaluation Service                                  | TBD                     | TBD                    |
 
+#### Data utility
 
-#### Data utility: to whom will it be useful
-
-ACTRIS will produce data and data products essential to a wide range of communities, including:
-
-  * Atmospheric science research communities world-wide (climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations);
-  * Environmental science research communities and communities from other neighbouring fields: hydro-marine, bio-ecosystem, geosciences, space physics, energy, health, and food domain, to study interactions and processes in across different disciplines;
-  * Instrument manufacturers and sensor industries for development, testing, prototyping and demonstration;
-  * Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
-  * Space agencies for validation and the development of new satellite missions;
-  * National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution
-models;
-  * Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
+Data utility specifically related to the DC unit (see data summary at ASC for example)
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
