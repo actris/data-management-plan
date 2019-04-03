@@ -260,72 +260,20 @@ The origin of the data is derived from instrument raw data.
 
 #### The expected size of the data
 
-<table width="604" cellspacing="0" cellpadding="7">
-<tbody>
-<tr>
-<td rowspan="3" width="94">
-<p align="center">&nbsp;</p>
-</td>
-<td colspan="4" width="229">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Number of annual data sets</strong></span></span></span></p>
-</td>
-<td colspan="3" width="240">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Data volume</strong></span></span></span></p>
-</td>
-</tr>
-<tr>
-<td rowspan="2" width="57">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
-</td>
-<td colspan="2" width="157">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
-</td>
-<td colspan="2" rowspan="2" width="60">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
-</td>
-<td colspan="2" width="165">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
-</td>
-</tr>
-<tr>
-<td width="57">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
-</td>
-<td width="86">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
-</td>
-<td width="60">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
-</td>
-<td width="91">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="94">
-<p>ACTRIS aerosol remote sensing data</p>
-</td>
-<td width="57">
-<p>28</p>
-</td>
-<td width="57">
-<p>30</p>
-</td>
-<td width="86">
-<p>70</p>
-</td>
-<td colspan="2" width="60">
-<p>4 GB</p>
-</td>
-<td width="60">
-<p>2.5 TB</p>
-</td>
-<td width="91">
-<p>25 TB</p>
-</td>
-</tr>
-</tbody>
-</table>
+
+#### The expected size of the data
+
+| Type                                |Number of annual datasests (now)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+|-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
+| ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   70                                    |
+
+Table 1: *Number of annual datasets*
+
+| Type                               |Data volume (now)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
+|------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
+| ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   25 TB                    |
+
+Table 2: *Data volume*
 
 #### Data utility
 
@@ -372,118 +320,25 @@ The ACTRIS data user interface will include access to ACTRIS trace gases remote 
 The origin of the data is derived from instrument raw data, through offline observations.
 
 #### The expected size of the data
-<table width="604" cellspacing="0" cellpadding="7">
-<tbody>
-<tr>
-<td rowspan="3" width="94">
-<p align="center">&nbsp;</p>
-</td>
-<td colspan="4" width="229">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Number of annual data sets</strong></span></span></span></p>
-</td>
-<td colspan="3" width="240">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Data volume</strong></span></span></span></p>
-</td>
-</tr>
-<tr>
-<td rowspan="2" width="57">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
-</td>
-<td colspan="2" width="157">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
-</td>
-<td colspan="2" rowspan="2" width="60">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
-</td>
-<td colspan="2" width="165">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
-</td>
-</tr>
-<tr>
-<td width="57">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
-</td>
-<td width="86">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
-</td>
-<td width="60">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
-</td>
-<td width="91">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="94">
-<p>ACTRIS-GRES <br>FTIR</p>
-</td>
-<td width="57">
-<p>TBD</p>
-</td>
-<td width="57">
-<p>TBD</p>
-</td>
-<td width="86">
-<p>TBD</p>
-</td>
-<td colspan="2" width="60">
-<p>TBD</p>
-</td>
-<td width="60">
-<p>TBD</p>
-</td>
-<td width="91">
-<p>TBD</p>
-</td>
-</tr>
-<tr valign="top">
-<td width="94">
-<p>ACTRIS-GRES <br>UV-VIS</p>
-</td>
-<td width="57">
-<p>TBD</p>
-</td>
-<td width="57">
-<p>TBD</p>
-</td>
-<td width="86">
-<p>TBD</p>
-</td>
-<td colspan="2" width="60">
-<p>TBD</p>
-</td>
-<td width="60">
-<p>TBD</p>
-</td>
-<td width="91">
-<p>TBD</p>
-</td>
-</tr>
-<tr valign="top">
-<td width="94">
-<p>ACTRIS-GRES <br>LIDAR DIAL</p>
-</td>
-<td width="57">
-<p>57</p>
-</td>
-<td width="57">
-<p>60</p>
-</td>
-<td width="86">
-<p>80</p>
-</td>
-<td colspan="2" width="60">
-<p>400 MB</p>
-</td>
-<td width="60">
-<p>400 MB</p>
-</td>
-<td width="91">
-<p>550 MB</p>
-</td>
-</tr>
-</tbody>
-</table>
+
+
+#### The expected size of the data
+
+| Type                                |Number of annual datasests (now)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+|-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
+| ACTRIS-GRES FTIR                    |                   TBD                                    |          TBD                            |             TBD                         |
+| ACTRIS-GRES UV-VIS                  |                   TBD                                    |          TBD                            |             TBD                         |
+| ACTRIS-GRES LIDAR DIAL              |                   57                                     |          60                             |             80                          |
+
+Table 1: *Number of annual datasets*
+
+| Type                               |Data volume (now)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
+|------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
+| ACTRIS aerosol remote sensing data |                     TBD                                   |              TBD                         |          TBD               |
+| ACTRIS aerosol remote sensing data |                     TBD                                   |              TBD                         |          TBD               |
+| ACTRIS aerosol remote sensing data |                     400 MB                                |              400 MB                      |          550 MB            |
+
+Table 2: *Data volume*
 
 #### Data utility
 
@@ -522,120 +377,25 @@ The ACTRIS data user interface will include access to ACTRIS Atmospheric Simulat
 #### The origin of the data
 
 Not clear for me what is expected here … Should we explain in details how data are generated?
+*It  should be sufficient to just briefly describe where the data is coming from e.g. is it sensors,lab experiments, satellites etc.*
 
 #### The expected size of the data
-<table width="604" cellspacing="0" cellpadding="7">
-<tbody>
-<tr>
-<td rowspan="3" width="94">
-<p align="center">&nbsp;</p>
-</td>
-<td colspan="4" width="229">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Number of annual data sets</strong></span></span></span></p>
-</td>
-<td colspan="3" width="240">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Data volume</strong></span></span></span></p>
-</td>
-</tr>
-<tr>
-<td rowspan="2" width="57">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
-</td>
-<td colspan="2" width="157">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
-</td>
-<td colspan="2" rowspan="2" width="60">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Now</strong></span></span></span></p>
-</td>
-<td colspan="2" width="165">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>by 2025</strong></span></span></span></p>
-</td>
-</tr>
-<tr>
-<td width="57">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
-</td>
-<td width="86">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
-</td>
-<td width="60">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Min.</strong></span></span></span></p>
-</td>
-<td width="91">
-<p align="center"><span style="font-family: 'Times New Roman', serif;"><span style="font-size: medium;"><span lang="en-GB"><strong>Max.</strong></span></span></span></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="94">
-<p>ACTRIS-ASC <br>DASCS</p>
-</td>
-<td width="57">
-<p>100</p>
-</td>
-<td width="57">
-<p>50</p>
-</td>
-<td width="86">
-<p>200</p>
-</td>
-<td colspan="2" width="60">
-<p></p>
-</td>
-<td width="60">
-<p></p>
-</td>
-<td width="91">
-<p></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="94">
-<p>ACTRIS-ASC <br>LAR</p>
-</td>
-<td width="57">
-<p>20</p>
-</td>
-<td width="57">
-<p>10</p>
-</td>
-<td width="86">
-<p>50</p>
-</td>
-<td colspan="2" width="60">
-<p></p>
-</td>
-<td width="60">
-<p></p>
-</td>
-<td width="91">
-<p></p>
-</td>
-</tr>
-<tr valign="top">
-<td width="94">
-<p>ACTRIS-ASC<br>LADP</p>
-</td>
-<td width="57">
-<p>0</p>
-</td>
-<td width="57">
-<p>30</p>
-</td>
-<td width="86">
-<p>100</p>
-</td>
-<td colspan="2" width="60">
-<p></p>
-</td>
-<td width="60">
-<p></p>
-</td>
-<td width="91">
-<p></p>
-</td>
-</tr>
-</tbody>
-</table>
+
+| Type               |Number of annual data sests (now)   | Number of annual data sets (min by 2025) | Number of annual data sets (max by 2025) |
+|--------------------|------------------------------------|------------------------------------------|------------------------------------------|
+| ACTRIS-ASC DASCS   |         100                        |          50                              |          200                             |
+| ACTRIS-ASC LAR     |          20                        |          10                              |          50                              |
+| ACTRIS-ASC LADP    |           0                        |          30                              |   		100                             |
+
+Table 1: *Number of annual datasets*
+
+| Type               |Data volume (now)           | Data volume (min by 2025)          | Data volume (max by 2025)   |
+|--------------------|----------------------------|------------------------------------|-----------------------------|
+| ACTRIS-ASC DASCS   |           TBD              |       TBD                          |   TBD                       |
+| ACTRIS-ASC LAR     |           TBD              |       TBD                          |   TBD                       |
+| ACTRIS-ASC LADP    |           TBD              |       TBD                          |   TBD	                     |
+
+Table 2: *Data volume*
 
 #### Data utility
 
