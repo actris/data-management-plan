@@ -245,7 +245,6 @@ The ARES data center unit handles provision of aerosol remote sensing data proce
 
 Further more the goal is to measure the aerosol content in the whole troposphere and upper stratosphere over all time scales and to investigate its relationship with near surface mechanisms (as pollution and air quality issue) and to address the challenging issue of the not-well assessed indirect effects of aerosol in the climate change.
 
-
 #### The types and formats of data generated/collected
 
 The ACTRIS ARES data centre unit provides data in netCDF 4 format compliant as much as possible with CF 1.7 standards.  The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator.
@@ -504,17 +503,25 @@ The origin of the data is derived from ground-based and satellite observations, 
 
 ##### Generated (systematic production)
 
-<table width="100%" cellspacing="0" cellpadding="7">
-<tbody>
-<tr> <td rowspan="3" width="100" height="26"> <p class="western" lang="en-GB" align="center">&nbsp;</p> </td> <td colspan="3" width="225"> <p class="western" align="center"><span lang="en-GB"><strong>Number of annual data sets</strong></span></p> </td> <td colspan="3" width="235"> <p class="western" align="center"><span lang="en-GB"><strong>Data volume</strong></span></p> </td> </tr>
-<tr> <td rowspan="2" width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p> </td> <td colspan="2" width="145"> <p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p> </td> <td rowspan="2" width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Now</strong></span></p> </td> <td colspan="2" width="152"> <p class="western" align="center"><span lang="en-GB"><strong>by 2025</strong></span></p> </td> </tr>
-<tr> <td width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p> </td> <td width="66"> <p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p> </td> <td width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Min.</strong></span></p> </td> <td width="69"> <p class="western" align="center"><span lang="en-GB"><strong>Max.</strong></span></p> </td> </tr>
-<tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">GRASP/GARRLiC</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">6</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">See SCC L1 from ARES</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">See SCC L1 from ARES</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">3.2 GB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">TBD</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">TBD</span></span></p> </td> </tr>
-<tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">GRASP-AOD</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">7500</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">12500</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">0</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">10.5 TB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">17.5 TB
-</span></span></p> </td> </tr>
-<tr> <td width="100"> <p class="western" align="left"><span lang="en-GB">ReOBS</span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">1</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">1</span></span></p> </td> <td width="66"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">1</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">2 GB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">3 GB</span></span></p> </td> <td width="69"> <p class="western" align="center"><span style="color: #000000;"><span lang="en-GB">5 GB</span></span></p> </td> </tr>
-</tbody> </table>
-*Table 1: Expected size of the ACTRIS level 3 data*
+
+#### The expected size of the data
+
+| Type                  |Number of annual datasests (now)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+|-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
+|    GRASP/GARRLiC      |                        6          |             See SCC L1 from ARES        |    See SCC L1 from ARES                 |
+|    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
+|    ReOBS              |                        1          |             1                           |    1                                    |
+
+Table 2.6.1. *Number of annual datasets*
+
+| Type              |Data volume (now)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
+|-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
+| GRASP/GARRLiC     |                            3.2 GB                         |     TBD                    |           TBD              |
+| GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
+| ReOBS             |                              2 GB                         |        3 GB                |                5 GB        |
+
+Table 2.6.2. *Data volume*
+
 
 ##### Generated (on-demand services)
 
@@ -686,11 +693,24 @@ ACTRIS as an Research infrastructure is in its preparation phase, and is expecte
 
 #### Workflow Tasks Responsibilities
 
-<table style="height: 254px;" width="826"> <tbody> <tr> <th style="width: 206.25px;">&nbsp;</th> <th style="width: 206.25px;" colspan="3">&nbsp;Responsible for</th> </tr> <tr> <th style="width: 206.25px;">&nbsp;Workflow Task ID</th> <th style="width: 206.25px;">&nbsp;Specification</th> <th style="width: 206.25px;">&nbsp;Implementation</th> <th style="width: 206.25px;">&nbsp;Operation</th> </tr> <tr> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> </tr> <tr> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> <td style="width: 206.25px;">&nbsp;</td> </tr> </tbody> </table>
+
+| Workflow Task ID           | Responsible for specification   | REsponsible for implementation | Responsible for operation |
+|----------------------------|---------------------------------|---------------------- ---------|---------------------------|
+|         				     |                                 |                   			    |                           |
+|              				 |                                 |                                |                           |
+|                  			 |                                 |                                |                           |
+
+Table: *Workflow Tasks Responsibilities*
 
 #### Workflow Tasks Short Specification
 
-<table style="height: 254px; width: 826px;"> <tbody> <tr> <th style="width: 16.1667px;">&nbsp;Workflow Task ID</th> <th style="width: 395.833px;">&nbsp;Short Specification</th> </tr> <tr> <td style="width: 16.1667px;">&nbsp;</td> <td style="width: 395.833px;">&nbsp;</td> </tr> <tr> <td style="width: 16.1667px;">&nbsp;</td> <td style="width: 395.833px;">&nbsp;</td> </tr> </tbody> </table>
+| Workflow Task ID           | Short Specification   |
+|----------------------------|-----------------------|
+|         				     |                       |
+|              				 |                       |
+|                  			 |                       |
+
+Table: *Workflow Tasks Short Specification*
 
 ### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
 **Will also link to seperate document describing the workflow in more detail.**
