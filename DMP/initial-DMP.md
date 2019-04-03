@@ -221,7 +221,8 @@ The origin of the data is derived from instrument raw data, either through onlin
 | ACTRIS in situ aerosol data   |           60                                             |       50                                |   120                                   |
 | ACTRIS in situ cloud data     |           0                                              |       35                                |   105                                   |
 | ACTRIS in situ trace gas data |           27                                             |       30                                |   60		                               |
-**Table 1:** *Number of annual datasets*
+
+Table 1: *Number of annual datasets*
 
 | Type                          |Data volume (now)                                          | Data volume (min by 2025)                | Data volume (max by 2025) |
 |-------------------------------|-----------------------------------------------------------|------------------------------------------|------------------------------------------|
@@ -229,7 +230,7 @@ The origin of the data is derived from instrument raw data, either through onlin
 | ACTRIS in situ cloud data     |           0 MB                                            |       1 GB                               |   3 GB                                   |
 | ACTRIS in situ trace gas data |           300 MB                                          |       200 MB                             |   400 MB	                              |
 
-**Table 2:** *Data volume*
+Table 2: *Data volume*
 
 #### Data utility
 
