@@ -717,7 +717,7 @@ ACTRIS as an Research infrastructure is in its preparation phase, and is expecte
 
 *More tables to be added regarding the workflow, currently this is an example draft*
 
-![ACTRIS In situ data centre unit workflow diagram](https://folk.nilu.no/~markus/ACTRIS-DMP/20190331%20ACTRIS%20EBAS%20Data%20Flowchart.png)
+![ACTRIS In situ data centre unit workflow diagram](https://folk.nilu.no/~markus/ACTRIS-DMP/20190424%20ACTRIS%20EBAS%20Data%20Flowchart.png)
 
 #### Workflow Tasks Responsibilities
 
