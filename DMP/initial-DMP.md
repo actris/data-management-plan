@@ -1,4 +1,6 @@
-# ACTRIS Research Infrastructure initial outline of DMP
+<img align="right" src="https://www.actris.eu/Portals/46/Images/Logos/logo-actris_new_140.png?ver=2015-06-08-141001-817" alt="ACTRIS logo">
+
+# Data Management plan for ACTRIS - Aerosols, Clouds, and Trace gases Research InfraStructure
 
 # Table of contents
 
