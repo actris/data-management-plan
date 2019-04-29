@@ -509,7 +509,20 @@ Access to quality controlled data from the data centre units is provided by the 
 **ACCESS unit takes the lead on this section**
 ### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
 
-ACTRIS will collect data and metadata from a large range of observations and methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit should provide discovery metadata for all ACTRIS data, using a common standard that is WIS compliant such as ISO19139 or ISO19115.
+ACTRIS will harvest metadata from a large range of observations and methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit will provide discovery metadata for all ACTRIS data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. 
+
+ACTRIS is providing metadata via its metadata catalog following the iso19139 standard harvesting metadata from the different DC units. Exceptions may occur in cases where current standards do not meet the need to describe data/metadata.
+
+Below is a table offering an overview of the sources the ACTRIS DC is harvesting metadata from.
+
+
+| DC unit                  | metadata service                | end-point                                                                               |                        standard |
+|--------------------------|---------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+|         In Situ		   |           OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       iso19115, CF-1.7, ACDD    |
+|         ARES     		   |           REST-Service          |  https://150.145.73.229/earlinetservice/services/restapi?_wadl                          |                                 |
+|         CLU              |                                 |                                                                                         |                                 |
+
+Table: Sources of ACTRIS metadata
 
 Future efforts should make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in the a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
 
