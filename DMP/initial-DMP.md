@@ -520,7 +520,7 @@ Below is a table offering an overview of the sources the ACTRIS DC is harvesting
 |--------------------------|---------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ		   |           OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       iso19115, CF-1.7, ACDD    |
 |         ARES     		   |           REST-Service          |  https://150.145.73.229/earlinetservice/services/restapi?_wadl                          |                                 |
-|         CLU              |                                 |                                                                                         |                                 |
+|         CLU              |           REST                  |  http://devcloudnet.fmi.fi/api                                                                                     |                                 |
 
 Table: Sources of ACTRIS metadata
 
