@@ -517,13 +517,16 @@ ACTRIS is providing metadata via its metadata catalog following the iso19139 sta
 Below is a table offering an overview of the sources the ACTRIS DC is harvesting metadata from.
 
 
-| DC unit                  | metadata service                | end-point                                                                               |                        standard |
-|--------------------------|---------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
-|         In Situ		   |           OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       iso19115, CF-1.7, ACDD    |
-|         ARES     		   |           REST-Service          |  https://150.145.73.229/earlinetservice/services/restapi?_wadl                          |                                 |
-|         CLU              |                                 |                                                                                         |                                 |
+| DC unit                  | metadata service               | end-point                                                                               |                        standard |
+|--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
+|         In Situ		   |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
+|         ARES     		   |          ISO via Thredds server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html             |       ISO 19115-2               |
+|         CLU              |          None                  |  None                                                                                   |       None                      |
+|		  ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
+|         ASC              | To be defined					|  None																					  |       To be decided				|
+|		  GRES             | To be decided					|  None																					  |       To be decided				|
 
-Table: Sources of ACTRIS metadata
+Table: ACTRIS metadata for discoverability
 
 Future efforts should make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in the a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
 
