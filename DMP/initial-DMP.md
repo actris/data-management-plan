@@ -576,6 +576,18 @@ In all cases where access is restricted, information on how to access the data s
 
 If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) should be available through open access repositories like GitHub. A open source licence for software should be encouraged and applied when possible. The aformentioned guidelines are related to ACTRIS [level 2 data](#11-actris-data-set-descriptions-and-actris-data-levels). This is primarily intended as guidelines for software that is needed to access data that is available through the data centre. Software related to ACTRIS level 0 and level 1 data is out of scope for this section.
 
+Below is an overview of licences that are associated with data from the different data center units in ACTRIS:
+
+| DC unit                  | data format                  | Licence                                                                                                                                                              |                     comment |
+|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+|         In Situ		   |          netCDF              |                                                                                                                                                                      |                             |
+|         ARES     		   |          netCDF              |                                                                                                                                                                      |                             | 
+|         CLU              |          netCDF              |                                                                                                                                                                      |                             |
+|		  ACCESS           | Defined by primary repository|  																		                                                                                             |                     	       |
+|         ASC              | Not available			      |  																					                                                                                 |       				       |
+|		  GRES             | Not available				  |  																					                                                                                 |       				       |
+Table: Licensing in ACTRIS
+
 ### 3.3. Interoperable: Making data interoperable [FAIR data]
 
 Making data interoperable is the guiding principle of the ACTRIS DC. The ACTRIS DC handles a large variety of data and there is currently no common approach towards interoperability.
@@ -589,6 +601,19 @@ Implementation of new standards for data and metadata used in the context of ACT
 Standard vocabulary might not always be used, but in all cases they should be mapped to standard vocabulary if existing by the DC ACCESS unit.
 
 As an overarching goal, ACTRIS DC will take part in discussions that takes place in forums/groups such as ENVRI FAIR across the different environmental domains and strive to use cross-environmental standards and solutions in order to allow for inter-disciplinary interoperability.
+
+Below is a list of data formats and examples:
+
+| DC unit                  | data format                  | example                                                                                                                                                              |                     comment |
+|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+|         In Situ		   |          netCDF              |  https://thredds.nilu.no/thredds/fileServer/testAll/NO2464R.20150821120000.20161017000000.hand_picked..dried_moss.1h.5y.NO01L_NILU_moss.NO01L_NILU_ICP-HRMS.lev2.nc  |                             |
+|         ARES     		   |          netCDF              |  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html                                                                                          |                             | 
+|         CLU              |          netCDF              |  http://cloudnet.fmi.fi/cgi-bin/cloudnetdata.cgi?date=20180508&product=classification&site=potenza                                                                   |                             |
+|		  ACCESS           | Defined by primary repository|  None																		                                                                                         |                     	       |
+|         ASC              | Not available			      |  None																					                                                                             |       				       |
+|		  GRES             | Not available				  |  None																					                                                                             |       				       |
+
+Table: Describing the data and format related to what is provided in the discovery metadata
 
 ### 3.4. Reuseable: Increase data re-use [FAIR data]
 
