@@ -515,12 +515,12 @@ Below is a table offering an overview of the sources the ACTRIS DC is harvesting
 
 | DC unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
-|         In Situ		   |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
-|         ARES     		   |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services/ , https://150.145.73.229/earlinet/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
-|         CLU              |          None                  |  None                                                                                   |       None                      |
-|		  ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
+|         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
+|         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services/ , https://150.145.73.229/earlinet/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
+|         CLU              |          JSON via REST API     |  http://devcloudnet.fmi.fi/api                                                                 |       CF-1.7                      |
+|	  ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
 |         ASC              | To be defined					|  None																					  |       To be decided				|
-|		  GRES             | To be decided					|  None																					  |       To be decided				|
+|         GRES             | To be decided					|  None																					  |       To be decided				|
 
 Table: ACTRIS metadata for discoverability
 
@@ -534,7 +534,7 @@ Generally, ACTRIS data set names aims to be compliant with [CF (Climate and Fore
 
 ACTRIS works towards establishing traceability for all applicable variables using persistent identifiers (PIDs). This is to assure proper attribution is given to data originators adequately reflecting their contributions. Currently ACTRIS is using  digital object identifiers (DOIs) for all secondary datasets though the [Data Cite Metadata Store API](https://mds.datacite.org/).
 
-More over, ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical \<prefix\>/\<suffix\> pattern. 
+Moreover, ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical \<prefix\>/\<suffix\> pattern. 
 
 Currently there is no search model used by the ACCESS unit (ACTRIS data portal). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre should in the future use a controlled set of vocabularies for search keywords like [Global Change Master Directory (GCMD)](https://earthdata.nasa.gov/about/gcmd/global-change-master-directory-gcmd-keywords) or similar, and semantic search will be implemented.
 
@@ -610,7 +610,7 @@ Below is a list of data formats and examples:
 |--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
 |         In Situ		   |          netCDF              |  https://thredds.nilu.no/thredds/fileServer/testAll/NO2464R.20150821120000.20161017000000.hand_picked..dried_moss.1h.5y.NO01L_NILU_moss.NO01L_NILU_ICP-HRMS.lev2.nc  |                             |
 |         ARES     		   |          netCDF              |  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services                                                                                     |                             | 
-|         CLU              |          netCDF              |  http://cloudnet.fmi.fi/cgi-bin/cloudnetdata.cgi?date=20180508&product=classification&site=potenza                                                                   |                             |
+|         CLU              |          netCDF              |  http://devcloudnet.fmi.fi/api/files/?site_code=potenza&date=20180508&product=classification                                                                   |                             |
 |		  ACCESS           | Defined by primary repository|  None																		                                                                                         |                     	       |
 |         ASC              | Not available			      |  None																					                                                                             |       				       |
 |		  GRES             | Not available				  |  None																					                                                                             |       				       |
