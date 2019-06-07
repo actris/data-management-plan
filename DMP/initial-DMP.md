@@ -544,6 +544,9 @@ The ACTRIS DC aims at providing clear versioning of its data and metadata, due t
 
 As a guiding principle, all data submitted to ACTRIS passing quality assurance should be uniquely identified. In case of updates, a ID-number is generated, and previous data versions should be identifiable and kept available upon request while the latest version is served through the ACTRIS data portal web-interface.
 
+A Versioning System has been implemented at ARES directly in the RDBMS by using DML (Data Manipulation Language) triggers.
+A new version of a file is produced when a user tries to modify data through a DML event. New versions will be centrally produced if new QC procedures and new processing features are released. Additionally new versions of the files will be allowed and centrally handled for fixing file bugs in particular for legacy data.
+
 ### 3.2. Accessible: Making data openly accessible [FAIR data]
 
 The main access point to ACTRIS data will be through the [ACTRIS data portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyse and download data produced within ACTRIS. Access to data and metadata should also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog, for example setting up a ACTRIS OAI-PMH server.
@@ -570,6 +573,9 @@ General guidelines for access to ACTRIS data and services are available in the c
 Some data requires a username and password in order to gain access, e.g. the usage of aerosol profile data.**(If some data is kept closed, we must provide rationale for doing so. For ARES registration is open to everybody.)**
 Apart from Quicklooks (simple plots of data from the [In Situ](http://ebas-nrt-showcase.nilu.no/), ARES and CLU units), Near-Real-Time (NRT) data is mostly access protected.
 For all data that requires username and password, a Single-Sign-On service should be implemented, and used by all Data Centre units.
+
+A Single-Sign-On authentication system has been implemented at ARES unit. It is based on [CAS (Central Authentication Service)](https://www.apereo.org/projects/cas) protocol and provides both authentication via username and password and via Google credentials. 
+
 In all cases where access is restricted, information on how to access the data should be available through the metadata.
 
 If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) should be available through open access repositories like GitHub. A open source licence for software should be encouraged and applied when possible. The aformentioned guidelines are related to ACTRIS [level 2 data](#11-actris-data-set-descriptions-and-actris-data-levels). This is primarily intended as guidelines for software that is needed to access data that is available through the data centre. Software related to ACTRIS level 0 and level 1 data is out of scope for this section.
@@ -598,6 +604,8 @@ ACTRIS DC needs to specify what data standards the ACTRIS DC should choose, in o
 
 As mention in section 3.1 metadata standard and vocabularies commonly used in the atmospheric domain should be applied, unless the common solutions do not address the specific need for the DC unit.
 
+Aerosol profiles data are archived and provided by ARES unit in netCDF format. All  published EARLINET data are in [CF (Climate and Forecast) 1.7](http://cfconventions.org/) compliant format.
+
 Implementation of new standards for data and metadata used in the context of ACTRIS should be discussed by all the DC units. This is especially important for the ACCESS unit, coordinating the access to all of the ACTRIS data. Therefore the aim should be to harmonize data and metadata as much as possible, both in terms of technical aspects related to implementation, but also making it easier for the end user to make use of the data.
 
 Standard vocabulary might not always be used, but in all cases they should be mapped to standard vocabulary if existing by the DC ACCESS unit.
@@ -609,8 +617,8 @@ Below is a list of data formats and examples:
 | DC unit                  | data format                  | example                                                                                                                                                              |                     comment |
 |--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
 |         In Situ		   |          netCDF              |  https://thredds.nilu.no/thredds/fileServer/testAll/NO2464R.20150821120000.20161017000000.hand_picked..dried_moss.1h.5y.NO01L_NILU_moss.NO01L_NILU_ICP-HRMS.lev2.nc  |                             |
-|         ARES     		   |          netCDF              |  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services                                                                                     |                             | 
-|         CLU              |          netCDF              |  http://devcloudnet.fmi.fi/api/files/?site_code=potenza&date=20180508&product=classification                                                                   |                             |
+|         ARES     		   |          netCDF-CF1.7              |  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services                                                                                     |                             | 
+|         CLU              |          netCDF              |  http://cloudnet.fmi.fi/cgi-bin/cloudnetdata.cgi?date=20180508&product=classification&site=potenza                                                                   |                             |
 |		  ACCESS           | Defined by primary repository|  None																		                                                                                         |                     	       |
 |         ASC              | Not available			      |  None																					                                                                             |       				       |
 |		  GRES             | Not available				  |  None																					                                                                             |       				       |
@@ -620,6 +628,10 @@ Table: Describing the data and format related to what is provided in the discove
 ### 3.4. Reuseable: Increase data re-use [FAIR data]
 
 The ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the ACTRIS data and access policy and the open research data initiative of the European Commission. As a result, the ACTRIS DC will implement one or multiple licences for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to ensure the visibility of ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably end of 2020 or early 2021). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
+
+Several features have been implemented by ARES unit to ensure reusability and traceability. Just to mention a few: 
+  * recording of files and datasets downloaded by users, as well as of research filters/keywords used; 
+  * the use of a centralized and automated tool, the [Single Calculus Chain (SCC)](https://scc.imaa.cnr.it), for data processing. This allows a "traceable" reprocessing when a new version (of the data as well as of the tool) is available. More over, the processing suite could potentially be made available to others per specific processing needs.  
 
 Availability of data might vary between the different data centre units. As an example, In situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but this might vary for other data centre units, there might be campaigns, or the delivery of NRT data that is available at a more frequent basis. ACTRIS legacy data should also be kept available for the users, but the data might follow a different data policy then the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
