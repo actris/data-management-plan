@@ -408,6 +408,7 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 | Metop/IASI       | BUFR    | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html) |
 | MSG/SEVIRI       | NetCDF4 | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html)                             |
 | AeroCom          | NetCDF4 | METNO     | https://aerocom.met.no/                                                                                                                                                                                                             |
+| NWP Model data   | NetCDF4 | NWP Centres    |                                                                                                                                                                                                              |
 
 ##### Generated (systematic production)
 
@@ -473,7 +474,7 @@ Table 2.6.2. *Data volume*
 | Transport modelling products for assessment of source regions | ...                     |                        |
 | Colocation service of data from contributing networks         | TBD                     | TBD                    |
 | Model Evaluation Service                                      | 30                      | 300 MB                 |
-| NWP Model Evaluation Service                                  | TBD                     | TBD                    |
+| NWP Model Evaluation Service                                  | 120                     | 100 MB                 |
 
 #### Data utility
 
@@ -502,7 +503,7 @@ Access to quality controlled data from the data centre units is provided by the 
 
 *Figure x: current_overview_topical_databases.png*
 
-  > **Cathrine will update figure above in the near future**
+  > **Cathrine will update figure above in the near future. Note: Cloudnet archive should be at FMI.**
 
 **ACCESS unit takes the lead on this section**
 ### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
@@ -513,15 +514,14 @@ ACTRIS is providing metadata via its metadata catalog following the iso19139 sta
 
 Below is a table offering an overview of the sources the ACTRIS DC is harvesting metadata from.
 
-
 | DC unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
-|         In Situ		   |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
-|         ARES     		   |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services/ , https://150.145.73.229/earlinet/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
-|         CLU              |          None                  |  None                                                                                   |       None                      |
-|		  ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
+|         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
+|         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services/ , https://150.145.73.229/earlinet/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
+|         CLU              |          To be defined     |  None                                                                 |       To be decided                      |
+|	  ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
 |         ASC              | To be defined					|  None																					  |       To be decided				|
-|		  GRES             | To be decided					|  None																					  |       To be decided				|
+|         GRES             | To be decided					|  None																					  |       To be decided				|
 
 Table: ACTRIS metadata for discoverability
 
@@ -535,7 +535,7 @@ Generally, ACTRIS data set names aims to be compliant with [CF (Climate and Fore
 
 ACTRIS works towards establishing traceability for all applicable variables using persistent identifiers (PIDs). This is to assure proper attribution is given to data originators adequately reflecting their contributions. Currently ACTRIS is using  digital object identifiers (DOIs) for all secondary datasets though the [Data Cite Metadata Store API](https://mds.datacite.org/).
 
-More over, ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical \<prefix\>/\<suffix\> pattern. 
+Moreover, ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical \<prefix\>/\<suffix\> pattern. 
 
 Currently there is no search model used by the ACCESS unit (ACTRIS data portal). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre should in the future use a controlled set of vocabularies for search keywords like [Global Change Master Directory (GCMD)](https://earthdata.nasa.gov/about/gcmd/global-change-master-directory-gcmd-keywords) or similar, and semantic search will be implemented.
 
@@ -554,18 +554,18 @@ The main access point to ACTRIS data will be through the [ACTRIS data portal](ht
 
 The guiding principle is free and open access to data and data products.
 
-There might also be data available through the actris data portal that is not directly actris data, but used in the interpretation of ACTRIS data.
+There might also be data available through the ACTRIS data portal that is not directly ACTRIS data, but used in the interpretation of ACTRIS data.
 
-**The following types of data is provided:**
+**The following types of data are provided:**
 
-* **Type 1: The ACTRIS data**
+* **Type 1: ACTRIS data**
    * Data are funded and produced within the context of the ACTRIS project. Every dataset created within ACTRIS is owned by the ACTRIS partner(s) who created this dataset, and the ACTRIS data policy can be found here. A description of ACTRIS data is provided in the "ACTRIS Data management Plan". This includes access to NRT data. The ACCESS unit is currently showcasing NRT data providing quicklook images for [Near surface and cloud data](http://actris.nilu.no/Content/?pageid=844fe06802f04a83a2d6b0e8b2a59fe2) and [Aerosol profiles](http://actris.nilu.no/Content/?pageid=ae1bf05f1fa54ba8bae735a2420e6c8d).
 
 * **Type 2: Other data available through the portal**
   * Data are archived and owned by other organisations or data providers and are hosted at other databases. Type 2 data are provided with the permission of each organisation or data provider contributing to the data archive. Each dataset of type II may have its own data policy that will supersede the ACTRIS data policy.
 
 * **Type 3: ACTRIS level 3 data:**
-  * Data are elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2, and data from other sources. The data can be gridded or not. Level 3 datasets are derived from measurement data, where the measurements are reported to the ACTRIS topic data repositories. The datasets are derived by e.g. averaging, filtering of events, interpolation of measurement data and are usually the a result of analysis for special studies or processed for model experiments. The [secondary data archive](http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa) stores secondary data sets to provide long term access for all users, including the possibility to issue a Digital Object Identifier (DOI). Secondary datasets are normally not updated over time.
+  * Data are elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2, and data from other sources. The data can be gridded or not. Level 3 datasets are derived from measurement data, where the measurements are reported to the ACTRIS topic data repositories. The datasets are derived by e.g. averaging, filtering of events, interpolation of measurement data and are usually the result of analysis for special studies or processed for model experiments. The [secondary data archive](http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa) stores secondary data sets to provide long term access for all users, including the possibility to issue a Digital Object Identifier (DOI). Secondary datasets are normally not updated over time.
 
 Still, individual data centre units will also serve as access points for ACTRIS data. But that is out of scope for this document.
 
@@ -599,13 +599,14 @@ Making data interoperable is the guiding principle of the ACTRIS DC. The ACTRIS 
 
 By some of the DC units the Thredds Data Server (TDS) is used for serving data as netCDF and through OPeNDAP (EBAS, Earlinet, others?). 
 
-More over, ARES unit provides a [REST API](https://150.145.73.229/earlinetservice/services) for machine-to-machine communication. The API serves metadata (info, provenance, versions, quality controls, etc.) in JSON format and data (specific files or datasets previously generated) in NetCDF format. 
+More over, ARES unit provides a [REST API](https://150.145.73.229/earlinetservice/services) for machine-to-machine communication. The API serves metadata (info, provenance, versions, quality controls, etc.) in JSON format and data (specific files or datasets previously generated) in NetCDF format. CLU unit provides a [RESTful API](http://devcloudnet.fmi.fi/api) with similar services (data and some metadata).
 
 ACTRIS DC needs to specify what data standards the ACTRIS DC should choose, in order to facilitate interoperability. Still, work remains to see if a common solution could be agreed upon. The intricate nature of the data, might require the use of different solutions to suit the needs of each individual DC unit.
 
 As mention in section 3.1 metadata standard and vocabularies commonly used in the atmospheric domain should be applied, unless the common solutions do not address the specific need for the DC unit.
 
-Aerosol profiles data are archived and provided by ARES unit in netCDF format. All  published EARLINET data are in [CF (Climate and Forecast) 1.7](http://cfconventions.org/) compliant format.
+Aerosol and cloud profile data are archived and provided by the ARES and CLU units in netCDF format. All published EARLINET and Cloudnet data are in [CF (Climate and Forecast) 1.7](http://cfconventions.org/) compliant format.
+
 
 Implementation of new standards for data and metadata used in the context of ACTRIS should be discussed by all the DC units. This is especially important for the ACCESS unit, coordinating the access to all of the ACTRIS data. Therefore the aim should be to harmonize data and metadata as much as possible, both in terms of technical aspects related to implementation, but also making it easier for the end user to make use of the data.
 
@@ -634,13 +635,15 @@ Several features have been implemented by ARES unit to ensure reusability and tr
   * recording of files and datasets downloaded by users, as well as of research filters/keywords used; 
   * the use of a centralized and automated tool, the [Single Calculus Chain (SCC)](https://scc.imaa.cnr.it), for data processing. This allows a "traceable" reprocessing when a new version (of the data as well as of the tool) is available. More over, the processing suite could potentially be made available to others per specific processing needs.  
 
-Availability of data might vary between the different data centre units. As an example, In situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but this might vary for other data centre units, there might be campaigns, or the delivery of NRT data that is available at a more frequent basis. ACTRIS legacy data should also be kept available for the users, but the data might follow a different data policy then the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
+Similarly, the CLU unit has a centralized and automated processing chain, Cloudnet, ensuring reusability and traceability, which is also available via [open source](https://github.com/tukiains/cloudnetpy) for the community to use, evaluate and review.
+
+Availability of data can vary between the different data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
 **Consider adding a table giving an overview of when data is made available, level 2, NRT, campaign data and how this differs among the DC units**
 
-Data quality assurance is provided by the data submitter and national facilities, the topical centres as well as by each individual data centre unit.
+Data quality assurance is provided by the data submitter and national facilities, appropriate topical centre, and the appropriate data centre unit.
 
-ACTRIS as a Research infrastructure is in its preparation phase, and is expected to be fully operational within 2025. The project will aim at providing open-access to data throughout the lifetime of the infrastructure.
+ACTRIS as a Research infrastructure is in its preparation phase, and is expected to be fully operational within 2025, aiming to provide open-access to data throughout the lifetime of the infrastructure.
 
 ## 4. Allocation of resources
 
