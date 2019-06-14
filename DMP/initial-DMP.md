@@ -111,7 +111,7 @@ ACTRIS will produce data and data products essential to a wide range of communit
 * Space agencies for validation and the development of new satellite missions;
 * National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution models;
 * Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
-* Copernicus Gas atmospheric service (ECMWF)
+* Copernicus Climate Change Service (C3S) and Copernicus Atmosphere Monitoring Service (CAMS) are both being run by the European Centre for Medium Range Weather Forecasting (ECMWF)
 * Science community working on air quality, climate change and stratospheric ozone depletion issues
 
 ### 2.1. ACTRIS In situ data centre unit (In-Situ)
@@ -408,6 +408,7 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 | Metop/IASI       | BUFR    | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html) |
 | MSG/SEVIRI       | NetCDF4 | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html)                             |
 | AeroCom          | NetCDF4 | METNO     | https://aerocom.met.no/                                                                                                                                                                                                             |
+| SDS-WAS          | NetCDF4 | BSC    | https://sds-was.aemet.es/                                                                                                                                                                                                            |
 | NWP Model data   | NetCDF4 | NWP Centres    |                                                                                                                                                                                                              |
 
 ##### Generated (systematic production)
