@@ -486,8 +486,6 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ## 3. Data Management at the ACTRIS data centre
 
-**Describe briefly data management for each data centre unit. (Could we move this up to section 2 and include this as a part of the data summary for the data centre units)**
-
 Data management is handled by the individual data centre unit:
 
 * ACTRIS In situ data centre unit for all aerosol, cloud and trace gas in situ data - In-Situ
@@ -513,6 +511,7 @@ ACTRIS will harvest metadata from a large range of observations and methodologie
 ACTRIS is providing metadata via its metadata catalog following the iso19139 standard harvesting metadata from the different DC units. Exceptions may occur in cases where current standards do not meet the need to describe data/metadata.
 
 Below is a table offering an overview of the sources the ACTRIS DC is harvesting metadata from.
+**TODO: Include links to standards**
 
 | DC unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
@@ -550,13 +549,24 @@ A new version of a file is produced when a user tries to modify data through a D
 
 ### 3.2. Accessible: Making data openly accessible [FAIR data]
 
-The main access point to ACTRIS data will be through the [ACTRIS data portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyse and download data produced within ACTRIS. Access to data and metadata should also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog, for example setting up a ACTRIS OAI-PMH server.
-
-The guiding principle is free and open access to data and data products.
+As a guding principle all ACTRIS data should be reable for both humans and machines. ACTRIS is organized as a distrbuted network of centralized repositories. The main access point to ACTRIS data will be through the [ACTRIS data portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyse and download data produced within ACTRIS. Access to data and metadata should also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. Currently, machine-to-machine access of ACTRIS data varies between the different data repositories.
 
 There might also be data available through the ACTRIS data portal that is not directly ACTRIS data, but used in the interpretation of ACTRIS data.
 
 **The following types of data are provided:**
+
+Below is an overview of licences that are associated with data from the different data center units in ACTRIS:
+
+| DC unit                  | data format                  | Repository URL                                                                                                                                                       |           Comment           |
+|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+|         In Situ		   |          netCDF              |                 http://ebas.nilu.no/                                                                                                                                 |                             |
+|         ARES     		   |          netCDF              |                 http://access.earlinet.org/                                                                                                                          |                             | 
+|         CLU              |          netCDF              |                 http://cloudnet.fmi.fi                                                                                                                               |                             |
+|		  ACCESS           | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |                     	       |
+|         ASC              | Not available			      |  				https://data.eurochamp.org/																	                                                         |       				       |
+|		  GRES             | Not available				  |  				https://en.aeris-data.fr/																	                                                         |       				       |
+
+**Table: Licensing in ACTRIS**
 
 * **Type 1: ACTRIS data**
    * Data are funded and produced within the context of the ACTRIS project. Every dataset created within ACTRIS is owned by the ACTRIS partner(s) who created this dataset, and the ACTRIS data policy can be found here. A description of ACTRIS data is provided in the "ACTRIS Data management Plan". This includes access to NRT data. The ACCESS unit is currently showcasing NRT data providing quicklook images for [Near surface and cloud data](http://actris.nilu.no/Content/?pageid=844fe06802f04a83a2d6b0e8b2a59fe2) and [Aerosol profiles](http://actris.nilu.no/Content/?pageid=ae1bf05f1fa54ba8bae735a2420e6c8d).
@@ -581,21 +591,12 @@ In all cases where access is restricted, information on how to access the data s
 
 If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) should be available through open access repositories like GitHub. A open source licence for software should be encouraged and applied when possible. The aformentioned guidelines are related to ACTRIS [level 2 data](#11-actris-data-set-descriptions-and-actris-data-levels). This is primarily intended as guidelines for software that is needed to access data that is available through the data centre. Software related to ACTRIS level 0 and level 1 data is out of scope for this section.
 
-Below is an overview of licences that are associated with data from the different data center units in ACTRIS:
-
-| DC unit                  | data format                  | Licence                                                                                                                                                              |                     comment |
-|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-|         In Situ		   |          netCDF              |                                                                                                                                                                      |                             |
-|         ARES     		   |          netCDF              |                                                                                                                                                                      |                             | 
-|         CLU              |          netCDF              |                                                                                                                                                                      |                             |
-|		  ACCESS           | Defined by primary repository|  																		                                                                                             |                     	       |
-|         ASC              | Not available			      |  																					                                                                                 |       				       |
-|		  GRES             | Not available				  |  																					                                                                                 |       				       |
-Table: Licensing in ACTRIS
+**Table over data repositories here:
 
 ### 3.3. Interoperable: Making data interoperable [FAIR data]
 
-Making data interoperable is the guiding principle of the ACTRIS DC. The ACTRIS DC handles a large variety of data and there is currently no common approach towards interoperability.
+As a guiding principle, ACTRIS should make sure that metadata and data use a format that is commonly used and accessible both within the research community as well as other disciplines.
+Currently there are no common approach towards interoperability among the DC units.
 
 By some of the DC units the Thredds Data Server (TDS) is used for serving data as netCDF and through OPeNDAP (EBAS, Earlinet, others?). 
 
@@ -629,6 +630,8 @@ Table: Describing the data and format related to what is provided in the discove
 
 ### 3.4. Reuseable: Increase data re-use [FAIR data]
 
+The guiding principle is free and open access to ACTRIS data and ACTRIS data products.
+
 The ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the ACTRIS data and access policy and the open research data initiative of the European Commission. As a result, the ACTRIS DC will implement one or multiple licences for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to ensure the visibility of ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably end of 2020 or early 2021). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
 
 Several features have been implemented by ARES unit to ensure reusability and traceability. Just to mention a few: 
@@ -638,6 +641,18 @@ Several features have been implemented by ARES unit to ensure reusability and tr
 Similarly, the CLU unit has a centralized and automated processing chain, Cloudnet, ensuring reusability and traceability, which is also available via [open source](https://github.com/tukiains/cloudnetpy) for the community to use, evaluate and review.
 
 Availability of data can vary between the different data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
+
+Below is an overview of licences that are associated with data from the different data center units in ACTRIS:
+
+| DC unit                  | data format                  | Licence                                                                                                                                                              |                     comment |
+|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+|         In Situ		   |          netCDF              |                                                                                                                                                                      |                             |
+|         ARES     		   |          netCDF              |                                                                                                                                                                      |                             | 
+|         CLU              |          netCDF              |                                                                                                                                                                      |                             |
+|		  ACCESS           | Defined by primary repository|  																		                                                                                             |                     	       |
+|         ASC              | ?			      |  																					                                                                                 |       				       |
+|		  GRES             | ?				  |  																					                                                                                 |       				       |
+Table: Licensing in ACTRIS
 
 **Consider adding a table giving an overview of when data is made available, level 2, NRT, campaign data and how this differs among the DC units**
 
