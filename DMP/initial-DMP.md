@@ -506,12 +506,14 @@ Access to quality controlled data from the data centre units is provided by the 
 **ACCESS unit takes the lead on this section**
 ### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
 
-ACTRIS will harvest metadata from a large range of observations and methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit will provide discovery metadata for all ACTRIS data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. 
+ACTRIS will harvest metadata from a large range of observations and methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. 
+The ACCESS unit will provide discovery metadata for all ACTRIS data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. 
 
 ACTRIS is providing metadata via its metadata catalog following the iso19139 standard harvesting metadata from the different DC units. Exceptions may occur in cases where current standards do not meet the need to describe data/metadata.
 
-Below is a table offering an overview of the sources the ACTRIS DC is harvesting metadata from.
-**TODO: Include links to standards**
+#### 3.1.1. Metadata services
+
+Data are described with rich metadata.
 
 | DC unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
@@ -522,7 +524,37 @@ Below is a table offering an overview of the sources the ACTRIS DC is harvesting
 |         ASC              | To be defined					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
 
-Table: ACTRIS metadata for discoverability
+Table: ACTRIS metadata services
+
+#### 3.1.2. Persistent Identifiers
+
+ACTRIS (meta)data are assigned PIDs.
+
+| DC unit                  | PID service               | Description                                                                               |                        standard |
+|--------------------------|---------------------------|-------------------------------------------------------------------------------------------|---------------------------------|
+|         In Situ          |                           |                                                                                           |                                 |
+|         ARES             |                           |                                                                                           |                                 |
+|         CLU              |          NaN              |  None                                                                                     |       To be decided             |
+|	      ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
+|         ASC              | To be defined					|  None																					  |       To be decided				|
+|         GRES             | To be decided					|  None																					  |       To be decided				|
+
+Table: ACTRIS PID handlers
+
+#### 3.1.3. Metadata indexing in exteranl resources
+
+ACTRIS meta(data) are registered or indexed in a searchable resource.
+
+| External repository         | Description               | ACTRIS DC unit indexed                                                                    |
+|-----------------------------|---------------------------|-------------------------------------------------------------------------------------------|
+|         GISC Offenbach          |                           |                                                                                       |
+|         NextGEOSS             |                           |                                                                                         |
+|         WIGOS              |          NaN              |  None                                                                                      |
+|	      Copernicus           | Defined by primary repository  |  None																		          |
+|         re3data              | To be defined					|  None																			      |
+|                      | To be decided					|  None																					      |   
+
+Table: ACTRIS PID handlers
 
 Future efforts should make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
 
