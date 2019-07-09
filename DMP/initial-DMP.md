@@ -524,7 +524,7 @@ Data are described with rich metadata.
 |         ASC              | To be defined					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
 
-Table: ACTRIS metadata services
+*Table: ACTRIS metadata services*
 
 #### 3.1.2. Persistent Identifiers
 
@@ -539,7 +539,7 @@ ACTRIS (meta)data are assigned PIDs.
 |         ASC              | To be defined					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
 
-Table: ACTRIS PID handlers
+*Table: ACTRIS PID handlers*
 
 #### 3.1.3. Metadata indexing in exteranl resources
 
@@ -554,7 +554,7 @@ ACTRIS meta(data) are registered or indexed in a searchable resource.
 |         re3data              | To be defined					|  None																			      |
 |                      | To be decided					|  None																					      |   
 
-Table: ACTRIS PID handlers
+*Table: ACTRIS PID handlers*
 
 Future efforts should make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
 
@@ -581,24 +581,25 @@ A new version of a file is produced when a user tries to modify data through a D
 
 ### 3.2. Accessible: Making data openly accessible [FAIR data]
 
-As a guding principle all ACTRIS data should be reable for both humans and machines. ACTRIS is organized as a distrbuted network of centralized repositories. The main access point to ACTRIS data will be through the [ACTRIS data portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyse and download data produced within ACTRIS. Access to data and metadata should also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. Currently, machine-to-machine access of ACTRIS data varies between the different data repositories.
+As a guding principle all ACTRIS data should be reable for both humans and machines using protocols that offer no limitations to access. ACTRIS is organized as a distrbuted network of centralized repositories. The main access point to ACTRIS data will be through the [ACTRIS data portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyse and download data produced within ACTRIS. Access to data and metadata should also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. Currently, machine-to-machine access of ACTRIS data varies between the different data repositories.
+
+The access protocol should be clearly discribed in the metadata. If direct access is limited due to size of data or sensitive data, a email, telephone number or similar to a contact person should then be included. The access protocol must be described in a easy to understand way in the metadata, both for humans and machines.
 
 There might also be data available through the ACTRIS data portal that is not directly ACTRIS data, but used in the interpretation of ACTRIS data.
 
-**The following types of data are provided:**
+#### 3.2.1. ACTRIS data access protocols
 
-Below is an overview of licences that are associated with data from the different data center units in ACTRIS:
+| DC unit                  | data format                  | Repository URL                                                                                                                                                       |           Protocol           | Authentication and authorization needed  | 
+|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|------------------------------------------|
+|         In Situ		   |          netCDF              |                 http://ebas.nilu.no/                                                                                                                                 |              HTTP               | No                                    | 
+|         ARES     		   |          netCDF              |                 http://access.earlinet.org/                                                                                                                          |              HTTP               | Yes                                   |
+|         CLU              |          netCDF              |                 http://cloudnet.fmi.fi                                                                                                                               |              HTTP               | No                                    |
+|		  ACCESS (data portal)          | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |               HTTP      	       | For some data                         |
+|         ASC              | Not available			      |  				https://data.eurochamp.org/																	                                                         |       		 HTTP		       | For some data                         |
+|		  GRES             | Not available				  |  				https://en.aeris-data.fr/																	                                                         |       				 FTP      | No                                     |
+|		  ACCESS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa																                                                         |       				 FTP      | No                                     |
 
-| DC unit                  | data format                  | Repository URL                                                                                                                                                       |           Comment           |
-|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-|         In Situ		   |          netCDF              |                 http://ebas.nilu.no/                                                                                                                                 |                             |
-|         ARES     		   |          netCDF              |                 http://access.earlinet.org/                                                                                                                          |                             | 
-|         CLU              |          netCDF              |                 http://cloudnet.fmi.fi                                                                                                                               |                             |
-|		  ACCESS           | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |                     	       |
-|         ASC              | Not available			      |  				https://data.eurochamp.org/																	                                                         |       				       |
-|		  GRES             | Not available				  |  				https://en.aeris-data.fr/																	                                                         |       				       |
-
-**Table: Licensing in ACTRIS**
+**Table: Who and how to access the data**
 
 * **Type 1: ACTRIS data**
    * Data are funded and produced within the context of the ACTRIS project. Every dataset created within ACTRIS is owned by the ACTRIS partner(s) who created this dataset, and the ACTRIS data policy can be found here. A description of ACTRIS data is provided in the "ACTRIS Data management Plan". This includes access to NRT data. The ACCESS unit is currently showcasing NRT data providing quicklook images for [Near surface and cloud data](http://actris.nilu.no/Content/?pageid=844fe06802f04a83a2d6b0e8b2a59fe2) and [Aerosol profiles](http://actris.nilu.no/Content/?pageid=ae1bf05f1fa54ba8bae735a2420e6c8d).
