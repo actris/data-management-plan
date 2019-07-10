@@ -651,8 +651,8 @@ As an overarching goal, ACTRIS DC will take part in discussions that takes place
 | Data center unit         | Vocabulary name               |          Comment            |
 |--------------------------|-------------------------------|-----------------------------|
 |         In Situ		   | ISO19139, ISO19115-2, CF-1.7  |                             |
-|         ARES     		   | ISO19115-2 netCDF-CF1.7       |                             |
-|         CLU              |          netCDF               |                             |
+|         ARES     		   | ISO19115-2, netCDF-CF1.7      |                             |
+|         CLU              |          netCDF-CF-1.7        |                             |
 |		  ACCESS           | Defined by primary repository |                             |
 |         ASC              | 		NaN				       |  			                 |
 |		  GRES             | 		NaN					   |  				             |
@@ -673,7 +673,7 @@ Similarly, the CLU unit has a centralized and automated processing chain, Cloudn
 
 Availability of data can vary between the different data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
-Below is an overview of data licences and software licences that are associated with data from the different data center units in ACTRIS:
+#### 3.4.1. Data and software usage licence
 
 | Data center unit         |          Data licence                 |  Comment     |
 |--------------------------|---------------------------------------|--------------|
