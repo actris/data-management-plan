@@ -507,54 +507,7 @@ Access to quality controlled data from the data centre units is provided by the 
 ### 3.1. Findable: Making data findable, including provisions for metadata [FAIR data]
 
 ACTRIS will harvest metadata from a large range of observations and methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. 
-The ACCESS unit will provide discovery metadata for all ACTRIS data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. 
-
-ACTRIS is providing metadata via its metadata catalog following the iso19139 standard harvesting metadata from the different DC units. Exceptions may occur in cases where current standards do not meet the need to describe data/metadata.
-
-#### 3.1.1. Metadata services
-
-Data are described with rich metadata.
-
-| DC unit                  | metadata service               | end-point                                                                               |                        standard |
-|--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
-|         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
-|         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services/ , https://150.145.73.229/earlinet/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
-|         CLU              |          To be defined     |  None                                                                 |       To be decided                      |
-|	  ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
-|         ASC              | To be defined					|  None																					  |       To be decided				|
-|         GRES             | To be decided					|  None																					  |       To be decided				|
-
-*Table: ACTRIS metadata services*
-
-#### 3.1.2. Persistent Identifiers
-
-ACTRIS (meta)data are assigned PIDs.
-
-| DC unit                  | PID service               | Description                                                                               |                        standard |
-|--------------------------|---------------------------|-------------------------------------------------------------------------------------------|---------------------------------|
-|         In Situ          |                           |                                                                                           |                                 |
-|         ARES             |                           |                                                                                           |                                 |
-|         CLU              |          NaN              |  None                                                                                     |       To be decided             |
-|	      ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
-|         ASC              | To be defined					|  None																					  |       To be decided				|
-|         GRES             | To be decided					|  None																					  |       To be decided				|
-
-*Table: ACTRIS PID handlers*
-
-#### 3.1.3. Metadata indexing in exteranl resources
-
-ACTRIS meta(data) are registered or indexed in a searchable resource.
-
-| Metadata catalogs           | Description               | ACTRIS DC unit indexed                                                                    |
-|-----------------------------|---------------------------|-------------------------------------------------------------------------------------------|
-|         GISC Offenbach          |                           |                                                                                       |
-|         NextGEOSS             |                           |                                                                                         |
-|         WIGOS              |          NaN              |  None                                                                                      |
-|	      Copernicus           | Defined by primary repository  |  None																		          |
-|         re3data              | To be defined					|  None																			      |
-|                      | To be decided					|  None																					      |   
-
-*Table: ACTRIS PID handlers*
+The ACCESS unit aims at providing discovery metadata for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. Exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data.
 
 Future efforts should make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
 
@@ -578,6 +531,51 @@ As a guiding principle, all data submitted to ACTRIS passing quality assurance s
 
 A Versioning System has been implemented at ARES directly in the RDBMS by using DML (Data Manipulation Language) triggers.
 A new version of a file is produced when a user tries to modify data through a DML event. New versions will be centrally produced if new QC procedures and new processing features are released. Additionally new versions of the files will be allowed and centrally handled for fixing file bugs in particular for legacy data.
+
+#### 3.1.1. Metadata services
+
+ACTRIS data should be described with rich metadata. Currently metadata services are offered on data center unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
+
+| Data center unit                  | metadata service               | end-point                                                                               |                        standard |
+|--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
+|         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
+|         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services/ , https://150.145.73.229/earlinet/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
+|         CLU              |          To be defined     |  None                                                                 |       To be decided                      |
+|	  ACCESS           	   | To be decided              |  None																		              |       To be decided             |
+|         ASC              | To be decided					|  None																					  |       To be decided				|
+|         GRES             | To be decided					|  None																					  |       To be decided				|
+
+*Table: ACTRIS metadata services*
+
+#### 3.1.2. Persistent Identifiers (PIDs)
+
+ACTRIS data should be assigned PIDs that are available through the metadata.
+
+| Data center unit                  | PID service               | Description                                                                               |                        standard |
+|--------------------------|---------------------------|-------------------------------------------------------------------------------------------|---------------------------------|
+|         In Situ          |                           |                                                                                           |                                 |
+|         ARES             |                           |                                                                                           |                                 |
+|         CLU              |          NaN              |  None                                                                                     |       To be decided             |
+|	      ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
+|         ASC              | To be defined					|  None																					  |       To be decided				|
+|         GRES             | To be decided					|  None																					  |       To be decided				|
+
+*Table: ACTRIS PID handlers*
+
+#### 3.1.3. Metadata indexing in external resources
+
+ACTRIS metadata should be registered or indexed in relevant metadata catalogs
+
+| Metadata catalogs           | Description               | ACTRIS DC unit indexed                                                                    |
+|-----------------------------|---------------------------|-------------------------------------------------------------------------------------------|
+|         GISC Offenbach          |                           |                                                                                       |
+|         NextGEOSS             |                           |                                                                                         |
+|         WIGOS              |          NaN              |  None                                                                                      |
+|	      Copernicus           | Defined by primary repository  |  None																		          |
+|         re3data              | To be defined					|  None																			      |
+|         EOSC             | To be decided					|  None																					      |   
+
+*Table: ACTRIS PID handlers*
 
 ### 3.2. Accessible: Making data openly accessible [FAIR data]
 
