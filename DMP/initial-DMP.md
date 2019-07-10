@@ -545,7 +545,7 @@ ACTRIS (meta)data are assigned PIDs.
 
 ACTRIS meta(data) are registered or indexed in a searchable resource.
 
-| External repository         | Description               | ACTRIS DC unit indexed                                                                    |
+| Metadata catalogs           | Description               | ACTRIS DC unit indexed                                                                    |
 |-----------------------------|---------------------------|-------------------------------------------------------------------------------------------|
 |         GISC Offenbach          |                           |                                                                                       |
 |         NextGEOSS             |                           |                                                                                         |
@@ -624,8 +624,6 @@ In all cases where access is restricted, information on how to access the data s
 
 If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) should be available through open access repositories like GitHub. A open source licence for software should be encouraged and applied when possible. The aformentioned guidelines are related to ACTRIS [level 2 data](#11-actris-data-set-descriptions-and-actris-data-levels). This is primarily intended as guidelines for software that is needed to access data that is available through the data centre. Software related to ACTRIS level 0 and level 1 data is out of scope for this section.
 
-**Table over data repositories here:
-
 ### 3.3. Interoperable: Making data interoperable [FAIR data]
 
 As a guiding principle, ACTRIS should make sure that metadata and data use a format that is commonly used and accessible both within the research community as well as other disciplines.
@@ -648,18 +646,18 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 As an overarching goal, ACTRIS DC will take part in discussions that takes place in forums/groups such as ENVRI FAIR across the different environmental domains and strive to use cross-environmental standards and solutions in order to allow for inter-disciplinary interoperability.
 
-Below is a list of data formats and examples:
+#### 3.3.1. Implementation of vocabulary
 
-| DC unit                  | data format                  | example                                                                                                                                                              |                     comment |
-|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-|         In Situ		   |          netCDF              |  https://thredds.nilu.no/thredds/fileServer/testAll/NO2464R.20150821120000.20161017000000.hand_picked..dried_moss.1h.5y.NO01L_NILU_moss.NO01L_NILU_ICP-HRMS.lev2.nc  |                             |
-|         ARES     		   |          netCDF-CF1.7              |  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://150.145.73.229/earlinetservice/services                                                                                     |                             | 
-|         CLU              |          netCDF              |  http://cloudnet.fmi.fi/cgi-bin/cloudnetdata.cgi?date=20180508&product=classification&site=potenza                                                                   |                             |
-|		  ACCESS           | Defined by primary repository|  None																		                                                                                         |                     	       |
-|         ASC              | Not available			      |  None																					                                                                             |       				       |
-|		  GRES             | Not available				  |  None																					                                                                             |       				       |
+| Data center unit         | Vocabulary name               |          Comment            |
+|--------------------------|-------------------------------|-----------------------------|
+|         In Situ		   | ISO19139, ISO19115-2, CF-1.7  |                             |
+|         ARES     		   | ISO19115-2 netCDF-CF1.7       |                             |
+|         CLU              |          netCDF               |                             |
+|		  ACCESS           | Defined by primary repository |                             |
+|         ASC              | 		NaN				       |  			                 |
+|		  GRES             | 		NaN					   |  				             |
 
-Table: Describing the data and format related to what is provided in the discovery metadata
+*Table X: List of vocabularies*
 
 ### 3.4. Reuseable: Increase data re-use [FAIR data]
 
@@ -675,17 +673,25 @@ Similarly, the CLU unit has a centralized and automated processing chain, Cloudn
 
 Availability of data can vary between the different data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
-Below is an overview of licences that are associated with data from the different data center units in ACTRIS:
+Below is an overview of data licences and software licences that are associated with data from the different data center units in ACTRIS:
 
-| DC unit                  | data format                  | Licence                                                                                                                                                              |                     comment |
-|--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-|         In Situ		   |          netCDF              |                                                                                                                                                                      |                             |
-|         ARES     		   |          netCDF              |                                                                                                                                                                      |                             | 
-|         CLU              |          netCDF              |                                                                                                                                                                      |                             |
-|		  ACCESS           | Defined by primary repository|  																		                                                                                             |                     	       |
-|         ASC              | ?			      |  																					                                                                                 |       				       |
-|		  GRES             | ?				  |  																					                                                                                 |       				       |
-Table: Licensing in ACTRIS
+| Data center unit         |          Data licence                 |  Comment     |
+|--------------------------|---------------------------------------|--------------|
+|         In Situ		   |          To be decided                |              |
+|         ARES     		   |          To be decided                |              |
+|         CLU              |          To be decided                |              |                                                          
+|		  ACCESS           | Will be defined by primary repository |              | 
+|         ASC              | To be decided			               |              |
+|		  GRES             | To be decided				           |              |
+
+*Table x: Licences*
+
+| Responsible data center unit         |          Software licence    |  Software link                                                        |
+|--------------------------------------|------------------------------|-----------------------------------------------------------------------|
+|         In Situ		               |       None                   |     [EBAS IO](https://git.nilu.no/ebas/ebas-io/wikis/home)            |
+|         ARES     		               |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
+
+*Table x: Software*
 
 **Consider adding a table giving an overview of when data is made available, level 2, NRT, campaign data and how this differs among the DC units**
 
