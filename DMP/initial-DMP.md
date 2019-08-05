@@ -321,15 +321,15 @@ Data provided by ACTRIS ASC unit are produced from experiments in simulation cha
 | ACTRIS-ASC DASCS                    |                   100                                    |          50                            |             200                 |
 | ACTRIS-ASC LAR                 |                   20                                  |          10                          |             50               |
 | ACTRIS-ASC LADP              |                   30                                     |          60                             |             150                |
-|
+
 
  Table 1: _Number of annual datasets
-  Type                                |Data volume (now)                          | Data volumes (min by 2025) | Data volume (max by 2025) |
+|  Type                                |Data volume (now)                          | Data volumes (min by 2025) | Data volume (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-------------------------------|
 | ACTRIS-ASC DASCS                    |                  1,2 GB                                  |        1,5 GB                            |             2,4 GB                 |
 | ACTRIS-ASC LAR                 |                   67 MB                                  |          76 MB                        |            120 MB               |
 | ACTRIS-ASC LADP              |                   26 KB                                     |          200 KB                             |             500 KB                |
-|
+
 Table 2: _Data volume_
 
 **Data utility**
@@ -496,7 +496,7 @@ Access to quality controlled data from the data centre units is provided by the 
 ![ACTRIS Data Centre topical databases](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/current_overview_topical_databases.png)
 *Figure x: current_overview_topical_databases.png*
 
-![ACTRIS ASC Unit://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
+![ACTRIS ASC Unit: https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
 *Figure x: current overview of ASC unit*
 
   > **Cathrine will update figure above in the near future. Note: Cloudnet archive should be at FMI.**
