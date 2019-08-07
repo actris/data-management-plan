@@ -486,9 +486,21 @@ Data management is handled by the individual data centre unit:
 Access to quality controlled data from the data centre units is provided by the ACTRIS data and service access unit (ACCESS). The ACCESS unit is not only responsible for access to measurement data, but also access to services, tools and providing documentation, all which is based on metadata provided by the data centre units. Currently there are 3 data centre units providing metadata (including details on how to access measurement data), in the current ACTRIS metadata catalogue. This includes data from the Cloudnet (Cloud remote sensing) database, Earlinet (Aerosol remote sensing) database and the EBAS (aerosol, cloud and trace gas in situ data) database. The metadata is used as input to the current ACTRIS metadata catalog providing identification and access to data through the [ACTRIS data portal](http://actris.nilu.no/). Access to primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day. In parallel, ASC unit has developed its own metadata catalog within EUROCHAMP project. This metadata catalog is currently available through EUROCHAMP Data Centre portal and provides identification and access to data.
 *(Note from Bénédicte : I think that we should discuss about the interest and the possibility of merging the different metadata catalogues)*
 
+### ACTRIS data and services access unit (ACCESS)
+
 ![ACTRIS Data Centre elements, phase 2](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/ACTRIS_data_centre_elements_phase2_simplified.jpg)
 ![ACTRIS Data Centre topical databases](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/current_overview_topical_databases.png)
 *Figure x: current_overview_topical_databases.png*
+
+### ACTRIS In situ data centre unit (In-Situ)
+
+### ACTRIS Aerosol remote sensing data centre unit (ARES)
+
+### ACTRIS Cloud remote sensing data centre unit (CLU)
+
+### ACTRIS trace gases remote sensing data centre unit (GRES)
+
+### ACTRIS Atmospheric simulation chamber data centre unit (ASC)
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
 *Figure x: current overview of ASC unit*
