@@ -77,7 +77,25 @@ The ACTRIS Data Management Plan (DMP) is the key element of the comprehensive AC
 
 The ACTRIS DMP is a living online document which is set up to be a machine-actionable document that is a part of the FAIR data ecosystem. The DMP should be a hub of information on ACTRIS FAIR digital objects. The goal is to make the ACTRIS DMP accessible for all stakeholders (repository operators, funders, researchers, publishers, infrastructure providers etc.) by making it available and accessible for both humans and machines. We currently use [GitHub](https://github.com/actris/data-management-plan) as the platform for collaboration on the DMP, this enables all actors working with or within ACTRIS to directly contribute and susggest changes to the document. Furthermore, the ACTRIS Data Management Plan follow the [glossary](https://www.actris.eu/About/ACTRIS/ACTRISglossary.aspx) of terminology and definitions used in ACTRIS.
 
-## 2. Data summary for of the ACTRIS data centre
+## 2. ACTRIS data and ACTRIS data levels
+
+ACTRIS data are data from observational or exploratory National Facilities complying with the procedures established within ACTRIS. The ACTRIS atmospheric variables are listed in [Appendix I](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx), associated to the corresponding recommended methodology. ACTRIS data comprises ACTRIS variables resulting from measurements that fully comply with the [standard operating procedures (SOP), measurement recommendations, and quality guidelines](http://actris.nilu.no/Content/?pageid=2bedb8fc3d5a42a4b6d96d5fb8dfcd3b) established within ACTRIS. 
+
+There are 4 levels of ACTRIS data:
+ * **ACTRIS level 0 data:** Raw sensor output, either mV or physical units. Native resolution, metadata necessary for next level.
+ * **ACTRIS level 1 data:** Calibrated and quality assured data with minimum level of quality control.
+ * **ACTRIS level 2 data:** Approved and fully quality controlled ACTRIS data product or geophysical variable.
+ * **ACTRIS level 3 data:** Elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2 data, and data from other sources. The data can be gridded or not.
+ * **ACTRIS synthesis product:** Data product from e.g. research activities, not under direct ACTRIS responsibility, but ACTRIS offer repository and access.
+
+![Architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_levels.jpg)
+*Figure 1: ACTRIS data levels*
+
+The list of ACTRIS variables are expected to increase during the progress of ACTRIS, particularly level 3 data products.
+
+#################################################
+
+## 3. Data summary of the ACTRIS data centre
 
 #### The purpose of the data collection/generation
 
@@ -750,6 +768,8 @@ ACTRIS as a Research infrastructure is in its preparation phase, and is expected
 
 ### Appendix 1: List of ACTRIS variables and recommended methodology
 [List of ACTRIS variables and recommended methodology](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx)
+
+*Additional information:* During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilizing these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available.
 
 ### Appendix 2: List of ACTRIS level 3 data products
 [List of ACTRIS level 3 data products](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx)
