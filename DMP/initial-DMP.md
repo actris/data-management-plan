@@ -537,10 +537,10 @@ Access to quality controlled data from the data centre units is provided by the 
 
 ### 4.2 Findable: Making data findable, including provisions for metadata [FAIR data]
 
-ACTRIS will harvest metadata from a large range of observations and methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. 
+ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. 
 The ACCESS unit aims at providing discovery metadata for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. Exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data.
 
-Future efforts should make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
+Future efforts should further develop the system shown in Figure XXX (that Richard is producing) and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
 
 There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, one should still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
