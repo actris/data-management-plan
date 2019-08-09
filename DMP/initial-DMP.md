@@ -439,7 +439,42 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ACTRIS data and products should be findable, accessible, interoperable and reusable (FAIR), and the data centre work towards fulfilling the FAIR principles. This chapter is describing the complete ACTRIS Data Flow from [National Facilities (NF)](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section1/Exp_Obs_NF.jpg) to users that is operational now and the work and solutions that will be implemented during the implementation phase (2020-2025). The section starts with and introduction to the data management system in ACTRIS in section 4.1, including detailed description of data flow within each unit (4.1.1.-4.1.5). This is followed by sections describing detailed solutions and implementation plans making ACTRIS data and products findable (4.2), accessible (4.3), interoperable (4.4) and reusable (4.5).
 
-### 4.1 Dataflow
+### 4.1 Introduction and overview of ACTRIS Data Management architecture
+
+ACTRIS Data Management is handled by the individual data centre units:
+
+* ACTRIS In situ data centre unit for all aerosol, cloud and trace gas in situ data - In-Situ
+* ACTRIS Aerosol remote sensing data centre unit - ARES
+* ACTRIS Cloud remote sensing data centre unit - CLU
+* ACTRIS Trace gases remote sensing data centre unit - GRES
+* ACTRIS Atmospheric simulation chamber data centre unit – ASC
+* ACTRIS data and service access unit - ACCESS
+
+An overview of the elements in the data flow is shown in Figure XX.
+
+![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png)
+
+*Figure x: ACTRIS Data Access and Services*
+
+#### 4.1.1 ACCESS role and data management
+
+Access to quality controlled data from the data centre units is provided by the ACTRIS data and service access unit (ACCESS) through the web interface called “ACTRIS Data Centre”. The ACCESS unit is not only responsible for access to measurement data, but also access to services, tools and providing documentation, all which is based on metadata provided by the data Centre units, the tasks are summarized in the [Figure](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png) above and include the organization of ACTRIS level 3 data. 
+
+All data centre units are providing metadata and interface for access to data in the current ACTRIS metadata catalogue, expect for ASC. The metadata is used as input to the current ACTRIS metadata catalog providing identification and access to data through the [ACTRIS Data Centre](http://actris.nilu.no/) web portal. Access to primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day. ASC unit has developed its own metadata catalog within EUROCHAMP project. This metadata catalog is currently available through EUROCHAMP Data Centre portal and provides identification and access to data.
+
+**Figure X (Richard provide here)** show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
+
+In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalouge, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
+The ACCESS unit will suggest a stanadrd that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
+
+![Current overview of topical databases](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/overview_of_topical_databases.png)
+Figure x: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
+
+As decribed in Figure ACCESS organize the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the compltete list with variables under implementation is included in annex II. Details of the level 3 data prodsction in opertain is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all level-3-variables).
+
+#### 4.1.2 In-Situ dataflow and data management
+
+****************************************************************************************
 
 #### 4.1.1 Dataflow data and services access unit (ACCESS)
 
