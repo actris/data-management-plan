@@ -190,17 +190,16 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 3.2 ACTRIS Aerosol remote sensing data centre unit (ARES)
 
-The ARES data centre unit handles provision of aerosol remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data provision and archiving, and documentation. The activity enables RRT and NRT delivery and provides tutorial activities. Production of level 3 data for climatological analysis and new products. 
+The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data. This includes centralized data processing, inclusion of data and meta data in the data base, traceability, harmonization and data versioning, quality control, archiving, documentation and data provision. The activity enables RRT and NRT data compilation and delivery and provides tutorial activities. Furthermore, data product generation of level 3 data for climatological analysis and new products is offered and further implemented during the implementation phase.
 
-Further more the goal is to measure the aerosol content in the whole troposphere and upper stratosphere over all time scales and to investigate its relationship with near surface mechanisms (as pollution and air quality issue) and to address the challenging issue of the not-well assessed indirect effects of aerosol in the climate change.
+Furthermore the goal is to measure the aerosol distribution and optical properties in the whole troposphere and upper stratosphere with short time resolution and to investigate its relationship with near surface processes as pollution and air quality issues and to address the challenging issue of cloud indirect effects of aerosol in the climate change.
 
 #### The types and formats of data generated/collected
 
-The ACTRIS ARES data centre unit provides data in netCDF 4 format compliant as much as possible with CF 1.7 standards.  The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator.
-Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data centre automatically produces Level 2 and Level 3 climatological products.
+The ACTRIS ARES data centre unit is making use of EARLINET Data base infrastructure. Aerosol remote sensing data submitted to ACTRIS need to be in a specified format compliant with the centralized processing suite. ARES provides data compliant with netCDF 4 as much as possible, and following Climate Forecast (CF) 1.7 convention. 
 
 #### Re-use of existing data
-The ACTRIS data user interface will include access to ACTRIS ARES data and legacy data resulting from ACTRIS pre-projects.
+The ACTRIS data user interface will include access to aerosol remote sensing legacy data resulting from ACTRIS pre-projects (for ARES [EARLINET, EARLINET-ASOS](https://www.actris.eu/About/ACTRIS/Heritage.aspx)). These will also be included as a part of the ACTRIS ARES data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
 
 #### The origin of the data
 
@@ -208,13 +207,13 @@ The origin of the data is derived from instrument raw data.
 
 #### The expected size of the data
 
-| Type                                |Number of annual datasets (now)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+| Type                                |Number of annual datasets (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   70                                    |
 
 Table 1: *Number of annual datasets*
 
-| Type                               |Data volume (now)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
+| Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
 | ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   25 TB                    |
 
@@ -226,7 +225,7 @@ Data utility specifically related to the DC unit (see data summary at ASC for ex
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
-Detail on the data life cycle and workflow (workflow diagrams for data production) for remote sensing observations can be found in Appendix 4: ACTRIS aerosol remote sensing  data lifecycle and workflow (draft).
+Details of the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [Appendix 4: ACTRIS aerosol remote sensing data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-4-actris-aerosol-remote-sensing-data-centre-unit-ares-data-life-cycle-and-workflow-diagram).
 
 ### 3.3 ACTRIS Cloud remote sensing data centre unit (CLU)
 
