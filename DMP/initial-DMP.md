@@ -544,38 +544,38 @@ These data are produced from L0 and L1 data processing performed at NFs level. T
 
 ### 4.2 Findable: Making data findable, including provisions for metadata [FAIR data]
 
-ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. 
-The ACCESS unit aims at providing discovery metadata for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. Exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data.
+#### 4.2.1 ACTRIS variable names and implementation of vocabulary
 
-Future efforts should further develop the system shown in Figure XXX (that Richard is producing) and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar.
+Generally, ACTRIS data set names aims to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the ACCESS unit (ACTRIS Data Center web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
 
-There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, one should still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
+ASC unit has developed a user-friendly web interface which includes searching tools based on the metadata catalogue for the three pillars, DASCS, LAR and LADP. Relevant searching criteria have been defined for each pillar. 
 
-The core responsibility of metadata provisioning is at the data centre unit level and common metadata protocols and standards for each data curation unit will be implemented. The role of the ACCESS unit is to harvest metadata records for the ACTRIS metadata catalog as well as putting in place instruments for monitoring data/metadata provisioning as well as monitoring and collecting user statistics (inspections, plotting and download of data) related to the ACTRIS Data Portal and the ACTRIS metadata catalog.
+Standard vocabulary might not always be used, but in all cases they should be mapped to standard vocabulary if existing by the DC ACCESS unit.
 
-Generally, ACTRIS data set names aims to be compliant with [CF (Climate and Forecast) metadata conventions](http://cfconventions.org/standard-names.html). In the case where no standard CF names are defined, an application will be sent to establish these.
+| Data center unit         | Vocabulary name               |          Comment            |
+|--------------------------|-------------------------------|-----------------------------|
+|         In Situ		   | IUPAC, CF-1.7, WMO category codes?  |                             |
+|         ARES     		   | CF1.7      |                             |
+|         CLU              |          CF-1.7        |                             |
+|		  ACCESS           | Defined by primary repository |                             |
+|         ASC              | 		?				       |  			                 |
+|		  GRES             | 		?				   |  				             |
 
-ACTRIS works towards establishing traceability for all applicable variables using persistent identifiers (PIDs). This is to assure proper attribution is given to data originators adequately reflecting their contributions. Currently ACTRIS is using  digital object identifiers (DOIs) for all secondary datasets though the [Data Cite Metadata Store API](https://mds.datacite.org/).
-*(Note from ASC and GRES DC : Not yet but we work on it)*
+*Table X: List of vocabularies used July 2019*
 
-Moreover, ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical \<prefix\>/\<suffix\> pattern. 
+#### 4.2.2 Metadata standards and meta data services
 
-Currently there is no search model used by the ACCESS unit (ACTRIS data portal). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre should in the future use a controlled set of vocabularies for search keywords like [Global Change Master Directory (GCMD)](https://earthdata.nasa.gov/about/gcmd/global-change-master-directory-gcmd-keywords) or similar, and semantic search will be implemented.
+**Figure needed showing the meta data flow and interfaces throughout the flow from NF to ACTRIS Data Center – Richard and Cathrine is working on this. Made in line with the others (layout wise), clearly stating the technologies with most “FAIR” data at the top (ACTRIS DC and the various ways of getting (meta)data)**
 
-ASC unit has developed a user-friendly web interface which includes searching tools based on the metadata catalogue for the three pillars, DASCS, LAR and LADP. Relevant searching criteria have been defined for each pillar.
+ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit aims at providing discovery metadata in a common format for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. A decision about the standard is not taken, and under consideration. In any case, exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data. The present situation is shown in Table (refer to the one at the end of the section). 
 
-ACTRIS aiming at following the [INSPIRE](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32007L0002) directive for metadata formatting. Present standard(s) for metadata at the ACTRIS data and services access unit level. Must decide if data centre units should provide metadata according to a specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
+Future efforts will further develop the system shown in Figure XXX (that Richard is producing now) and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data center unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
 
-The ACTRIS DC aims at providing clear versioning of its data and metadata, due to the decentralised nature of the Data Centre, this varies between the different data centre units, and implementation will be done on unit level.
+There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Center will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
-As a guiding principle, all data submitted to ACTRIS passing quality assurance should be uniquely identified. In case of updates, a ID-number is generated, and previous data versions should be identifiable and kept available upon request while the latest version is served through the ACTRIS data portal web-interface.
+ACTRIS aiming at following the INSPIRE directive for metadata formatting. Present standard(s) for metadata is at the ACCESS unit level. A decision is needed if data centre units should provide metadata according to a specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
 
-A Versioning System has been implemented at ARES directly in the RDBMS by using DML (Data Manipulation Language) triggers.
-A new version of a file is produced when a user tries to modify data through a DML event. New versions will be centrally produced if new QC procedures and new processing features are released. Additionally new versions of the files will be allowed and centrally handled for fixing file bugs in particular for legacy data.
-
-#### 4.2.1 Metadata services
-
-ACTRIS data should be described with rich metadata. Currently metadata services are offered on data center unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
+Tables below show the status by July 2019.
 
 | Data center unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
@@ -584,13 +584,37 @@ ACTRIS data should be described with rich metadata. Currently metadata services 
 |         CLU              |          To be defined     |  None                                                                 |       To be decided                      |
 |	  ACCESS           	   | To be decided              |  None																		              |       To be decided             |
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
-|         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139
+|         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
 
-*Table: ACTRIS metadata services*
+*Table x: List of metadata standards and services implemented by July 2019*
 
-#### 4.2.2 Persistent Identifiers (PIDs)
+ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 
-ACTRIS data should be assigned PIDs that are available through the metadata.
+| Metadata catalogs           | Description               | ACTRIS DC unit indexed                                                                    |
+|-----------------------------|---------------------------|-------------------------------------------------------------------------------------------|
+|         GISC Offenbach          |                           |                                                                                       |
+|         NextGEOSS             |                           |                                                                                         |
+|         WIGOS              |          NaN              |  None                                                                                      |
+|	      Copernicus           | Defined by primary repository  |  None																		          |
+|         re3data              | To be defined					|  None																			      |
+|         EOSC             | To be decided					|  None																					      |  
+
+*Table x: ACTRIS metadata registered or indexed in relevant metadata catalogs.*
+
+The core responsibility of metadata provisioning is at the data centre unit level and common metadata protocols and standards for each data curation unit will be implemented. The role of the ACCESS unit is to harvest metadata records for the ACTRIS metadata catalog as well as putting in place instruments for monitoring data/metadata provisioning as well as monitoring and collecting user statistics (inspections, plotting and download of data) related to the ACTRIS Data Portal and the ACTRIS metadata
+catalog.
+
+***********************************************************************************************************
+
+#### 4.2.3 Traceability of ACTRIS data
+
+The term measurement traceability is used to refer to an unbroken chain of comparisons relating an instrument's measurements to a known standard, time, processing, software etc. Calibration to a traceable standard can be used to determine an instrument's bias, precision, and accuracy. The ability to trace a measurements back to its origin is important for several reasons; It increase the quality by facilitating back-out or reprocess bad data, and conversely, it allows reward and boost good data sources and processing techniques. This is also to ensure that proper attribution is given to data originators adequately reflecting their contributions through the data production chain.
+
+ACTRIS works towards establishing traceability for all variables using persistent identifiers (PIDs). This work is in development, and need close interaction with the topical centres as well as National Facilities. Currently ACTRIS is using digital object identifiers (DOIs) for some level 3 datasets though the Data Cite Metadata Store API, and more will be implemented. 
+
+ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical <prefix>/<suffix> pattern.
+
+ACTRIS data will be assigned PIDs that are available through the metadata, the Table show the status by July 2019.
 
 | Data center unit                  | PID service               | Description                                                                               |                        standard |
 |--------------------------|---------------------------|-------------------------------------------------------------------------------------------|---------------------------------|
@@ -603,20 +627,15 @@ ACTRIS data should be assigned PIDs that are available through the metadata.
 
 *Table: ACTRIS PID handlers*
 
-#### 4.2.3 Metadata indexing in external resources
+#### 4.2.4: Version control of ACTRIS (meta)data
 
-ACTRIS metadata should be registered or indexed in relevant metadata catalogs
+The ACTRIS DC aims at providing clear versioning of its data and metadata, due to the decentralised nature of the Data Centre, this varies between the different data centre units, and implementation will be done on unit level.
 
-| Metadata catalogs           | Description               | ACTRIS DC unit indexed                                                                    |
-|-----------------------------|---------------------------|-------------------------------------------------------------------------------------------|
-|         GISC Offenbach          |                           |                                                                                       |
-|         NextGEOSS             |                           |                                                                                         |
-|         WIGOS              |          NaN              |  None                                                                                      |
-|	      Copernicus           | Defined by primary repository  |  None																		          |
-|         re3data              | To be defined					|  None																			      |
-|         EOSC             | To be decided					|  None																					      |   
+As a guiding principle, all data submitted to ACTRIS passing quality assurance should be uniquely identified. In case of updates, a ID-number is generated, and previous data versions should be identifiable and kept available upon request while the latest version is served through the ACTRIS Data Centre.
 
-*Table: ACTRIS PID handlers*
+A Versioning System has been implemented at ARES directly in the RDBMS by using DML (Data Manipulation Language) triggers. A new version of a file is produced when a user tries to modify data through a DML event. New versions will be centrally produced if new QC procedures and new processing features are released. Additionally new versions of the files will be allowed and centrally handled for fixing file bugs in particular for legacy data. 
+
+**Input In-Siti, CLU, GRES, ASC is needed. **
 
 ### 4.3 Accessible: Making data openly accessible [FAIR data]
 
@@ -689,18 +708,7 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 As an overarching goal, ACTRIS DC will take part in discussions that takes place in forums/groups such as ENVRI FAIR across the different environmental domains and strive to use cross-environmental standards and solutions in order to allow for inter-disciplinary interoperability.
 
-#### 4.4.1 Implementation of vocabulary
 
-| Data center unit         | Vocabulary name               |          Comment            |
-|--------------------------|-------------------------------|-----------------------------|
-|         In Situ		   | ISO19139, ISO19115-2, CF-1.7  |                             |
-|         ARES     		   | ISO19115-2, netCDF-CF1.7      |                             |
-|         CLU              |          netCDF-CF-1.7        |                             |
-|		  ACCESS           | Defined by primary repository |                             |
-|         ASC              | 		ISO19139				       |  			                 |
-|		  GRES             | 		ISO19139				   |  				             |
-
-*Table X: List of vocabularies*
 
 ### 4.5 Reuseable: Increase data re-use [FAIR data]
 
