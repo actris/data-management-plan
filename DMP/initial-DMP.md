@@ -133,7 +133,7 @@ Management of ACTRIS data relates to measuring atmospheric composition and the a
 
 #### Main users of ACTRIS data and software
 
-ACTRIS will produce data and data products essential to a wide range of communities as described in detail in the Stakeholder Handbook, section “Users” including:
+ACTRIS will produce data and data products essential to a wide range of communities as described in detail in the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217), section “Users” including:
 
 * Atmospheric science research communities world-wide
   * The climate and air-quality, observational/ experimental/ modelling/ satellite communities, national and international research programmes and organisations;
@@ -148,16 +148,16 @@ ACTRIS will produce data and data products essential to a wide range of communit
 
 ### 3.1 ACTRIS In situ data centre unit (In-Situ)
 
-The In-Situ unit provides a data curation service for aerosol, cloud and trace gas in-situ data and inclusion of data in EBAS database.
+The In-Situ data centre unit provides data curation service for aerosol, cloud and trace gas in situ data and inclusion of data in EBAS database. This includes tools for harmonized data submission and meta data templates, inclusion of data and meta data in the data base, traceability, harmonization and data versioning, quality control, archiving, documentation and data provision. Training and online tools for QA, QC is offered. The activity enables RRT and NRT data compilation and delivery and provides tutorial activities. Furthermore, support for centralized data processing, harmonization, and data product generation, both level 2 and level 3 is offered and further implemented during the implementation phase.
 
 #### The types and formats of data generated/collected
-The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format (ASCII file) by the data originator, and there are exsisting instructions and templates for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
+The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format (ASCII file) by the data originator, and there are exsisting [instructions and templates](https://ebas-submit.nilu.no/) for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
 
-Currently, work is being conducted with regards to providing data in the netCDF 4 format, making it compliant with the [CF 1.7 convention](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html) and the [Attribute Convention for Data Discovery 1-3 (ACDD)](http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery_1-3).
+ACTRIS in situ data is also available in the netCDF 4 format through the [EBAS Thredds Server](https://thredds.nilu.no/thredds/catalog.html), following the [CF 1.7 convention](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html) and the [Attribute Convention for Data Discovery 1-3 (ACDD)](http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery_1-3).
 
 #### Re-use of existing data
 
-Legacy data resulting from ACTRIS pre-projects will also be included as a part of the ACTRIS In Situ data centre unit.
+The ACTRIS data user interface will include access to aerosol and trace gas in situ legacy data resulting from ACTRIS pre-projects (for In-Situ [CREATE, EUSAAR, ACTRIS-FP7](https://www.actris.eu/About/ACTRIS/Heritage.aspx). These will also be included as a part of the ACTRIS In Situ data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
 
 #### The origin of the data
 
@@ -165,7 +165,7 @@ The origin of the data is derived from instrument raw data, either through onlin
 
 #### The expected size of the data
 
-| Type                          |Number of annual datasests (now)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+| Type                          |Number of annual datasests (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS in situ aerosol data   |           60                                             |       50                                |   120                                   |
 | ACTRIS in situ cloud data     |           0                                              |       35                                |   105                                   |
@@ -173,7 +173,7 @@ The origin of the data is derived from instrument raw data, either through onlin
 
 Table 1: *Number of annual datasets*
 
-| Type                          |Data volume (now)                                          | Data volume (min by 2025)                | Data volume (max by 2025) |
+| Type                          |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025) |
 |-------------------------------|-----------------------------------------------------------|------------------------------------------|------------------------------------------|
 | ACTRIS in situ aerosol data   |           18 000 MB                                       |       15 000 MB                          |   50 000 MB                              |
 | ACTRIS in situ cloud data     |           0 MB                                            |       1 GB                               |   3 GB                                   |
@@ -183,7 +183,7 @@ Table 2: *Data volume*
 
 #### Data utility
 
-Data utility specifically related to the DC unit (see data summary at ASC for example)
+Data utility specifically related to the DC unit (see data summary at ASC for under the "Data utility" section for an example)
 
 #### Outline of data life cycle (workflow and workflow diagram)
 Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle-and-workflow-diagram).
