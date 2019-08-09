@@ -467,30 +467,77 @@ All data centre units are providing metadata and interface for access to data in
 In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalouge, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
 The ACCESS unit will suggest a stanadrd that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
 
+![ACTRIS Data Centre elements, phase 2](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/ACTRIS_data_centre_elements_phase2_simplified.jpg)
+Figure x: ACTRIS Data Centre elements
+
 ![Current overview of topical databases](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/overview_of_topical_databases.png)
 Figure x: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
 
-As decribed in Figure ACCESS organize the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the compltete list with variables under implementation is included in annex II. Details of the level 3 data prodsction in opertain is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all level-3-variables).
+As decribed in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organize the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the compltete list with variables under implementation is included in Appendix II. Details of the level 3 data prodsction in opertain is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all-level-3-variables).
 
 #### 4.1.2 In-Situ dataflow and data management
 
-****************************************************************************************
+Max 1 page, including figure. Common structure for all units
+Give and overview of the role and tasks here, not too detailed. Refer to workflow annex
+for details.
+Bullet points to be covered by each unit leader:
+* data submission,
+* online, offline, manual automatic
+* level 0: how and where are these handled/archived? Comment on formats.
+* level 1 – level 2 data production: where? NF? DC+ TC?
+* how are the traceable data measurements now, and potentially in the future (plans for implementation)
+* version control, all levels?
+* what is centralized, what is at NF level etc,
+* Centralised tools, manual tools, automatic tools
 
-#### 4.1.1 Dataflow data and services access unit (ACCESS)
+Make use of the concept paper for text: the subsection in section 3. Can probably use some from there.
 
-![ACTRIS Data Centre elements, phase 2](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/ACTRIS_data_centre_elements_phase2_simplified.jpg)
-![ACTRIS Data Centre topical databases](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/current_overview_topical_databases.png)
-*Figure x: current_overview_topical_databases.png*
+Add figure, similar to ASC, to easily visualize data flow with main links and tasks for the NF and Unit (including some text, not much).
 
-#### 4.1.2 Dataflow In situ data centre unit (In-Situ)
+#### 4.1.2 ARES dataflow and data management
+*Max 1 page, including figure. Common structure for all units*
 
-#### 4.1.3 Dataflow Aerosol remote sensing data centre unit (ARES)
+**Wait with writing this, until we have a draft of in-situ with**
 
-#### 4.1.4 Dataflow Cloud remote sensing data centre unit (CLU)
+**Text moved from other parts of the document that belongs here, maybe in modified version:**
 
-#### 4.1.5 Dataflow trace gases remote sensing data centre unit (GRES)
+The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with the centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data centre automatically produces Level 2 and Level 3 climatological products.
 
-#### 4.1.6 Dataflow Atmospheric simulation chamber data centre unit (ASC)
+#### 4.1.3 CLU dataflow and data management
+
+*Max 1 page, including figure. Common structure for all units*
+
+**Wait with writing this, until we have a draft of in-situ with**
+
+**Text moved from other parts of the document that belongs here, maybe in modified version:**
+
+Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
+
+#### 4.1.2 GRES dataflow and data management
+
+*Max 1 page, including figure. Common structure for all units*
+
+**Wait with writing this, until we have a draft of in-situ with**
+
+**Text moved from other parts of the document that belongs here, maybe in modified version:**
+
+Trace gases remote sensing data produced are organized within one unique database and are issued from measurements using three types of instruments located at different observatory stations. The three types of instruments are:
+
+* FTIR: Fourier Transform Infra-Red Spectrometry,
+* UVVIS including UV-VIS zenith-sky or UVVIS ZS and UVVIS MAXDOAS (Multi-AXis Differential Optical Absorption Spectroscopy instruments),
+* LIDAR DIAL: Differential Absorption Lidar.
+
+This database provides access to level 2b and level 3 data of trace gases profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …). The level 2b data are produced from the consolidation of level 2a data using quality assurance and quality control procedures. The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
+
+#### 4.1.2 ASC dataflow and data management
+
+*Max 1 page, including figure. Common structure for all units*
+
+**Wait with writing this, until we have a draft of in-situ with**
+
+**Text moved from other parts of the document that belongs here, maybe in modified version:**
+
+These data are produced from L0 and L1 data processing performed at NFs level. These data have to be provided by NFs in a standard format, called “EDF format” (EUROCHAMP Data Format) which is based on an ASCII text format but contains additional metadata in a header. These data are completed with rich metadata which are available from the website and give access to a technical description of the chambers (size, volume, walls, irradiation system …), the experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamber-dependent parameters.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
 *Figure x: current overview of ASC unit*
@@ -812,19 +859,19 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 
 ##### Collected (other than ACTRIS L0-1-2)
 
-| Product          | format  | source    | description                                                                                                                                                                                                  |
-| ---------------- | ------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| AERONET-NASA L1  | csv     | NASA/GSFC | [https://aeronet.gsfc.nasa.gov](https://aeronet.gsfc.nasa.gov)                                                                                                                                               |
-| Terra+Aqua/MODIS | HDF4    | AERIS     | [https://modis.gsfc.nasa.gov](https://modis.gsfc.nasa.gov)                                                                                                                                                   |
-| CALIPSO          | HDF4    | AERIS     | [https://www-calipso.larc.nasa.gov](https://www-calipso.larc.nasa.gov)                                                                                                                                       |
-| CLOUDSAT         | HDF4    | AERIS     | [http://www.cloudsat.cira.colostate.edu](http://www.cloudsat.cira.colostate.edu)                                                                                                                             |
-| PARASOL          | HDF5    | AERIS     | [http://www.icare.univ-lille1.fr/parasol](http://www.icare.univ-lille1.fr/parasol)                                                                                                                           |
-| Aura/OMI         | HDF4    | AERIS     | [https://aura.gsfc.nasa.gov/omi](https://aura.gsfc.nasa.gov/omi.html)                                                                                                                                        |
-| Terra/MISR       | HDF4    | AERIS     | [https://terra.nasa.gov/about/terra-instruments/misr](https://terra.nasa.gov/about/terra-instruments/misr)                                                                                                   |
-| Metop/IASI       | BUFR    | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html) |
-| MSG/SEVIRI       | NetCDF4 | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html)                             |
-| AeroCom          | NetCDF4 | METNO     | https://aerocom.met.no/                                                                                                                                                                                                             |
-| NWP Model data   | NetCDF4 | NWP Centres    |                                                                                                                                                                                                              |
+| Product          | format  | source    | description                                                                                                                                                                                                  | Data harvest method | Level 3 data producer |
+| ---------------- | ------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |---------------------|-----------------------|
+| AERONET-NASA L1  | csv     | NASA/GSFC | [https://aeronet.gsfc.nasa.gov](https://aeronet.gsfc.nasa.gov)                                                                                                                                               |					  |                       |
+| Terra+Aqua/MODIS | HDF4    | AERIS     | [https://modis.gsfc.nasa.gov](https://modis.gsfc.nasa.gov)                                                                                                                                                   |                     |                       |
+| CALIPSO          | HDF4    | AERIS     | [https://www-calipso.larc.nasa.gov](https://www-calipso.larc.nasa.gov)                                                                                                                                       |                     |                       |
+| CLOUDSAT         | HDF4    | AERIS     | [http://www.cloudsat.cira.colostate.edu](http://www.cloudsat.cira.colostate.edu)                                                                                                                             |                     |                       |
+| PARASOL          | HDF5    | AERIS     | [http://www.icare.univ-lille1.fr/parasol](http://www.icare.univ-lille1.fr/parasol)                                                                                                                           |                     |                       |
+| Aura/OMI         | HDF4    | AERIS     | [https://aura.gsfc.nasa.gov/omi](https://aura.gsfc.nasa.gov/omi.html)                                                                                                                                        |                     |                       |
+| Terra/MISR       | HDF4    | AERIS     | [https://terra.nasa.gov/about/terra-instruments/misr](https://terra.nasa.gov/about/terra-instruments/misr)                                                                                                   |                     |                       |
+| Metop/IASI       | BUFR    | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html) |                     |                       |
+| MSG/SEVIRI       | NetCDF4 | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html)                             |                     |                       |
+| AeroCom          | NetCDF4 | METNO     | https://aerocom.met.no/                                                                                                                                                                                      |                     |                       |
+| NWP Model data   | NetCDF4 | NWP Centres    |                                                                                                                                                                                                         |                     |                       |
 
 ##### Generated (systematic production)
 
@@ -849,3 +896,21 @@ Some products will be generated through on-line services, and will generate data
 | Colocation service of data from contributing networks               | NetCDF-CF                            | Benchmark data products including relevant EMEP and ACTRIS data: PM and/or sulphate with  ACTRIS National Facilities  compiled in one data product                                                               |
 | Model Evaluation Service                                            | NetCDF-CF                            | Automated model evaluation workflow, Evaluation reports of different complexity, NRT and reanalysis, climate models                                                                                              |
 | NWP Model Evaluation Service                                        | NetCDF-CF                            | Automated model evaluation workflow, evaluation reports of different complexity for NWP models, NRT and reanalysis, NWP models                     
+
+#### Production of level 3 data solely based on data from ACTRIS observational platforms
+
+| Product                                             | format               | description                                                                                                                                                                                  |
+| --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                     |                      |                                                                                                                                                                                              |
+
+#### Production of ACTRIS level 3 data and tools through multi-source data integration services, employing external ground based measurement data
+
+| Product                                             | format               | description                                                                                                                                                                                  |
+| --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                     |                      |                                                                                                                                                                                              |
+
+#### Production of ACTRIS level 3 data products involving regional and global model data
+
+| Product                                             | format               | description                                                                                                                                                                                  |
+| --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                     |                      |                                                                                                                                                                                              |
