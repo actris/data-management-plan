@@ -229,15 +229,15 @@ Details of the data life cycle and workflow (workflow diagrams for data producti
 
 ### 3.3 ACTRIS Cloud remote sensing data centre unit (CLU)
 
-The CLU data centre unit handles provision of cloud remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data provision and archiving, and documentation. The activity enables RRT and NRT delivery, and participation in training. Production of level 3 data for forecast and climate model evaluation, climatological analysis and new products.
+The CLU data centre unit provides data curation and data processing service of cloud remote sensing data. This includes centralized processing, traceability, harmonization and data versioning, quality control, data provision and archiving, and documentation. The activity enables RRT and NRT data compilation and delivery, and participation in training. Furthermore, data product generation of level 3 data for forecast and climate model evaluation, climatological analysis and new products is offered and further implemented during the implementation phase. 
 
 #### The types and formats of data generated/collected
 
-The ACTRIS CLU data centre unit provides data in netCDF 3 and netCDF4 formats compliant as much as possible with CF 1.7 standards. Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
+The ACTRIS CLU data centre unit is making use of the CLOUDNET data base infrastructure. Cloud remote sensing data submitted to ACTRIS need to be in a specified format compliant with the centralized processing suite. CLU provides data compliant with netCDF 3 and netCDF4 formats as much as possible, and following CF 1.7 convention. Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
 
 #### Re-use of existing data
 
-Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
+The ACTRIS data user interface will include access to cloud remote sensing legacy data resulting from ACTRIS pre-projects (for CLU [CLOUDNET](https://www.actris.eu/About/ACTRIS/Heritage.aspx)). These will also be included as a part of the ACTRIS CLU data centre unit. Legacy data resulting from ACTRIS preprojects will be available in the same format as current products.
 
 #### The origin of the data
 
@@ -245,13 +245,13 @@ Data is derived from instrument raw data, coupled with thermodynamic profiles fr
 
 #### The expected size of the data
 
-| Type                              |Number of annual datasests (now)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+| Type                              |Number of annual datasests (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-----------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS cloud remote sensing data  |       11                                                 |      15                                 |   25                                    |
 
 Table 1: *Number of annual datasets*
 
-| Type                               |Data volume (now)                                     | Data volume (min by 2025)             | Data volume (max by 2025)             |
+| Type                               |Data volume (end 2019)                                     | Data volume (min by 2025)             | Data volume (max by 2025)             |
 |------------------------------------|------------------------------------------------------|---------------------------------------|---------------------------------------|
 | ACTRIS cloud remote sensing data   |           15 TB                                      |       50 TB                           |   150 TB                              |
 
@@ -263,22 +263,16 @@ Data utility specifically related to the DC unit (see data summary at ASC for ex
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
-Detail on the data life cycle and workflow (workflow diagrams for data production) for remote sensing observations can be found in Appendix 5: ACTRIS cloud remote sensing  data lifecycle and workflow (draft).
-
+Details on the data life cycle and workflow (workflow diagrams for data production) for remote sensing observations can be found in [Appendix 5: ACTRIS cloud remote sensing  data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-5-actris-cloud-remote-sensing-data-centre-unit-clu-data-life-cycle-and-workflow-diagram).
 
 ### 3.4 ACTRIS trace gases remote sensing data centre unit (GRES)
 
-The GRES data centre unit provides data curation service for reactive trace gases remote sensing data, added values products, standardized process for data submission and QC. Trace gases remote sensing data are necessary to monitor the evolution of atmospheric composition in relation to air quality, climate change and ozone depletion issues. 
+The GRES data centre unit provides data curation service for reactive trace gases remote sensing data, **ADD: new text, see issue and comment have this consistent with the other units.**
 
 #### Description of the ACTRIS-GRES unit
-Trace gases remote sensing data produced are organized within one unique database and are issued from measurements using three types of instruments located at different observatory stations. The three types of instruments are:
+The ACTRIS trace gases remote sensing data centre unit making use of AERIS database. Reactive trace gas remote sensing data submitted to ACTRIS need to be submitted as level 2 data following the GEOMS data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) and the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements.
 
--   FTIR: Fourier Transform Infra-Red Spectrometry,
--   UVVIS including UV-VIS zenith-sky or UVVIS ZS and UVVIS MAXDOAS (Multi-AXis Differential Optical Absorption Spectroscopy  instruments),
--   LIDAR DIAL: Differential Absorption Lidar.
-
-This database provides access to level 2b and level 3 data of trace gases profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …). The level 2b data are produced from the consolidation of level 2a data using quality assurance and quality control procedures.
-The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
+For data access and download, the level 2 and level 3 data are be converted in NetCDF4 format following the CF (Climate Forecast) conventions. 
 
 #### The types and formats of data generated/collected
 The ACTRIS trace gases remote sensing data centre unit is supported by AERIS database. All providers will submit level 2 data following the GEOMS data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) and following the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements. The GEOMS data format allows the necessary requirements to setup the ACTRIS data curation service for trace gas remote sensing data.
@@ -286,14 +280,14 @@ The ACTRIS trace gases remote sensing data centre unit is supported by AERIS dat
 The level 2 and level 3 data will be also converted in NetCDF ([https://www.unidata.ucar.edu/software/netcdf/](https://www.unidata.ucar.edu/software/netcdf/)) version 4 format following the CF (Climate Forecast) conventions and be disseminated. The Climate and Forecast conventions are metadata conventions for earth science data. The conventions define metadata that are included in the same file as the data making the file "self-describing".
 
 #### Re-use of existing data
-The ACTRIS data user interface will include access to ACTRIS trace gases remote sensing data and legacy data resulting from ACTRIS pre-projects.
+The ACTRIS data user interface will include access to reactive trace gases remote sensing legacy data data resulting from ACTRIS pre-projects (for GRES…). These will also be included as a part of the ACTRIS GRES data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
 
 #### The origin of the data
 The origin of the data is derived from instrument raw data, through offline observations.
 
 #### The expected size of the data
 
-| Type                                |Number of annual datasets (now)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+| Type                                |Number of annual datasets (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS-GRES FTIR                    |                  276                                 |         200                            |             300                         |
 | ACTRIS-GRES UV-VIS                  |             20000                                          |          15000                            |             30000                         |
@@ -301,7 +295,7 @@ The origin of the data is derived from instrument raw data, through offline obse
 
 Table 1: *Number of annual datasets*
 
-| Type                               |Data volume (now)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
+| Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
 | ACTRIS-GRES FTIR |                    2,5 GB                                   |              12 GB                         |          18 GB               |
 | ACTRIS-GRES UV-VIS  |                     1,2 GB                                   |              6 GB                         |          10 GB               |
@@ -314,11 +308,11 @@ Table 2: *Data volume*
 Data utility specifically related to the DC unit (see data summary at ASC for example)
 
 #### Outline of data life cycle (workflow and workflow diagram)
-Detail on the data life cycle and workflow (workflow diagrams for data production) for trace gases remote sensing data can be found in annex 6.
+Detail on the data life cycle and workflow (workflow diagrams for data production) for trace gases remote sensing data can be found in [Appendix 6](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-6-actris-trace-gases-remote-sensing-data-centre-unit-gres-data-life-cycle-and-workflow-diagram).
 
 ### 3.5 ACTRIS Atmospheric simulation chamber data centre unit (ASC)
 
-The ASC data centre unit provides access to data and data products obtained from experiments in atmospheric simulation chambers (exploratory platforms). It includes standardized process for data provision, data services curation and documentation. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes which affect air quality and climate change. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. Furthermore, ASC provides access to detailed information on the infrastructures (i.e. simulation chambers) used for the generation of the data; this includes a technical description of the chambers (size, volume, walls, irradiation system …) and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations.
+The ASC data centre unit provides data curation service for data obtained from ACTRIs exploratory platforms; experiments in atmospheric simulation chambers. (This includes standardized processing for data provision, data services curation and documentation. ASC compile and provides access to detailed information on the infrastructures (i.e. simulation chambers) used for the generation of the data; this includes a technical description of the chambers (size, volume, walls, irradiation system …) and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations.
 
 The ACTRIS-ASC unit is structured in three pilars:
 -   The _Database of Atmospheric Simulation Chamber Studies_ (DASCS) provides access to experimental and modelled data (level 2 data), typically time-series of measured parameters, obtained from experiments in simulation chambers.
@@ -329,25 +323,23 @@ The ACTRIS-ASC unit is structured in three pilars:
     
 **The types and formats of data generated/collected**
 
-The ACTRIS ASC data centre unit is supported by AERIS (CNRS) infrastructure.
-
-Level 2 data provided in DASCS are full quality controlled time series of the targeted properties measured (or simulated) during experiments in simulation chambers. These data are produced from L0 and L1 data processing performed at NFs level. These data have to be provided by NFs in a standard format, called “EDF format” (EUROCHAMP Data Format) which is based on an ASCII text format but contains additional metadata in a header. These data are completed with rich metadata which are available from the website and give access to a technical description of the chambers (size, volume, walls, irradiation system …), the experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations. Currently, work is being conducted in order to provide data also in the netCDF format.
+The ACTRIS ASC data centre unit is making use of AERIS data infrastructure. Atmospheric simulation chambers data submitted to ACTRIS and the DASCS data base pillar have to be provided by NFs in a standard format, called “EDF format” (EUROCHAMP Data Format) which is based on an ASCII text format but contains additional metadata in a header. These data are completed with rich metadata which are available from the website and give access to a technical description of the chambers (size, volume, walls, irradiation system …), the experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamberdependent parameters affecting the observations. Currently, work is being conducted with regards to providing tools for access and download of data also in the netCDF 4 format, compliant with the CF 1.7 convention. This will be implemented during ACTRIS implementation phase. 
 
 Level 3 data provided in LAR are IR and mass spectra in JCAMP-DX format which is the standard format recommended by IUPAC for spectra. It is a 2D graphic format based on ASCII format. Metadata are attached and made available through the ACTRIS data user interface. These data are provided by NFs.
 
-Level 3 data provided in LADP are of different types and have thus different formats. Most of them are provided as a unique value with metadata attached. These metadata include information on the level 2 data processing, a link to the level 2 data in the DASCS and the reference paper where this data has been published.
+Level 3 data provided in LADP are of different types and have thus different nonharmonized formats. Most of them are provided as a unique value with metadata attached. These metadata include information on the level 2 data processing, a link to the level 2 data in the DASCS and the reference paper where this data has been published.
 
 **Re-use of existing data**
 
-The ACTRIS data user interface will include access to ACTRIS Atmospheric Simulation Chambers data and legacy data resulting from EUROCHAMP-2 and EUROCHAMP-2020 projects.
+The ACTRIS data user interface will include access to atmospheric simulation chamber legacy data resulting from ACTRIS pre-projects (for ASC [EUROCHAMP, EUROCHAMP-2](https://www.actris.eu/About/ACTRIS/Heritage.aspx)). These will also be included as a part of the ACTRIS ASC data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
 
 **The origin of the data**
 
-Data provided by ACTRIS ASC unit are produced from experiments in simulation chambers. Data provided in DASCS and LAR pillars are generated by L0 and L1 data processing while data provided in LADP are produced from L2 data processing. All the data processing is performed by NFs.
+Data provided by ACTRIS ASC unit are produced from experiments in simulation chambers. Data provided in DASCS and LAR pillars are generated byinstrument raw data and data processing, while data provided in LADP are produced from L2 data processing. All the data processing is performed by NFs.
 
 **The expected size of the data**
 
-| Type                                |Number of annual datasets (now)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+| Type                                |Number of annual datasets (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-------------------------------|
 | ACTRIS-ASC DASCS                    |                   100                                    |          50                            |             200                 |
 | ACTRIS-ASC LAR                 |                   20                                  |          10                          |             50               |
@@ -356,7 +348,7 @@ Data provided by ACTRIS ASC unit are produced from experiments in simulation cha
 
  Table 1: _Number of annual datasets
 
-|  Type                                |Data volume (now)                          | Data volumes (min by 2025) | Data volume (max by 2025) |
+|  Type                                |Data volume (end 2019)                          | Data volumes (min by 2025) | Data volume (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-------------------------------|
 | ACTRIS-ASC DASCS                    |                  1,2 GB                                  |        1,5 GB                            |             2,4 GB                 |
 | ACTRIS-ASC LAR                 |                   67 MB                                  |          76 MB                        |            120 MB               |
@@ -377,106 +369,38 @@ Atmospheric simulation chamber data contribute to better predict the behavior of
 
 **Outline of data life cycle (workflow and workflow diagram)**
 
-Detail on the data life cycle and workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in annex 7.
+Detail on the data life cycle and workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in [Appendix 7](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram).
 
 ### 3.6 ACTRIS data and services (ACCESS)
-*(Note from Bénédicte : I think that we should clearly indicate that level 3 mentioned here are produced from ACTRIS data AND from other sources. Otherwise, we don't understand why there are also L3 data in the other sections (eg ASC unit). This is what we did in the concept paper. )*
-The access unit provides provision of ACTRIS web interface for data, services and digital tools as well as data production of selected Level 3 data, quality control tools, and synergy data products.
-Data management of ACTRIS level 3 data relates to the ability to predict the future behaviour of the atmosphere over all time scales. This is facilitated by post-processed ACTRIS level 0-1-2 observations, advanced multi-instrument synergistic algorithms, long term reanalysis against model results and satellite data.
 
-The ACTRIS ACCESS unit will provide elaborated aerosol, cloud and trace gas parameters, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources. The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx).
+ACTRIS data and services access unit (ACCESS) is responsible for access to measurement data, services, tools and documentation, with scientific data management and support to observational and exploratory NFs. The access unit provides provision of ACTRIS web interface for data, services and digital tools as well as performing data production of and access to Level 3 data, quality control tools, and synergy data products.
+
+The ACTRIS access web interface for data, services and tools, is called “The ACTRIS Data Centre” and the main activities are **Discovery and access** to ACTRIS data and data products, digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data and synergy data products. The data centre also offers **bridge to external data bases and sources**.
+
+The ACTRIS ACCESS unit provides elaborated aerosol, cloud and trace gas data products, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources.
+
+The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx), and consiste of three main categories:
+
+	I. Production of level 3 data solely based on data from ACTRIS observational platforms
+
+	II. Production of level 3 data and tools through multi-source data integration services, employing external ground based measurement data
+
+	III. Production of level 3 data products involving regional and global model data
 
 #### The types and formats of data generated/collected
 
-The objective is that most of the level 3 data generated will be in [NetCDF data format](https://www.unidata.ucar.edu/software/netcdf/) and have metadata compliant to the [NetCDF CF Metadata Conventions](http://cfconventions.org). This format and metadata are widely used in the atmospheric science community, and is supported by a lot of standard visualization and analysis tools.
-Nevertheless, the collected data can come from external sources and so, can be in non standard formats. In these cases, they will be rather kept in their original format.
-Here is the summary of the collected/generated level 3 datasets:
+The objective is that most of the level 3 data generated will be in [NetCDF data format](https://www.unidata.ucar.edu/software/netcdf/) and have metadata compliant to the [NetCDF CF Metadata Conventions](http://cfconventions.org). This format and metadata are widely used in the atmospheric science community, and is supported by a lot of standard visualization and analysis tools. Nevertheless, the collected data can come from external sources accordingly, non standard formats may also be used. In these cases, they will be rather kept in their original format.
 
-##### TO BE DELETED / CHECKED: list of variables in Annex II
+### Re-use of existing data
 
-Below is a list of all lev3 variables that are listed in Annex II and the checkbox indicates whether they are included in the lists below or not:
+The generated products and online services available from ACTRIS-preproject use existing ACTRIS L0-1-2, satellite and model data.
 
-- [ ] Column Water Vapor Content
-- [ ] Climatology products for ACTRIS variables @ ACTRIS National Facilities across Europe
-- [x] Calculated Particle light scattering coefficients ** GRASP/GARRLiC **
-- [x] Collocation service of data from contributing networks
-- [ ] PM retrieval  @GAW sites
-- [x] Single Scattering Albedo @ACTRIS National Facilities
-- [x] Calculated particle light extinction coefficient ** GRASP/GARRLiC **
-- [ ] Integrated full-range particle number size distribution
-- [ ] Source apportionment of submicron organic aerosols in Europe
-- [ ] Volatile Organic Compounds (VOC) source attribution across Europe
-- [ ] Cloud occurence at cloud in situ observational platforms
-- [x] Direct Sun/Moon Extinction Aerosol Optical Depth (column)
-- [x] Spectral Downward Sky Radiances
-- [x] Aerosol columnar properties (GRASP-AOD)
-- [x] ReOBS  
-- [x] Aerosol profile microphysical and optical properties ** GRASP/GARRLiC **
-- [x] Satellite data – combined with ground based ACTRIS data
-- [x] Aerosol and Gas trend assessment
-- [x] Data Interpretation and Outlier Identification Tool
-- [x] Optimal interpolation and Gap filling tool
-- [x] Model Evaluation Service
-- [x] NWP Model Evaluation Service
-- [x] Transport modelling products for assessment of source regions
-- [x] Alert Service for National Facilities
-
-##### Collected (other than ACTRIS L0-1-2)
-
-| Product          | format  | source    | description                                                                                                                                                                                                  |
-| ---------------- | ------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| AERONET-NASA L1  | csv     | NASA/GSFC | [https://aeronet.gsfc.nasa.gov](https://aeronet.gsfc.nasa.gov)                                                                                                                                               |
-| Terra+Aqua/MODIS | HDF4    | AERIS     | [https://modis.gsfc.nasa.gov](https://modis.gsfc.nasa.gov)                                                                                                                                                   |
-| CALIPSO          | HDF4    | AERIS     | [https://www-calipso.larc.nasa.gov](https://www-calipso.larc.nasa.gov)                                                                                                                                       |
-| CLOUDSAT         | HDF4    | AERIS     | [http://www.cloudsat.cira.colostate.edu](http://www.cloudsat.cira.colostate.edu)                                                                                                                             |
-| PARASOL          | HDF5    | AERIS     | [http://www.icare.univ-lille1.fr/parasol](http://www.icare.univ-lille1.fr/parasol)                                                                                                                           |
-| Aura/OMI         | HDF4    | AERIS     | [https://aura.gsfc.nasa.gov/omi](https://aura.gsfc.nasa.gov/omi.html)                                                                                                                                        |
-| Terra/MISR       | HDF4    | AERIS     | [https://terra.nasa.gov/about/terra-instruments/misr](https://terra.nasa.gov/about/terra-instruments/misr)                                                                                                   |
-| Metop/IASI       | BUFR    | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html) |
-| MSG/SEVIRI       | NetCDF4 | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html)                             |
-| AeroCom          | NetCDF4 | METNO     | https://aerocom.met.no/                                                                                                                                                                                                             |
-| NWP Model data   | NetCDF4 | NWP Centres    |                                                                                                                                                                                                              |
-
-##### Generated (systematic production)
-
-| Product                                             | format               | description                                                                                                                                                                                  |
-| --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GRASP/GARRLiC                                       | NetCDF-CF            | ACTRIS-2 GARRLiC Data Product Description. Link to be added                                                                                                                                  |
-| GRASP-AOD                                           | NetCDF-CF            | Aerosol size distribution retrieval from optical depth                                                                                                                                       |
-| ReOBS                                               | NetCDF-CF            | The ReOBS project proposes a scientific method to aggregate, qualify and harmonize about fifty geophysical variables at hourly scale over a decade, to allow multiannual and multi-variables studies combining atmospheric dynamics and thermodynamics, radiation, clouds and aerosols, from ground-based observations. |
-| Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
-| Data Interpretation and Outlier Identification Tool                 | NetCDF-CF                            | Quicklooks for time series data, compared to Copernicus Analysis and Reanalysis model products                                                                                                                   |
-| **?** Optimal interpolation and Gap filling tool                    | NetCDF-CF                            | modal/data integration products which fill measurement gaps, eg in a time series, profile or field.                                                                                                              |
-| Alert Service for National Facilities                               | [geoJSON](http://geojson.org/) **?** | Provide near real time update of special weather situations of interest for research activities at national facilities                                                                                           |
-
-##### Generated (on-demand services)
-
-Some products will be generated through on-line services, and will generate datasets available for a limited time on a web server.
-
-| Product                                                             | format                               | description                                                                                                                                                                                                      |
-| ------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Satellite data subsets                                              | NetCDF-CF                            | Satellite data subsets, spatially and temporally colocated with ACTRIS ground-based measurements                                                                                                                 |
-| **?** Transport modelling products for assessment of source regions | NetCDF-CF                            | Backward transport modelling with FLEXPART to analyse air transirt and impact of various soucres. Develop tools to run FLEXPART operationally and automatically on a regular basis, e.g. monthly, for every site |
-| Colocation service of data from contributing networks               | NetCDF-CF                            | Benchmark data products including relevant EMEP and ACTRIS data: PM and/or sulphate with  ACTRIS National Facilities  compiled in one data product                                                               |
-| Model Evaluation Service                                            | NetCDF-CF                            | Automated model evaluation workflow, Evaluation reports of different complexity, NRT and reanalysis, climate models                                                                                              |
-| NWP Model Evaluation Service                                        | NetCDF-CF                            | Automated model evaluation workflow, evaluation reports of different complexity for NWP models, NRT and reanalysis, NWP models                                                                                   |
-
-#### Re-use of existing data
-
-The generated products and online services will use existing ACTRIS L0-1-2, satellite and model data.
-
-#### The origin of the data
-
+### The origin of the data
 The origin of the data is derived from ground-based and satellite observations, retrieval algorithms and model simulations.
 
 #### The expected size of the data
 
-##### Generated (systematic production)
-
-
-#### The expected size of the data
-
-| Type                  |Number of annual datasests (now)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
+| Type                  |Number of annual datasests (end 2019)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
 |    GRASP/GARRLiC      |                        6          |             See SCC L1 from ARES        |    See SCC L1 from ARES                 |
 |    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
@@ -484,7 +408,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 
 Table 2.6.1. *Number of annual datasets*
 
-| Type              |Data volume (now)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
+| Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
 | GRASP/GARRLiC     |                            3.2 GB                         |     TBD                    |           TBD              |
 | GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
@@ -509,20 +433,11 @@ Data utility specifically related to the DC unit (see data summary at ASC for ex
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
-Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in **TODO**
+Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in [Appendix 8](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
 
 ## 4. Data Management at the ACTRIS data centre
 
-Data management is handled by the individual data centre unit:
-
-* ACTRIS In situ data centre unit for all aerosol, cloud and trace gas in situ data - In-Situ
-* ACTRIS Aerosol remote sensing data centre unit - ARES
-* ACTRIS Cloud remote sensing data centre unit - CLU
-* ACTRIS Trace gases remote sensing data centre unit - GRES
-* ACTRIS Atmospheric simulation chamber data centre unit - ASC
-
-Access to quality controlled data from the data centre units is provided by the ACTRIS data and service access unit (ACCESS). The ACCESS unit is not only responsible for access to measurement data, but also access to services, tools and providing documentation, all which is based on metadata provided by the data centre units. Currently there are 3 data centre units providing metadata (including details on how to access measurement data), in the current ACTRIS metadata catalogue. This includes data from the Cloudnet (Cloud remote sensing) database, Earlinet (Aerosol remote sensing) database and the EBAS (aerosol, cloud and trace gas in situ data) database. The metadata is used as input to the current ACTRIS metadata catalog providing identification and access to data through the [ACTRIS data portal](http://actris.nilu.no/). Access to primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day. In parallel, ASC unit has developed its own metadata catalog within EUROCHAMP project. This metadata catalog is currently available through EUROCHAMP Data Centre portal and provides identification and access to data.
-*(Note from Bénédicte : I think that we should discuss about the interest and the possibility of merging the different metadata catalogues)*
+ACTRIS data and products should be findable, accessible, interoperable and reusable (FAIR), and the data centre work towards fulfilling the FAIR principles. This chapter is describing the complete ACTRIS Data Flow from [National Facilities (NF)](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section1/Exp_Obs_NF.jpg) to users that is operational now and the work and solutions that will be implemented during the implementation phase (2020-2025). The section starts with and introduction to the data management system in ACTRIS in section 4.1, including detailed description of data flow within each unit (4.1.1.-4.1.5). This is followed by sections describing detailed solutions and implementation plans making ACTRIS data and products findable (4.2), accessible (4.3), interoperable (4.4) and reusable (4.5).
 
 ### 4.1 Dataflow
 
@@ -829,7 +744,73 @@ Table: *Workflow Tasks Short Specification*
 ![ACTRIS Atmospheric simulation chamber data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/atm_simulation_chamber_workflow.png)
 
 ### Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit
+![ACTRIS ACCESS data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section3/DMP-DataAccess-MetNo-BSC.png)
 
+### Appendix 9: List of all level 3 variables
 
+Below is a list of all lev3 variables that are listed in Annex II and the checkbox indicates whether they are included in the lists below or not:
 
+- [ ] Column Water Vapor Content
+- [ ] Climatology products for ACTRIS variables @ ACTRIS National Facilities across Europe
+- [x] Calculated Particle light scattering coefficients ** GRASP/GARRLiC **
+- [x] Collocation service of data from contributing networks
+- [ ] PM retrieval  @GAW sites
+- [x] Single Scattering Albedo @ACTRIS National Facilities
+- [x] Calculated particle light extinction coefficient ** GRASP/GARRLiC **
+- [ ] Integrated full-range particle number size distribution
+- [ ] Source apportionment of submicron organic aerosols in Europe
+- [ ] Volatile Organic Compounds (VOC) source attribution across Europe
+- [ ] Cloud occurence at cloud in situ observational platforms
+- [x] Direct Sun/Moon Extinction Aerosol Optical Depth (column)
+- [x] Spectral Downward Sky Radiances
+- [x] Aerosol columnar properties (GRASP-AOD)
+- [x] ReOBS  
+- [x] Aerosol profile microphysical and optical properties ** GRASP/GARRLiC **
+- [x] Satellite data – combined with ground based ACTRIS data
+- [x] Aerosol and Gas trend assessment
+- [x] Data Interpretation and Outlier Identification Tool
+- [x] Optimal interpolation and Gap filling tool
+- [x] Model Evaluation Service
+- [x] NWP Model Evaluation Service
+- [x] Transport modelling products for assessment of source regions
+- [x] Alert Service for National Facilities
 
+##### Collected (other than ACTRIS L0-1-2)
+
+| Product          | format  | source    | description                                                                                                                                                                                                  |
+| ---------------- | ------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| AERONET-NASA L1  | csv     | NASA/GSFC | [https://aeronet.gsfc.nasa.gov](https://aeronet.gsfc.nasa.gov)                                                                                                                                               |
+| Terra+Aqua/MODIS | HDF4    | AERIS     | [https://modis.gsfc.nasa.gov](https://modis.gsfc.nasa.gov)                                                                                                                                                   |
+| CALIPSO          | HDF4    | AERIS     | [https://www-calipso.larc.nasa.gov](https://www-calipso.larc.nasa.gov)                                                                                                                                       |
+| CLOUDSAT         | HDF4    | AERIS     | [http://www.cloudsat.cira.colostate.edu](http://www.cloudsat.cira.colostate.edu)                                                                                                                             |
+| PARASOL          | HDF5    | AERIS     | [http://www.icare.univ-lille1.fr/parasol](http://www.icare.univ-lille1.fr/parasol)                                                                                                                           |
+| Aura/OMI         | HDF4    | AERIS     | [https://aura.gsfc.nasa.gov/omi](https://aura.gsfc.nasa.gov/omi.html)                                                                                                                                        |
+| Terra/MISR       | HDF4    | AERIS     | [https://terra.nasa.gov/about/terra-instruments/misr](https://terra.nasa.gov/about/terra-instruments/misr)                                                                                                   |
+| Metop/IASI       | BUFR    | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html) |
+| MSG/SEVIRI       | NetCDF4 | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html)                             |
+| AeroCom          | NetCDF4 | METNO     | https://aerocom.met.no/                                                                                                                                                                                                             |
+| NWP Model data   | NetCDF4 | NWP Centres    |                                                                                                                                                                                                              |
+
+##### Generated (systematic production)
+
+| Product                                             | format               | description                                                                                                                                                                                  |
+| --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GRASP/GARRLiC                                       | NetCDF-CF            | ACTRIS-2 GARRLiC Data Product Description. Link to be added                                                                                                                                  |
+| GRASP-AOD                                           | NetCDF-CF            | Aerosol size distribution retrieval from optical depth                                                                                                                                       |
+| ReOBS                                               | NetCDF-CF            | The ReOBS project proposes a scientific method to aggregate, qualify and harmonize about fifty geophysical variables at hourly scale over a decade, to allow multiannual and multi-variables studies combining atmospheric dynamics and thermodynamics, radiation, clouds and aerosols, from ground-based observations. |
+| Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
+| Data Interpretation and Outlier Identification Tool                 | NetCDF-CF                            | Quicklooks for time series data, compared to Copernicus Analysis and Reanalysis model products                                                                                                                   |
+| **?** Optimal interpolation and Gap filling tool                    | NetCDF-CF                            | modal/data integration products which fill measurement gaps, eg in a time series, profile or field.                                                                                                              |
+| Alert Service for National Facilities                               | [geoJSON](http://geojson.org/) **?** | Provide near real time update of special weather situations of interest for research activities at national facilities                                                                                           |
+
+##### Generated (on-demand services)
+
+Some products will be generated through on-line services, and will generate datasets available for a limited time on a web server.
+
+| Product                                                             | format                               | description                                                                                                                                                                                                      |
+| ------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Satellite data subsets                                              | NetCDF-CF                            | Satellite data subsets, spatially and temporally colocated with ACTRIS ground-based measurements                                                                                                                 |
+| **?** Transport modelling products for assessment of source regions | NetCDF-CF                            | Backward transport modelling with FLEXPART to analyse air transirt and impact of various soucres. Develop tools to run FLEXPART operationally and automatically on a regular basis, e.g. monthly, for every site |
+| Colocation service of data from contributing networks               | NetCDF-CF                            | Benchmark data products including relevant EMEP and ACTRIS data: PM and/or sulphate with  ACTRIS National Facilities  compiled in one data product                                                               |
+| Model Evaluation Service                                            | NetCDF-CF                            | Automated model evaluation workflow, Evaluation reports of different complexity, NRT and reanalysis, climate models                                                                                              |
+| NWP Model Evaluation Service                                        | NetCDF-CF                            | Automated model evaluation workflow, evaluation reports of different complexity for NWP models, NRT and reanalysis, NWP models                     
