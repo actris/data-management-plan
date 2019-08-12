@@ -21,6 +21,7 @@
 * [4. Data Management at the ACTRIS data centre](#4-Data-Management-at-the-ACTRIS-data-centre)
   * [4.1 Introduction and overview of ACTRIS Data Management architecture](#41-introduction-and-overview-of-actris-data-management-architecture)
     * [4.1.1 ACCESS role and data management](#411-access-role-and-data-management)
+	* [4.1.2 In-Situ dataflow and data management](#412-in-situ-dataflow-and-data-management)
   * [Findable: Making data findable, including provisions for metadata [FAIR data]](#31-findable-making-data-findable-including-provisions-for-metadata-fair-data)
   * [Accessible: Making data openly accessible [FAIR data]](#32-accessible-making-data-openly-accessible-fair-data)
   * [Interoperable: Making data interoperable [FAIR data]](#33-interoperable-making-data-interoperable-fair-data)
@@ -499,7 +500,7 @@ Make use of the concept paper for text: the subsection in section 3. Can probabl
 
 Add figure, similar to ASC, to easily visualize data flow with main links and tasks for the NF and Unit (including some text, not much).
 
-#### 4.1.2 ARES dataflow and data management
+#### 4.1.3 ARES dataflow and data management
 *Max 1 page, including figure. Common structure for all units*
 
 **Wait with writing this, until we have a draft of in-situ with**
@@ -508,7 +509,7 @@ Add figure, similar to ASC, to easily visualize data flow with main links and ta
 
 The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with the centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data centre automatically produces Level 2 and Level 3 climatological products.
 
-#### 4.1.3 CLU dataflow and data management
+#### 4.1.4 CLU dataflow and data management
 
 *Max 1 page, including figure. Common structure for all units*
 
@@ -518,7 +519,7 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 
 Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
 
-#### 4.1.2 GRES dataflow and data management
+#### 4.1.5 GRES dataflow and data management
 
 *Max 1 page, including figure. Common structure for all units*
 
@@ -534,7 +535,7 @@ Trace gases remote sensing data produced are organized within one unique databas
 
 This database provides access to level 2b and level 3 data of trace gases profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …). The level 2b data are produced from the consolidation of level 2a data using quality assurance and quality control procedures. The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
 
-#### 4.1.2 ASC dataflow and data management
+#### 4.1.6 ASC dataflow and data management
 
 *Max 1 page, including figure. Common structure for all units*
 
