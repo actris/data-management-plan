@@ -454,7 +454,7 @@ An overview of the elements in the data flow is shown in Figure XX.
 
 ![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png)
 
-*Figure x: ACTRIS Data Access and Services*
+*Figure x: Schematic overview of the elements in ACTRIS data flow - Figure to be adjusted by Cathrine
 
 #### 4.1.1 ACCESS role and data management
 
