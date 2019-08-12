@@ -481,8 +481,9 @@ Max 1 page, including figure. Common structure for all units
 Give and overview of the role and tasks here, not too detailed. Refer to workflow annex
 for details.
 Bullet points to be covered by each unit leader:
-* data submission,
+* data submission
 * online, offline, manual automatic
+* Archiving and preservation of  data sets, level 0-2 
 * level 0: how and where are these handled/archived? Comment on formats.
 * level 1 – level 2 data production: where? NF? DC+ TC?
 * how are the traceable data measurements now, and potentially in the future (plans for implementation)
