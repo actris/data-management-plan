@@ -29,3 +29,5 @@ All contributions are welcome.
 [Using Git and GitHub](https://help.github.com/)
 
 [Getting started with Git and GitHub: the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+
+![ACTRIS logo](img/actris-logo.png)
