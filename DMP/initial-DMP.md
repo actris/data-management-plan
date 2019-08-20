@@ -481,10 +481,10 @@ All data centre units are providing metadata and interface for access to data in
 In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalouge, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
 The ACCESS unit will suggest a stanadrd that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
 
-![ACTRIS Data Centre elements, phase 2](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/ACTRIS_data_centre_elements_phase2_simplified.jpg)
+![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/actris-data-center-elements.png)
 Figure x: ACTRIS Data Centre elements
 
-![Current overview of topical databases](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/overview_of_topical_databases.png)
+![Current overview of topical databases](img/section4/overview_of_topical_databases.png)
 Figure x: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
 
 As decribed in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organize the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the compltete list with variables under implementation is included in Appendix II. Details of the level 3 data prodsction in opertain is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all-level-3-variables).
