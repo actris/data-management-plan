@@ -1,4 +1,4 @@
-# Contacts
+# Data center unit contact persons
 
 ## ACTRIS data and services access unit (ACCESS)
 
@@ -20,6 +20,7 @@ Paul Eckhardt
 
 ### General
 Lucia Mona - CNR - Italy
+
 Giuseppe D'Amico - CNR-IMAA - Italy
 
 ### Technical contact
@@ -28,16 +29,19 @@ Giuseppe D'Amico - CNR-IMAA - Italy
 
 ### General
 Antti Hyvärinen	FMI - Finland
+
 Ewan O'Connor - FMI - Finland
 
 ### Technical contact
 Simo Tukiainen - FMI - Finland
+
 Anniina Korpinen - FMI - Finland
 
 ## ACTRIS trace gases remote sensing data centre unit (GRES)
 
 ### General
 Cathy - Boone - IPSL/CNRS - France
+
 Nicole Papineau - CNRS/AERIS - FRANCE
 
 ### Technical contact
