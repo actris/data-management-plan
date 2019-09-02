@@ -130,7 +130,7 @@ The primary goal of ACTRIS is to produce high quality integrated datasets in the
 
 * to provide information on the 4D-compositon and variability and of the physical, optical and chemical properties of short-lived atmospheric constituents, from the surface throughout the troposphere to the stratosphere, with the required level of precision, coherence and integration;
 * to provide information and understanding on the atmospheric processes driving the formation, transformation and removal of short-lived atmospheric constituents;
-* to provide efficient open access to ACTRIS data and services and the means to effectively use the of ACTRIS products;
+* to provide efficient open access to ACTRIS data and services and the means to effectively use the ACTRIS products;
 * to ensure and raise the quality of data and use of up-to-date technology used in the RI and the quality of services offered to the community of users, involving partners from the private sector; and
 * to promote training of operators and users and enhance linkage between research, education and innovation in the field of atmospheric science.
 
@@ -479,7 +479,7 @@ All data centre units are providing metadata and interface for access to data in
 **Figure X (Richard provide here)** show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
 
 In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalouge, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
-The ACCESS unit will suggest a stanadrd that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
+The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
 
 ![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/actris-data-center-elements.png)
 Figure x: ACTRIS Data Centre elements
@@ -487,7 +487,7 @@ Figure x: ACTRIS Data Centre elements
 ![Current overview of topical databases](img/section4/overview_of_topical_databases.png)
 Figure x: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
 
-As decribed in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organize the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the compltete list with variables under implementation is included in Appendix II. Details of the level 3 data prodsction in opertain is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all-level-3-variables).
+As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all-level-3-variables).
 
 #### 4.1.2 In-Situ dataflow and data management
 
@@ -523,7 +523,14 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 *Max 1 page, including figure. Common structure for all units*
 
 **Wait with writing this, until we have a draft of in-situ with**
-
+* data submission - automated transfer
+* Archiving and preservation of  data sets, level 0-2 - not all L0 is archived at DB yet
+* level 0: how and where are these handled/archived? Comment on formats. - Mostly netcdf; after processing, all netcdf
+* level 1 – level 2 data production: where? NF? DC+ TC? - under DC control, all netcdf 
+* how are the traceable data measurements now, and potentially in the future (plans for implementation) - in principle, traceable through metadata in netcdf
+* version control, all levels? - under development
+* what is centralized, what is at NF level etc. - processing suite centralised, calibration via CCRES
+* Centralised tools, manual tools, automatic tools - processing automated, but calibration requires manual tools
 **Text moved from other parts of the document that belongs here, maybe in modified version:**
 
 Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
