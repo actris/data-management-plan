@@ -629,14 +629,14 @@ The term measurement traceability is used to refer to an unbroken chain of compa
 
 ACTRIS works towards establishing traceability for all variables using persistent identifiers (PIDs). This work is in development, and need close interaction with the topical centres as well as National Facilities. Currently ACTRIS is using digital object identifiers (DOIs) for some level 3 datasets though the [Data Cite Metadata Store API](https://mds.datacite.org/), and more will be implemented.
 
-ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical '<prefix>/<suffix>' pattern.
+ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical "prefix"/"suffix" pattern.
 
 ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status by July 2019.
 
 | Data center unit         | PID service                    | Description                                                                             |                        Standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          | To be decided                  |                                                                                         |                                 |
-|         ARES             | To be decided                  |                                                                                         |                                 |
+|         ARES             | Internal (temporary)                 | Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
 |         CLU              | To be decided                  |  None                                                                                   |       To be decided             |
 |	      ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
 |         ASC              | To be decided					|  None																					  |       To be decided				|
