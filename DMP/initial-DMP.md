@@ -758,10 +758,50 @@ The table shows the data and software usage licence July 2019.
 
 ## 6. Data security
 
-Rutines for data recovery as well as secure storage and transfer of sensitive data should be handled by each data centre unit for level 0, 1 and 2 data.
-For secondary data, the ACCESS unit is responsible for providing secure storage and transfer of sensitive data according to relevant rules and regulations.
+The main structure and installations of the ACTRIS Data Centre is located at NILU - Norwegian Institute for Air Research, Kjeller, Norway. NILU hosts EBAS archiving all in situ data sets, in addition to the ACTRIS Data Portal. The other installations are the EARLINET DB at National Research Council - Institute of Environmental Analysis (CNR), Tito Scalo, Potenza, Italy, the satellite data components at the University of Lille, Villeneuve d'Ascq, France, and the cloud profile data in the Cloudnet DB at the Finnish Meteorological Institute in Helsinki, Finland.
 
-**More details should be provided here**
+### 6.1 Archiving and preservation of In-Situ data
+
+EBAS is a relational database (Sybase) developed in the mid-1990s. Data from primary projects and programmes, such as ACTRIS, GAW-WDCA, EMEP, AMAP, are physically stored in EBAS. All data in EBAS are, in addition, stored at a dedicated disk in the file tree at NILU. This include the levels 0-1-2 of data.
+
+The complete data system is backed up regularly. This includes incremental back up of the data base 6 times per week, and one weekly back up of the full data base to a server in a neighbour building to ensure as complete as possible storage of all data for future use in case of e.g. fires or other damages to the physical construction. File submission is conducted by ftp. A separate ftp area is allocated to incoming files, and all activities herein are logged on a separate log file, and backed up on 2 hour frequency. An alert system is implemented to ensure warning messages if there are problems during file transfer from the data originators to the data centre.
+
+Ca 455 separate new comprehensive files including meta data with annual time series of medium to high time resolution (seconds to week) is expected per year. A significant growth in this number is not expected on annual scale. In total this will sum up to ca 10GB/year from ca 150 000 single column files, including both raw data and auxiliary parameters.
+
+EBAS is based on data management over more than 40 years. Last 10 years there has been a European project-type cooperation from FP5 to Horizon2020, with and EMEP and GAW programmes since 1970’s as the fundament. Sharing visions and goals with the supporting long-term policy driven frameworks have ensured long-term funding for the core data base infrastructure. A long-term strategy for providing access to all ACTRIS data and other related services are in progress through the establishment of ACTRIS as a RI. ACTRIS is on the ESFRI (European Strategy Forum on Research Infrastructures) roadmap for Research Infrastructures, and a preparatory phase project is ongoing.
+
+### 6.2 Archiving and preservation of ARES data
+
+The storage infrastructure is composed by three servers and two different SAN (Storage Area Network). One server hosts the EARLINET PostgreSQL database and the other one is used to interface both endusers and data submitters to the EARLINET database. This last server is connected to the operational SAN on which the data submitted by the user are safety stored. A daily back up of the EARLINET database is made automatically and it is stored on the second backup SAN.
+
+The whole EARLINET database is also accessible through THREDDS (Thematic Real-time Environmental Distributed Data Services) which is installed on a third server. On the same server a CAS (Central Authentication Service) is configure to authenticate all EARLINET users centrally. 
+
+The current size of the PostgresSQL EARLINET database is about 1GB. The total amount of data submitted (NetCDF EARLINET files) is about 1.3 GB. An estimation of the growing rate of the database at this rate is 100-200MB/year. However a significant growth in number of files to be collected is expected because of: the use of the SCC (Single Calculus Chain) for the data submission, the inclusion of new products (pre-processed data, NRT optical properties, profiles, aerosol layers properties and multiwavelength datasets), increases of the number of EARLINET stations and increase of EARLINET h24 stations. We estimate that at the end of ACTRIS2 project, the ACTRIS aerosol profile database could growth at a rate of about 12-15 GB per year. 
+
+The SCC is part of the EARLINET data centre and it is the standard EARLINET tool for the automatic analysis of lidar data. Three additional servers are needed to provide this further service: a calculus server where all the SCC calculus modules are installed and ran, a MySQL database where all the analysis metadata are stored in a fully traceable way a finally a web interface allowing the users to access to the SCC.
+
+The EARLINET database and the SCC are maintained by the National Research Council of Italy with long term commitment for archiving and preservation. The archiving on CERA database is a further measure for assuring the availability of the data through redundancy of the archive. 
+
+### 6.3 Archiving and preservation of CLU data
+
+The Cloudnet database is a file-based database, due to the nature of the typical use-case and data volume. The infrastructure comprises an FTP server for incoming data streams, rsync server for outgoing data streams, processing server, webserver, with data storage distributed across a series of virtual filesystems including incremental backups. Due to the data volume, most sites also hold a copy of their own processed data, effectively acting as a second distributed database and additional backup.
+
+The current size of the database is about 10 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. However, there will be a significant increase in volume when the planned move to multi-peak and spectral products is undertaken; this is in addition to a slight increase arising through the creation of new products. The Cloudnet database is maintained by FMI with long-term commitment for archiving and preservation. Publication of QA datasets will aid dataset preservation.
+
+### 6.4 Archiving and preservation of GRES data
+
+### 6.5 Archiving and preservation of ASC data
+
+### 6.6 Archiving and preservation of ACCESS data
+
+#### 6.6.1 Level 3 data
+
+Some higher level data products are stored at NILU in a file archive, this is data that is post-processed and usually part of data publications (http://actris.nilu.no/Content/pageid=226809f7a0ac49538914eeafb4448afa).
+
+#### 6.6.3 ACTRIS metadata
+
+#### 6.6.3 Other
+
 
 ## 7. Ethical aspects
 
