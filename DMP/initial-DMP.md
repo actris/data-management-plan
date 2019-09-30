@@ -204,29 +204,20 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 3.2 ACTRIS Aerosol remote sensing data centre unit (ARES)
 
-The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data. This includes centralized data processing, data storage, recording of metadata in a dedicated RDBMS, traceability, harmonization and data versioning, quality control, documentation and data provision. The unit allows for RRT and NRT data provisioning and offers support and training activities. Furthermore, level 3 data production for climatological analysis and the delivery of new data products will be further implemented and offered during the implementation phase.
+The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data. This includes centralized data processing, inclusion of data and meta data in the data base, traceability, harmonization and data versioning, quality control, archiving, documentation and data provision. The activity enables RRT and NRT data compilation and delivery and provides tutorial activities. Furthermore, data product generation of level 3 data for climatological analysis and new products is offered and further implemented during the implementation phase.
 
-The goals are:
-- measure the aerosol optical properties vertical distribution in the whole troposphere and upper stratosphere with short time resolution; 
-- investigate the relationship between near-surface processes (as pollution or air quality issues) and atmospheric aerosol contents;
-- address the challenging issue of direct and indirect effects of aerosol in the climate change.
+Furthermore the goal is to measure the aerosol distribution and optical properties in the whole troposphere and upper stratosphere with short time resolution and to investigate its relationship with near surface processes as pollution and air quality issues and to address the challenging issue of cloud indirect effects of aerosol in the climate change.
 
 #### The types and formats of data generated/collected
 
-The ACTRIS ARES data centre unit is making use of EARLINET Data base infrastructure. Aerosol remote sensing data submitted to ACTRIS need to be compliant to a specific format established by the ARES unit centralized processing suite. ARES provides data compliance with NetCDF4, following Climate Forecast (CF) 1.7 conventions. 
-
-* ARES Level 1 data products consist of high and low resolution total attenuated backscatter and volume depolarization ratio time series provided in NRT or RRT. 
-
-* ARES Level 2 data products contain fully quality ensured aersol extinction, backscatter and depolarization ratio vertical profiles.
-
-* ARES Level 3 data products are retrieved from the level 2 data and provide statistical analysis (including seasonality and annuality) of the most important aerosol optical parameters.   
+The ACTRIS ARES data centre unit is making use of EARLINET Data base infrastructure. Aerosol remote sensing data submitted to ACTRIS need to be in a specified format compliant with the centralized processing suite. ARES provides data compliant with netCDF 4 as much as possible, and following Climate Forecast (CF) 1.7 convention. 
 
 #### Re-use of existing data
 The ACTRIS data user interface will include access to aerosol remote sensing legacy data resulting from ACTRIS pre-projects (for ARES [EARLINET, EARLINET-ASOS](https://www.actris.eu/About/ACTRIS/Heritage.aspx)). These will also be included as a part of the ACTRIS ARES data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
 
 #### The origin of the data
 
-The origin of the data is derived from instrument raw data provided by the data originators in a common format (NetCDF).
+The origin of the data is derived from instrument raw data.
 
 #### The expected size of the data
 
@@ -244,17 +235,11 @@ Table 2: *Data volume*
 
 #### Data utility
 
-Atmospheric aerosols are considered one of the major uncertainties in climate forcing, and a detailed aerosol characterization is needed in order to understand their role in the atmospheric processes as well as human health and environment. The most significant source of uncertainty is the large variability in space and time. Due to their short lifetime and strong interactions, their global concentrations and properties are poorly known. For these reasons, information on the large-scale three-dimensional aerosol distribution in the atmosphere should be continuously monitored. It is undoubted that information on the vertical distribution is particularly important and that lidar remote sensing is the most appropriate tool for providing this information. ARES data products are particularly useful for addressing important issues like validation and improvement of models that predict the future state of the atmosphere and its dependence on different scenarios describing economic development, including those actions taken to preserve the quality of the environment. 
-
-* ARES Level 1 data are particularly interesting for several applications such as model assimilation and monitoring of special/critical events (volcanic eruptions, dust intrusions, ...).
-
-* ARES Level 2 data allow for an optimal and complete optical and microphysical characterization of atmospheric aerosol. This is the fundamental starting point for any study regarding the assessment of aerosol in many atmospheric processes (climatology, climate change, Earth radiative budget, aerosol layer characterization, long range transported aerosol processes).   
-
-* ARES Level 3 data are climatological products providing statistical analysis of aerosol optical parameters. These products are useful for the characterization of different sites all over Europe as well as to underline seasonalities, annualities and trends. 
+Data utility specifically related to the DC unit (see data summary at ASC for example)
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
-Details of the data life cycle and workflow (workflow diagrams for data production) for aerosol remote sensing observations can be found in [Appendix 4: ACTRIS aerosol remote sensing data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-4-actris-aerosol-remote-sensing-data-centre-unit-ares-data-life-cycle-and-workflow-diagram).
+Details of the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [Appendix 4: ACTRIS aerosol remote sensing data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-4-actris-aerosol-remote-sensing-data-centre-unit-ares-data-life-cycle-and-workflow-diagram).
 
 ### 3.3 ACTRIS Cloud remote sensing data centre unit (CLU)
 
@@ -527,13 +512,18 @@ Make use of the concept paper for text: the subsection in section 3. Can probabl
 Add figure, similar to ASC, to easily visualize data flow with main links and tasks for the NF and Unit (including some text, not much).
 
 #### 4.1.3 ARES dataflow and data management
-*Max 1 page, including figure. Common structure for all units*
-
-**Wait with writing this, until we have a draft of in-situ with**
-
-**Text moved from other parts of the document that belongs here, maybe in modified version:**
 
 The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with the centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data centre automatically produces Level 2 and Level 3 climatological products.
+
+|        Product Type       |                                  Availability (Typical)                                          | 
+|---------------------------|--------------------------------------------------------------------------------------------------|
+| Level 1                   |                                          RRT / NRT                                               |
+| Level 2                   |                                             3 days?                                  |  
+| Level 3                   |                                             1 month?                                  | 
+
+Table 4.1.3.1. *ARES Data Products Availability *
+
+*ADD FIGURE*
 
 #### 4.1.4 CLU dataflow and data management
 
@@ -612,7 +602,7 @@ Future efforts will further develop the system shown in Figure XXX (that Richard
 
 There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Center will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
-ACTRIS aiming at following the INSPIRE directive for metadata formatting. Present standard(s) for metadata is at the ACCESS unit level. A decision is needed if data centre units should provide metadata according to a specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
+ACTRIS aiming at following the INSPIRE directive for metadata formatting. Present standard(s) for metadata is at the ACCESS unit level. A decision is needed if data centre units should provide metadata according to specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
 
 Tables below show the status by July 2019.
 
@@ -642,18 +632,20 @@ ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 
 #### 4.2.3 Traceability of ACTRIS data
 
-The term measurement traceability is used to refer to an unbroken chain of comparisons relating an instrument's measurements to a known standard, time, processing, siftware etc. Calibration to a traceable standard can be used to determine an instrument's bias, precision, and accuracy. The ability to trace a measurements back to its origin is important for several reasons; It increase the quality by facilitating back-out or reprocess bad data, and conversely, it allows reward and boost good data sources and processing techniques. This is also to ensure that proper attribution is given to data originators adequately reflecting their contributions through the data production chain.
+The term measurement traceability is used to refer to an unbroken chain of comparisons relating an instrument's measurements to a known standard, time, processing, software etc. Calibration to a traceable standard can be used to determine an instrument's bias, precision, and accuracy. The ability to trace a measurements back to its origin is important for several reasons; It increase the quality by facilitating back-out or reprocess bad data, and conversely, it allows reward and boost good data sources and processing techniques. This is also to ensure that proper attribution is given to data originators adequately reflecting their contributions through the data production chain.
 
 ACTRIS works towards establishing traceability for all variables using persistent identifiers (PIDs). This work is in development, and need close interaction with the topical centres as well as National Facilities. Currently ACTRIS is using digital object identifiers (DOIs) for some level 3 datasets though the [Data Cite Metadata Store API](https://mds.datacite.org/), and more will be implemented.
 
-ARES unit assigns a persistent identifier to a dataset implementing an internal PID generation system based on an alphanumerical "prefix"/"suffix" pattern.
+Currently, ARES unit assigns two different types of local persistent identifier (PID): 
+* **Data Processing PIDs.** These PIDs identify univocally the characteristics of the instrument (including all its subparts) used to collect the Level 0 data. In particular, to each submitted Level 0 product it is assigned an alphanumeric ID which allows to retrieve all the details about the instrument configuration used to perform the measurement as well as the data processing configuration used to compute the corresponding Level 1 data products.    
+* **Dataset PIDs.** An internal PID generation system based on an alphanumerical "prefix"/"suffix" pattern identifies univocally each dataset downloaded through the ARES interfaces.
 
 ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status by July 2019.
 
 | Data center unit         | PID service                    | Description                                                                             |                        Standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          | To be decided                  |                                                                                         |                                 |
-|         ARES             | Internal (temporary)                 | Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
+|         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
 |         CLU              | To be decided                  |  None                                                                                   |       To be decided             |
 |	      ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
 |         ASC              | To be decided					|  None																					  |       To be decided				|
@@ -663,7 +655,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 
 #### 4.2.4: Version control of ACTRIS (meta)data
 
-The ACTRIS DC aims at providing clear versioning of its data and metadata, due to the decentralised nature of the Data Centre, this varies between the different data centre units, and implementation will be done on unit level.
+The ACTRIS DC aims at providing clear versioning of its data and metadata. Due to the decentralised nature of the Data Centre, this varies between the different data centre units, and implementation will be done on unit level.
 
 As a guiding principle, all data submitted to ACTRIS passing quality assurance should be uniquely identified. In case of updates, a ID-number is generated, and previous data versions should be identifiable and kept available upon request while the latest version is served through the ACTRIS Data Centre.
 
@@ -702,9 +694,9 @@ The table shows the data access protocols July 2019.
 
 For In-Situ, CLU, GRES and and ASC unit, all data, metadata, tools and documentation are provided with free and fully open access to all users without authentication with username and password.
 
-A Sign-On authentication system has been implemented at ARES unit. It is based on CAS (Central Authentication Service) protocol and provides both authentication via username and password and via Google credentials.
+A Sign-On authentication system has been implemented at ARES unit. It is based on [CAS (Central Authentication Service) project](https://www.apereo.org/projects/cas) which implements natively multiple authentication protocols (CAS, SAML, OAuth, OpenID) and provides both authentication via username and password and via Google credentials. In order to gain access to ARES products (apart from Quicklooks, simple plots of Level 1 data) a user authentication (free and open to all users) is needed. Such authentication process has been implemented with the only purpose to allow feedback to the end user in case of software or data products updates. 
 
-Some ACTRIS data requires a username and password in order to gain access, e.g. the usage of aerosol profile dataApart from Quicklooks (simple plots of data from the In Situ, ARES and CLU units), password is required for access to Near-Real-Time (NRT). For all data that requires username and password, a Single-Sign-On service will be implemented, and used by all Data Centre units.
+In general, for all data that requires username and password, a Single-Sign-On service will be implemented, and used by all Data Centre units.
 
 In all cases where access is restricted, information on how to access the data should be available through the metadata, in order to facilitate machine to machine interaction.
 
@@ -731,9 +723,11 @@ The guiding principle is free and open access to ACTRIS data and ACTRIS data pro
 
 As a result, the ACTRIS DC will implement one or multiple licenses for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to acknowledge ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably end of 2020 or early 2021). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
 
-Several features have been implemented by In-Situ, ARES, CLU (or more) units to ensure reusability and traceability, in particular traceable data flow and version control of data produce, see section 4.2.
+Several features have been implemented by In-Situ, ARES, CLU (or more) units to ensure reusability and traceability, in particular traceable data flow and version control of data products, see section 4.2.
 
 In order to increase the reusability of data in ASC unit, these data are completed with rich metadata which are in open access from the website. These metadata provide detailed technical description of the chambers (size, volume, walls, irradiation system ...), experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations. This last one is very useful for modelers who aim at simulating experiments performed in simulation chambers.
+
+As regards ARES unit, all the characteristics of the LIDAR instrument configuration (laser, telescope, acquisition and detection system, processing configuration, ...) are reported as metadata in each ARES data product. 
 
 Availability of data can vary between the different data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
@@ -789,15 +783,17 @@ EBAS is based on data management over more than 40 years. Last 10 years there ha
 
 ### 6.2 Archiving and preservation of ARES data
 
-The storage infrastructure is composed by three servers and two different SAN (Storage Area Network). One server hosts the EARLINET PostgreSQL database and the other one is used to interface both endusers and data submitters to the EARLINET database. This last server is connected to the operational SAN on which the data submitted by the user are safety stored. A daily back up of the EARLINET database is made automatically and it is stored on the second backup SAN.
+The ARES infrastructure is composed by seven virtual servers and two different SAN (Storage Area Network). 
 
-The whole EARLINET database is also accessible through THREDDS (Thematic Real-time Environmental Distributed Data Services) which is installed on a third server. On the same server a CAS (Central Authentication Service) is configure to authenticate all EARLINET users centrally. 
+One server hosts a PostgreSQL database, a second and a third one are used to interface the data originators and endusers respectively. ARES data products are safely stored on a primary SAN. A full daily back up is made automatically and it is stored on a second backup SAN.
 
-The current size of the PostgresSQL EARLINET database is about 1GB. The total amount of data submitted (NetCDF EARLINET files) is about 1.3 GB. An estimation of the growing rate of the database at this rate is 100-200MB/year. However a significant growth in number of files to be collected is expected because of: the use of the SCC (Single Calculus Chain) for the data submission, the inclusion of new products (pre-processed data, NRT optical properties, profiles, aerosol layers properties and multiwavelength datasets), increases of the number of EARLINET stations and increase of EARLINET h24 stations. We estimate that at the end of ACTRIS2 project, the ACTRIS aerosol profile database could growth at a rate of about 12-15 GB per year. 
+Another server is responsible for the provisioning of the whole database through THREDDS (Thematic Real-time Environmental Distributed Data Services). On the same server a CAS (Central Authentication Service) is configured to authenticate all ARES users centrally. 
 
-The SCC is part of the EARLINET data centre and it is the standard EARLINET tool for the automatic analysis of lidar data. Three additional servers are needed to provide this further service: a calculus server where all the SCC calculus modules are installed and ran, a MySQL database where all the analysis metadata are stored in a fully traceable way a finally a web interface allowing the users to access to the SCC.
+The current size of the PostgresSQL EARLINET database is about 1GB. The total amount of data submitted (NetCDF EARLINET files) is about 1.3 GB. An estimation of the growing rate of the database is 100-200MB/year. However a significant growth in number of files to be collected is expected because of: the use of the SCC (Single Calculus Chain) for the data submission, the inclusion of new products (pre-processed data, NRT optical properties, profiles, aerosol layers properties and multiwavelength datasets), increases of the number of aerosol remote sensing NF and increase of NF operating 24/7. We estimate that during the Implementation Phase the ACTRIS aerosol profile database could grow at a rate of about 300 GB per year. 
 
-The EARLINET database and the SCC are maintained by the National Research Council of Italy with long term commitment for archiving and preservation. The archiving on CERA database is a further measure for assuring the availability of the data through redundancy of the archive. 
+The SCC is part of the ARES infrastructure and it is the standard EARLINET tool for the automatic analysis of lidar data. Three additional servers are needed to provide this further service: a calculus server where all the SCC calculus modules are installed and ran, a MySQL database where all the analysis metadata are stored in a fully traceable way and finally a web interface allowing the users to access to the SCC.
+
+The ARES infrastructure is maintained by the National Research Council of Italy with long term commitment for archiving and preservation. The archiving on CERA database is a further measure for assuring the availability of the data through redundancy of the archive. 
 
 ### 6.3 Archiving and preservation of CLU data
 
