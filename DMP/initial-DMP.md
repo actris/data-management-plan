@@ -812,9 +812,9 @@ The ARES infrastructure is maintained by the National Research Council of Italy 
 
 ### 6.3 Archiving and preservation of CLU data
 
-The Cloudnet database is a file-based database, due to the nature of the typical use-case and data volume. The infrastructure comprises an FTP server for incoming data streams, rsync server for outgoing data streams, processing server, webserver, with data storage distributed across a series of virtual filesystems including incremental backups. Due to the data volume, most sites also hold a copy of their own processed data, effectively acting as a second distributed database and additional backup.
+The CLU database consists of a file archive connected to a relational metadata database, due to the nature of the typical use-case and data volume. The infrastructure comprises a webserver, an FTP server for incoming data streams, web and rsync server for outgoing data streams, processing servers, with data storage distributed across a series of virtual filesystems including incremental backups. Due to the data volume, most sites also hold an archive of their own Level 0 and Level 1 data, effectively acting as a second distributed database and additional backup.
 
-The current size of the database is about 10 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. However, there will be a significant increase in volume when the planned move to multi-peak and spectral products is undertaken; this is in addition to a slight increase arising through the creation of new products. The Cloudnet database is maintained by FMI with long-term commitment for archiving and preservation. Publication of QA datasets will aid dataset preservation.
+The current size of the database is about 25 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. However, there will be a significant increase in volume when the planned move to multi-peak and spectral products is undertaken; this is in addition to a slight increase arising through the creation of new products. The CLU infrastructure is maintained by FMI with long-term commitment for archiving and preservation. Publication of QA datasets will aid dataset preservation.
 
 ### 6.4 Archiving and preservation of GRES data
 
