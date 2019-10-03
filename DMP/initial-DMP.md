@@ -763,6 +763,7 @@ The table shows the data and software usage licence July 2019.
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
 |         In Situ		               |       None                   |     [EBAS IO](https://git.nilu.no/ebas/ebas-io/wikis/home)            |
 |         ARES     		               |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
+|	CLU					|	MIT		|	[CloudnetPy](https://github.com/tukiains/cloudnetpy) 		|
 
 *Table x: Software*
 
