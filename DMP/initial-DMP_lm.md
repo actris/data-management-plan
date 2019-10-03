@@ -63,7 +63,7 @@ atmospheric constituents, processes, events or regions by following common ACTRI
 ![Architecture of the ACTRIS Data Centre](img/section1/Exp_Obs_NF.jpg)
 * Figure XX: Overview of the types of National Facilities providing data to ACTRIS Data Centre*
 
-ACTRIS is a unique RI improving both the quality of and access to atmospheric observations, developing new methods and protocols, and harmonizing existing observations of the atmospheric variables listed in [Appendix 1](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx). Appendix 1 includes an updated list of all ACTRIS variables associated to recommended measurement methodology.
+ACTRIS is a unique RI that improves both the quality of and access to atmospheric observations, developing new methods and protocols, and harmonizing existing observations of the atmospheric variables listed in [Appendix 1](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx). Appendix 1 includes an updated list of all ACTRIS variables associated to recommended measurement methodology.
 
 ### 1.1 The mission, overall goal and structure of the ACTRIS Data Centre
 
