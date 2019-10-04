@@ -109,12 +109,13 @@ There are 4 levels of ACTRIS data:
  * **ACTRIS level 1 data:** Calibrated and quality assured data with minimum level of quality control.
  * **ACTRIS level 2 data:** Approved and fully quality controlled ACTRIS data product or geophysical variable.
  * **ACTRIS level 3 data:** Elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2 data, and data from other sources. The data can be gridded or not.
- * **ACTRIS synthesis product:** Data product from e.g. research activities, not under direct ACTRIS responsibility, but ACTRIS offer repository and access.
+ 
+Additionally to these data products which are completely under the control of ACTRIS with established procedures and standards, the ACTRIS DC will also produce additional data products of interest of the the scientific and  user communities. These are   **ACTRIS synthesis product:** data products from e.g. research activities, not under direct ACTRIS responsibility, but for which ACTRIS offers repository and access.
 
 ![Architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_levels.jpg)
 *Figure 1: ACTRIS data levels*
 
-The list of ACTRIS variables are expected to increase during the progress of ACTRIS, particularly level 3 data products.
+The list of ACTRIS variables are expected to increase during the progress of ACTRIS. Level 3 data products are expected to increase in quantity and number of variables because of the expected increase in ACTRIS data synergistic usage with other datasets. Additionally the expected technological and methodological developments fostered by ACTRIS itself will increase the ACTRIS observational capabilities and therefore the number and quality of observable atmospheric related variables (Level 1 and Level 2 products).
 
 ## 3. Data summary of the ACTRIS data centre
 
@@ -156,8 +157,8 @@ ACTRIS will produce data and data products essential to a wide range of communit
 * Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
 * Space agencies for validation and the development of new satellite missions;
 * National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution models;
-* Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
-* Copernicus Gas atmospheric service (ECMWF)
+* Policy makers and local/ regional/ national authorities for climate, air-quality, health and atmoshperic hazards related information for decision making and policy development.
+* Copernicus atmospheric monitoring service (ECMWF)
 * Science community working on air quality, climate change and stratospheric ozone depletion issues
 
 ### 3.1 ACTRIS In situ data centre unit (In-Situ)
@@ -204,20 +205,20 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 3.2 ACTRIS Aerosol remote sensing data centre unit (ARES)
 
-The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data. This includes centralized data processing, data storage, recording of metadata in a dedicated RDBMS, traceability, harmonization and data versioning, quality control, documentation and data provision. The unit allows for RRT and NRT data provisioning and offers support and training activities. Furthermore, level 3 data production for climatological analysis and the delivery of new data products will be further implemented and offered during the implementation phase.
+The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data coming frm lidar and photometer obsrevations. This includes centralized data processing, data storage, recording of metadata in a dedicated RDBMS, traceability, harmonization and data versioning, quality control, documentation and data provision. The unit allows for RRT and NRT data provisioning and offers support and training activities. Furthermore, level 3 data production for climatological analysis and the delivery of new data products will be further implemented and offered during the implementation phase.
 
-The goals are:
-- measure the aerosol optical properties vertical distribution in the whole troposphere and upper stratosphere with short time resolution; 
-- investigate the relationship between near-surface processes (as pollution or air quality issues) and atmospheric aerosol contents;
-- address the challenging issue of direct and indirect effects of aerosol in the climate change.
+The main goal is providing access of high quality and document datasets of the aerosol optical properties vertical distribution in the whole troposphere and upper stratosphere with short time resolution.
+This long term dataset collected at continental scale allows :
+- investigation of the relationship between near-surface processes (as pollution or air quality issues) and atmospheric aerosol contents;
+- addressing the challenging issue of direct and indirect effects of aerosol in the climate change.
 
 #### The types and formats of data generated/collected
 
-The ACTRIS ARES data centre unit is making use of EARLINET Data base infrastructure. Aerosol remote sensing data submitted to ACTRIS need to be compliant to a specific format established by the ARES unit centralized processing suite. ARES provides data compliance with NetCDF4, following Climate Forecast (CF) 1.7 conventions. 
+The ACTRIS ARES data centre unit is built on the heritage of the EARLINET Data base infrastructure and integartes the photometer aerosol data processing. Aerosol remote sensing data submitted to ACTRIS need to be compliant to a specific format established by the ARES unit centralized processing suite. All further data levels are produced by the ARES processing suite. ARES provides data compliance with NetCDF4, following Climate Forecast (CF) 1.7 conventions. 
 
-* ARES Level 1 data products consist of high and low resolution total attenuated backscatter and volume depolarization ratio time series provided in NRT or RRT. 
+* ARES Level 1 data products consist of high and low resolution total attenuated backscatter and volume depolarization ratio time series provided in NRT or RRT. provided by the photometer observation are also available. Additionally ARES provides columnar information and synergistic lidar/photometer products as vertical profiles of aerosol microphysical properties as Level 1 data.
 
-* ARES Level 2 data products contain fully quality ensured aersol extinction, backscatter and depolarization ratio vertical profiles.
+* ARES Level 2 data products contain fully quality assured aerosol extinction, backscatter, lidar ratio, Angstrom exponent and depolarization ratio vertical profiles and full quality controlled columnar information and aerosol microphysical properties profiles.
 
 * ARES Level 3 data products are retrieved from the level 2 data and provide statistical analysis (including seasonality and annuality) of the most important aerosol optical parameters.   
 
@@ -232,14 +233,14 @@ The origin of the data is derived from instrument raw data provided by the data 
 
 | Type                                |Number of annual datasets (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
-| ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   70                                    |
-
+| ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                    |
+ GRASP/GARRLiC      |                        6          |             30        |    52                
 Table 1: *Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
-| ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   25 TB                    |
-
+| ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                    |
+| GRASP/GARRLiC     |                            3.2 GB                         |     TBD                    |           TBD              
 Table 2: *Data volume*
 
 #### Data utility
@@ -433,7 +434,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 
 | Type                  |Number of annual datasests (end 2019)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
-|    GRASP/GARRLiC      |                        6          |             See SCC L1 from ARES        |    See SCC L1 from ARES                 |
+|   |
 |    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
 |    ReOBS              |                        1          |             1                           |    1                                    |
 
@@ -441,7 +442,7 @@ Table 2.6.1. *Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
-| GRASP/GARRLiC     |                            3.2 GB                         |     TBD                    |           TBD              |
+|
 | GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
 | ReOBS             |                              2 GB                         |        3 GB                |                5 GB        |
 
@@ -533,8 +534,8 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 |        Product Type       |                                  Availability (Typical)                                          | 
 |---------------------------|--------------------------------------------------------------------------------------------------|
 | Level 1                   |                                          RRT / NRT                                               |
-| Level 2                   |                                             3 days?                                  |  
-| Level 3                   |                                             1 month?                                  | 
+| Level 2                   |                                             1 year                                  |  
+| Level 3                   |                                             1 year                                  | 
 
 Table 4.1.3.1. *ARES Data Products Availability *
 
