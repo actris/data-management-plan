@@ -539,7 +539,8 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 
 Table 4.1.3.1. *ARES Data Products Availability *
 
-*ADD FIGURE*
+![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
+* Figure X: ARES Data Products Availability*
 
 #### 4.1.4 CLU dataflow and data management
 
