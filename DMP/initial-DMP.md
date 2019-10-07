@@ -86,9 +86,9 @@ During the ACTRIS implementation phase (expected 2020-2024), the Central Facilit
 | Name of Central Facility and associated Unit                                | Hosting institution and contribution | Main activities                                                   |
 |--------------------------------------------------------------|--------------------------------------|--------------------------------------------------------------------|                                    
 | [ACTRIS data and services access unit (ACCESS)](http://actris.nilu.no/)                | NILU (lead), CNRS, MetNo, BSC        | ACTRIS web interface for data, services and tools, called “The ACTRIS Data Centre”. Main activities are discovery and access to ACTRIS data and data products, digital tools provided by the topical centres and the data centre units, documentation, access to software and tools for data production. Offer visualisation of ACTRIS data products. Data production of selected Level 3 data and synergy data products. The data centre will offer bridge to external data bases and sources.|
-| [ACTRIS In-Situ data center unit (In-Situ)](http://ebas.nilu.no/)                   | NILU                                 | Data curation service for in situ data: all aerosol, cloud and trace gas in situ data. This comprises inclusion of data in the data base EBAS, archiving and documentation. Support for centralized data processing, harmonization, traceability, quality control and data product generation. Training and online tools for QA, QC. The activity enables RRT and NRT delivery.|
+| [ACTRIS In-Situ data centre unit (In-Situ)](http://ebas.nilu.no/)                   | NILU                                 | Data curation service for in situ data: all aerosol, cloud and trace gas in situ data. This comprises inclusion of data in the data base EBAS, archiving and documentation. Support for centralized data processing, harmonization, traceability, quality control and data product generation. Training and online tools for QA, QC. The activity enables RRT and NRT delivery.|
 | [ACTRIS Aerosol remote sensing data centre unit (ARES)](https://data.earlinet.org/)		   | CNR (lead), CNRS					  |	Aerosol remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data archiving in EARLINET DB, data provision and documentation. The activity enables RRT and NRT delivery. Tutorial activities. Production of level 3 data for climatological analysis and new products. |	
-| [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)		   | FMI								  |	Data curation service for cloud remote sensing data. Support for centralized cloud remote sensing data processing, harmonization, automated quality control and product generation. Enables RRT and NRT delivery. Production of level 3 data for NWP model evaluation. | 
+| [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)		   | FMI								  |	Data curation service for cloud remote sensing data. Support for centralized cloud remote sensing data processing, traceability, harmonization, automated quality control and product generation, and data archiving. Enables RRT and NRT delivery. Production of level 3 data for NWP model evaluation. | 
 | [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/) | CNRS                                 | Data curation service for atmospheric simulation chamber data. This includes standardized process for data submission, quality control, inclusion of data in the XX data base, search metadata creation and provision and archiving.|
 | [ACTRIS trace gases remote sensing data centre unit (GRES)](https://en.aeris-data.fr/)    | CNRS                                 | Data curation service for reactive trace gases remote sensing data. This comprises standardized process for data submission, quality control, inclusion of data in the XX data base, metadata creation and provision and archiving. Production of level 3 data for climatological analysis, and added values products (quicklooks, links to EVDC - ESA Atmospheric Validation Data Centre).|
 
@@ -109,12 +109,13 @@ There are 4 levels of ACTRIS data:
  * **ACTRIS level 1 data:** Calibrated and quality assured data with minimum level of quality control.
  * **ACTRIS level 2 data:** Approved and fully quality controlled ACTRIS data product or geophysical variable.
  * **ACTRIS level 3 data:** Elaborated ACTRIS data products derived by post-processing of ACTRIS Level 0 -1 -2 data, and data from other sources. The data can be gridded or not.
- * **ACTRIS synthesis product:** Data product from e.g. research activities, not under direct ACTRIS responsibility, but ACTRIS offer repository and access.
+ 
+Additionally to these data products which are completely under the control of ACTRIS with established procedures and standards, the ACTRIS DC will also produce additional data products of interest of the the scientific and  user communities. These are   **ACTRIS synthesis product:** data products from e.g. research activities, not under direct ACTRIS responsibility, but for which ACTRIS offers repository and access.
 
 ![Architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_levels.jpg)
 *Figure 1: ACTRIS data levels*
 
-The list of ACTRIS variables are expected to increase during the progress of ACTRIS, particularly level 3 data products.
+The list of ACTRIS variables are expected to increase during the progress of ACTRIS. Level 3 data products are expected to increase in quantity and number of variables because of the expected increase in ACTRIS data synergistic usage with other datasets. Additionally the expected technological and methodological developments fostered by ACTRIS itself will increase the ACTRIS observational capabilities and therefore the number and quality of observable atmospheric related variables (Level 1 and Level 2 products).
 
 ## 3. Data summary of the ACTRIS data centre
 
@@ -156,8 +157,8 @@ ACTRIS will produce data and data products essential to a wide range of communit
 * Operational services, National weather services, climate services for model validation, weather and climate analysis and forecasting;
 * Space agencies for validation and the development of new satellite missions;
 * National and regional air quality monitoring networks and environmental protection agencies for air quality assessments and validation of air pollution models;
-* Policy makers and local/ regional/ national authorities for climate and air-quality related information for decision making and policy development.
-* Copernicus Gas atmospheric service (ECMWF)
+* Policy makers and local/ regional/ national authorities for climate, air-quality, health and atmoshperic hazards related information for decision making and policy development.
+* Copernicus atmospheric monitoring service (ECMWF)
 * Science community working on air quality, climate change and stratospheric ozone depletion issues
 
 ### 3.1 ACTRIS In situ data centre unit (In-Situ)
@@ -204,20 +205,20 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 3.2 ACTRIS Aerosol remote sensing data centre unit (ARES)
 
-The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data. This includes centralized data processing, data storage, recording of metadata in a dedicated RDBMS, traceability, harmonization and data versioning, quality control, documentation and data provision. The unit allows for RRT and NRT data provisioning and offers support and training activities. Furthermore, level 3 data production for climatological analysis and the delivery of new data products will be further implemented and offered during the implementation phase.
+The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data coming frm lidar and photometer obsrevations. This includes centralized data processing, data storage, recording of metadata in a dedicated RDBMS, traceability, harmonization and data versioning, quality control, documentation and data provision. The unit allows for RRT and NRT data provisioning and offers support and training activities. Furthermore, level 3 data production for climatological analysis and the delivery of new data products will be further implemented and offered during the implementation phase.
 
-The goals are:
-- measure the aerosol optical properties vertical distribution in the whole troposphere and upper stratosphere with short time resolution; 
-- investigate the relationship between near-surface processes (as pollution or air quality issues) and atmospheric aerosol contents;
-- address the challenging issue of direct and indirect effects of aerosol in the climate change.
+The main goal is providing access of high quality and document datasets of the aerosol optical properties vertical distribution in the whole troposphere and upper stratosphere with short time resolution.
+This long term dataset collected at continental scale allows :
+- investigation of the relationship between near-surface processes (as pollution or air quality issues) and atmospheric aerosol contents;
+- addressing the challenging issue of direct and indirect effects of aerosol in the climate change.
 
 #### The types and formats of data generated/collected
 
-The ACTRIS ARES data centre unit is making use of EARLINET Data base infrastructure. Aerosol remote sensing data submitted to ACTRIS need to be compliant to a specific format established by the ARES unit centralized processing suite. ARES provides data compliance with NetCDF4, following Climate Forecast (CF) 1.7 conventions. 
+The ACTRIS ARES data centre unit is built on the heritage of the EARLINET Data base infrastructure and integartes the photometer aerosol data processing. Aerosol remote sensing data submitted to ACTRIS need to be compliant to a specific format established by the ARES unit centralized processing suite. All further data levels are produced by the ARES processing suite. ARES provides data compliance with NetCDF4, following Climate Forecast (CF) 1.7 conventions. 
 
-* ARES Level 1 data products consist of high and low resolution total attenuated backscatter and volume depolarization ratio time series provided in NRT or RRT. 
+* ARES Level 1 data products consist of high and low resolution total attenuated backscatter and volume depolarization ratio time series provided in NRT or RRT. provided by the photometer observation are also available. Additionally ARES provides columnar information and synergistic lidar/photometer products as vertical profiles of aerosol microphysical properties as Level 1 data.
 
-* ARES Level 2 data products contain fully quality ensured aersol extinction, backscatter and depolarization ratio vertical profiles.
+* ARES Level 2 data products contain fully quality assured aerosol extinction, backscatter, lidar ratio, Angstrom exponent and depolarization ratio vertical profiles and full quality controlled columnar information and aerosol microphysical properties profiles.
 
 * ARES Level 3 data products are retrieved from the level 2 data and provide statistical analysis (including seasonality and annuality) of the most important aerosol optical parameters.   
 
@@ -232,14 +233,14 @@ The origin of the data is derived from instrument raw data provided by the data 
 
 | Type                                |Number of annual datasets (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
-| ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   70                                    |
-
+| ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                    |
+ GRASP/GARRLiC      |                        6          |             30        |    52                
 Table 1: *Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
-| ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   25 TB                    |
-
+| ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                    |
+| GRASP/GARRLiC     |                            3.2 GB                         |     TBD                    |           TBD              
 Table 2: *Data volume*
 
 #### Data utility
@@ -262,11 +263,11 @@ The CLU data centre unit provides data curation and data processing service of c
 
 #### The types and formats of data generated/collected
 
-The ACTRIS CLU data centre unit is making use of the CLOUDNET data base infrastructure. Cloud remote sensing data submitted to ACTRIS need to be in a specified format compliant with the centralized processing suite. CLU provides data compliant with netCDF 3 and netCDF4 formats as much as possible, and following CF 1.7 convention. Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
+The ACTRIS CLU data centre unit is making use of the Cloudnet database infrastructure. Cloud remote sensing data submitted to ACTRIS need to be in a specified format compliant with the centralized processing suite. CLU provides data compliant with netCDF 3 and netCDF4 formats as much as possible, and following CF 1.7 convention. Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
 
 #### Re-use of existing data
 
-The ACTRIS data user interface will include access to cloud remote sensing legacy data resulting from ACTRIS pre-projects (for CLU [CLOUDNET](https://www.actris.eu/About/ACTRIS/Heritage.aspx)). These will also be included as a part of the ACTRIS CLU data centre unit. Legacy data resulting from ACTRIS preprojects will be available in the same format as current products.
+The ACTRIS data user interface will include access to cloud remote sensing legacy data resulting from ACTRIS pre-projects (for CLU [Cloudnet](https://www.actris.eu/About/ACTRIS/Heritage.aspx)). These will also be included as a part of the ACTRIS CLU data centre unit. Legacy data resulting from ACTRIS preprojects will be available in the same format as current products.
 
 #### The origin of the data
 
@@ -433,7 +434,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 
 | Type                  |Number of annual datasests (end 2019)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
-|    GRASP/GARRLiC      |                        6          |             See SCC L1 from ARES        |    See SCC L1 from ARES                 |
+|   |
 |    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
 |    ReOBS              |                        1          |             1                           |    1                                    |
 
@@ -441,7 +442,7 @@ Table 2.6.1. *Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
-| GRASP/GARRLiC     |                            3.2 GB                         |     TBD                    |           TBD              |
+|
 | GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
 | ReOBS             |                              2 GB                         |        3 GB                |                5 GB        |
 
@@ -533,8 +534,8 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 |        Product Type       |                                  Availability (Typical)                                          | 
 |---------------------------|--------------------------------------------------------------------------------------------------|
 | Level 1                   |                                          RRT / NRT                                               |
-| Level 2                   |                                             3 days?                                  |  
-| Level 3                   |                                             1 month?                                  | 
+| Level 2                   |                                             1 year                                  |  
+| Level 3                   |                                             1 year                                  | 
 
 Table 4.1.3.1. *ARES Data Products Availability *
 
@@ -590,13 +591,13 @@ These data are produced from L0 and L1 data processing performed at NFs level. T
 
 #### 4.2.1 ACTRIS variable names and implementation of vocabulary
 
-Generally, ACTRIS data set names aims to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the ACCESS unit (ACTRIS Data Center web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
+Generally, ACTRIS data set names aims to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the ACCESS unit (ACTRIS Data Centre web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
 
 ASC unit has developed a user-friendly web interface which includes searching tools based on the metadata catalogue for the three pillars, DASCS, LAR and LADP. Relevant searching criteria have been defined for each pillar. 
 
 Standard vocabulary might not always be used, but in all cases they should be mapped to standard vocabulary if existing by the DC ACCESS unit.
 
-| Data center unit         | Vocabulary name               |          Comment            |
+| Data centre unit         | Vocabulary name               |          Comment            |
 |--------------------------|-------------------------------|-----------------------------|
 |         In Situ		   | IUPAC, CF-1.7, WMO category codes?  |                             |
 |         ARES     		   | CF1.7      |                             |
@@ -609,19 +610,19 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 #### 4.2.2 Metadata standards and meta data services
 
-**Figure needed showing the meta data flow and interfaces throughout the flow from NF to ACTRIS Data Center – Richard and Cathrine is working on this. Made in line with the others (layout wise), clearly stating the technologies with most “FAIR” data at the top (ACTRIS DC and the various ways of getting (meta)data)**
+**Figure needed showing the meta data flow and interfaces throughout the flow from NF to ACTRIS Data Centre – Richard and Cathrine is working on this. Made in line with the others (layout wise), clearly stating the technologies with most “FAIR” data at the top (ACTRIS DC and the various ways of getting (meta)data)**
 
 ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit aims at providing discovery metadata in a common format for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. A decision about the standard is not taken, and under consideration. In any case, exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data. The present situation is shown in Table (refer to the one at the end of the section). 
 
-Future efforts will further develop the system shown in Figure XXX (that Richard is producing now) and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data center unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
+Future efforts will further develop the system shown in Figure XXX (that Richard is producing now) and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data centre unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
 
-There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Center will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
+There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Centre will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
 ACTRIS aiming at following the INSPIRE directive for metadata formatting. Present standard(s) for metadata is at the ACCESS unit level. A decision is needed if data centre units should provide metadata according to specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
 
 Tables below show the status by July 2019.
 
-| Data center unit                  | metadata service               | end-point                                                                               |                        standard |
+| Data centre unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
@@ -652,12 +653,12 @@ The term measurement traceability is used to refer to an unbroken chain of compa
 ACTRIS works towards establishing traceability for all variables using persistent identifiers (PIDs). This work is in development, and need close interaction with the topical centres as well as National Facilities. Currently ACTRIS is using digital object identifiers (DOIs) for some level 3 datasets though the [Data Cite Metadata Store API](https://mds.datacite.org/), and more will be implemented.
 
 Currently, ARES unit assigns two different types of local persistent identifier (PID): 
-* **Data Processing PIDs.** These PIDs identify univocally the characteristics of the instrument (including all its subparts) used to collect the Level 0 data. In particular, to each submitted Level 0 product it is assigned an alphanumeric ID which allows to retrieve all the details about the instrument configuration used to perform the measurement as well as the data processing configuration used to compute the corresponding Level 1 data products.    
+* **Data Processing PIDs.** These PIDs identify unequivocally the characteristics of the instrument (including all its subparts) used to collect the Level 0 data. In particular, to each submitted Level 0 product it is assigned an alphanumeric ID which allows to retrieve all the details about the instrument configuration used to perform the measurement as well as the data processing configuration used to compute the corresponding Level 1 data products.    
 * **Dataset PIDs.** An internal PID generation system based on an alphanumerical "prefix"/"suffix" pattern identifies univocally each dataset downloaded through the ARES interfaces.
 
 ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status by July 2019.
 
-| Data center unit         | PID service                    | Description                                                                             |                        Standard |
+| Data centre unit         | PID service                    | Description                                                                             |                        Standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          | To be decided                  |                                                                                         |                                 |
 |         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
@@ -715,13 +716,13 @@ In general, for all data that requires username and password, a Single-Sign-On s
 
 In all cases where access is restricted, information on how to access the data should be available through the metadata, in order to facilitate machine to machine interaction.
 
-If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) will be available through open access repositories like GitHub. *A open source licence for software should be encouraged and applied when possible. All software related to ACTRIS data should aim at following the practice of open access if possible. For software related to access of level 2 data, the ACCESS unit is responsible together with the data center units. To be discussed: For level 0 and 1, the topical centers and/or data center unit are responsible for providing access to software related to ACTRIS level 0 and level 1.*
+If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) will be available through open access repositories like GitHub. *A open source licence for software should be encouraged and applied when possible. All software related to ACTRIS data should aim at following the practice of open access if possible. For software related to access of level 2 data, the ACCESS unit is responsible together with the data centre units. To be discussed: For level 0 and 1, the topical centres and/or data centre unit are responsible for providing access to software related to ACTRIS level 0 and level 1.*
 
 There are valuable and contributing networks to ACTRIS e.g. EMEP, GAW, EARLINET, and level 3 products covering bridge to external data bases and use of these data in combined products. The implementation and strategic and technical contributions of this is under development.
 
 ### 4.4 Interoperable: Making data interoperable [FAIR data]
 
-As a guiding principle, ACTRIS should make sure that metadata and data use a formal, accessible, shared and broadly applicable language for knowledge representation in order to facilitate interoperability. Still, work remains to see if a common solution could be agreed upon. The intricate nature of the data and metadata might require the use of different solutions to suit the needs of different data center units. As mention in section 4.2 metadata standard and vocabularies commonly used in the atmospheric domain should be applied, unless the common solutions do not address the specific need for the DC unit.
+As a guiding principle, ACTRIS should make sure that metadata and data use a formal, accessible, shared and broadly applicable language for knowledge representation in order to facilitate interoperability. Still, work remains to see if a common solution could be agreed upon. The intricate nature of the data and metadata might require the use of different solutions to suit the needs of different data centre units. As mention in section 4.2 metadata standard and vocabularies commonly used in the atmospheric domain should be applied, unless the common solutions do not address the specific need for the DC unit.
 Implementation of new standards for data and metadata used in the context of ACTRIS should be discussed by all the DC units. The aim should be to harmonize data and metadata as much as possible, both in terms of technical aspects related to implementation, but also making it easier for the end user to make use of the data.
 
 By many of the DC units the Thredds Data Server (TDS) is used for serving data and metadata in an automated way as netCDF files through the OPeNDAP protocol (this apporach is implemented by In-Situ, ARES, ASC, GRES).
@@ -748,7 +749,7 @@ Availability of data can vary between the different data centre units. As an exa
 
 The table shows the data and software usage licence July 2019.
 
-| Data center unit         |          Data licence                 |  Comment     |
+| Data centre unit         |          Data licence                 |  Comment     |
 |--------------------------|---------------------------------------|--------------|
 |         In Situ		   |          To be decided                |              |
 |         ARES     		   |          To be decided                |              |
@@ -759,10 +760,11 @@ The table shows the data and software usage licence July 2019.
 
 *Table x: Licences*
 
-| Responsible data center unit         |          Software licence    |  Software link                                                        |
+| Responsible data centre unit         |          Software licence    |  Software link                                                        |
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
 |         In Situ		               |       None                   |     [EBAS IO](https://git.nilu.no/ebas/ebas-io/wikis/home)            |
 |         ARES     		               |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
+|	CLU					|	MIT		|	[CloudnetPy](https://github.com/tukiains/cloudnetpy) 		|
 
 *Table x: Software*
 
@@ -812,9 +814,9 @@ The ARES infrastructure is maintained by the National Research Council of Italy 
 
 ### 6.3 Archiving and preservation of CLU data
 
-The Cloudnet database is a file-based database, due to the nature of the typical use-case and data volume. The infrastructure comprises an FTP server for incoming data streams, rsync server for outgoing data streams, processing server, webserver, with data storage distributed across a series of virtual filesystems including incremental backups. Due to the data volume, most sites also hold a copy of their own processed data, effectively acting as a second distributed database and additional backup.
+The CLU database consists of a file archive connected to a relational metadata database, due to the nature of the typical use-case and data volume. The infrastructure comprises a webserver, an FTP server for incoming data streams, web and rsync server for outgoing data streams, processing servers, with data storage distributed across a series of virtual filesystems including incremental backups. Due to the data volume, most sites also hold an archive of their own Level 0 and Level 1 data, effectively acting as a second distributed database and additional backup.
 
-The current size of the database is about 10 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. However, there will be a significant increase in volume when the planned move to multi-peak and spectral products is undertaken; this is in addition to a slight increase arising through the creation of new products. The Cloudnet database is maintained by FMI with long-term commitment for archiving and preservation. Publication of QA datasets will aid dataset preservation.
+The current size of the database is about 25 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. However, there will be a significant increase in volume when the planned move to multi-peak and spectral products is undertaken; this is in addition to a slight increase arising through the creation of new products. The CLU infrastructure is maintained by FMI with long-term commitment for archiving and preservation. Publication of QA datasets will aid dataset preservation.
 
 ### 6.4 Archiving and preservation of GRES data
 
@@ -833,7 +835,7 @@ Some higher level data products are stored at NILU in a file archive, this is da
 
 ## 7. Ethical aspects
 
-[ACTRIS Ethical Guidelines](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.2_M24.pdf?ver=2018-12-07-080117-913) describes the main principles of ethics to be applied within ACTRIS activities. These guidlines shall be acknowledged and followed by all persons affiliated to ACTRIS and should be supported by all participating institutions, including the Data Center. These guidelines do not exclude other ethical issues (e.g. related to professional and scientific responsibility, governance, social and environmental responsibility and law abiding) brought up by the ACTRIS ERIC and its contractual ACTRIS partners, or by the Ethical Advisory Board of the ACTRIS ERIC. In general, everyone in ACTRIS should work in a socially ethical way keeping the integrity and fairness, and maintaining high level of trust and respect among the people working in ACTRIS and with the users and other stakeholders. One should alwaystake into account that the mission of ACTRIS is to provide effective access for a wide user community to its resources and services, in order to facilitate high-quality Earth system research, to increase the excellence in Earth system research, and to provide information and knowledge on developing sustainable solutions to societal challenges.
+[ACTRIS Ethical Guidelines](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.2_M24.pdf?ver=2018-12-07-080117-913) describes the main principles of ethics to be applied within ACTRIS activities. These guidlines shall be acknowledged and followed by all persons affiliated to ACTRIS and should be supported by all participating institutions, including the Data Centre. These guidelines do not exclude other ethical issues (e.g. related to professional and scientific responsibility, governance, social and environmental responsibility and law abiding) brought up by the ACTRIS ERIC and its contractual ACTRIS partners, or by the Ethical Advisory Board of the ACTRIS ERIC. In general, everyone in ACTRIS should work in a socially ethical way keeping the integrity and fairness, and maintaining high level of trust and respect among the people working in ACTRIS and with the users and other stakeholders. One should alwaystake into account that the mission of ACTRIS is to provide effective access for a wide user community to its resources and services, in order to facilitate high-quality Earth system research, to increase the excellence in Earth system research, and to provide information and knowledge on developing sustainable solutions to societal challenges.
 
 ## 8. Appendix
 
