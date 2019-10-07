@@ -980,3 +980,8 @@ Some products will be generated through on-line services, and will generate data
 | Product                                             | format               | description                                                                                                                                                                                  |
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |                                                     |                      |                                                                                                                                                                                              |
+
+#### Production of ACTRIS level 3 data products from the Atmospheric simulation chamber data centre unit (ASC)
+
+[ASC level 3 data products](docs/Appendix_III_ACTRIS-ASC_level3_variables_June_2019.xlsx)
+
