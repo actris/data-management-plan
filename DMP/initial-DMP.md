@@ -39,7 +39,7 @@
 * [6. Data security](#6-Data-security)
 * [7. Ethical aspects](#7-Ethical-aspects)
 * [8. Appendix](#8-Appendix)
-  * [Appendix 1: List of ACTRIS variables and recommended methodology](#appendix-1-list-of-actris-variables-and-recommended-methodology)
+  * [Appendix 1: List of ACTRIS variables from observational platforms and associated recommended methodology](#appendix-1-list-of-actris-variables-from-observational-platforms-and-associated-recommended-methodology)
   * [Appendix 2: List of ACTRIS level 3 data products](#appendix-2-list-of-actris-level-3-data-products)
   * [Appendix 3: ACTRIS In situ data centre unit (In-Situ) data life cycle](#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle)
   * [Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram](#appendix-4-actris-aerosol-remote-sensing-data-centre-unit-ares-data-life-cycle-and-workflow-diagram)
@@ -47,7 +47,7 @@
   * [Appendix 6: ACTRIS trace gases remote sensing data centre unit (GRES) data life cycle and workflow diagram](#appendix-6-actris-trace-gases-remote-sensing-data-centre-unit-gres-data-life-cycle-and-workflow-diagram)
   * [Appendix 7: ACTRIS Atmospheric simulation chamber data centre unit (ASC) data life cycle and workflow diagram](#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram)
   * [Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit](#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
-  * [Appendix 9: List of all level 3 variables](#appendix-9-list-of-all-level-3-variables)
+  * [Appendix 9: Format and external data sources for level 3 variables](#appendix-9-format-and-external-data-sources-for-level-3-variables)
 
 ## 1.  Introduction to The ACTRIS Data Centre and ACTRIS Data Management Plan
 
@@ -348,9 +348,7 @@ The ASC data centre unit provides data curation service for data obtained from e
 
 * The Library of Analytical Resources (LAR) provides quantitative analytical resources that include infrared spectra and mass spectra of molecules and derivatives (level 3 data).
 
-* The Library of Advanced Data Products (LADP) provides different types of mature data products (level 3 data): rate constants of reactions in gas and condensed
-
-phases, quantum yields and photolysis frequencies of trace gas compounds, secondary organic aerosol (SOA) yields, mass extinction/absorption/scattering coefficients and complex refractive index of aerosols, growth factors of aerosols and modelling tools.
+* The Library of Advanced Data Products (LADP) provides different types of mature data products (level 3 data): rate constants of reactions, quantum yields and photolysis frequencies of trace gas compounds, secondary organic aerosol (SOA) yields, mass extinction/absorption/scattering coefficients and complex refractive index of aerosols, growth factors of aerosols and modelling tools. The detailed list of ACTRIS level 3 data products is given in Appendix 9.
     
 **The types and formats of data generated/collected**
 
@@ -362,7 +360,7 @@ Level 3 data provided in LADP are of different types and have thus different for
 
 **Re-use of existing data**
 
-The ACTRIS data user interface will include access to atmospheric simulation chamber legacy data resulting from ACTRIS pre-projects (for ASC EUROCHAMP, EUROCHAM-2. These will also be included as a part of the ACTRIS ASC data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
+The ACTRIS data user interface will include access to atmospheric simulation chamber legacy data resulting from ACTRIS pre-projects (for ASChere EUROCHAMP-1, -2, and EUROCHAMP-2020). These will also be included as a part of the ACTRIS ASC data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
 
 **The origin of the data**
 
@@ -372,9 +370,9 @@ Data provided in DASCS and LAR pillars are derived from instrument raw data and 
 
 | Type                                |Number of annual datasets (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-------------------------------|
-| ACTRIS-ASC DASCS                    |                   100                                    |          50                            |             200                 |
+| ACTRIS-ASC DASCS                    |                   200                                    |          50                            |             300                 |
 | ACTRIS-ASC LAR                 |                   20                                  |          10                          |             50               |
-| ACTRIS-ASC LADP              |                   30                                     |          60                             |             150                |
+| ACTRIS-ASC LADP              |                   70                                     |          50                             |             200                |
 
 
  Table 1: _Number of annual datasets
@@ -389,8 +387,7 @@ Table 2: _Data volume_
 
 **Data utility**
 
-Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes which affect air quality and climate change. ACTRIS-ASC unit give access to different types of data and data products essential to a wide range of
-
+Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes which affect air quality and climate change. ACTRIS-ASC unit gives access to different types of data and data products essential to a wide range of 
 communities. Many of these parameters are incorporated in air quality and climate models.
 
 * Level 2 data provided in DASCS are of high interest for a large community of users in atmospheric science research and related areas, as well as the private sector. In particular, they are largely used for modelling activities to develop and/or validate chemical schemes of atmospheric models.
@@ -401,7 +398,7 @@ communities. Many of these parameters are incorporated in air quality and climat
 
 **Outline of data life cycle (workflow and workflow diagram)**
 
-Detail on the data life cycle and workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in [Appendix 7](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram).
+Detail on the data life cycle andA preliminary version of the data workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in [Appendix 7](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram). The definition of this workflow is still under progress and a finalized version will be available in 2020.   
 
 ### 3.6 ACTRIS data and services (ACCESS)
 
@@ -492,11 +489,11 @@ An overview of the elements in the data flow is shown in Figure XX.
 
 Access to quality controlled data from the data centre units is provided by the ACTRIS data and service access unit (ACCESS) through the web interface called “ACTRIS Data Centre”. The ACCESS unit is not only responsible for access to measurement data, but also access to services, tools and providing documentation, all which is based on metadata provided by the data Centre units, the tasks are summarized in the [Figure](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png) above and include the organization of ACTRIS level 3 data. 
 
-All data centre units are providing metadata and interface for access to data in the current ACTRIS metadata catalogue, expect for ASC. The metadata is used as input to the current ACTRIS metadata catalog providing identification and access to data through the [ACTRIS Data Centre](http://actris.nilu.no/) web portal. Access to primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day. ASC unit has developed its own metadata catalog within EUROCHAMP project. This metadata catalog is currently available through EUROCHAMP Data Centre portal and provides identification and access to data.
+All data centre units are providing metadata and interface for access to data in the current ACTRIS metadata catalogue, expect for ASC. The metadata is used as input to the current ACTRIS metadata catalog providing identification and access to data through the ACTRIS Data Centre web portal. Access to primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day. ASC unit has developed its own metadata catalog within EUROCHAMP projects. This metadata catalog is currently available through EUROCHAMP Data Centre portal and provides identification and access to data.
 
-**Figure X (Richard provide here)** show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
+[The current overview of topical databases](img/section4/overview_of_topical_databases.png) show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
 
-In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalouge, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
+In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
 The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
 
 ![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/actris-data-center-elements.png)
@@ -583,7 +580,7 @@ This database provides access to level 2b and level 3 data of trace gases profil
 
 **Text moved from other parts of the document that belongs here, maybe in modified version:**
 
-These data are produced from L0 and L1 data processing performed at NFs level. These data have to be provided by NFs in a standard format, called “EDF format” (EUROCHAMP Data Format) which is based on an ASCII text format but contains additional metadata in a header. These data are completed with rich metadata which are available from the website and give access to a technical description of the chambers (size, volume, walls, irradiation system …), the experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamber-dependent parameters.
+Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure XX). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
 *Figure x: current overview of ASC unit*
@@ -840,13 +837,13 @@ Some higher level data products are stored at NILU in a file archive, this is da
 
 ## 8. Appendix
 
-### Appendix 1: List of ACTRIS variables and recommended methodology
+### Appendix 1: List of ACTRIS variables from observational platforms and associated recommended methodology
 [List of ACTRIS variables and recommended methodology](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx)
 
 *Additional information:* During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilizing these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available.
 
 ### Appendix 2: List of ACTRIS level 3 data products
-[List of ACTRIS level 3 data products](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx)
+[List of ACTRIS level 3 data products](docs/Appendix_II_ACTRIS_level3_variables_08_Oct_2019.xlsx)
 
 ### Appendix 3: ACTRIS In situ data centre unit (In-Situ) data life cycle
 
@@ -894,7 +891,7 @@ Table: *Workflow Tasks Short Specification*
 ### Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit
 ![ACTRIS ACCESS data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section3/DMP-DataAccess-MetNo-BSC.png)
 
-### Appendix 9: List of all level 3 variables
+### Appendix 9: Format and external data sources for level 3 variables
 
 Below is a list of all lev3 variables that are listed in Annex II and the checkbox indicates whether they are included in the lists below or not:
 
@@ -980,8 +977,4 @@ Some products will be generated through on-line services, and will generate data
 | Product                                             | format               | description                                                                                                                                                                                  |
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |                                                     |                      |                                                                                                                                                                                              |
-
-#### Production of ACTRIS level 3 data products from the Atmospheric simulation chamber data centre unit (ASC)
-
-[ASC level 3 data products](docs/Appendix_III_ACTRIS-ASC_level3_variables_June_2019.xlsx)
 
