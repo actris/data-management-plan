@@ -439,7 +439,7 @@ Table 2.6.1. *Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
-|
+|   |
 | GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
 | ReOBS             |                              2 GB                         |        3 GB                |                5 GB        |
 
