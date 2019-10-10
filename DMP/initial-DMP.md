@@ -240,7 +240,7 @@ Table 1: *Number of annual datasets*
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
 | ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                    |
-| GRASP/GARRLiC     |                            3.2 GB                         |     TBD                    |           TBD              
+| GRASP/GARRLiC     |                            3.2 GB                         |     40 GB                   |           50 GB            
 Table 2: *Data volume*
 
 #### Data utility
