@@ -822,6 +822,8 @@ The current size of the database is about 25 TB and the volume is expected to gr
 
 ### 6.6 Archiving and preservation of ACCESS data
 
+The ACCESS unit is providing access to all ACTRIS data sets through the [ACTRIS data portal](https://actris.nilu.no/). The metadata from the data center units (In Situ, ARES and CLU) are harvested custom APIs and services. The metadata is stored in an Oracle database at NILU.
+
 #### 6.6.1 Level 3 data
 
 Some higher level data products are stored at NILU in a file archive, this is data that is post-processed and usually part of data publications (http://actris.nilu.no/Content/pageid=226809f7a0ac49538914eeafb4448afa).
