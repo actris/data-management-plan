@@ -525,8 +525,8 @@ Make use of the concept paper for text: the subsection in section 3. Can probabl
 Add figure, similar to ASC, to easily visualize data flow with main links and tasks for the NF and Unit (including some text, not much).
 
 The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (listed in Appendix 1) follows a common workflow (see Appendix 3 for details). The workflow is separated into 2 branches:
-* Online observations: Measurement done directly on sample air stream immediately after sampling, measurement reported by instrument while sample passes through or immediately after. Instrument QA by on- and off-site comparisons to standard instruments / primary standards. RRT data provision is possible and default.
-* Offline observations: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
+* **Online observations**: Measurement done directly on sample air stream immediately after sampling, measurement reported by instrument while sample passes through or immediately after. Instrument QA by on- and off-site comparisons to standard instruments / primary standards. RRT data provision is possible and default.
+* **Offline observations**: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
 
 ![ACTRIS In Situ Simplified Workflow](https://folk.nilu.no/~markus/20191001%20ACTRIS%20EBAS%20Data%20Flowchart%20simplified.png)
 Figure x: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users. *to be updated*
@@ -535,33 +535,31 @@ Figure x: Simplified workflow of the ACTRIS In Situ data centre unit, focussing 
 If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow.
 
 ACTRIS In situ concretises the ACTRIS data levels as follows:
-* Level 0: raw data as produced by the instrument, all main and instrument status parameters provided by instrument, brought to a well-defined data format. Discovery, use, provenance, and configuration metadata attached, including all information needed for further data production, as far as known at stations level (e.g. QC metadata). Instrument model specific, time resolution native to instrument, temperature and pressure conditions as provided by instrument.
-* Level 1: Contains physical property observed, including measures of uncertainty. Instrument status parameters, QC measurements and invalid data removed, quality control and post-calibrations applied. Time resolution native to instrument. Content specific for measured property, standard conditions of temperature and pressure.
-* Level 2: Contains data averaged to a homogeneous time resolution, typically 1 h. Includes measure of atmospheric variability, content specific for measured property.
+* **Level 0**: raw data as produced by the instrument, all main and instrument status parameters provided by instrument, brought to a well-defined data format. Discovery, use, provenance, and configuration metadata attached, including all information needed for further data production, as far as known at stations level (e.g. QC metadata). Instrument model specific, time resolution native to instrument, temperature and pressure conditions as provided by instrument.
+* **Level 1**: Contains physical property observed, including measures of uncertainty. Instrument status parameters, QC measurements and invalid data removed, quality control and post-calibrations applied. Time resolution native to instrument. Content specific for measured property, standard conditions of temperature and pressure.
+* **Level 2**: Contains data averaged to a homogeneous time resolution, typically 1 h. Includes measure of atmospheric variability, content specific for measured property.
 
 ##### Online In Situ Data Production
 
 Already at the station, the raw data stream from the instrument is transcribed to a homogeneous level 0 format, and annotated with discovery, use, provenance, and configuration metadata. The level 0 data are transferred to the ACTRIS DC at a RRT schedule (latest 3 h after measurement, normally 1 h). At this point, the In Situ online workflow splits into 2 branches:
-
 1. RRT data production: incoming level 0 data are auto-QCed for outliers, spikes, calibration data, and automatically identifiable instrument malfunctions, and flagged accordingly, yielding level 0b. From there, levels 1b and 1.5 (final RRT data product) are produced. RRT data are offered through a data subscription service.
-
 2. Fully QCed data production: data are manually QCed for outliers, spikes, calibration data, episodes (e.g. atmospheric transport, local / regional contamination), and instrument malfunctions. Tools for manual data QC are provided centrally. Manual QC is assisted by automatic pre-screening of data, similar to the auto-QC for RRT data. There are 2 options for organising the QC process, both are applied at least annually:
-  a. TC review: data QC is conducted by NF and supervised by TC, and follows its own sub-workflow.
-  b. NF review: data QC by an identified person under the responsibility of the NF. 
+  * TC review: data QC is conducted by NF and supervised by TC, and follows its own sub-workflow.
+  * NF review: data QC by an identified person under the responsibility of the NF. 
 
-From the fully QCed level 0 data, i.e. level 0a, levels 1a and 2 (final data product) are produced. 
+   From the fully QCed level 0 data, i.e. level 0a, levels 1a and 2 (final data product) are produced. 
 
 All In Situ data products, level 1.5 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these (see Appendix 9).
 The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. By default, the responsibilities are distributed between NF, TC, and DC as follows:
 
-NF:
+**NF**:
 * Operates the instrument according to TC recommendations.
 * Uses data acquisition and handling software provided by TC.
 * Conducts / participates in on-site and off-site QA measures as specified by TC.
 * Maintains infrastructure for RRT data transfer.
 * Reacts to feedback on instrument operation and data quality from both TC and DC within 1 week, and takes corrective action within 1 month.
 
-TC:
+**TC**:
 * Maintains operating procedures for each In Situ instrument type in his responsibility.
 * Provides and maintains data handling software for each In Situ instrument type in his responsibility to NF.
 * Supervises on-site QA measures and calibrations, provides specification and tools for documenting these in a traceable way.
@@ -572,7 +570,7 @@ TC:
 * Provides software executing task boxes in data production workflow.
 * In collaboration with DC, specifies sub-workflow for data QC review, if applicable.
 
-DC:
+**DC**:
 * Archives all level 0, 1, and 2 data occurring during workflow execution.
 * Archives level 3 data produced by In Situ.
 * Operates software 
