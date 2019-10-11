@@ -539,7 +539,7 @@ ACTRIS In situ concretises the ACTRIS data levels as follows:
 * **Level 1**: Contains physical property observed, including measures of uncertainty. Instrument status parameters, QC measurements and invalid data removed, quality control and post-calibrations applied. Time resolution native to instrument. Content specific for measured property, standard conditions of temperature and pressure.
 * **Level 2**: Contains data averaged to a homogeneous time resolution, typically 1 h. Includes measure of atmospheric variability, content specific for measured property.
 
-##### Online In Situ Data Production
+##### 4.1.2.1 Online In Situ Data Production
 
 Already at the station, the raw data stream from the instrument is transcribed to a homogeneous level 0 format, and annotated with discovery, use, provenance, and configuration metadata. The level 0 data are transferred to the ACTRIS DC at a RRT schedule (latest 3 h after measurement, normally 1 h). At this point, the In Situ online workflow splits into 2 branches:
 1. RRT data production: incoming level 0 data are auto-QCed for outliers, spikes, calibration data, and automatically identifiable instrument malfunctions, and flagged accordingly, yielding level 0b. From there, levels 1b and 1.5 (final RRT data product) are produced. RRT data are offered through a data subscription service.
@@ -574,6 +574,10 @@ The content of workflow tasks and the responsibilities for them are specified in
 * Archives all level 0, 1, and 2 data occurring during workflow execution.
 * Archives level 3 data produced by In Situ.
 * Operates software 
+
+##### 4.1.2.2 Offline In Situ Data Production
+
+
 
 
 #### 4.1.3 ARES dataflow and data management
