@@ -529,7 +529,7 @@ The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (l
 * Offline observations: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
 
 ![ACTRIS In Situ Simplified Workflow](https://folk.nilu.no/~markus/20191001%20ACTRIS%20EBAS%20Data%20Flowchart%20simplified.png)
-Figure x: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.
+Figure x: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users. *to be updated*
 
 
 If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow.
