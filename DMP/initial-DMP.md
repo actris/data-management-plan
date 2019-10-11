@@ -421,7 +421,7 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 | Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
 | Data Interpretation and Outlier Identification Tool                 | NetCDF-CF                            | Quicklooks for time series data, compared to Copernicus Analysis and Reanalysis model products                                                                                                                   |
 | **?** Optimal interpolation and Gap filling tool                    | NetCDF-CF                            | modal/data integration products which fill measurement gaps, eg in a time series, profile or field.                                                                                                              |
-| Alert Service for National Facilities                               | [geoJSON](http://geojson.org/) **?** | Provide near real time update of special weather situations of interest for research activities at national facilities                                                                                           |
+| Alert Service for National Facilities                               | [geoJSON](http://geojson.org/) **?** (Dust alert in NetCDF-CF) | Provide near real time update of special weather and atmospheric situations of interest for research activities at national facilities                                                                                           |
 
 ##### Generated (on-demand services)
 
