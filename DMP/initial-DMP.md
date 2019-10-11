@@ -542,9 +542,7 @@ Already at the station, the raw data stream from the instrument is transcribed t
 1. RRT data production: incoming level 0 data are auto-QCed for outliers, spikes, calibration data, and automatically identifiable instrument malfunctions, and flagged accordingly, yielding level 0b. From there, levels 1b and 1.5 (final RRT data product) are produced. RRT data are offered through a data subscription service.
 
 2. Fully QCed data production: data are manually QCed for outliers, spikes, calibration data, episodes (e.g. atmospheric transport, local / regional contamination), and instrument malfunctions. Tools for manual data QC are provided centrally. Manual QC is assisted by automatic pre-screening of data, similar to the auto-QC for RRT data. There are 2 options for organising the QC process, both are applied at least annually:
-
   a. TC review: data QC is conducted by NF and supervised by TC, and follows its own sub-workflow.
-  
   b. NF review: data QC by an identified person under the responsibility of the NF. 
 
 From the fully QCed level 0 data, i.e. level 0a, levels 1a and 2 (final data product) are produced. 
