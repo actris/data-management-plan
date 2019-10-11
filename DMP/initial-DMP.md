@@ -544,8 +544,8 @@ ACTRIS In situ concretises the ACTRIS data levels as follows:
 Already at the station, the raw data stream from the instrument is transcribed to a homogeneous level 0 format, and annotated with discovery, use, provenance, and configuration metadata. The level 0 data are transferred to the ACTRIS DC at a RRT schedule (latest 3 h after measurement, normally 1 h). At this point, the In Situ online workflow splits into 2 branches:
 1. RRT data production: incoming level 0 data are auto-QCed for outliers, spikes, calibration data, and automatically identifiable instrument malfunctions, and flagged accordingly, yielding level 0b. From there, levels 1b and 1.5 (final RRT data product) are produced. RRT data are offered through a data subscription service.
 2. Fully QCed data production: data are manually QCed for outliers, spikes, calibration data, episodes (e.g. atmospheric transport, local / regional contamination), and instrument malfunctions. Tools for manual data QC are provided centrally. Manual QC is assisted by automatic pre-screening of data, similar to the auto-QC for RRT data. There are 2 options for organising the QC process, both are applied at least annually:
-   2.1 **TC review**: data QC is conducted by NF and supervised by TC, and follows its own sub-workflow.
-   2.2 **NF review**: data QC by an identified person under the responsibility of the NF. 
+   1. **TC review**: data QC is conducted by NF and supervised by TC, and follows its own sub-workflow.
+   2. **NF review**: data QC by an identified person under the responsibility of the NF. 
 
    From the fully QCed level 0 data, i.e. level 0a, levels 1a and 2 (final data product) are produced. 
 
