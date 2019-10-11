@@ -240,7 +240,7 @@ Table 1: *Number of annual datasets*
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
 | ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                    |
-| GRASP/GARRLiC     |                            3.2 GB                         |     TBD                    |           TBD              
+| GRASP/GARRLiC     |                            3.2 GB                         |     40 GB                   |           50 GB            
 Table 2: *Data volume*
 
 #### Data utility
@@ -439,7 +439,7 @@ Table 2.6.1. *Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
-|
+|   |
 | GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
 | ReOBS             |                              2 GB                         |        3 GB                |                5 GB        |
 
@@ -899,11 +899,9 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 
 - [ ] Column Water Vapor Content
 - [ ] Climatology products for ACTRIS variables @ ACTRIS National Facilities across Europe
-- [x] Calculated Particle light scattering coefficients ** GRASP/GARRLiC **
 - [x] Collocation service of data from contributing networks
 - [ ] PM retrieval  @GAW sites
 - [x] Single Scattering Albedo @ACTRIS National Facilities
-- [x] Calculated particle light extinction coefficient ** GRASP/GARRLiC **
 - [ ] Integrated full-range particle number size distribution
 - [ ] Source apportionment of submicron organic aerosols in Europe
 - [ ] Volatile Organic Compounds (VOC) source attribution across Europe
@@ -912,7 +910,6 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 - [x] Spectral Downward Sky Radiances
 - [x] Aerosol columnar properties (GRASP-AOD)
 - [x] ReOBS  
-- [x] Aerosol profile microphysical and optical properties ** GRASP/GARRLiC **
 - [x] Satellite data – combined with ground based ACTRIS data
 - [x] Aerosol and Gas trend assessment
 - [x] Data Interpretation and Outlier Identification Tool
@@ -942,7 +939,6 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 
 | Product                                             | format               | description                                                                                                                                                                                  |
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GRASP/GARRLiC                                       | NetCDF-CF            | ACTRIS-2 GARRLiC Data Product Description. Link to be added                                                                                                                                  |
 | GRASP-AOD                                           | NetCDF-CF            | Aerosol size distribution retrieval from optical depth                                                                                                                                       |
 | ReOBS                                               | NetCDF-CF            | The ReOBS project proposes a scientific method to aggregate, qualify and harmonize about fifty geophysical variables at hourly scale over a decade, to allow multiannual and multi-variables studies combining atmospheric dynamics and thermodynamics, radiation, clouds and aerosols, from ground-based observations. |
 | Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
