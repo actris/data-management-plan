@@ -58,10 +58,10 @@ ACTRIS data are data from observational or exploratory National Facilities compl
 ACTRIS observational platforms are fixed ground-based stations that produce long-term data based on a regular measurement schedule and common operation standards. These platforms perform measurements of aerosol, clouds, and reactive trace gases from the Earth surface throughout the troposphere up to the stratosphere by applying state-of-the-art remote-sensing and in situ measurement techniques under consideration of harmonized, standardized, and quality controlled instrumentation, operation procedures and data retrieval schemes. The sites are strategically located in diverse climatic regimes both within and outside Europe, and many of them contribute to one or several European and international networks, such as [EMEP](https://www.emep.int/), [NDACC](http://www.ndaccdemo.org/), or [GAW](http://www.wmo.int/pages/prog/arep/gaw/gaw_home_en.html), and are possibly partly shared with other environmental infrastructures, such as [ICOS](https://www.icos-cp.eu/), [SIOS](https://sios-svalbard.org/), [ANAEE](https://www.anaee.com/) or [eLTER](https://www.lter-europe.net/elter).
 
 Laboratory platforms and mobile platforms that perform dedicated experiments and contribute data on
-atmospheric constituents, processes, events or regions by following common ACTRIS standards are considered ACTRIS exploratory platform. In addition to these,atmospheric simulation chambers are ACTRIS exploratory platforms too. These chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes, which affect air quality and climate change. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. 
+atmospheric constituents, processes, events or regions by following common ACTRIS standards are considered ACTRIS exploratory platform. In addition to these,atmospheric simulation chambers are ACTRIS exploratory platforms too. These chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes, which affect air quality and climate change. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models.
 
 ![Architecture of the ACTRIS Data Centre](img/section1/Exp_Obs_NF.jpg)
-* Figure XX: Overview of the types of National Facilities providing data to ACTRIS Data Centre*
+* Figure 1: Overview of the types of National Facilities providing data to ACTRIS Data Centre*
 
 ACTRIS is a unique RI improving both the quality of and access to atmospheric observations, developing new methods and protocols, and harmonizing existing observations of the atmospheric variables listed in [Appendix 1](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx). Appendix 1 includes an updated list of all ACTRIS variables associated to recommended measurement methodology.
 
@@ -78,8 +78,8 @@ The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and oth
 * [ACTRIS trace gases remote sensing data centre unit (GRES)](https://en.aeris-data.fr/)
 * [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
-![Architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_centre_elements_phase2.jpg)
-*Figure 1: Architecture of the ACTRIS Data Centre*
+![Architecture of the ACTRIS Data Centre](img/ACTRIS_data_centre_elements_phase2.jpg)
+*Figure 2: Architecture of the ACTRIS Data Centre*
 
 During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities will be constructed and their services tested. The ACTRIS Central Facilities host selection was a part of ACTRIS PPP, and the following consortium is selected to host the ACTRIS Data Centre, and the various units with services to data producers and data users.
 
@@ -112,8 +112,8 @@ There are 4 levels of ACTRIS data:
  
 Additionally to these data products which are completely under the control of ACTRIS with established procedures and standards, the ACTRIS DC will also produce additional data products of interest of the the scientific and  user communities. These are   **ACTRIS synthesis product:** data products from e.g. research activities, not under direct ACTRIS responsibility, but for which ACTRIS offers repository and access.
 
-![Architecture of the ACTRIS Data Centre](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_data_levels.jpg)
-*Figure 1: ACTRIS data levels*
+![Architecture of the ACTRIS Data Centre](img/ACTRIS_data_levels.jpg)
+*Figure 3: ACTRIS data levels*
 
 The list of ACTRIS variables are expected to increase during the progress of ACTRIS. Level 3 data products are expected to increase in quantity and number of variables because of the expected increase in ACTRIS data synergistic usage with other datasets. Additionally the expected technological and methodological developments fostered by ACTRIS itself will increase the ACTRIS observational capabilities and therefore the number and quality of observable atmospheric related variables (Level 1 and Level 2 products).
 
@@ -197,8 +197,6 @@ Table 1: *Number of annual datasets*
 Table 2: *Data volume*
 
 #### Data utility
-
-Data utility specifically related to the DC unit (see data summary at ASC for under the "Data utility" section for an example)
 
 #### Outline of data life cycle (workflow and workflow diagram)
 Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle-and-workflow-diagram).
@@ -289,15 +287,13 @@ Table 2: *Data volume*
 
 #### Data utility
 
-Data utility specifically related to the DC unit (see data summary at ASC for example).
-
 #### Outline of data life cycle (workflow and workflow diagram)
 
 Details on the data life cycle and workflow (workflow diagrams for data production) for remote sensing observations can be found in [Appendix 5: ACTRIS cloud remote sensing  data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-5-actris-cloud-remote-sensing-data-centre-unit-clu-data-life-cycle-and-workflow-diagram).
 
 ### 3.4 ACTRIS trace gases remote sensing data centre unit (GRES)
 
-The GRES data centre unit provides data curation service for reactive trace gases remote sensing data, **ADD: new text, see issue and comment have this consistent with the other units.**
+The GRES data centre unit provides data curation service for reactive trace gases remote sensing data.
 
 #### Description of the ACTRIS-GRES unit
 The ACTRIS trace gases remote sensing data centre unit making use of AERIS database. Reactive trace gas remote sensing data submitted to ACTRIS need to be submitted as level 2 data following the GEOMS data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) and the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements.
@@ -458,8 +454,6 @@ Table 2.6.2. *Data volume*
 
 #### Data utility
 
-Data utility specifically related to the DC unit (see data summary at ASC for example)
-
 #### Outline of data life cycle (workflow and workflow diagram)
 
 Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in [Appendix 8](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
@@ -483,7 +477,7 @@ An overview of the elements in the data flow is shown in Figure XX.
 
 ![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png)
 
-*Figure x: Schematic overview of the elements in ACTRIS data flow - Figure to be adjusted by Cathrine
+*Figure 4: Schematic overview of the elements in ACTRIS data flow
 
 #### 4.1.1 ACCESS role and data management
 
@@ -497,39 +491,21 @@ In the future, the aim is to collect all ACTRIS metadata in to a single metadata
 The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
 
 ![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/actris-data-center-elements.png)
-Figure x: ACTRIS Data Centre elements
+Figure 5: ACTRIS Data Centre elements
 
 ![Current overview of topical databases](img/section4/overview_of_topical_databases.png)
-Figure x: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
+Figure 6: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
 
 As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all-level-3-variables).
 
 #### 4.1.2 In-Situ dataflow and data management
-
-Max 1 page, including figure. Common structure for all units
-Give and overview of the role and tasks here, not too detailed. Refer to workflow annex
-for details.
-Bullet points to be covered by each unit leader:
-* data submission
-* online, offline, manual automatic
-* Archiving and preservation of  data sets, level 0-2 
-* level 0: how and where are these handled/archived? Comment on formats.
-* level 1 – level 2 data production: where? NF? DC+ TC?
-* how are the traceable data measurements now, and potentially in the future (plans for implementation)
-* version control, all levels?
-* what is centralized, what is at NF level etc,
-* Centralised tools, manual tools, automatic tools
-
-Make use of the concept paper for text: the subsection in section 3. Can probably use some from there.
-
-Add figure, similar to ASC, to easily visualize data flow with main links and tasks for the NF and Unit (including some text, not much).
 
 The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (listed in Appendix 1) follows a common workflow (see Appendix 3 for details). The workflow is separated into 2 branches:
 * **Online observations**: Measurement done directly on sample air stream immediately after sampling, measurement reported by instrument while sample passes through or immediately after. Instrument QA by on- and off-site comparisons to standard instruments / primary standards. RRT data provision is possible and default.
 * **Offline observations**: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
 
 ![ACTRIS In Situ Simplified Workflow](https://folk.nilu.no/~markus/20191001%20ACTRIS%20EBAS%20Data%20Flowchart%20simplified.png)
-Figure x: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users. *to be updated and simplified*
+Figure 7: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users. *to be updated and simplified*
 
 
 If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow.
@@ -593,32 +569,13 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 Table 4.1.3.1. *ARES Data Products Availability *
 
 ![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
-* Figure X: ARES Data Products Availability*
+* Figure 8: ARES Data Products Availability*
 
 #### 4.1.4 CLU dataflow and data management
-
-*Max 1 page, including figure. Common structure for all units*
-
-**Wait with writing this, until we have a draft of in-situ with**
-* data submission - automated transfer
-* Archiving and preservation of  data sets, level 0-2 - not all L0 is archived at DB yet
-* level 0: how and where are these handled/archived? Comment on formats. - Mostly netcdf; after processing, all netcdf
-* level 1 – level 2 data production: where? NF? DC+ TC? - under DC control, all netcdf 
-* how are the traceable data measurements now, and potentially in the future (plans for implementation) - in principle, traceable through metadata in netcdf
-* version control, all levels? - under development
-* what is centralized, what is at NF level etc. - processing suite centralised, calibration via CCRES
-* Centralised tools, manual tools, automatic tools - processing automated, but calibration requires manual tools
-**Text moved from other parts of the document that belongs here, maybe in modified version:**
 
 Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
 
 #### 4.1.5 GRES dataflow and data management
-
-*Max 1 page, including figure. Common structure for all units*
-
-**Wait with writing this, until we have a draft of in-situ with**
-
-**Text moved from other parts of the document that belongs here, maybe in modified version:**
 
 Trace gases remote sensing data produced are organized within one unique database and are issued from measurements using three types of instruments located at different observatory stations. The three types of instruments are:
 
@@ -630,16 +587,10 @@ This database provides access to level 2b and level 3 data of trace gases profil
 
 #### 4.1.6 ASC dataflow and data management
 
-*Max 1 page, including figure. Common structure for all units*
-
-**Wait with writing this, until we have a draft of in-situ with**
-
-**Text moved from other parts of the document that belongs here, maybe in modified version:**
-
 Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure XX). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
-*Figure x: current overview of ASC unit*
+*Figure 9: current overview of ASC unit*
 
 ### 4.2 Findable: Making data findable, including provisions for metadata [FAIR data]
 
@@ -664,11 +615,9 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 #### 4.2.2 Metadata standards and meta data services
 
-**Figure needed showing the meta data flow and interfaces throughout the flow from NF to ACTRIS Data Centre – Richard and Cathrine is working on this. Made in line with the others (layout wise), clearly stating the technologies with most “FAIR” data at the top (ACTRIS DC and the various ways of getting (meta)data)**
-
 ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit aims at providing discovery metadata in a common format for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. A decision about the standard is not taken, and under consideration. In any case, exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data. The present situation is shown in Table (refer to the one at the end of the section). 
 
-Future efforts will further develop the system shown in Figure XXX (that Richard is producing now) and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data centre unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
+Future efforts will further develop the system shown in Figure X and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data centre unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
 
 There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Centre will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
@@ -824,8 +773,6 @@ The table shows the data and software usage licence July 2019.
 
 ## 5. Allocation of resources
 
-**Cathrine takes the lead on this section. Draft should be more like an abstract of the cost book**
-
 ### Estimate the costs for making your data FAIR. Describe how you intend to cover these costs
 
   Question not answered.
@@ -933,11 +880,11 @@ Table: *Workflow Tasks Responsibilities*
 Table: *Workflow Tasks Short Specification*
 
 ### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
-**Will also link to seperate document describing the workflow in more detail.**
+**Link to seperate document describing the workflow in more detail.**
 ![ACTRIS Aerosol remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_Aerosol_Remote_Sensing_workflow.png)
 
 ### Appendix 5: ACTRIS Cloud remote sensing data centre unit (CLU) data life cycle and workflow diagram
-**Will also link to seperate document describing the workflow in more detail.**
+**Link to seperate document describing the workflow in more detail.**
 ![ACTRIS Cloud remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_cloud_remote_Sensing_workflow.png)
 
 ### Appendix 6: ACTRIS trace gases remote sensing data centre unit (GRES) data life cycle and workflow diagram
