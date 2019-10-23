@@ -536,7 +536,7 @@ Already at the station, the raw data stream from the instrument is transcribed t
 
    From the fully QCed level 0 data, i.e. level 0a, levels 1a and 2 (final data product) are produced. 
 
-All In Situ data products, level 1.5 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these (see Appendix 9).
+All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these (see Appendix 9).
 The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. By default, the responsibilities are distributed between NF, TC, and DC as follows:
 
 **NF**:
@@ -545,6 +545,8 @@ The content of workflow tasks and the responsibilities for them are specified in
 * Conducts / participates in on-site and off-site QA measures as specified by TC.
 * Maintains infrastructure for RRT data transfer.
 * Reacts to feedback on instrument operation and data quality from both TC and DC within 1 week, and takes corrective action within 1 month.
+
+Cathrine: I MISS DATA SUBMISSION PROCEDURE HERE: Submission deadline 31 March - data under rewview by TC - 31 May by TC, final submisison an QA/QC at the data centre unit.
 
 **TC**:
 * Maintains operating procedures for each In Situ instrument type in his responsibility.
