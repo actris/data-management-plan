@@ -25,7 +25,7 @@
 	  * [4.1.2.1 Online In Situ Data Production](#412-in-situ-dataflow-and-data-management)
 	  * [4.1.2.2 Offline In Situ Data Production](#4122-offline-in-situ-data-production)
 	* [4.1.3 ARES dataflow and data management](#413-ares-dataflow-and-data-management)
-	* [4.1.4 CLU dataflow and data management](##414-clu-dataflow-and-data-management)
+	* [4.1.4 CLU dataflow and data management](#414-clu-dataflow-and-data-management)
 	* [4.1.5 GRES dataflow and data management](#415-gres-dataflow-and-data-management)
 	* [4.1.6 ASC dataflow and data management](#416-asc-dataflow-and-data-management)
   * [4.2 Findable: Making data findable, including provisions for metadata [FAIR data]](#42-findable-making-data-findable-including-provisions-for-metadata-fair-data)
@@ -605,7 +605,7 @@ The actual metadata standard is yet to be decided, but it must comply with the n
 we use netCDF file format. All data files encounter regular back-ups.
 
 The data flow between national facilities, CLU, and the corresponding topical centre, CCRES, can be illustrated in Figure. X.
-![CLU services](img/section4/clu_data_flow.jpg)
+![CLU services](img/section4/clu_data_flow.png)
 
 
 #### 4.1.5 GRES dataflow and data management
