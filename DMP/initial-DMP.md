@@ -597,16 +597,16 @@ a common metadata structure. In this stage, we also screen out noisy data points
 This first processing step is applied to cloud radar and lidar measurements, but the microwave radiometer (MWR) data are
 processed elsewhere. FMI only receives the calibrated and processed Level 2 MWR files needed in the further processing steps.
 
-After receiving and processing the raw data (and MWR L2 files), we generate all Level 2 cloud products with our in-house
+After receiving and processing the raw data (and receiving MWR files), we generate all Level 2 cloud products with our in-house
 processing suite. All processed data are stored in netCDF files, which are archived on FMIs data servers. From the
 processed files, we generate a metadata database which is synchronized with the master metadata repository
-hosted by the ACCESS unit. All of our metadata is available as a JSON format via a restful http API.
+hosted by the ACCESS unit. All of our metadata is available as a JSON format via restful http API.
 The actual metadata standard is yet to be decided, but it must comply with the netCDF conventions because
-we use netCDF file format. All data files encounter regular back-ups.
+we use the netCDF file format. All data files encounter regular back-ups.
 
-A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure. 9.
+A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure 9.
 ![CLU services](img/section4/clu_data_flow.png)
-* Figure 9: CLU data products and services*
+* Figure 9: CLU data products and services
 
 
 #### 4.1.5 GRES dataflow and data management
