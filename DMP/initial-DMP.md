@@ -22,6 +22,8 @@
   * [4.1 Introduction and overview of ACTRIS Data Management architecture](#41-introduction-and-overview-of-actris-data-management-architecture)
     * [4.1.1 ACCESS role and data management](#411-access-role-and-data-management)
 	* [4.1.2 In-Situ dataflow and data management](#412-in-situ-dataflow-and-data-management)
+	  * [4.1.2.1 Online In Situ Data Production](#412-in-situ-dataflow-and-data-management)
+	  * [4.1.2.2 Offline In Situ Data Production](#4122-offline-in-situ-data-production)
 	* [4.1.3 ARES dataflow and data management](#413-ares-dataflow-and-data-management)
 	* [4.1.4 CLU dataflow and data management](##414-clu-dataflow-and-data-management)
 	* [4.1.5 GRES dataflow and data management](#415-gres-dataflow-and-data-management)
@@ -36,7 +38,16 @@
   * [4.4 Interoperable: Making data interoperable [FAIR data]](#44-interoperable-making-data-interoperable-fair-data)
   * [4.5 Reuseable: Increase data re-use [FAIR data]](#45-reuseable-increase-data-re-use-fair-data)
 * [5. Allocation of resources](#5-Allocation-of-resources)
-* [6. Data security](#6-Data-security)
+* [6. Data security](#6-data-security)
+  * [6.1 Archiving and preservation of In-Situ data](#61-archiving-and-preservation-of-in-situ-data)
+  * [6.2 Archiving and preservation of ARES data](#62-archiving-and-preservation-of-ares-data)
+  * [6.3 Archiving and preservation of CLU data](#63-archiving-and-preservation-of-clu-data)
+  * [6.4 Archiving and preservation of GRES data](#64-archiving-and-preservation-of-gres-data)
+  * [6.5 Archiving and preservation of ASC data](#65-archiving-and-preservation-of-asc-data)
+  * [6.6 Archiving and preservation of ACCESS data](#66-archiving-and-preservation-of-access-data)
+	* [6.6.1 Level 3 data](#661-level-3-data)
+	* [6.6.2 ACTRIS metadata](#663-actris-metadata)
+	* [6.6.3 Other](#663-other)
 * [7. Ethical aspects](#7-Ethical-aspects)
 * [8. Appendix](#8-Appendix)
   * [Appendix 1: List of ACTRIS variables from observational platforms and associated recommended methodology](#appendix-1-list-of-actris-variables-from-observational-platforms-and-associated-recommended-methodology)
@@ -186,7 +197,7 @@ The origin of the data is derived from instrument raw data, either through onlin
 | ACTRIS in situ cloud data     |           0                                              |       35                                |   105                                   |
 | ACTRIS in situ trace gas data |           27                                             |       30                                |   60		                               |
 
-Table 1: *Number of annual datasets*
+Table 2: *Number of annual datasets*
 
 | Type                          |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025) |
 |-------------------------------|-----------------------------------------------------------|------------------------------------------|------------------------------------------|
@@ -194,7 +205,7 @@ Table 1: *Number of annual datasets*
 | ACTRIS in situ cloud data     |           0 MB                                            |       1 GB                               |   3 GB                                   |
 | ACTRIS in situ trace gas data |           300 MB                                          |       200 MB                             |   400 MB	                              |
 
-Table 2: *Data volume*
+Table 3: *Data volume*
 
 #### Data utility
 
@@ -206,7 +217,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data coming frm lidar and photometer obsrevations. This includes centralized data processing, data storage, recording of metadata in a dedicated RDBMS, traceability, harmonization and data versioning, quality control, documentation and data provision. The unit allows for RRT and NRT data provisioning and offers support and training activities. Furthermore, level 3 data production for climatological analysis and the delivery of new data products will be further implemented and offered during the implementation phase.
 
 The main goal is providing access of high quality and document datasets of the aerosol optical properties vertical distribution in the whole troposphere and upper stratosphere with short time resolution.
-This long term dataset collected at continental scale allows :
+This long term dataset collected at continental scale allows:
 - investigation of the relationship between near-surface processes (as pollution or air quality issues) and atmospheric aerosol contents;
 - addressing the challenging issue of direct and indirect effects of aerosol in the climate change.
 
@@ -233,13 +244,13 @@ The origin of the data is derived from instrument raw data provided by the data 
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                    |
  GRASP/GARRLiC      |                        6          |             30        |    52                
-Table 1: *Number of annual datasets*
+Table 4: *Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
 | ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                    |
 | GRASP/GARRLiC     |                            3.2 GB                         |     40 GB                   |           50 GB            
-Table 2: *Data volume*
+Table 5: *Data volume*
 
 #### Data utility
 
@@ -277,13 +288,13 @@ Data is derived from instrument raw data, coupled with thermodynamic profiles fr
 |-----------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS cloud remote sensing data  |       11                                                 |      15                                 |   25                                    |
 
-Table 1: *Number of annual datasets*
+Table 6: *Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                     | Data volume (min by 2025)             | Data volume (max by 2025)             |
 |------------------------------------|------------------------------------------------------|---------------------------------------|---------------------------------------|
 | ACTRIS cloud remote sensing data   |           15 TB                                      |       50 TB                           |   150 TB                              |
 
-Table 2: *Data volume*
+Table 7: *Data volume*
 
 #### Data utility
 
@@ -319,7 +330,7 @@ The origin of the data is derived from instrument raw data, through offline obse
 | ACTRIS-GRES UV-VIS                  |             20000                                          |          15000                            |             30000                         |
 | ACTRIS-GRES LIDAR DIAL              |                  450                                    |          300                            |             500                          |
 
-Table 1: *Number of annual datasets*
+Table 8: *Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
@@ -327,7 +338,7 @@ Table 1: *Number of annual datasets*
 | ACTRIS-GRES UV-VIS  |                     1,2 GB                                   |              6 GB                         |          10 GB               |
 | ACTRIS-GRES LIDAR DIAL |                     400 MB                                |              400 MB                      |          550 MB            |
 
-Table 2: *Data volume*
+Table 9: *Data volume*
 
 #### Data utility
 
@@ -348,7 +359,7 @@ The ASC data centre unit provides data curation service for data obtained from e
     
 **The types and formats of data generated/collected**
 
-The ACTRIS ASC data centre unit is making use of EUROCHAMP database (https://data.eurochamp.org/) which is hosted by AERIS infrastructure. Data submitted to the DASCS pillar have to be provided by NFs in a standard format, called “EDF format” (EUROCHAMP Data Format) which is based on an ASCII text format and contains additional metadata in a header. These data are completed with rich metadata which are available from the website and give access to a technical description of the chambers (size, volume, walls, irradiation system …), the experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations. Currently, work is being conducted with regards to providing tools for access and download of data also in the netCDF 4 format, compliant with the CF 1.7 convention. This will be implemented during ACTRIS implementation phase.
+The ACTRIS ASC data centre unit is making use of EUROCHAMP database (https://data.eurochamp.org/) which is hosted by AERIS infrastructure. Data submitted to the DASCS pillar have to be provided by NFs in a standard format, called “EDF format” (EUROCHAMP Data Format) which is based on an ASCII text format and contains additional metadata in a header. These data are completed with rich metadata which are available from the website and give access to a technical description of the chambers (size, volume, walls, irradiation system), the experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations. Currently, work is being conducted with regards to providing tools for access and download of data also in the netCDF 4 format, compliant with the CF 1.7 convention. This will be implemented during ACTRIS implementation phase.
 
 Level 3 data provided in LAR are IR and mass spectra in JCAMP-DX format which is the standard format recommended by IUPAC for spectra. It is a 2D graphic format based on ASCII format. Metadata are attached and made available through the ACTRIS data user interface. These data are provided by NFs.
 
@@ -371,7 +382,7 @@ Data provided in DASCS and LAR pillars are derived from instrument raw data and 
 | ACTRIS-ASC LADP              |                   70                                     |          50                             |             200                |
 
 
- Table 1: _Number of annual datasets
+ Table 10: _Number of annual datasets
 
 |  Type                                |Data volume (end 2019)                          | Data volumes (min by 2025) | Data volume (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-------------------------------|
@@ -379,7 +390,7 @@ Data provided in DASCS and LAR pillars are derived from instrument raw data and 
 | ACTRIS-ASC LAR                 |                   67 MB                                  |          76 MB                        |            120 MB               |
 | ACTRIS-ASC LADP              |                   26 KB                                     |          200 KB                             |             500 KB                |
 
-Table 2: _Data volume_
+Table 11: _Data volume_
 
 **Data utility**
 
@@ -431,7 +442,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 |    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
 |    ReOBS              |                        1          |             1                           |    1                                    |
 
-Table 2.6.1. *Number of annual datasets*
+Table 12: *Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
@@ -439,7 +450,7 @@ Table 2.6.1. *Number of annual datasets*
 | GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
 | ReOBS             |                              2 GB                         |        3 GB                |                5 GB        |
 
-Table 2.6.2. *Data volume*
+Table 13: *Data volume*
 
 
 ##### Generated (on-demand services)
@@ -505,7 +516,7 @@ The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (l
 * **Offline observations**: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
 
 ![ACTRIS In Situ Simplified Workflow](https://folk.nilu.no/~markus/20191001%20ACTRIS%20EBAS%20Data%20Flowchart%20simplified.png)
-Figure 7: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users. *to be updated and simplified*
+Figure 7: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.
 
 
 If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow.
@@ -566,7 +577,7 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 | Level 2                   |                                             1 year                                  |  
 | Level 3                   |                                             1 year                                  | 
 
-Table 4.1.3.1. *ARES Data Products Availability *
+Table 14: *ARES Data Products Availability *
 
 ![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
 * Figure 8: ARES Data Products Availability*
@@ -611,7 +622,7 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 |         ASC              | 		?				       |  			                 |
 |		  GRES             | 		?				   |  				             |
 
-*Table X: List of vocabularies used July 2019*
+*Table 15: List of vocabularies used July 2019*
 
 #### 4.2.2 Metadata standards and meta data services
 
@@ -634,7 +645,7 @@ Tables below show the status by July 2019.
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
 
-*Table x: List of metadata standards and services implemented by July 2019*
+*Table 16: List of metadata standards and services implemented by July 2019*
 
 ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 
@@ -647,7 +658,7 @@ ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 |         re3data              | To be defined					|  None																			      |
 |         EOSC             | To be decided					|  None																					      |  
 
-*Table x: ACTRIS metadata registered or indexed in relevant metadata catalogs.*
+*Table 17: ACTRIS metadata registered or indexed in relevant metadata catalogs.*
 
 #### 4.2.3 Traceability of ACTRIS data
 
@@ -670,7 +681,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 |         ASC              | To be decided					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
 
-*Table: ACTRIS PID handlers*
+*Table 18: ACTRIS PID handlers*
 
 #### 4.2.4: Version control of ACTRIS (meta)data
 
@@ -709,7 +720,7 @@ The table shows the data access protocols July 2019.
 |		  GRES             | netCDF (data conversion by 2021)			  |  				https://en.aeris-data.fr/																	                                                         |       				 FTP      | No                                     |
 |		  ACCESS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa																                                                         |       				 FTP      | No                                     |
 
-*Table 1: Data formats and access protocols*
+*Table 19: Data formats and access protocols*
 
 For In-Situ, CLU, GRES and and ASC unit, all data, metadata, tools and documentation are provided with free and fully open access to all users without authentication with username and password.
 
@@ -733,8 +744,6 @@ By many of the DC units the Thredds Data Server (TDS) is used for serving data a
 In addition to this, ARES provides a REST API for machine-to-machine interaction. The API serves metadata (info, provenance, versions, quality controls, etc.) in JSON format and data (specific files or datasets previously generated) in NetCDF format. 
 
 CLU is currently working on a RESTful API with similar services as ARES in development.
-
-**ASC must provide information on platform that offers data/metadata in a automated way/plans for offering machine-readable data/metadata**
 
 ### 4.5 Reuseable: Increase data re-use [FAIR data]
 
@@ -761,7 +770,7 @@ The table shows the data and software usage licence July 2019.
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
 
-*Table x: Licences*
+*Table 20: Licences*
 
 | Responsible data centre unit         |          Software licence    |  Software link                                                        |
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
@@ -769,21 +778,26 @@ The table shows the data and software usage licence July 2019.
 |         ARES     		               |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
 |	CLU					|	MIT		|	[CloudnetPy](https://github.com/tukiains/cloudnetpy) 		|
 
-*Table x: Software*
+*Table 21: Software*
 
 ## 5. Allocation of resources
 
 ### Estimate the costs for making your data FAIR. Describe how you intend to cover these costs
 
-  Question not answered.
-
 ### Clearly identify responsibilities for data management in your project
-
-  Question not answered.
 
 ### Describe costs and potential value of long term preservation
 
-  Question not answered.
+| Data centre unit         |          Cost                         |  Comment     |
+|--------------------------|---------------------------------------|--------------|
+|         In Situ		   |                          			   |              |
+|         ARES     		   |                          			   |              |
+|         CLU              |                          			   |   			  |                                                          
+|		  ACCESS           |  									   |              | 
+|         ASC              | 			               			   |              |
+|		  GRES             | 				           			   |              |
+
+*Table 22: Cost of long term preservation*
 
 ## 6. Data security
 
@@ -867,7 +881,7 @@ Some higher level data products are stored at NILU in a file archive, this is da
 |              				 |                                 |                                |                           |
 |                  			 |                                 |                                |                           |
 
-Table: *Workflow Tasks Responsibilities*
+Table 23: *Workflow Tasks Responsibilities*
 
 #### Workflow Tasks Short Specification
 
@@ -877,7 +891,7 @@ Table: *Workflow Tasks Responsibilities*
 |              				 |                       |
 |                  			 |                       |
 
-Table: *Workflow Tasks Short Specification*
+Table 24: *Workflow Tasks Short Specification*
 
 ### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
 **Link to seperate document describing the workflow in more detail.**
