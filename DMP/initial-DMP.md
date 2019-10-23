@@ -584,7 +584,29 @@ Table 14: *ARES Data Products Availability *
 
 #### 4.1.4 CLU dataflow and data management
 
-Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
+Modern cloud remote sensing instruments can produce vast amounts of raw data. This data first need to be stored locally
+at the measurement site. Then, the data are transferred to FMI servers for processing and archiving. Currently, FMI offers
+an FTP access point to establish the file transfer, but it is site operators responsibility to maintain regular data flow to FMI.
+
+It should be noted that, technically, it is also possible to execute the first processing step already on site, and
+only transfer the processed measurement files, that are much smaller, to FMI for further processing.
+It is currently unclear if this option will be used in the operational ACTRIS processing or not.
+
+At FMI, the raw measurement files from various instruments are processed to obtain more standardized netCDF files with
+a common metadata structure. In this stage, we also screen out noisy data points and apply possible calibration factors.
+This first processing step is applied to cloud radar and lidar measurements, but the microwave radiometer (MWR) data are
+processed elsewhere. FMI only receives the calibrated and processed Level 2 MWR files needed in the further processing steps.
+
+After receiving and processing the raw data (and MWR L2 files), we generate all Level 2 cloud products with our in-house
+processing suite. All processed data are stored in netCDF files, which are archived on FMIs data servers. From the
+processed files, we generate a metadata database which is synchronized with the master metadata repository
+hosted by the ACCESS unit. All of our metadata is available as a JSON format via a restful http API.
+The actual metadata standard is yet to be decided, but it must comply with the netCDF conventions because
+we use netCDF file format. All data files encounter regular back-ups.
+
+The data flow between national facilities, CLU, and the corresponding topical centre, CCRES, can be illustrated in Figure. X.
+![CLU services](img/section4/clu_data_flow.jpg)
+
 
 #### 4.1.5 GRES dataflow and data management
 
