@@ -604,8 +604,9 @@ hosted by the ACCESS unit. All of our metadata is available as a JSON format via
 The actual metadata standard is yet to be decided, but it must comply with the netCDF conventions because
 we use netCDF file format. All data files encounter regular back-ups.
 
-The data flow between national facilities, CLU, and the corresponding topical centre, CCRES, can be illustrated in Figure. X.
+A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure. 9.
 ![CLU services](img/section4/clu_data_flow.png)
+* Figure 9: CLU data products and services*
 
 
 #### 4.1.5 GRES dataflow and data management
