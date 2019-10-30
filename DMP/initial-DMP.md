@@ -440,7 +440,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 |-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
 |   |
 |    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
-|    ReOBS              |                        1          |             1                           |    1                                    |
+|    ReOBS              |                        1          |             15                          |    30                                    |
 
 Table 12: *Number of annual datasets*
 
@@ -448,7 +448,7 @@ Table 12: *Number of annual datasets*
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
 |   |
 | GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
-| ReOBS             |                              2 GB                         |        3 GB                |                5 GB        |
+| ReOBS             |                              2 GB                         |        30 GB                |                100 GB        |
 
 Table 13: *Data volume*
 
@@ -981,7 +981,7 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 | Product                                             | format               | description                                                                                                                                                                                  |
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | GRASP-AOD                                           | NetCDF-CF            | Aerosol size distribution retrieval from optical depth                                                                                                                                       |
-| ReOBS                                               | NetCDF-CF            | The ReOBS project proposes a scientific method to aggregate, qualify and harmonize about fifty geophysical variables at hourly scale over a decade, to allow multiannual and multi-variables studies combining atmospheric dynamics and thermodynamics, radiation, clouds and aerosols, from ground-based observations. |
+| ReOBS                                               | NetCDF-CF            | The ReOBS project proposes an advanced method to aggregate, quality-control and harmonize in one single NetCDF file as many available geophysical variables from a NF at hourly scale for the whole data record spanned by this ensemble of variables. This file allows to easily perform multiannual and multi-variable studies combining atmospheric dynamics and thermodynamics, radiation, clouds and aerosols, from ground-based observations associated to a NF. |
 | Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
 | Data Interpretation and Outlier Identification Tool                 | NetCDF-CF                            | Quicklooks for time series data, compared to Copernicus Analysis and Reanalysis model products                                                                                                                   |
 | **?** Optimal interpolation and Gap filling tool                    | NetCDF-CF                            | modal/data integration products which fill measurement gaps, eg in a time series, profile or field.                                                                                                              |
