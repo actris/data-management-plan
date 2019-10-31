@@ -512,6 +512,19 @@ Figure 6 lower panel: Future architecture
 
 As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all-level-3-variables).
 
+##### Overview of when data is made available
+
+|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit |
+|---------------------------|---------------------------|-------------------------------------------------|
+| In Situ                   |              31th of May  |               31th of June                      |
+| GRES                      |                           |                                                 |  
+| ARES                      |                           |                                                 | 
+| ASC                       |                           |                                                 | 
+| CLU                       |                           |                                                 | 
+
+*Table x: Overview of when data is made available*
+
+
 #### 4.1.2 In-Situ dataflow and data management
 
 The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (listed in Appendix 1) follows a common workflow (see Appendix 3 for details). The workflow is separated into 2 branches:
