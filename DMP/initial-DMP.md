@@ -505,7 +505,10 @@ The ACCESS unit will suggest a standard that is widely used within the atmospher
 Figure 5: ACTRIS Data Centre elements
 
 ![Current overview of topical databases](img/section4/overview_of_topical_databases.png)
-Figure 6: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
+Figure 6 upper panel: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
+
+Figure 6 lower panel: Future architecture
+
 
 As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all-level-3-variables).
 
