@@ -25,7 +25,7 @@
 	  * [4.1.2.1 Online In Situ Data Production](#412-in-situ-dataflow-and-data-management)
 	  * [4.1.2.2 Offline In Situ Data Production](#4122-offline-in-situ-data-production)
 	* [4.1.3 ARES dataflow and data management](#413-ares-dataflow-and-data-management)
-	* [4.1.4 CLU dataflow and data management](##414-clu-dataflow-and-data-management)
+	* [4.1.4 CLU dataflow and data management](#414-clu-dataflow-and-data-management)
 	* [4.1.5 GRES dataflow and data management](#415-gres-dataflow-and-data-management)
 	* [4.1.6 ASC dataflow and data management](#416-asc-dataflow-and-data-management)
   * [4.2 Findable: Making data findable, including provisions for metadata [FAIR data]](#42-findable-making-data-findable-including-provisions-for-metadata-fair-data)
@@ -440,7 +440,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 |-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
 |   |
 |    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
-|    ReOBS              |                        1          |             1                           |    1                                    |
+|    ReOBS              |                        1          |             15                          |    30                                    |
 
 Table 12: *Number of annual datasets*
 
@@ -448,7 +448,7 @@ Table 12: *Number of annual datasets*
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
 |   |
 | GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
-| ReOBS             |                              2 GB                         |        3 GB                |                5 GB        |
+| ReOBS             |                              2 GB                         |        30 GB                |                100 GB        |
 
 Table 13: *Data volume*
 
@@ -539,7 +539,7 @@ Already at the station, the raw data stream from the instrument is transcribed t
 
    From the fully QCed level 0 data, i.e. level 0a, levels 1a and 2 (final data product) are produced. 
 
-All In Situ data products, level 1.5 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these (see Appendix 9).
+All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these (see Appendix 9).
 The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. By default, the responsibilities are distributed between NF, TC, and DC as follows:
 
 **NF**:
@@ -548,6 +548,8 @@ The content of workflow tasks and the responsibilities for them are specified in
 * Conducts / participates in on-site and off-site QA measures as specified by TC.
 * Maintains infrastructure for RRT data transfer.
 * Reacts to feedback on instrument operation and data quality from both TC and DC within 1 week, and takes corrective action within 1 month.
+
+Cathrine: I MISS DATA SUBMISSION PROCEDURE HERE: Submission deadline 31 March - data under rewview by TC - 31 May by TC, final submisison an QA/QC at the data centre unit.
 
 **TC**:
 * Maintains operating procedures for each In Situ instrument type in his responsibility.
@@ -587,7 +589,30 @@ Table 14: *ARES Data Products Availability *
 
 #### 4.1.4 CLU dataflow and data management
 
-Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
+Modern cloud remote sensing instruments can produce vast amounts of raw data. This data first need to be stored locally
+at the measurement site. Then, the data are transferred to FMI servers for processing and archiving. Currently, FMI offers
+an FTP access point to establish the file transfer, but it is site operators responsibility to maintain regular data flow to FMI.
+
+It should be noted that, technically, it is also possible to execute the first processing step already on site, and
+only transfer the processed measurement files, that are much smaller, to FMI for further processing.
+It is currently unclear if this option will be used in the operational ACTRIS processing or not.
+
+At FMI, the raw measurement files from various instruments are processed to obtain more standardized netCDF files with
+a common metadata structure. In this stage, we also screen out noisy data points and apply possible calibration factors.
+This first processing step is applied to cloud radar and lidar measurements, but the microwave radiometer (MWR) data are
+processed elsewhere. FMI only receives the calibrated and processed Level 2 MWR files needed in the further processing steps.
+
+After receiving and processing the raw data (and receiving MWR files), we generate all Level 2 cloud products with our in-house
+processing suite. All processed data are stored in netCDF files, which are archived on FMIs data servers. From the
+processed files, we generate a metadata database which is synchronized with the master metadata repository
+hosted by the ACCESS unit. All of our metadata is available as a JSON format via restful http API.
+The actual metadata standard is yet to be decided, but it must comply with the netCDF conventions because
+we use the netCDF file format. All data files encounter regular back-ups.
+
+A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure 9.
+![CLU services](img/section4/clu_data_flow.png)
+* Figure 9: CLU data products and services
+
 
 #### 4.1.5 GRES dataflow and data management
 
@@ -604,7 +629,7 @@ This database provides access to level 2b and level 3 data of trace gases profil
 Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure XX). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
-*Figure 9: current overview of ASC unit*
+*Figure 10: current overview of ASC unit*
 
 ### 4.2 Findable: Making data findable, including provisions for metadata [FAIR data]
 
@@ -643,7 +668,7 @@ Tables below show the status by July 2019.
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
-|         CLU              |          To be defined     |  None                                                                 |       To be decided                      |
+|         CLU              |          JSON via REST API     |  http://devcloudnet.fmi.fi/api/                                                                 |       To be decided                      |
 |	  ACCESS           	   | To be decided              |  None																		              |       To be decided             |
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
@@ -901,8 +926,7 @@ Table 24: *Workflow Tasks Short Specification*
 ![ACTRIS Aerosol remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_Aerosol_Remote_Sensing_workflow.png)
 
 ### Appendix 5: ACTRIS Cloud remote sensing data centre unit (CLU) data life cycle and workflow diagram
-**Link to seperate document describing the workflow in more detail.**
-![ACTRIS Cloud remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_cloud_remote_Sensing_workflow.png)
+![ACTRIS Cloud remote sensing data centre unit workflow diagram](img/CLU_workflow.png)
 
 ### Appendix 6: ACTRIS trace gases remote sensing data centre unit (GRES) data life cycle and workflow diagram
 ![ACTRIS trace gases remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/workflow_gres.png)
@@ -960,7 +984,7 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 | Product                                             | format               | description                                                                                                                                                                                  |
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | GRASP-AOD                                           | NetCDF-CF            | Aerosol size distribution retrieval from optical depth                                                                                                                                       |
-| ReOBS                                               | NetCDF-CF            | The ReOBS project proposes a scientific method to aggregate, qualify and harmonize about fifty geophysical variables at hourly scale over a decade, to allow multiannual and multi-variables studies combining atmospheric dynamics and thermodynamics, radiation, clouds and aerosols, from ground-based observations. |
+| ReOBS                                               | NetCDF-CF            | The ReOBS project proposes an advanced method to aggregate, quality-control and harmonize in one single NetCDF file as many available geophysical variables from a NF at hourly scale for the whole data record spanned by this ensemble of variables. This file allows to easily perform multiannual and multi-variable studies combining atmospheric dynamics and thermodynamics, radiation, clouds and aerosols, from ground-based observations associated to a NF. |
 | Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
 | Data Interpretation and Outlier Identification Tool                 | NetCDF-CF                            | Quicklooks for time series data, compared to Copernicus Analysis and Reanalysis model products                                                                                                                   |
 | **?** Optimal interpolation and Gap filling tool                    | NetCDF-CF                            | modal/data integration products which fill measurement gaps, eg in a time series, profile or field.                                                                                                              |
