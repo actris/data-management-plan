@@ -355,7 +355,7 @@ The ASC data centre unit provides data curation service for data obtained from e
 
 * The Library of Analytical Resources (LAR) provides quantitative analytical resources that include infrared spectra and mass spectra of molecules and derivatives (level 3 data).
 
-* The Library of Advanced Data Products (LADP) provides different types of mature data products (level 3 data): rate constants of reactions, quantum yields and photolysis frequencies of trace gas compounds, secondary organic aerosol (SOA) yields, mass extinction/absorption/scattering coefficients and complex refractive index of aerosols, growth factors of aerosols and modelling tools. The detailed list of ACTRIS level 3 data products is given in Appendix 9.
+* The Library of Advanced Data Products (LADP) provides different types of mature data products (level 3 data): rate constants of reactions, quantum yields and photolysis frequencies of trace gas compounds, secondary organic aerosol (SOA) yields, mass extinction/absorption/scattering coefficients and complex refractive index of aerosols, growth factors of aerosols and modelling tools. The detailed list of ACTRIS level 3 data products is given in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
     
 **The types and formats of data generated/collected**
 
@@ -510,7 +510,7 @@ Figure 6 upper panel: Current overview of topical databases (Updates of Figure F
 Figure 6 lower panel: Future architecture
 
 
-As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-list-of-all-level-3-variables).
+As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
 ##### Overview of when data is made available (level 2 data)
 
@@ -552,7 +552,7 @@ Already at the station, the raw data stream from the instrument is transcribed t
 
    From the fully QCed level 0 data, i.e. level 0a, levels 1a and 2 (final data product) are produced. 
 
-All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these (see Appendix 9).
+All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these ([Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables)).
 The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. By default, the responsibilities are distributed between NF, TC, and DC as follows:
 
 **NF**:
@@ -582,8 +582,7 @@ Cathrine: I MISS DATA SUBMISSION PROCEDURE HERE: Submission deadline 31 March - 
 
 ##### 4.1.2.2 Offline In Situ Data Production
 
-
-
+*Content not yet available*
 
 #### 4.1.3 ARES dataflow and data management
 
