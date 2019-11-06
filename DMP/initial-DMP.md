@@ -496,7 +496,7 @@ Access to quality controlled data from the data centre units is provided by the 
 
 All data centre units are providing metadata and interface for access to data in the current ACTRIS metadata catalogue, expect for ASC. The metadata is used as input to the current ACTRIS metadata catalog providing identification and access to data through the ACTRIS Data Centre web portal. Access to primary datasets are regularly updated through the metadata catalogue, typically every night or on a weekly basis, through various procedures, so potentially new data added to the topical databases are available through the portal the following day. ASC unit has developed its own metadata catalog within EUROCHAMP projects. This metadata catalog is currently available through EUROCHAMP Data Centre portal and provides identification and access to data.
 
-[The current overview of topical databases](img/section4/overview_of_topical_databases.png) show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
+[The current overview of topical databases](img/section4/overview_current_architecture.png) show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
 
 In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
 The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
@@ -504,7 +504,7 @@ The ACCESS unit will suggest a standard that is widely used within the atmospher
 ![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/actris-data-center-elements.png)
 Figure 5: ACTRIS Data Centre elements
 
-![Current overview of topical databases](img/section4/overview_of_topical_databases.png)
+![Current overview of topical databases](img/section4/overview_current_architecture.png)
 Figure 6 upper panel: Current overview of topical databases (Updates of Figure Figure x: current_overview_topical_databases.png) 
 
 Figure 6 lower panel: Future architecture
