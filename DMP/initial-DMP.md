@@ -1032,3 +1032,7 @@ Some products will be generated through on-line services, and will generate data
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |                                                     |                      |                                                                                                                                                                                              |
 
+### Appendix 10: ReOBS workflow diagram
+
+![ReOBS workflow diagram](img/workflows/ACTRIS_ReOBS_Workflow_v1.png)
+
