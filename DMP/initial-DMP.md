@@ -471,9 +471,24 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ## 4. Data Management at the ACTRIS data centre
 
-ACTRIS data and products should be findable, accessible, interoperable and reusable (FAIR), and the data centre works towards fulfilling the FAIR principles. This chapter is describing the complete ACTRIS Data Flow from [National Facilities (NF)](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section1/Exp_Obs_NF.jpg) to users that is operational now, and the work and solutions that will be implemented during the implementation phase (2020-2025). The section starts with an introduction to the data management system in ACTRIS in section 4.1, including detailed descriptions of data flows within each unit (4.1.1.-4.1.5). This is followed by sections describing detailed solutions and implementation plans making ACTRIS data and products findable (4.2), accessible (4.3), interoperable (4.4), and reusable (4.5).
+ACTRIS data and products should be findable, accessible, interoperable and reusable (FAIR), and the data centre works towards fulfilling the FAIR principles. This chapter is describing the operational ACTRIS Data Flow from [National Facilities (NF)](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section1/Exp_Obs_NF.jpg) to users now, and the work and solutions that will be implemented during the implementation phase (2020-2025). The section starts with a brief introducation to ACTRIS Access strategy, then introduction to the data management system in ACTRIS in section 4.1, including detailed descriptions of data flows within each unit (4.1.1.-4.1.5). This is followed by sections describing detailed solutions and implementation plans making ACTRIS data and products findable (4.2), accessible (4.3), interoperable (4.4), and reusable (4.5).
 
-### 4.1 Introduction and overview of ACTRIS Data Management architecture
+
+### 4.1 ACTRIS access and service policy
+
+ACTRIS is offering access to a large variety of high-quality services offered by ACTRIS facilities, to a wide range of users and needs, for scientific, technological and innovation-oriented usage. Accordingly, ACTRIS has developed an [access strategy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467) to give clear guidelines and describe the general principles for access provided by ACTRIS to Users.
+When the ACTRIS services are in operation, the Users will access the ACTRIS services through a single entry point, as shown in Figure XX below.
+
+
+ 
+Figure XX: Overview of ACTRIS Access strategy
+
+Virtual access is wide access to ACTRIS data and digital tools and does not require a selection process. Virtual access to ACTRIS data and digital tools is Free access, and is given in compliance with the [ACTRIS data policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.3_M30.pdf?ver=2018-10-29-152439-550) for data from ACTRIS labelled NFs. Competitive access is Physical or Remote access to the ACTRIS Facilities, including access to specific services offered by the Data Centre and shall be managed by the SAMU and requires a selection process. 
+
+
+
+
+### 4.2 Introduction and overview of ACTRIS Data Management architecture
 
 ACTRIS Data Management is handled by the individual data centre units:
 
@@ -490,7 +505,7 @@ An overview of the elements in the data flow is shown in Figure XX.
 
 *Figure 4: Schematic overview of the elements in ACTRIS data flow
 
-#### 4.1.1 ACCESS role and data management
+#### 4.2.1 ACCESS role and data management
 
 Access to quality controlled data from the data centre units is provided by the ACTRIS data and service access unit (ACCESS) through the web interface called “ACTRIS Data Centre”. The ACCESS unit is not only responsible for access to measurement data, but also access to services, tools and providing documentation, all which is based on metadata provided by the data Centre units, the tasks are summarized in the [Figure](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png) above and include the organization of ACTRIS level 3 data. 
 
@@ -525,7 +540,7 @@ As described in [figure x](https://raw.githubusercontent.com/actris/data-managem
 *Table x: Overview of when data is made available*
 
 
-#### 4.1.2 In-Situ dataflow and data management
+#### 4.2.2 In-Situ dataflow and data management
 
 The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (listed in Appendix 1) follows a common workflow (see Appendix 3 for details). The workflow is separated into 2 branches:
 * **Online observations**: Measurement done directly on sample air stream immediately after sampling, measurement reported by instrument while sample passes through or immediately after. Instrument QA by on- and off-site comparisons to standard instruments / primary standards. RRT data provision is possible and default.
@@ -542,7 +557,7 @@ ACTRIS In situ concretises the ACTRIS data levels as follows:
 * **Level 1**: Contains physical property observed, including measures of uncertainty. Instrument status parameters, QC measurements and invalid data removed, quality control and post-calibrations applied. Time resolution native to instrument. Content specific for measured property, standard conditions of temperature and pressure.
 * **Level 2**: Contains data averaged to a homogeneous time resolution, typically 1 h. Includes measure of atmospheric variability, content specific for measured property.
 
-##### 4.1.2.1 Online In Situ Data Production
+##### 4.2.2.1 Online In Situ Data Production
 
 Already at the station, the raw data stream from the instrument is transcribed to a homogeneous level 0 format, and annotated with discovery, use, provenance, and configuration metadata. The level 0 data are transferred to the ACTRIS DC at a RRT schedule (latest 3 h after measurement, normally 1 h). At this point, the In Situ online workflow splits into 2 branches:
 1. RRT data production: incoming level 0 data are auto-QCed for outliers, spikes, calibration data, and automatically identifiable instrument malfunctions, and flagged accordingly, yielding level 0b. From there, levels 1b and 1.5 (final RRT data product) are produced. RRT data are offered through a data subscription service.
@@ -580,11 +595,11 @@ Cathrine: I MISS DATA SUBMISSION PROCEDURE HERE: Submission deadline 31 March - 
 * Archives level 3 data produced by In Situ.
 * Operates software 
 
-##### 4.1.2.2 Offline In Situ Data Production
+##### 4.2.2.2 Offline In Situ Data Production
 
 *Content not yet available*
 
-#### 4.1.3 ARES dataflow and data management
+#### 4.2.3 ARES dataflow and data management
 
 The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with the centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data centre automatically produces Level 2 and Level 3 climatological products.
 
@@ -599,7 +614,7 @@ Table 14: *ARES Data Products Availability *
 ![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
 * Figure 8: ARES Data Products Availability*
 
-#### 4.1.4 CLU dataflow and data management
+#### 4.2.4 CLU dataflow and data management
 
 Modern cloud remote sensing instruments can produce vast amounts of raw data. This data first need to be stored locally
 at the measurement site. Then, the data are transferred to FMI servers for processing and archiving. Currently, FMI offers
@@ -626,7 +641,7 @@ A general overview of the links between national facilities, CLU, and the corres
 * Figure 9: CLU data products and services
 
 
-#### 4.1.5 GRES dataflow and data management
+#### 4.2.5 GRES dataflow and data management
 
 Trace gases remote sensing data produced are organized within one unique database and are issued from measurements using three types of instruments located at different observatory stations. The three types of instruments are:
 
@@ -636,16 +651,16 @@ Trace gases remote sensing data produced are organized within one unique databas
 
 This database provides access to level 2b and level 3 data of trace gases profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …). The level 2b data are produced from the consolidation of level 2a data using quality assurance and quality control procedures. The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
 
-#### 4.1.6 ASC dataflow and data management
+#### 4.2.6 ASC dataflow and data management
 
 Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure XX). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
 *Figure 10: current overview of ASC unit*
 
-### 4.2 Findable: Making data findable, including provisions for metadata [FAIR data]
+### 4.3 Findable: Making data findable, including provisions for metadata [FAIR data]
 
-#### 4.2.1 ACTRIS variable names and implementation of vocabulary
+#### 4.3.1 ACTRIS variable names and implementation of vocabulary
 
 Generally, ACTRIS data set names aims to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the ACCESS unit (ACTRIS Data Centre web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
 
@@ -664,7 +679,7 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 *Table 15: List of vocabularies used July 2019*
 
-#### 4.2.2 Metadata standards and meta data services
+#### 4.3.2 Metadata standards and meta data services
 
 ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit aims at providing discovery metadata in a common format for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. A decision about the standard is not taken, and under consideration. In any case, exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data. The present situation is shown in Table (refer to the one at the end of the section). 
 
@@ -700,7 +715,7 @@ ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 
 *Table 17: ACTRIS metadata registered or indexed in relevant metadata catalogs.*
 
-#### 4.2.3 Traceability of ACTRIS data
+#### 4.3.3 Traceability of ACTRIS data
 
 The term measurement traceability is used to refer to an unbroken chain of comparisons relating an instrument's measurements to a known standard, time, processing, software etc. Calibration to a traceable standard can be used to determine an instrument's bias, precision, and accuracy. The ability to trace a measurements back to its origin is important for several reasons; It increase the quality by facilitating back-out or reprocess bad data, and conversely, it allows reward and boost good data sources and processing techniques. This is also to ensure that proper attribution is given to data originators adequately reflecting their contributions through the data production chain.
 
@@ -723,7 +738,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 
 *Table 18: ACTRIS PID handlers*
 
-#### 4.2.4: Version control of ACTRIS (meta)data
+#### 4.3.4: Version control of ACTRIS (meta)data
 
 The ACTRIS DC aims at providing clear versioning of its data and metadata. Due to the decentralised nature of the Data Centre, this varies between the different data centre units, and implementation will be done on unit level.
 
@@ -731,7 +746,7 @@ As a guiding principle, all data submitted to ACTRIS passing quality assurance s
 
 A Versioning System has been implemented at ARES directly in the RDBMS by using DML (Data Manipulation Language) triggers. A new version of a file is produced when a user tries to modify data through a DML event. New versions will be centrally produced if new QC procedures and new processing features are released. Additionally new versions of the files will be allowed and centrally handled for fixing file bugs in particular for legacy data. 
 
-### 4.3 Accessible: Making data openly accessible [FAIR data]
+### 4.4 Accessible: Making data openly accessible [FAIR data]
 
 The purpose of the data collection and generation of data products in ACTRIS is to provide open access to aerosol, cloud and trace gas in situ and remote sensing measurements of high quality (see section 1).
 
@@ -739,7 +754,7 @@ A guiding principle is that all ACTRIS data should be readable for both humans a
 
 There might also be data available through the ACTRIS Data Centre that is not directly ACTRIS data, but used in the production and interpretation of ACTRIS data.
 
-#### 4.3.1 ACTRIS data access and access protocols
+#### 4.4.1 ACTRIS data access and access protocols
 
 General guidelines for access to ACTRIS data and services are available in the current [ACTRIS access and service policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467). Conditions of use should be indicated in section 3.4, and is covered by the attached licence, unless stated otherwise.
 
@@ -774,9 +789,9 @@ If specific software tools are need to access the data, documentation about the 
 
 There are valuable and contributing networks to ACTRIS e.g. EMEP, GAW, EARLINET, and level 3 products covering bridge to external data bases and use of these data in combined products. The implementation and strategic and technical contributions of this is under development.
 
-### 4.4 Interoperable: Making data interoperable [FAIR data]
+### 4.5 Interoperable: Making data interoperable [FAIR data]
 
-As a guiding principle, ACTRIS should make sure that metadata and data use a formal, accessible, shared and broadly applicable language for knowledge representation in order to facilitate interoperability. Still, work remains to see if a common solution could be agreed upon. The intricate nature of the data and metadata might require the use of different solutions to suit the needs of different data centre units. As mention in section 4.2 metadata standard and vocabularies commonly used in the atmospheric domain should be applied, unless the common solutions do not address the specific need for the DC unit.
+As a guiding principle, ACTRIS should make sure that metadata and data use a formal, accessible, shared and broadly applicable language for knowledge representation in order to facilitate interoperability. Still, work remains to see if a common solution could be agreed upon. The intricate nature of the data and metadata might require the use of different solutions to suit the needs of different data centre units. As mention in section 4.3 metadata standard and vocabularies commonly used in the atmospheric domain should be applied, unless the common solutions do not address the specific need for the DC unit.
 Implementation of new standards for data and metadata used in the context of ACTRIS should be discussed by all the DC units. The aim should be to harmonize data and metadata as much as possible, both in terms of technical aspects related to implementation, but also making it easier for the end user to make use of the data.
 
 By many of the DC units the Thredds Data Server (TDS) is used for serving data and metadata in an automated way as netCDF files through the OPeNDAP protocol (this apporach is implemented by In-Situ, ARES, ASC, GRES).
@@ -785,13 +800,13 @@ In addition to this, ARES provides a REST API for machine-to-machine interaction
 
 CLU is currently working on a RESTful API with similar services as ARES in development.
 
-### 4.5 Reuseable: Increase data re-use [FAIR data]
+### 4.6 Reuseable: Increase data re-use [FAIR data]
 
 The guiding principle is free and open access to ACTRIS data and ACTRIS data products, and the ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the [ACTRIS access and service policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467) and the open research data initiative of the European Commission.
 
 As a result, the ACTRIS DC will implement one or multiple licenses for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to acknowledge ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably end of 2020 or early 2021). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
 
-Several features have been implemented by In-Situ, ARES, CLU (or more) units to ensure reusability and traceability, in particular traceable data flow and version control of data products, see section 4.2.
+Several features have been implemented by In-Situ, ARES, CLU (or more) units to ensure reusability and traceability, in particular traceable data flow and version control of data products, see section 4.3.
 
 In order to increase the reusability of data in ASC unit, these data are completed with rich metadata which are in open access from the website. These metadata provide detailed technical description of the chambers (size, volume, walls, irradiation system ...), experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations. This last one is very useful for modelers who aim at simulating experiments performed in simulation chambers.
 
