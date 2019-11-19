@@ -136,7 +136,7 @@ Primary goal of ACTRIS is to produce high quality integrated datasets in the are
 
 See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217) for more information.
 
-#### The relation to the objectives of the project
+#### The relation to the objectives of the project as stated in [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217)
 
 The primary goal of ACTRIS is to produce high quality integrated datasets in the area of atmospheric sciences and provide services, including access to instrumented platforms, tailored for scientific and technological usage. The main objectives of ACTRIS are:
 
@@ -146,16 +146,16 @@ The primary goal of ACTRIS is to produce high quality integrated datasets in the
 * to ensure and raise the quality of data and use of up-to-date technology used in the RI and the quality of services offered to the community of users, involving partners from the private sector; and
 * to promote training of operators and users and enhance linkage between research, education and innovation in the field of atmospheric science.
 
-* *From the Stakeholder Handbook (2018)*
 
 Management of ACTRIS data relates to measuring atmospheric composition and the ability to predict the future behavior of the atmosphere over all time scales. High quality observational data harmonized across the countries and continents facilitates this, and needs to be supported by:
 
 * Documentation of archiving procedures and access to level 0 -> level 3 data produced by the National Facilities (NFs), Topical Centres (TCs), and Central Facilities (CFs)
 * Documented and traceable processing chain of level 0 data
 * Documented, traceable processing and long-term archiving and preservation of all ACTRIS level 1 to level 3 data and data products
-* Access to ACTRIS data, data products, and digital tools through a single point of entry, the ACTRIS data user interface
+* Access to ACTRIS data, data products, and digital tools through a single point of entry
 * Documentation of data, data flow, citation service, and data attribution, including version control, data traceability, and interoperability,
 * Data curation and support for campaigns and dedicated research projects and initiatives, external or internal to ACTRIS.
+
 
 #### Main users of ACTRIS data and software
 
@@ -409,19 +409,19 @@ Detail on the data life cycle andA preliminary version of the data workflow (wor
 
 ### 3.6 ACTRIS data and services (ACCESS)
 
-ACTRIS data and services access unit (ACCESS) is responsible for access to measurement data, services, tools and documentation, with scientific data management and support to observational and exploratory NFs. The access unit provides provision of ACTRIS web interface for data, services and digital tools as well as performing data production of and access to Level 3 data, quality control tools, and synergy data products.
+ACTRIS data and services access unit (ACCESS) is responsible for organising access to measurement data, tools and documentation of procedures as support to observational and exploratory NFs. The ACCESS unit provides the ACTRIS web interface for data, services and digital tools as well as performing data production of Level 3 data, and synergy data products.
 
-The ACTRIS access web interface for data, services and tools, is called “The ACTRIS Data Centre” and the main activities are **Discovery and access** to ACTRIS data and data products, digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data and synergy data products. The data centre also offers **bridge to external data bases and sources**.
+The ACTRIS access web interface for data, services and tools, is called “The ACTRIS Data Centre” and the main activities are **Discovery and access** to ACTRIS data and data products, overview of digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data and synergy data products. The data centre also offers **bridge to external data bases and sources**.
 
-The ACTRIS ACCESS unit provides elaborated aerosol, cloud and trace gas data products, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources.
+The ACTRIS ACCESS unit offer acecss to elaborated aerosol, cloud and trace gas data products, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources. These can be producved within the ACCESS unit, topic data centre units, topic centres, or extrnal contributions.
 
 The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx), and consiste of three main categories:
 
-	I. Production of level 3 data solely based on data from ACTRIS observational platforms
+	I. Level 3 data solely based on data from ACTRIS observational platforms
 
-	II. Production of level 3 data and tools through multi-source data integration services, employing external ground based measurement data
+	II. Level 3 data and tools through multi-source data integration services, employing external ground based measurement data
 
-	III. Production of level 3 data products involving regional and global model data
+	III. Level 3 data products involving regional and global model data
 
 #### The types and formats of data generated/collected
 
