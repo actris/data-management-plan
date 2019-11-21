@@ -518,7 +518,7 @@ The ACCESS unit will suggest a standard that is widely used within the atmospher
 ![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/actris-data-center-elements.png)
 Figure 5: ACTRIS Data Centre elements
 
-![Current overview of topical databases](img/section4/overview_current_architecture.png)
+![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
 Figure 6: Technical architecture of the ACTRIS meta data portal
 
 Identification and discovery of ASC will be implemented.
