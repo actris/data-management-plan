@@ -519,9 +519,9 @@ The ACCESS unit will suggest a standard that is widely used within the atmospher
 Figure 5: ACTRIS Data Centre elements
 
 ![Current overview of topical databases](img/section4/overview_current_architecture.png)
-Figure 6: Technical overview of operational ACTRIS data center
+Figure 6: Technical architecture of the ACTRIS meta data portal
 
-* Identification and discovery of ASC will be implemented. *
+Identification and discovery of ASC will be implemented.
 
 As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
