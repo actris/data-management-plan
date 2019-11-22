@@ -500,9 +500,8 @@ ACTRIS Data Management is handled by the individual data centre units:
 
 An overview of the elements in the data flow is shown in Figure XX.
 
-![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png)
-
-*Figure 4: Schematic overview of the elements in ACTRIS data flow
+![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components.jpg)
+Figure 4: Schematic overview of the elements in ACTRIS data flow
 
 #### 4.2.1 ACCESS role and data management
 
@@ -513,9 +512,9 @@ All data centre units are providing metadata and interface for access to data in
 [The current overview of topical databases](img/section4/overview_current_architecture.png) show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
 
 In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
-The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). The approach towards this will be discussed in more detail during a technical workshop in the end of 2019.
+The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). 
 
-![ACTRIS Data Centre elements](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/actris-data-center-elements.png)
+![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS.jpg)
 Figure 5: ACTRIS Data Centre elements
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
@@ -536,7 +535,6 @@ As described in [figure x](https://raw.githubusercontent.com/actris/data-managem
 | CLU                       |                           |                                                 | 
 
 *Table x: Overview of when data is made available*
-
 
 #### 4.2.2 In-Situ dataflow and data management
 
