@@ -501,7 +501,8 @@ ACTRIS Data Management is handled by the individual data centre units:
 An overview of the elements in the data flow is shown in Figure XX.
 
 ![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components.jpg)
-Figure 4: Schematic overview of the elements in ACTRIS data flow
+Figure 4: Overview of ACTRIS Data Centre components, links and main activities for the various units
+
 
 #### 4.2.1 ACCESS role and data management
 
@@ -515,7 +516,7 @@ In the future, the aim is to collect all ACTRIS metadata in to a single metadata
 The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). 
 
 ![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS.jpg)
-Figure 5: ACTRIS Data Centre elements
+Figure 5: Overview of the tasks of the ACCESS unit 
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
 Figure 6: Technical architecture of the ACTRIS meta data portal
