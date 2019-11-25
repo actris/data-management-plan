@@ -479,8 +479,7 @@ When the ACTRIS services are in operation, the Users will access the ACTRIS serv
 ![Overview of ACTRIS Access strategy](img/section4/ACTRIS_IAC09_principles_access_to_NF_draft.jpg)
 Figure XX: Overview of ACTRIS Access strategy
 
-Virtual access is wide access to ACTRIS data and digital tools and does not require a selection process. Virtual access to ACTRIS data and digital tools is Free access, and is given in compliance with the [ACTRIS data policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.3_M30.pdf?ver=2018-10-29-152439-550) for data from ACTRIS labelled NFs. Competitive access is Physical or Remote access to the ACTRIS Facilities, including access to specific services offered by the Data Centre and shall be managed by the SAMU and requires a selection process. 
-
+Virtual access is wide access to ACTRIS data and digital tools and does not require a selection process. Virtual access to ACTRIS data and digital tools is free access, and is given in compliance with the [ACTRIS data policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.3_M30.pdf?ver=2018-10-29-152439-550) for data from ACTRIS labelled NFs. Competitive access is Physical or Remote access to the ACTRIS Facilities, including access to specific services offered by the Data Centre and shall be managed by the SAMU and requires a selection process. This can e.g. be data centre services for comprehensiv research campaigns or large volume data delivery tailored for specific purposes.   
 
 
 
