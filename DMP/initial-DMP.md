@@ -45,9 +45,6 @@
   * [6.4 Archiving and preservation of GRES data](#64-archiving-and-preservation-of-gres-data)
   * [6.5 Archiving and preservation of ASC data](#65-archiving-and-preservation-of-asc-data)
   * [6.6 Archiving and preservation of ACCESS data](#66-archiving-and-preservation-of-access-data)
-	* [6.6.1 Level 3 data](#661-level-3-data)
-	* [6.6.2 ACTRIS metadata](#663-actris-metadata)
-	* [6.6.3 Other](#663-other)
 * [7. Ethical aspects](#7-Ethical-aspects)
 * [8. Appendix](#8-Appendix)
   * [Appendix 1: List of ACTRIS variables from observational platforms and associated recommended methodology](#appendix-1-list-of-actris-variables-from-observational-platforms-and-associated-recommended-methodology)
@@ -887,16 +884,7 @@ The current size of the database is about 25 TB and the volume is expected to gr
 
 ### 6.6 Archiving and preservation of ACCESS data
 
-The ACCESS unit is providing access to all ACTRIS data sets through the [ACTRIS data portal](https://actris.nilu.no/). The metadata from the data center units (In Situ, ARES and CLU) are harvested custom APIs and services. The metadata is stored in an Oracle database at NILU.
-
-#### 6.6.1 Level 3 data
-
-Some higher level data products are stored at NILU in a file archive, this is data that is post-processed and usually part of data publications (http://actris.nilu.no/Content/pageid=226809f7a0ac49538914eeafb4448afa).
-
-#### 6.6.3 ACTRIS metadata
-
-#### 6.6.3 Other
-
+The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data portal](https://actris.nilu.no/) using the ASP.NET (Web Forms) Framework 4.5 and Internet Information Services (ISS) web-server. The metadata is harvested from each individual data center unit, currently In Situ (EBAS), ARES (EARLINET), CLU (CLOUDNET) and GRES (NDACC), using custom harvesting routines triggered by cronjobs on an Ubuntu server running custom scripts written in Perl/Python. The metadata itself is stored on a Oracle database server, version 11.2.0.4. All source code is managed using version control, using subversion (SVN). 
 
 ## 7. Ethical aspects
 
