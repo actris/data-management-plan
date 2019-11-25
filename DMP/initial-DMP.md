@@ -433,7 +433,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 | Type                  |Number of annual datasests (end 2019)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
 |   |
-|    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
+|    GRASP-AOD          |                        0          |             30                          |    1500                                 |
 |    ReOBS              |                        1          |             15                          |    30                                    |
 
 Table 12: *Number of annual datasets*
@@ -441,7 +441,7 @@ Table 12: *Number of annual datasets*
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
 |   |
-| GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
+| GRASP-AOD         |                              0 GB                         |      50 GB               |        20 TB             |
 | ReOBS             |                              2 GB                         |        30 GB                |                100 GB        |
 
 Table 13: *Data volume*
@@ -453,7 +453,7 @@ Table 13: *Data volume*
 | ------------------------------------------------------------- | ----------------------- | ---------------------- |
 | Satellite data subsets                                        | 100                     | 100 MB                 |
 | Transport modelling products for assessment of source regions | ...                     |                        |
-| Colocation service of data from contributing networks         | TBD                     | TBD                    |
+| Colocation service of data from contributing networks         | 400                     | 400 MB                 |
 | Model Evaluation Service                                      | 30                      | 300 MB                 |
 | NWP Model Evaluation Service                                  | 120                     | 100 MB                 |
 
