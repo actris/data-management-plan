@@ -832,18 +832,6 @@ ACTRIS Data Center is a distributed data center with scientific and data expert 
 
 Details on costs of the various units is available upon request, and a part of the work within [ACTRIS-PPP]( https://www.actris.eu/Projects/ACTRISPPP(2017-2019).aspx)  and ACTRIS-IMP (starting 1 January 2020). 
 
-
-| Data centre unit         |          Cost                         |  Comment     |
-|--------------------------|---------------------------------------|--------------|
-|         In Situ		   |    To be added later                       			   |              |
-|         ARES     		   |    To be added later                  			   |              |
-|         CLU              |            To be added later               			   |   			  |                                                          
-|		  ACCESS           |  	To be added later 								   |              | 
-|         ASC              | 		To be added later 	               			   |              |
-|		  GRES             | 	To be added later 			           			   |              |
-
-*Table 23: Cost of long term preservation*
-
 ## 6. Data security
 
 The main structure and installations of the ACTRIS Data Centre is located at NILU - Norwegian Institute for Air Research, Kjeller, Norway. NILU hosts EBAS archiving all in situ data sets, in addition to the ACTRIS Data Portal. The other installations are the EARLINET DB at National Research Council - Institute of Environmental Analysis (CNR), Tito Scalo, Potenza, Italy, the satellite data components at the University of Lille, Villeneuve d'Ascq, France, and the cloud profile data in the Cloudnet DB at the Finnish Meteorological Institute in Helsinki, Finland.
