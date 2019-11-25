@@ -482,7 +482,7 @@ Virtual access is wide access to ACTRIS data and digital tools and does not requ
 
 ### 4.2 Introduction and overview of ACTRIS Data Management architecture
 
-ACTRIS Data Management is handled by the individual topic data centre units:
+ACTRIS Data Management is handled by the individual data centre unit:
 
 * ACTRIS In situ data centre unit for all aerosol, cloud and trace gas in situ data - In-Situ
 * ACTRIS Aerosol remote sensing data centre unit - ARES
@@ -499,9 +499,9 @@ Figure 5: Overview of ACTRIS Data Centre components, links and main activities f
 
 #### 4.2.1 ACCESS role and data management
 
-Access to quality controlled data from the topic data centre units is organised by the ACTRIS data and service access unit (ACCESS). The ACCESS unit includes a frequently updated metadata catalogue for identification of data, and links to measurement data at the topical data centre units. ACCESS also produces level 3 data, and organizes the catalogue of ACTRIS level 3 data, produced either by the topical data centre units or within ACCESS. ACCESS is structuring and compiling access to services, tools and documentation, and maintaining and further developing the web interface called “ACTRIS Data Centre” (currently https://actris.nilu.no). 
+Access to quality controlled data from the topic data centre units is organised by the ACTRIS data and service access unit (ACCESS). The ACCESS unit includes a frequently updated metadata catalogue for identification of data, and links to measurement data stored by the topical data centre units. ACCESS also produces level 3 data, and organizes the catalogue of ACTRIS level 3 data, produced either by the topical data centre units or within ACCESS. ACCESS is structuring and compiling access to services, tools and documentation, and maintaining and further developing the web interface called “ACTRIS Data Centre” (currently https://actris.nilu.no). 
 
-The tasks are summarized in the [Figure](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png) above and include the organization of ACTRIS level 3 data. 
+The tasks are summarized in [Figure 5](img/section4/overview_of_actris_data_centre_components.jpg) above and include the organization of ACTRIS level 3 data. 
 
 All data centre units are providing metadata, and interfaces for access to data indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2020. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The meta data catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
 
@@ -740,7 +740,7 @@ A Versioning System has been implemented at ARES directly in the RDBMS by using 
 
 The purpose of the data collection and generation of data products in ACTRIS is to provide open access to aerosol, cloud and trace gas in situ and remote sensing measurements of high quality (see section 1).
 
-A guiding principle is that all ACTRIS data should be readable for both humans and machines using protocols that offer no limitations to access. ACTRIS Data Centre is organized as a distributed network of centralized repositories (see Figure 6). The main access point to ACTRIS data will be through the [ACTRIS Data Centre portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyses and download data produced within ACTRIS (see Figure 7). Access to data and metadata will also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. Currently, machine-to-machine access of ACTRIS data varies between the different data units and their associated repositories.
+A guiding principle is that all ACTRIS data should be readable for both humans and machines using protocols that offer no limitations to access. ACTRIS Data Centre is organized as a distributed network of centralized repositories (see Figure 6). The ACTRIS data will be offered through the [ACTRIS Data Centre portal](http://actris.nilu.no/), a web portal that allows the user to search, analyses and download data produced within ACTRIS (see Figure 7). Access to data and metadata will also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. Currently, machine-to-machine access of ACTRIS data varies between the different data units and their associated repositories.
 
 There might also be data available through the ACTRIS Data Centre that is not directly ACTRIS data, but used in the production and interpretation of ACTRIS data.
 
