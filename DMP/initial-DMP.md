@@ -827,7 +827,8 @@ The table shows the data and software usage licence July 2019.
 
 ## 5. Allocation of resources
 
-ACTRIS Data Center is a distributed data center with scientific and data expert contributions, as well as funding contributions from many institutions and sources. All host countries are contributing significantly through both national projects and international projects in addition to considerable support from the institutions involved. Furthermore, there is large ongoing activity of making ACTRIS data FAIR, in particular this is the core of the work within the H202= project [ENVRI-FAIR]( https://envri.eu/home-envri-fair/). The ACTRIS DC budget in ENVRI-FAIR is ca 890 kEuro which leaves this project as one if the main funder of making ACTRIS data FAIR.
+ACTRIS Data Center is a distributed data center with scientific and data expert contributions as well as funding contributions from many institutions and sources. All host countries are contributing significantly to the operation and implementation through both national and international projects, in addition to considerable support from the institutions involved. Furthermore, there is large ongoing activity of making ACTRIS data FAIR, in particular this is the core of the work within the H2020 project [ENVRI-FAIR]( https://envri.eu/home-envri-fair/). The ACTRIS DC budget in ENVRI-FAIR is ca 890 kEuro which leaves this project as one if the main funder of making ACTRIS data FAIR.
+
 Details on costs of the various units is available upon request, and a part of the work within [ACTRIS-PPP]( https://www.actris.eu/Projects/ACTRISPPP(2017-2019).aspx)  and ACTRIS-IMP (starting 1 January 2020). 
 
 
