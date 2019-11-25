@@ -570,6 +570,7 @@ The content of workflow tasks and the responsibilities for them are specified in
 * Documents QA measures conducted by TC using the tools jointly specified / provided by TC and DC.
 
 **DC:**
+
 **DC Core services:**
 * Archives all level 0, 1, and 2 data occurring during workflow execution.
 * Archives level 3 data produced by In Situ.
@@ -638,6 +639,7 @@ The content of workflow tasks and the responsibilities for them are specified in
 
 
 **DC**:
+
 **DC Core services:**
 * NRT, RRT data production.
 * Data submission & curation service of online ACTRIS in situ data.
@@ -674,6 +676,7 @@ Again, the content of workflow tasks and the responsibilities for them are speci
 * Specify procedures for, implement, and conduct quality assurance measures as appropriate for observation method, document them, and store results in QA measure database operated by DC.
 
 **DC:**
+
 **DC Core services:**
 * Operate documentation system for sample medium pre-treatment, sample medium exposure, sample preparation, and sample analysis specified and implemented by TCs.
 * Operate archive for documentation of sample handling steps.
