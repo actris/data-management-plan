@@ -468,7 +468,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ## 4. Data Management at the ACTRIS data centre
 
-ACTRIS data and products should be findable, accessible, interoperable and reusable (FAIR), and the data centre works towards fulfilling the FAIR principles. This chapter is describing the operational ACTRIS Data Flow from [National Facilities (NF)](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section1/Exp_Obs_NF.jpg) to users now, and the work and solutions that will be implemented during the implementation phase (2020-2025). The section starts with a brief introducation to ACTRIS Access strategy, then introduction to the data management system in ACTRIS in section 4.1, including detailed descriptions of data flows within each unit (4.1.1.-4.1.5). This is followed by sections describing detailed solutions and implementation plans making ACTRIS data and products findable (4.2), accessible (4.3), interoperable (4.4), and reusable (4.5).
+ACTRIS data and products should be findable, accessible, interoperable and reusable (FAIR), and the data centre works towards fulfilling the FAIR principles. This chapter is describing the operational ACTRIS Data Flow from National Facilities (NF) to users now, decisions that are currently under implementation, and the work and solutions that will be implemented during the implementation phase (2020-2025). The section starts with a brief introduction to ACTRIS Access strategy, then introduction to the data management system in ACTRIS in section 4.1, including detailed descriptions of data flows within each unit (4.1.1.-4.1.5). This is followed by sections describing detailed solutions and implementation plans making ACTRIS data and products findable (4.2), accessible (4.3), interoperable (4.4), and reusable (4.5).
 
 
 ### 4.1 ACTRIS access and service policy
@@ -485,7 +485,7 @@ Virtual access is wide access to ACTRIS data and digital tools and does not requ
 
 ### 4.2 Introduction and overview of ACTRIS Data Management architecture
 
-ACTRIS Data Management is handled by the individual data centre units:
+ACTRIS Data Management is handled by the individual topic data centre units:
 
 * ACTRIS In situ data centre unit for all aerosol, cloud and trace gas in situ data - In-Situ
 * ACTRIS Aerosol remote sensing data centre unit - ARES
