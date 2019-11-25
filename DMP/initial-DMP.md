@@ -1044,3 +1044,7 @@ Some products will be generated through on-line services, and will generate data
 
 ![ReOBS workflow diagram](img/workflows/ACTRIS_ReOBS_Workflow_v1.png)
 
+### Appendix 11: Satellite data subsets workflow diagram
+
+![Satellite data subsets workflow diagram](img/workflows/ACTRIS-DC_ACCESS_satellite_extraction_workflow_v1-00.png)
+
