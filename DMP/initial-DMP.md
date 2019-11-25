@@ -433,7 +433,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 | Type                  |Number of annual datasests (end 2019)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
 |   |
-|    GRASP-AOD          |                        0          |             7500                        |    7500                                 |
+|    GRASP-AOD          |                        0          |             30                          |    1500                                 |
 |    ReOBS              |                        1          |             15                          |    30                                    |
 
 Table 12: *Number of annual datasets*
@@ -441,7 +441,7 @@ Table 12: *Number of annual datasets*
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
 |   |
-| GRASP-AOD         |                              0 GB                         |      10.5 TB               |        17.5 TB             |
+| GRASP-AOD         |                              0 GB                         |      50 GB               |        20 TB             |
 | ReOBS             |                              2 GB                         |        30 GB                |                100 GB        |
 
 Table 13: *Data volume*
@@ -453,7 +453,7 @@ Table 13: *Data volume*
 | ------------------------------------------------------------- | ----------------------- | ---------------------- |
 | Satellite data subsets                                        | 100                     | 100 MB                 |
 | Transport modelling products for assessment of source regions | ...                     |                        |
-| Colocation service of data from contributing networks         | TBD                     | TBD                    |
+| Colocation service of data from contributing networks         | 400                     | 400 MB                 |
 | Model Evaluation Service                                      | 30                      | 300 MB                 |
 | NWP Model Evaluation Service                                  | 120                     | 100 MB                 |
 
@@ -828,20 +828,19 @@ The table shows the data and software usage licence July 2019.
 
 ## 5. Allocation of resources
 
-### Estimate the costs for making your data FAIR. Describe how you intend to cover these costs
+ACTRIS Data Center is a distributed data center with scientific and data expert contributions as well as funding contributions from many institutions and sources. All host countries are contributing significantly to the operation and implementation through both national and international projects, in addition to considerable support from the institutions involved. Furthermore, there is large ongoing activity of making ACTRIS data FAIR, in particular this is the core of the work within the H2020 project [ENVRI-FAIR]( https://envri.eu/home-envri-fair/). The ACTRIS DC budget in ENVRI-FAIR is ca 890 kEuro which leaves this project as one if the main funder of making ACTRIS data FAIR.
 
-### Clearly identify responsibilities for data management in your project
+Details on costs of the various units is available upon request, and a part of the work within [ACTRIS-PPP]( https://www.actris.eu/Projects/ACTRISPPP(2017-2019).aspx)  and ACTRIS-IMP (starting 1 January 2020). 
 
-### Describe costs and potential value of long term preservation
 
 | Data centre unit         |          Cost                         |  Comment     |
 |--------------------------|---------------------------------------|--------------|
-|         In Situ		   |                          			   |              |
-|         ARES     		   |                          			   |              |
-|         CLU              |                          			   |   			  |                                                          
-|		  ACCESS           |  									   |              | 
-|         ASC              | 			               			   |              |
-|		  GRES             | 				           			   |              |
+|         In Situ		   |    To be added later                       			   |              |
+|         ARES     		   |    To be added later                  			   |              |
+|         CLU              |            To be added later               			   |   			  |                                                          
+|		  ACCESS           |  	To be added later 								   |              | 
+|         ASC              | 		To be added later 	               			   |              |
+|		  GRES             | 	To be added later 			           			   |              |
 
 *Table 23: Cost of long term preservation*
 
@@ -853,7 +852,9 @@ The main structure and installations of the ACTRIS Data Centre is located at NIL
 
 EBAS is a relational database (Sybase) developed in the mid-1990s. Data from primary projects and programmes, such as ACTRIS, GAW-WDCA, EMEP, AMAP, are physically stored in EBAS. All data in EBAS are, in addition, stored at a dedicated disk in the file tree at NILU. This include the levels 0-1-2 of data.
 
-The complete data system is backed up regularly. This includes incremental back up of the data base 6 times per week, and one weekly back up of the full data base to a server in a neighbour building to ensure as complete as possible storage of all data for future use in case of e.g. fires or other damages to the physical construction. File submission is conducted by ftp. A separate ftp area is allocated to incoming files, and all activities herein are logged on a separate log file, and backed up on 2 hour frequency. An alert system is implemented to ensure warning messages if there are problems during file transfer from the data originators to the data centre.
+The complete data system is backed up regularly. This includes incremental back up of the data base 4 times per week, and two weekly back ups of the full data base to a server in a neighbour building to ensure as complete as possible storage of all data for future use in case of e.g. fires or other damages to the physical construction. File submission is conducted by a web application which checks files for syntactic and semantic validity before uploading. As an alternative submission method, especially for regular submission or submission of many files at once, ftp upload is possible.
+ 
+A dedicated ftp area is allocated to incoming files, and all activities herein are logged on a separate log file, and backed up on 2 hour frequency. An alert system is implemented to ensure warning messages if there are problems during file transfer from the data originators to the data centre.
 
 Ca 455 separate new comprehensive files including meta data with annual time series of medium to high time resolution (seconds to week) is expected per year. A significant growth in this number is not expected on annual scale. In total this will sum up to ca 10GB/year from ca 150 000 single column files, including both raw data and auxiliary parameters.
 
