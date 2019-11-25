@@ -474,7 +474,7 @@ ACTRIS is offering access to a large variety of high-quality services offered by
 When the ACTRIS services are in operation, the Users will access the ACTRIS services through a single entry point, as shown in Figure XX below.
 
 ![Overview of ACTRIS Access strategy](img/section4/ACTRIS_IAC09_principles_access_to_NF_draft.jpg)
-Figure XX: Overview of ACTRIS Access strategy
+Figure 4: Overview of ACTRIS Access strategy
 
 Virtual access is wide access to ACTRIS data and digital tools and does not require a selection process. Virtual access to ACTRIS data and digital tools is free access, and is given in compliance with the [ACTRIS data policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.3_M30.pdf?ver=2018-10-29-152439-550) for data from ACTRIS labelled NFs. Competitive access is Physical or Remote access to the ACTRIS Facilities, including access to specific services offered by the Data Centre and shall be managed by the SAMU and requires a selection process. This can e.g. be data centre services for comprehensiv research campaigns or large volume data delivery tailored for specific purposes.   
 
@@ -491,10 +491,10 @@ ACTRIS Data Management is handled by the individual topic data centre units:
 * ACTRIS Atmospheric simulation chamber data centre unit – ASC
 * ACTRIS data and service access unit - ACCESS
 
-An overview of the elements in the data flow is shown in Figure XX.
+An overview of the elements in the data flow is shown in Figure 5.
 
 ![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components.jpg)
-Figure 4: Overview of ACTRIS Data Centre components, links and main activities for the various units
+Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units
 
 
 #### 4.2.1 ACCESS role and data management
@@ -510,13 +510,13 @@ All data centre units are providing metadata, and interfaces for access to data 
 In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs. Identification and discovery of ASC is under development and will be ready during 2020. The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). 
 
 ![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS.jpg)
-Figure 5: Overview of the tasks of the ACCESS unit 
+Figure 6: Overview of the tasks of the ACCESS unit 
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
-Figure 6: Technical architecture of the ACTRIS meta data portal
+Figure 7: Technical architecture of the ACTRIS meta data portal
 
 
-As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
+As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
 ##### Overview of when data is made available (level 2 data)
 
@@ -537,7 +537,7 @@ The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (l
 * **Offline observations**: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
 
 ![ACTRIS In Situ Simplified Workflow](img/section4/20191101_ACTRIS_EBAS_Data_Flowchart_simplified.png)
-Figure 7: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.
+Figure 8: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.
 
 
 If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow.
@@ -602,7 +602,7 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 Table 14: *ARES Data Products Availability *
 
 ![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
-* Figure 8: ARES Data Products Availability*
+* Figure 9: ARES Data Products Availability*
 
 #### 4.2.4 CLU dataflow and data management
 
@@ -628,7 +628,7 @@ we use the netCDF file format. All data files encounter regular back-ups.
 
 A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure 9.
 ![CLU services](img/section4/clu_data_flow.png)
-* Figure 9: CLU data products and services
+* Figure 10: CLU data products and services
 
 
 #### 4.2.5 GRES dataflow and data management
@@ -646,7 +646,7 @@ This database provides access to level 2b and level 3 data of trace gases profil
 Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure XX). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
-*Figure 10: current overview of ASC unit*
+*Figure 11: current overview of ASC unit*
 
 ### 4.3 Findable: Making data findable, including provisions for metadata [FAIR data]
 
@@ -673,7 +673,7 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit aims at providing discovery metadata in a common format for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. A decision about the standard is not taken, and under consideration. In any case, exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data. The present situation is shown in Table (refer to the one at the end of the section). 
 
-Future efforts will further develop the system shown in Figure X and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data centre unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
+Future efforts will further develop the system shown in Figure 7 and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data centre unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
 
 There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Centre will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
@@ -740,7 +740,7 @@ A Versioning System has been implemented at ARES directly in the RDBMS by using 
 
 The purpose of the data collection and generation of data products in ACTRIS is to provide open access to aerosol, cloud and trace gas in situ and remote sensing measurements of high quality (see section 1).
 
-A guiding principle is that all ACTRIS data should be readable for both humans and machines using protocols that offer no limitations to access. ACTRIS Data Centre is organized as a distributed network of centralized repositories (see Figure 1, add link to that). The main access point to ACTRIS data will be through the [ACTRIS Data Centre portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyses and download data produced within ACTRIS (see Figure 3.x, den med oversikten). Access to data and metadata will also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. Currently, machine-to-machine access of ACTRIS data varies between the different data units and their associated repositories.
+A guiding principle is that all ACTRIS data should be readable for both humans and machines using protocols that offer no limitations to access. ACTRIS Data Centre is organized as a distributed network of centralized repositories (see Figure 6). The main access point to ACTRIS data will be through the [ACTRIS Data Centre portal](http://actris.nilu.no/), this will be a web portal that allows the user to search, analyses and download data produced within ACTRIS (see Figure 7). Access to data and metadata will also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. Currently, machine-to-machine access of ACTRIS data varies between the different data units and their associated repositories.
 
 There might also be data available through the ACTRIS Data Centre that is not directly ACTRIS data, but used in the production and interpretation of ACTRIS data.
 
@@ -884,7 +884,7 @@ The current size of the database is about 25 TB and the volume is expected to gr
 
 ### 6.6 Archiving and preservation of ACCESS data
 
-The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data portal](https://actris.nilu.no/) using the ASP.NET (Web Forms) Framework 4.5 and Internet Information Services (ISS) web-server. The metadata is harvested from each individual data center unit, currently In Situ (EBAS), ARES (EARLINET), CLU (CLOUDNET) and GRES (NDACC), using custom harvesting routines triggered by cronjobs on an Ubuntu server running custom scripts written in Perl/Python. The metadata itself is stored on a Oracle database server, version 11.2.0.4. All source code is managed using version control, using subversion (SVN). 
+The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data portal](https://actris.nilu.no/) using the ASP.NET (Web Forms) Framework 4.5 and Internet Information Services (ISS) web-server. The metadata is harvested from each individual data center unit, currently In Situ (EBAS), ARES (EARLINET), CLU (CLOUDNET) and GRES (NDACC), using custom harvesting routines triggered by cronjobs on an Ubuntu server running custom scripts written in Perl/Python. The metadata itself is stored on a Oracle database server, version 11.2.0.4. Versioning and revision control is managed using subversion (SVN). 
 
 ## 7. Ethical aspects
 
