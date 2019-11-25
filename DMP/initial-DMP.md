@@ -510,8 +510,7 @@ All data centre units are providing metadata, and interfaces for access to data 
 
 [The current overview of topical databases](img/section4/overview_current_architecture.png) show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
 
-In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data. Currently there are no dedicated metadata catalog for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs.
-The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). 
+In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs. Identification and discovery of ASC is under development and will be ready during 2020. The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). 
 
 ![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS.jpg)
 Figure 5: Overview of the tasks of the ACCESS unit 
@@ -519,7 +518,6 @@ Figure 5: Overview of the tasks of the ACCESS unit
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
 Figure 6: Technical architecture of the ACTRIS meta data portal
 
-Identification and discovery of ASC will be implemented.
 
 As described in [figure x](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section4/elements_in_the_dataflow.png), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix II. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
