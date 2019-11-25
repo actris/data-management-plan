@@ -527,7 +527,7 @@ As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS.jpg), ACCESS 
 | GRES                      |                           |                                                 |  
 | ARES                      |                           |                                                 | 
 | ASC                       |                           |                                                 | 
-| CLU                       |                           |                                                 | 
+| CLU                       |                Automatic  |  1 day after submission                         | 
 
 *Table 14: Overview of when data is made available*
 
