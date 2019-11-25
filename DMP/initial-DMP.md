@@ -408,18 +408,15 @@ communities. Many of these parameters are incorporated in air quality and climat
 Detail on the data life cycle andA preliminary version of the data workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in [Appendix 7](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram). The definition of this workflow is still under progress and a finalized version will be available in 2020.   
 
 ### 3.6 ACTRIS data and services (ACCESS)
+ACTRIS Data Center is a distributed data centre, and ACTRIS data and services access unit (ACCESS) is responsible for organising access to measurement data from the topic data centre units, and documentation of procedures as support to observational and exploratory NFs. The ACCESS unit provides the ACTRIS web interface for data download, services and digital tools as well as performing data production of Level 3 data, and synergy data products.
 
-ACTRIS data and services access unit (ACCESS) is responsible for organising access to measurement data, tools and documentation of procedures as support to observational and exploratory NFs. The ACCESS unit provides the ACTRIS web interface for data, services and digital tools as well as performing data production of Level 3 data, and synergy data products.
+The ACTRIS access web interface is called “The ACTRIS Data Centre” and incldues a meta data catalogue. The main activities are **Discovery and access** to ACTRIS data and data products, overview of digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data and synergy data products. The data centre also offers **bridge to external data bases and sources**.
 
-The ACTRIS access web interface for data, services and tools, is called “The ACTRIS Data Centre” and the main activities are **Discovery and access** to ACTRIS data and data products, overview of digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data and synergy data products. The data centre also offers **bridge to external data bases and sources**.
-
-The ACTRIS ACCESS unit offer acecss to elaborated aerosol, cloud and trace gas data products, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources. These can be producved within the ACCESS unit, topic data centre units, topic centres, or extrnal contributions.
-
-The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx), and consiste of three main categories:
+The ACTRIS ACCESS unit offer acecss to elaborated aerosol, cloud and trace gas data products, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources. These can be produced within the ACCESS unit, topic data centre units, topic centres, or extrnal contributions. The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx), and consiste of three main categories:
 
 	I. Level 3 data solely based on data from ACTRIS observational platforms
 
-	II. Level 3 data and tools through multi-source data integration services, employing external ground based measurement data
+	II. Level 3 data and tools from multi-source data integration services, employing external ground based measurement data
 
 	III. Level 3 data products involving regional and global model data
 
