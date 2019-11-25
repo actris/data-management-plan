@@ -493,7 +493,7 @@ ACTRIS Data Management is handled by the individual data centre unit:
 
 An overview of the elements in the data flow is shown in Figure 5.
 
-![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components.jpg)
+![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components_v2.jpg)
 Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units
 
 
@@ -501,20 +501,21 @@ Figure 5: Overview of ACTRIS Data Centre components, links and main activities f
 
 Access to quality controlled data from the topic data centre units is organised by the ACTRIS data and service access unit (ACCESS). The ACCESS unit includes a frequently updated metadata catalogue for identification of data, and links to measurement data stored by the topical data centre units. ACCESS also produces level 3 data, and organizes the catalogue of ACTRIS level 3 data, produced either by the topical data centre units or within ACCESS. ACCESS is structuring and compiling access to services, tools and documentation, and maintaining and further developing the web interface called “ACTRIS Data Centre” (currently https://actris.nilu.no). 
 
-The tasks are summarized in [Figure 5](img/section4/overview_of_actris_data_centre_components.jpg) above and include the organization of ACTRIS level 3 data. 
+The tasks are summarized in [Figure 5](img/section4/overview_of_actris_data_centre_components_v2.jpg) above and include the organization of ACTRIS level 3 data. 
 
-All data centre units are providing metadata, and interfaces for access to data indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2020. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The meta data catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
+All data centre units are providing metadata, and interfaces for access to data and metadata indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2020. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The metadata catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
 
-[The current overview of topical databases](img/section4/overview_current_architecture.png) show the current technical description and solutions and the interface used between the topical DC units, and ACCESS and the ACTRIS Data Centre web interface with access for users. 
+[Figure 7](img/section4/overview_current_architecture_v2.png) shows the current technical architecture and the interface used between the topical data center units, as well as ACCESS and the ACTRIS Data Centre web interface with access for users. 
 
-In the future, the aim is to collect all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data. The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom APIs. Identification and discovery of ASC is under development and will be ready during 2020. The ACCESS unit will suggest a standard that is widely used within the atmospheric domain for providing discovery metadata (likely to be ISO19139/ISO19115). 
+- We use ISO19115 with WIS profile as starting point for metadata exchange. The profile will be extended with ACTRIS specific metadata.
+
+The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom web services, but currentyl machine-to-machine access is not possible. Implementation of ASC is under development and will be ready during 2020, and in the future, the aim is to harvest all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data using ISO19115 with the WIS metadata profile enabling machine-to-machine access of ACTRIS metadata. 
 
 ![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS.jpg)
 Figure 6: Overview of the tasks of the ACCESS unit 
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
 Figure 7: Technical architecture of the ACTRIS meta data portal
-
 
 As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
@@ -528,7 +529,7 @@ As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS.jpg), ACCESS 
 | ASC                       |                           |                                                 | 
 | CLU                       |                           |                                                 | 
 
-*Table x: Overview of when data is made available*
+*Table 14: Overview of when data is made available*
 
 #### 4.2.2 In-Situ dataflow and data management
 
@@ -599,7 +600,7 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 | Level 2                   |                                             1 year                                  |  
 | Level 3                   |                                             1 year                                  | 
 
-Table 14: *ARES Data Products Availability *
+*Table 15: ARES Data Products Availability*
 
 ![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
 * Figure 9: ARES Data Products Availability*
@@ -667,7 +668,7 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 |         ASC              | 		?				       |  			                 |
 |		  GRES             | 		?				   |  				             |
 
-*Table 15: List of vocabularies used July 2019*
+*Table 16: List of vocabularies used July 2019*
 
 #### 4.3.2 Metadata standards and meta data services
 
@@ -690,7 +691,7 @@ Tables below show the status by July 2019.
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
 
-*Table 16: List of metadata standards and services implemented by July 2019*
+*Table 17: List of metadata standards and services implemented by July 2019*
 
 ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 
@@ -703,7 +704,7 @@ ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 |         re3data              | To be defined					|  None																			      |
 |         EOSC             | To be decided					|  None																					      |  
 
-*Table 17: ACTRIS metadata registered or indexed in relevant metadata catalogs.*
+*Table 18: ACTRIS metadata registered or indexed in relevant metadata catalogs.*
 
 #### 4.3.3 Traceability of ACTRIS data
 
@@ -726,7 +727,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 |         ASC              | To be decided					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
 
-*Table 18: ACTRIS PID handlers*
+*Table 19: ACTRIS PID handlers*
 
 #### 4.3.4: Version control of ACTRIS (meta)data
 
@@ -765,7 +766,7 @@ The table shows the data access protocols July 2019.
 |		  GRES             | netCDF (data conversion by 2021)			  |  				https://en.aeris-data.fr/																	                                                         |       				 FTP      | No                                     |
 |		  ACCESS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa																                                                         |       				 FTP      | No                                     |
 
-*Table 19: Data formats and access protocols*
+*Table 20: Data formats and access protocols*
 
 For In-Situ, CLU, GRES and and ASC unit, all data, metadata, tools and documentation are provided with free and fully open access to all users without authentication with username and password.
 
@@ -815,7 +816,7 @@ The table shows the data and software usage licence July 2019.
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
 
-*Table 20: Licences*
+*Table 21: Licences*
 
 | Responsible data centre unit         |          Software licence    |  Software link                                                        |
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
@@ -823,7 +824,7 @@ The table shows the data and software usage licence July 2019.
 |         ARES     		               |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
 |	CLU					|	MIT		|	[CloudnetPy](https://github.com/tukiains/cloudnetpy) 		|
 
-*Table 21: Software*
+*Table 22: Software*
 
 ## 5. Allocation of resources
 
@@ -842,7 +843,7 @@ The table shows the data and software usage licence July 2019.
 |         ASC              | 			               			   |              |
 |		  GRES             | 				           			   |              |
 
-*Table 22: Cost of long term preservation*
+*Table 23: Cost of long term preservation*
 
 ## 6. Data security
 
@@ -917,7 +918,7 @@ The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data port
 |              				 |                                 |                                |                           |
 |                  			 |                                 |                                |                           |
 
-Table 23: *Workflow Tasks Responsibilities*
+Table 24: *Workflow Tasks Responsibilities*
 
 #### Workflow Tasks Short Specification
 
@@ -927,7 +928,7 @@ Table 23: *Workflow Tasks Responsibilities*
 |              				 |                       |
 |                  			 |                       |
 
-Table 24: *Workflow Tasks Short Specification*
+Table 25: *Workflow Tasks Short Specification*
 
 ### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
 **Link to seperate document describing the workflow in more detail.**
