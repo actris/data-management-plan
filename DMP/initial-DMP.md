@@ -534,13 +534,13 @@ As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCE
 
 ##### Overview of when data is made available (level 2 data)
 
-|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit |
-|---------------------------|---------------------------|-------------------------------------------------|
-| In Situ                   |              31th of May  |               31th of June                      |
-| GRES                      |                           |                                                 |  
-| ARES                      |                           |                                                 | 
-| ASC                       |                           |                                                 | 
-| CLU                       |                           |                                                 | 
+|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |
+|---------------------------|---------------------------|-------------------------------------------------|----------------------|
+| In Situ                   |              31th of May  |               31th of June                      |			hourly	     |
+| GRES                      |                           |                                                 |  					 |
+| ARES                      |                           |                                                 |                      |
+| ASC                       |                           |                                                 |  Not applicable      |
+| CLU                       |                           |                                                 |                      |
 
 *Table 14: Overview of when data is made available*
 
