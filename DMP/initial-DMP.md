@@ -544,12 +544,13 @@ As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCE
 |---------------------------|---------------------------|-------------------------------------------------|----------------------|
 | In Situ                   |              31th of May  |               31th of June                      |			hourly	     |
 | GRES                      |                           |                                                 |  					 |
-| ARES                      |                           |                                                 |                      |
+| ARES                      |            Not applicable  |      Not applicable                            |                      |
 | ASC                       |                           |                                                 |  Not applicable      |
 | CLU                       |                           |                                                 |                      |
 
 *Table 14: Overview of when data is made available*
 
+For ARES, there is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. If submitted Level 1 data pass QCs at TC level, they are classified as Level 2 data and are made available by ARES DC.  
 
 #### 4.2.2 In-Situ dataflow and data management
 
