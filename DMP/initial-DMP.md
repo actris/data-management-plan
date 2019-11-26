@@ -1015,19 +1015,19 @@ The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data port
 
 ### Appendix 3: ACTRIS In situ data centre unit (In-Situ) data life cycle
 
-#### Data Life Cycle Description
+#### A3.1 Data Life Cycle Description
 
 *More tables to be added regarding the workflow, currently this is an example draft*
 
-![ACTRIS In situ data centre unit workflow diagram]("img/workflows/20191125 ACTRIS EBAS Data Flowchart full.png")
+![ACTRIS In situ data centre unit workflow diagram](img/workflows/20191125_ACTRIS_EBAS_Data_Flowchart_full.png)
 
 *Figure XX: ACTRIS In Situ DC unit data workflow, describing the interaction between NFs, TCs, and DC In Situ in data production.*
 
-![ACTRIS In situ data review workflow]("img/workflows/20191125 ACTRIS EBAS Data Flowchart data QC review.png")
+![ACTRIS In situ data review workflow](img/workflows/20191125_ACTRIS_EBAS_Data_Flowchart_data_QC_review.png)
 
 *Figure XX: ACTRIS In Situ DC unit data review workflow, a sub-workflow to the In Situ main data production workflow.*
 
-#### Workflow Implementation Tables, by instrument type
+#### A3.2 Workflow Implementation Tables, by instrument type
 
 In this version of the DMP, this Annex focuses on the distribution of responsibilities for workflow processing tasks, and a short specification of these. A specification of metadata and data items contained in data products and pre-products will follow in a later version. 
 
@@ -1038,9 +1038,11 @@ For each workflow task, responsibilities include the following roles:
 * **Application:** applying the software. Usually automatic, needs to be specified for manual tasks involving humans.
 
 
-##### Aerosol observations
+##### A3.2.1 Aerosol observations
 
-###### Integrating nephelometer
+###### A3.2.1.1 Integrating nephelometer
+
+Table 24: *Nephelometer Workflow Tasks Responsibilities*
 
 | Workflow Task ID           | Responsible for specification   | Responsible for implementation | Responsible for operation | Responsible for application |
 |----------------------------|---------------------------------|--------------------------------|---------------------------|-----------------------------|
@@ -1054,27 +1056,25 @@ For each workflow task, responsibilities include the following roles:
 | INSITU-ONL-INST-CAL        | ECAC-WCCAP                      | ECAC-WCCAP                     | DC IN SITU                | NF                          |
 | INSITU-QA-MEASURE          | ECAC-WCCAP                      | ECAC-WCCAP                     | ECAC-WCCAP                | NF                          |
 
-Table 24: *Nephelometer Workflow Tasks Responsibilities*
 
+
+Table 25: *Nephelometer Workflow Tasks Short Specification*
 
 | Workflow Task ID           | Short Specification   |
 |----------------------------|-----------------------|
-|         				     |                       |
-|              				 |                       |
-|                  			 |                       |
-| ONL-RAW-TO-LEV0 |	collect raw data stream from instruments serieal bus connection
+| INSITU-ONL-RAW-TO-LEV0 |	collect raw data stream from instruments serieal bus connection
 | |	if needed, aggregate raw data to desired raw data target time resolution, e.g. 1s to 30s
 | |		collect level 0 metadata
 | |		assemble daily level 0 datafiles, and store locally
 | |		assemble hourly level 0 datafiles, shifting file at the turn of the hour, store locally temporarily 
 | |		at the turn of the hour, upload so far unreported hourly level 0 file(s) to ACTRIS IN SITU DC
 | |		attach provenance metadata (incl. instrument ID, DAQ software ID, server ID, server hardware configuration, operating system, operating system version)
-| ONL-LEV0-UPLOAD |	assign PID to incoming hourly submissions
+| INSITU-ONL-LEV0-UPLOAD |	assign PID to incoming hourly submissions
 | |		append incoming file(s) to identified yearly level 0 file, set up new if necessary, including PID
 | |		feed hourly level 0 submissions into RT data production
 | |		attach provenance metadata (incl. upload software ID, time executed, server ID, server hardware configuration, operating system, operating system version)
-| ONL-LEV0-REVIEW |	not used for integrating nephelometer
-| ONL.LEV0-MAN-QC |	find and pre-select records with outliers
+| INSITU-ONL-LEV0-REVIEW |	not used for integrating nephelometer
+| INSITU-ONL-LEV0-MAN-QC |	find and pre-select records with outliers
 | |		find and pre-select records with data violating sanity check
 | |		find and pre-select possibly locally influenced records
 | |		find and pre-select periods with possible instrument malfunctions based on calibration reports
@@ -1082,30 +1082,28 @@ Table 24: *Nephelometer Workflow Tasks Responsibilities*
 | |		provide environment for inspecting data and pre-selected records
 | |		allow human to verify pre-selected records, and select new records for flagging
 | |		attach provenance metadata (incl. source file PID, QC software ID, human ID, time executed, server ID, server hardware configuration, operating system, operating| |	 system version)
-| ONL-LEV0-AUTO-QC |	flag invalid records with outliers
+| INSITU-ONL-LEV0-AUTO-QC |	flag invalid records with outliers
 | |		flag invalid records with data violating sanity check
 | |		find and flag possibly locally influenced records.
 | |		attach provenance metadata (incl. source file PID, QC software ID, time executed, server ID, server hardware configuration, operating system, operating system version)
-| ONL-LEV0-TO-LEV1 |	set invalid records as missing
+| INSITU-ONL-LEV0-TO-LEV1 |	set invalid records as missing
 | |		apply re-calibrations if needed
 | |		transform data to standard conditions of temperature and pressure
 | |		apply correction for angular truncation. Observe that implementation needs to tolerate noisy data at low particle concentrations
 | |		remove all instrument status and auxiliary parameters, except for those contained in level 1 template
 | |		attach provenance metadata (incl. source file PID, software ID, time executed, server ID, server hardware configuration, operating system, operating system version)
-| ONL-LEV1-TO-LEV2 |	calculate hourly averages with fixed timebase, i.e. average begins at the turn of the hour
+| INSITU-ONL-LEV1-TO-LEV2 |	calculate hourly averages with fixed timebase, i.e. average begins at the turn of the hour
 | |		averages disregard records with any invalidating flag.
 | |		averages use all records in averaging period with no or non-invalidating flags. All non-invalidating flags occuring at least once in averaging period are copied to average
 | |		calculate percentiles for averaging period as required by level 2 template to quantify data variability
 | |		attach provenance metadata (source file PID, software ID, time executed, triggering process, server ID, server hardware configuration, operating system, operating system version)
-| ONL-INST-CAL |	conduct span check following procedure defined by ACTRIS ECAS
+| INSITU-ONL-INST-CAL |	conduct span check following procedure defined by ACTRIS ECAS
 | |		record results describing deviation from scattering target values for cal gas and zero scattering as specified by calibration report
 | |		attach provenance metadata (incl. instrument ID, calibration procedure ID, calibration software ID, human ID, time executed, server ID, server hardware configuration, operating system, operating system version)
-| QA-MEASURE |	conduct off-site intercomparison according to sub-workflow specified by ECAC-WCCAP
+| INSITU-QA-MEASURE |	conduct off-site intercomparison according to sub-workflow specified by ECAC-WCCAP
 | |		collect result in form of electronic report
 | |		collect result in numerical form as specified by QA-MEASURE-RES template
 | |		attach provenance metadata (incl. instrument ID, QA-measure procedure ID, human ID, time executed)
-
-Table 25: *Nephelometer Workflow Tasks Short Specification*
 
 
 ##### Cloud observations
