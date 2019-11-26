@@ -1037,78 +1037,127 @@ For each workflow task, responsibilities include the following roles:
 * **Operation:** running the software on a daily basis. Includes documentation of provenance while executing software.
 * **Application:** applying the software. Usually automatic, needs to be specified for manual tasks involving humans.
 
+The task specifications and the distribution of roles between NFs, TCs, and DC are stated in tables linked below. 
 
 ##### A3.2.1 Aerosol observations
 
 ###### A3.2.1.1 Integrating nephelometer
 
-Table 24: *Nephelometer Workflow Tasks Responsibilities*
-
-| Workflow Task ID           | Responsible for specification   | Responsible for implementation | Responsible for operation | Responsible for application |
-|----------------------------|---------------------------------|--------------------------------|---------------------------|-----------------------------|
-| INSITU-ONL-RAW-TO-LEV0     | ECAC-WCCAP                      | ECAC-WCCAP                     | NF                        | N.A.                        |
-| INSITU-ONL-LEV0-UPLOAD     | ECAC-WCCAP                      | ECAC-WCCAP                     | NF                        | N.A.                        |
-| INSITU-ONL-LEV0-REVIEW     | N.A.                            | N.A.                           | N.A.                      | N.A.                        |
-| INSITU-ONL-LEV0-MAN-QC     | ECAC-WCCAP                      | ECAC-WCCAP                     | DC IN SITU                | NF                          |
-| INSITU-ONL-LEV0-AUTO-QC    | ECAC-WCCAP                      | ECAC-WCCAP                     | DC IN SITU                | N.A.                        |
-| INSITU-ONL-LEV0-TO-LEV1    | ECAC-WCCAP                      | ECAC-WCCAP                     | DC IN SITU                | N.A.                        |
-| INSITU-ONL-LEV1-TO-LEV2    | ECAC-WCCAP                      | ECAC-WCCAP                     | DC IN SITU                | N.A.                        |
-| INSITU-ONL-INST-CAL        | ECAC-WCCAP                      | ECAC-WCCAP                     | DC IN SITU                | NF                          |
-| INSITU-QA-MEASURE          | ECAC-WCCAP                      | ECAC-WCCAP                     | ECAC-WCCAP                | NF                          |
+[Nephelometer workflow implementation tables](https://sky.nilu.no/index.php/s/AyazDtaDafHHAKN)
 
 
+###### A3.2.1.2 Filter Absorption Photometer
 
-Table 25: *Nephelometer Workflow Tasks Short Specification*
-
-| Workflow Task ID           | Short Specification   |
-|----------------------------|-----------------------|
-| INSITU-ONL-RAW-TO-LEV0 |	collect raw data stream from instruments serieal bus connection
-| |	if needed, aggregate raw data to desired raw data target time resolution, e.g. 1s to 30s
-| |		collect level 0 metadata
-| |		assemble daily level 0 datafiles, and store locally
-| |		assemble hourly level 0 datafiles, shifting file at the turn of the hour, store locally temporarily 
-| |		at the turn of the hour, upload so far unreported hourly level 0 file(s) to ACTRIS IN SITU DC
-| |		attach provenance metadata (incl. instrument ID, DAQ software ID, server ID, server hardware configuration, operating system, operating system version)
-| INSITU-ONL-LEV0-UPLOAD |	assign PID to incoming hourly submissions
-| |		append incoming file(s) to identified yearly level 0 file, set up new if necessary, including PID
-| |		feed hourly level 0 submissions into RT data production
-| |		attach provenance metadata (incl. upload software ID, time executed, server ID, server hardware configuration, operating system, operating system version)
-| INSITU-ONL-LEV0-REVIEW |	not used for integrating nephelometer
-| INSITU-ONL-LEV0-MAN-QC |	find and pre-select records with outliers
-| |		find and pre-select records with data violating sanity check
-| |		find and pre-select possibly locally influenced records
-| |		find and pre-select periods with possible instrument malfunctions based on calibration reports
-| |		identify human executing manual QC, and time executed
-| |		provide environment for inspecting data and pre-selected records
-| |		allow human to verify pre-selected records, and select new records for flagging
-| |		attach provenance metadata (incl. source file PID, QC software ID, human ID, time executed, server ID, server hardware configuration, operating system, operating| |	 system version)
-| INSITU-ONL-LEV0-AUTO-QC |	flag invalid records with outliers
-| |		flag invalid records with data violating sanity check
-| |		find and flag possibly locally influenced records.
-| |		attach provenance metadata (incl. source file PID, QC software ID, time executed, server ID, server hardware configuration, operating system, operating system version)
-| INSITU-ONL-LEV0-TO-LEV1 |	set invalid records as missing
-| |		apply re-calibrations if needed
-| |		transform data to standard conditions of temperature and pressure
-| |		apply correction for angular truncation. Observe that implementation needs to tolerate noisy data at low particle concentrations
-| |		remove all instrument status and auxiliary parameters, except for those contained in level 1 template
-| |		attach provenance metadata (incl. source file PID, software ID, time executed, server ID, server hardware configuration, operating system, operating system version)
-| INSITU-ONL-LEV1-TO-LEV2 |	calculate hourly averages with fixed timebase, i.e. average begins at the turn of the hour
-| |		averages disregard records with any invalidating flag.
-| |		averages use all records in averaging period with no or non-invalidating flags. All non-invalidating flags occuring at least once in averaging period are copied to average
-| |		calculate percentiles for averaging period as required by level 2 template to quantify data variability
-| |		attach provenance metadata (source file PID, software ID, time executed, triggering process, server ID, server hardware configuration, operating system, operating system version)
-| INSITU-ONL-INST-CAL |	conduct span check following procedure defined by ACTRIS ECAS
-| |		record results describing deviation from scattering target values for cal gas and zero scattering as specified by calibration report
-| |		attach provenance metadata (incl. instrument ID, calibration procedure ID, calibration software ID, human ID, time executed, server ID, server hardware configuration, operating system, operating system version)
-| INSITU-QA-MEASURE |	conduct off-site intercomparison according to sub-workflow specified by ECAC-WCCAP
-| |		collect result in form of electronic report
-| |		collect result in numerical form as specified by QA-MEASURE-RES template
-| |		attach provenance metadata (incl. instrument ID, QA-measure procedure ID, human ID, time executed)
+[Filter Absorption Photometer workflow implementation tables](https://sky.nilu.no/index.php/s/EQf4SkpC5GeCn5g)
 
 
-##### Cloud observations
+###### A3.2.1.3 Mobility Particle Size Spectrometer
 
-##### Trace Gas Observations
+[Mobility Particle Size Spectrometer workflow implementation tables](https://sky.nilu.no/index.php/s/5XGJAiwdc3awSM7)
+
+
+###### A3.2.1.4 Condensation Particle Counter
+
+[Condensation Particle Counter workflow implementation tables](https://sky.nilu.no/index.php/s/WcGKkrSPHFNx6xg)
+
+
+###### A3.2.1.5 Cloud Condensation Nucleus Counter
+
+[Cloud Condensation Nucleus Counter workflow implementation tables](https://sky.nilu.no/index.php/s/EHQH7C9Sw7qK4Tr)
+
+
+###### A3.2.1.6 Aerodynamic / Optical Particle Size Spectrometer
+
+[Aerodynamic / Optical Particle Size Spectrometer workflow implementation tables](https://sky.nilu.no/index.php/s/Eqr7Dg7LbzyMATe)
+
+
+###### A3.2.1.7 Aerosol Chemical Speciation Monitor
+
+[Aerosol Chemical Speciation Monitor workflow implementation tables](https://sky.nilu.no/index.php/s/asjQNBzLqxDy7nA)
+
+
+###### A3.2.1.8 Proton-induced X-ray Emission
+
+[Proton-induced X-ray Emission workflow implementation tables](https://sky.nilu.no/index.php/s/2FoXmsFyQkDsRxM)
+
+
+###### A3.2.1.9 Organic Tracers
+
+[Organic Tracers workflow implementation tables](https://sky.nilu.no/index.php/s/zXiKc8yzkfz9Mdo)
+
+
+###### A3.2.1.10 Organic Carbon / Elemental Carbon
+
+[Organic Carbon / Elemental Carbon workflow implementation tables](https://sky.nilu.no/index.php/s/4mTpN7HpD8fmzP2)
+
+
+###### A3.2.1.11 Scanning Particle Size Magnifier / (Neutral) Air Ion Spectrometer / Nano Mobility Particle Size Spectrometer
+
+[Scanning Particle Size Magnifier / (Neutral) Air Ion Spectrometer / Nano Mobility Particle Size Spectrometer workflow implementation tables](https://sky.nilu.no/index.php/s/5X7AQEazZji4J66)
+
+###### A3.2.1.12 Particle Size Magnifier
+
+[Particle Size Magnifier workflow implementation tables](https://sky.nilu.no/index.php/s/4D9QQCqfdBALYjB)
+
+
+##### A3.2.2 Cloud observations
+
+###### A3.2.2.1 Integrating Cloud Probe
+
+[Integrating Cloud Probe workflow implementation tables](https://sky.nilu.no/index.php/s/xq4JmFDWHqfCQEQ)
+
+
+###### A3.2.2.2 Ice Nucleus Counter
+
+[Ice Nucleus Counter workflow implementation tables](https://sky.nilu.no/index.php/s/ad2NnpbmAbR6X9L)
+
+
+###### A3.2.2.3 Cloud Imaging Probe
+
+[Cloud Imaging Probe workflow implementation tables](https://sky.nilu.no/index.php/s/Co2XZQcMWazaS9P)
+
+
+###### A3.2.2.4 Cloud Droplet Probe
+
+[Cloud Droplet Probe workflow implementation tables](https://sky.nilu.no/index.php/s/Tkyp2jTrDWBzm9a)
+
+
+###### A3.2.2.5 Cloud Water Collector
+
+[Cloud Water Collector workflow implementation tables](https://sky.nilu.no/index.php/s/pHqNoQLBj4WMYya)
+
+
+###### A3.2.2.6 Cloud Aerosol Particle Sampler
+
+[Cloud Aerosol Particle Sampler workflow implementation tables](https://sky.nilu.no/index.php/s/4keA5sbqn7Fdcpb)
+
+
+##### A3.2.3 Trace Gas Observations
+
+###### A3.2.3.1 Volatile Organic Compounds
+
+[Volatile Organic Compounds workflow implementation tables](https://sky.nilu.no/index.php/s/8DbLgyiMwqZo3Nq)
+
+
+###### A3.2.3.2 Nitrogen Oxides
+
+[Nitrogen Oxides workflow implementation tables](https://sky.nilu.no/index.php/s/LADdLx3xrW6jkBa)
+
+
+###### A3.2.3.3 Condensable Vapours
+
+[Condensable Vapours workflow implementation tables](https://sky.nilu.no/index.php/s/oj6wczeJ9K2fBN3)
+
+
+###### A3.2.3.4 Ozone
+
+Filter Absorption Photometer workflow implementation tables to be added.
+
+
+###### A3.2.3.5 Meteorological Base Parameters
+
+Meteorological Base Parameters workflow implementation tables to be added.
+
 
 ### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
 **Link to seperate document describing the workflow in more detail.**
