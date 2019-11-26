@@ -471,6 +471,12 @@ Table 13: *Data volume*
 | NWP Model Evaluation Service                                  | 120                     | 100 MB                 |
 
 #### Data utility
+Data from ACTRIS is contributing to better prediction of the behavior of the atmosphere over all time scales through a detailed understanding of the physical, optical and chemical properties of aerosols, clouds and trace gases in the atmosphere, as well as data for improving knowledge of processes which affect air quality and climate change.
+
+ACTRIS data are very diverse, covering numerous measurement methodologies resulting in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC is organized in 6 Units.
+
+The ACCESS unit utilize data from all the 5 topical DC units, and produce level 3 products combining various data and also models prodcuibf new and value added data producst. Accordingly, the ACCESS data utility can cover all the more specific data utility sections described in sections 3.1 – 3.5. 
+
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
