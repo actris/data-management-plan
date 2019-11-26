@@ -86,7 +86,7 @@ The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and oth
 * [ACTRIS trace gases remote sensing data centre unit (GRES)](https://en.aeris-data.fr/)
 * [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
-![Architecture of the ACTRIS Data Centre](img/ACTRIS_data_centre_elements_phase2.jpg)
+![Architecture of the ACTRIS Data Centre](img/ACTRIS_data_centre_elements_phase2_v2.jpg)
 *Figure 2: Architecture of the ACTRIS Data Centre*
 
 During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities will be constructed and their services tested. The ACTRIS Central Facilities host selection was a part of ACTRIS PPP, and the following consortium is selected to host the ACTRIS Data Centre, and the various units with services to data producers and data users.
@@ -104,11 +104,7 @@ During the ACTRIS implementation phase (expected 2020-2024), the Central Facilit
 
 ### 1.2 The overall goal and structure of ACTRIS Data Management Plan
 
-<<<<<<< HEAD
 The ACTRIS Data Management Plan (DMP) should document the key elements of the ACTRIS data management life cycle, and the plans for the data collected, processed and/or generated. The goal of the DMP is to describe the present situation and the operational ACTRIS data center. Furthermore the DMP should also describe the technical solutions agreed, that are currently under implementation, and outline the strategy and development needed towards making ACTRIS data FAIR at ACTRIS Data Centre Level.
-=======
-The ACTRIS Data Management Plan (DMP) is the key element of the comprehensive ACTRIS data management and describes the data management life cycle in detail, and the plans for the data collected, processed and/or generated. The goal of the DMP is to describe the present situation and the operational ACTRIS data curation, the technical solutions agreed currently under implementation, and outline the strategy and development needed towards making ACTRIS data FAIR at ACTRIS Data Centre Level.
->>>>>>> 75da719d7b4595b2b079c6e3a48b2954b34d3ea9
 
 The ACTRIS DMP is a "living" online document which is set up to be machine-actionable as a part of the FAIR data ecosystem. The DMP should be a hub of information on ACTRIS FAIR digital objects. The goal is to make the ACTRIS DMP accessible for all stakeholders (repository operators, funders, researchers, publishers, infrastructure providers etc.) by making it available and accessible for both humans and machines. We currently use GitHub as the platform for collaboration on the DMP, this enables all actors working with or within ACTRIS to directly contribute and suggest changes to the document. Furthermore, the ACTRIS Data Management Plan should follow the glossary of terminology and definitions used in ACTRIS.
 
@@ -510,7 +506,7 @@ ACTRIS Data Management is handled by the individual data centre unit:
 
 An overview of the elements in the data flow is shown in Figure 5.
 
-![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components_v2.jpg)
+![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components_v3.jpg)
 Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units
 
 
@@ -518,7 +514,7 @@ Figure 5: Overview of ACTRIS Data Centre components, links and main activities f
 
 Access to quality controlled data from the topic data centre units is organised by the ACTRIS data and service access unit (ACCESS). The ACCESS unit includes a frequently updated metadata catalogue for identification of data, and links to measurement data stored by the topical data centre units. ACCESS also produces level 3 data, and organizes the catalogue of ACTRIS level 3 data, produced either by the topical data centre units or within ACCESS. ACCESS is structuring and compiling access to services, tools and documentation, and maintaining and further developing the web interface called “ACTRIS Data Centre” (currently https://actris.nilu.no). 
 
-The tasks are summarized in [Figure 5](img/section4/overview_of_actris_data_centre_components_v2.jpg) above and include the organization of ACTRIS level 3 data. 
+The tasks are summarized in [Figure 5](img/section4/overview_of_actris_data_centre_components_v3.jpg) above and include the organization of ACTRIS level 3 data. 
 
 All data centre units are providing metadata, and interfaces for access to data and metadata indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2020. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The metadata catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
 
@@ -528,13 +524,13 @@ All data centre units are providing metadata, and interfaces for access to data 
 
 The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom web services, but currentyl machine-to-machine access is not possible. Implementation of ASC is under development and will be ready during 2020, and in the future, the aim is to harvest all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data using ISO19115 with the WIS metadata profile enabling machine-to-machine access of ACTRIS metadata. 
 
-![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS.jpg)
+![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg)
 Figure 6: Overview of the tasks of the ACCESS unit 
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
 Figure 7: Technical architecture of the ACTRIS meta data portal
 
-As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
+As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
 ##### Overview of when data is made available (level 2 data)
 
