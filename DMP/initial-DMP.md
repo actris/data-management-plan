@@ -1023,7 +1023,7 @@ The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data port
 
 *Figure XX: ACTRIS In Situ DC unit data workflow, describing the interaction between NFs, TCs, and DC In Situ in data production.*
 
-![ACTRIS In situ data review workflow](img/workflows/20191125_ACTRIS_EBAS_Data_Flowchart_data_QC_review.png)
+![ACTRIS In situ data review workflow](img/workflows/20191126_ACTRIS_EBAS_Data_Flowchart_data_QC_review.png)
 
 *Figure XX: ACTRIS In Situ DC unit data review workflow, a sub-workflow to the In Situ main data production workflow.*
 
