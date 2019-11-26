@@ -97,8 +97,8 @@ During the ACTRIS implementation phase (expected 2020-2024), the Central Facilit
 | [ACTRIS In-Situ data centre unit (In-Situ)](http://ebas.nilu.no/)                   | NILU                                 | Data curation service for in situ data: all aerosol, cloud and trace gas in situ data. This comprises inclusion of data in the data base EBAS, archiving and documentation. Support for centralized data processing, harmonization, traceability, quality control and data product generation. Training and online tools for QA, QC. The activity enables RRT and NRT delivery.|
 | [ACTRIS Aerosol remote sensing data centre unit (ARES)](https://data.earlinet.org/)		   | CNR (lead), CNRS					  |	Aerosol remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data archiving in EARLINET DB, data provision and documentation. The activity enables RRT and NRT delivery. Tutorial activities. Production of level 3 data for climatological analysis and new products. |	
 | [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)		   | FMI								  |	Data curation service for cloud remote sensing data. Support for centralized cloud remote sensing data processing, traceability, harmonization, automated quality control and product generation, and data archiving. Enables RRT and NRT delivery. Production of level 3 data for NWP model evaluation. | 
-| [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/) | CNRS                                 | Data curation service for atmospheric simulation chamber data. This includes standardized process for data submission, quality control, inclusion of data in the XX data base, search metadata creation and provision and archiving.|
-| [ACTRIS trace gases remote sensing data centre unit (GRES)](https://en.aeris-data.fr/)    | CNRS                                 | Data curation service for reactive trace gases remote sensing data. This comprises standardized process for data submission, quality control, inclusion of data in the XX data base, metadata creation and provision and archiving. Production of level 3 data for climatological analysis, and added values products (quicklooks, links to EVDC - ESA Atmospheric Validation Data Centre).|
+| [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/) | CNRS                                 | Data curation service for atmospheric simulation chamber data. This includes standardized process for data submission, quality control, inclusion of data in the AERIS data base, search metadata creation and provision and archiving.|
+| [ACTRIS trace gases remote sensing data centre unit (GRES)](https://gres.aeris-data.fr/)    | CNRS                                 | Data curation service for reactive trace gases remote sensing data. This comprises standardized process for data submission, quality control, inclusion of data in the AERIS data base, metadata creation and provision and archiving. Production of level 3 data for climatological analysis, and added values products (quicklooks, links to EVDC - ESA Atmospheric Validation Data Centre).|
 
 *Table 1: Short description of the ACTRIS DC units and the research performing organizations leading and contributing to the units.*
 
@@ -301,45 +301,52 @@ Details on the data life cycle and workflow (workflow diagrams for data producti
 
 ### 3.4 ACTRIS trace gases remote sensing data centre unit (GRES)
 
-The GRES data centre unit provides data curation service for reactive trace gases remote sensing data.
+The ACTRIS trace gases remote sensing data centre unit (GRES) is supported by the AERIS data base (https://gres.aeris-data.fr). The GRES data centre unit provides data curation service for reactive trace gases remote sensing data. This includes data conversion processing, standardized process for data submission, quality control, inclusion of data in the data base, search metadata creation, data provision and archiving. In addition, data product generation of level 3 for climatological analysis and added values products (quicklooks, links to EVDC-ESA Atmospheric Validation Data Centre) is offered and implemented during the implementation phase. 
 
-#### Description of the ACTRIS-GRES unit
-The ACTRIS trace gases remote sensing data centre unit making use of AERIS database. Reactive trace gas remote sensing data submitted to ACTRIS need to be submitted as level 2 data following the GEOMS data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) and the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements.
-
-For data access and download, the level 2 and level 3 data are be converted in NetCDF4 format following the CF (Climate Forecast) conventions. 
+The ACTRIS-GRES unit is structured in one unique database including measurements issued from five types of instruments:
+-   FTIR: Fourier Transform Infra-Red Spectrometry,  
+-   UVVIS: Ultra-Violet and Visible spectroscopy including
+	- UV-VIS ZS (zenith-sky) SAOZ (Sytème d’Analyse par Observation Zénithale) spectrometer, 
+	- UVVIS MAX-DOAS (Multi-AXis Differential Optical Absorption Spectroscopy instruments),
+	- PANDORA instruments.
+-   LIDAR DIAL: Differential Absorption Lidar.
 
 #### The types and formats of data generated/collected
-The ACTRIS trace gases remote sensing data centre unit is supported by AERIS database. All providers will submit level 2 data following the GEOMS data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) and following the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements. The GEOMS data format allows the necessary requirements to setup the ACTRIS data curation service for trace gas remote sensing data.
 
-The level 2 and level 3 data will be also converted in NetCDF ([https://www.unidata.ucar.edu/software/netcdf/](https://www.unidata.ucar.edu/software/netcdf/)) version 4 format following the CF (Climate Forecast) conventions and be disseminated. The Climate and Forecast conventions are metadata conventions for earth science data. The conventions define metadata that are included in the same file as the data making the file "self-describing".
+Level 2 and level 3 trace gases remote sensing data produced are either profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …) products. The level 2b data are processed from the consolidation of level 2a data using quality assurance and quality control procedures. The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
+Level 2 and level 3 trace gases remote sensing data submitted to ACTRIS need to be in GEOMS HDF data format (Generic Earth Observation Metadata Standard, http://www.ndsc.ncep.noaa.gov/data/formats) following the appropriate GEOMS template for FTIR, UVVIS and LIDAR measurements (https://evdc.esa.int/tools.data-formatting-templates/). The GEOMS data format allows the necessary requirements to setup the ACTRIS data curation service for trace gas remote sensing data. The level 2 and level 3 data will be also converted in NetCDF (https://www.unidata.ucar.edu/software/netcdf/)) version 4 format following the CF 1-7 (Climate Forecast) conventions and be disseminated. The Climate and Forecast conventions are metadata conventions for earth science data. The conventions define metadata that are included in the same file as the data making the file "self-describing".  Level 0 and 1 data submitted to ACTRIS GRES are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the NF processing suite.
 
 #### Re-use of existing data
-The ACTRIS data user interface will include access to reactive trace gases remote sensing legacy data data resulting from ACTRIS pre-projects (for GRES…). These will also be included as a part of the ACTRIS GRES data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
+The ACTRIS data user interface will include access to reactive trace gases remote sensing legacy data data resulting from AERIS project (for NDACC data) . These will also be included as a part of the ACTRIS GRES data centre unit. Legacy data resulting from AERIS project will be available in the same format as current products.
 
 #### The origin of the data
-The origin of the data is derived from instrument raw data, through offline observations.
+The L2 data are derived from instrument raw data, through offline observations. All the data processing is performed by NFs.
 
 #### The expected size of the data
 
 | Type                                |Number of annual datasets (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
-| ACTRIS-GRES FTIR                    |                  276                                 |         200                            |             300                         |
-| ACTRIS-GRES UV-VIS                  |             20000                                          |          15000                            |             30000                         |
-| ACTRIS-GRES LIDAR DIAL              |                  450                                    |          300                            |             500                          |
+| ACTRIS-GRES FTIR                    |                  276                                 |         624                            |            3744                         |
+| ACTRIS-GRES SAOZ                 |             2900                                         |          7250                            |           14500                         |
+| ACTRIS-GRES MAX-DOAS                |             14600                                         |          14600                            |             14600                        |
+| ACTRIS-GRES PANDORA                 |             37230                                          |          7665                            |             10220                         |
+| ACTRIS-GRES LIDAR DIAL              |                  400                                |          100                            |            200                          |
 
 Table 8: *Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
-| ACTRIS-GRES FTIR |                    2,5 GB                                   |              12 GB                         |          18 GB               |
-| ACTRIS-GRES UV-VIS  |                     1,2 GB                                   |              6 GB                         |          10 GB               |
-| ACTRIS-GRES LIDAR DIAL |                     400 MB                                |              400 MB                      |          550 MB            |
+| ACTRIS-GRES FTIR |                    2,5 GB                                   |              25 GB                         |          150 GB               |
+| ACTRIS-GRES SAOZ  |                   0,6 GB                                   |              6 GB                         |          15 GB               |
+ ACTRIS-GRES MAX-DOAS |                     600 GB                                   |              3 TB                         |          3 TB           |
+  ACTRIS-GRES PANDORA  |                     1,7 TB                                  |              6 TB                         |          10 TB               |
+| ACTRIS-GRES LIDAR DIAL |                     0,4 GB                                |              1 GB                      |          2 GB            |
 
 Table 9: *Data volume*
 
 #### Data utility
 
-Data utility specifically related to the DC unit (see data summary at ASC for example)
+The data of GRES could be used to monitoring the evolution of key stratospheric gas trace such ozone under the effect of anthropogenic emissions, climate change and natural events. The retrieval of previous data by GRES will allow homogeneous data series to compute trends. Data could be also used in support of validation of satellite measurements deployed by international space agencies as well as models simulations.
 
 #### Outline of data life cycle (workflow and workflow diagram)
 Detail on the data life cycle and workflow (workflow diagrams for data production) for trace gases remote sensing data can be found in [Appendix 6](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-6-actris-trace-gases-remote-sensing-data-centre-unit-gres-data-life-cycle-and-workflow-diagram).
@@ -724,18 +731,21 @@ we use the netCDF file format. All data files encounter regular back-ups.
 
 A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure 9.
 ![CLU services](img/section4/clu_data_flow.png)
-* Figure 10: CLU data products and services
+*Figure 10: CLU data products and services*
 
 
 #### 4.2.5 GRES dataflow and data management
 
-Trace gases remote sensing data produced are organized within one unique database and are issued from measurements using three types of instruments located at different observatory stations. The three types of instruments are:
-
-* FTIR: Fourier Transform Infra-Red Spectrometry,
-* UVVIS including UV-VIS zenith-sky or UVVIS ZS and UVVIS MAXDOAS (Multi-AXis Differential Optical Absorption Spectroscopy instruments),
-* LIDAR DIAL: Differential Absorption Lidar.
-
-This database provides access to level 2b and level 3 data of trace gases profiles (O3) or columns (O3, C2H6, HCHO, NO2, NH3 …). The level 2b data are produced from the consolidation of level 2a data using quality assurance and quality control procedures. The level 3 data are produced from level 2b data, trace gas profiles or columns, and correspond to monthly averaged climatologies as well as coincident data with satellite overpasses.
+Data provided in GRES unit are L2 and L3 data produced from L0 and L1 data processing performed at NFs level (see Figure 10). These data have to be provided by NFs in GEOMS HDF format then converted within GRES DC in NetCDF format in order  to be disseminated through ACTRIS DC, These data have to be completed  with rich metadata.  NFs are also in charge of providing tools to facilitate the generation and the handling of the data. The GRES unit is in charge of:
+      - creating and maintening the metadata catalogue,
+      - providing a free and open access to metadata, data and tools developed by NFs through user-friendly web interfaces,
+      - providing an open access to documents about description of algorithm retrieval by types of data and  description of data quality assurance and control procedures using in NF's for the data production,
+      - developping tools to convert L2 and L3 data into NetCDF format and to ensure the completeness of data provision process, 
+      - developping quicklooks for level 2 and 3 data in order to a more comprehensible understanding of the data,
+      - offering  links to EVDC-ESA Atmospheric Validation Data Centre),
+      -  assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow,
+ ![GRES services](img/section4/gres_data_flow.png)
+*Figure 11: GRES data products and services*
 
 #### 4.2.6 ASC dataflow and data management
 
@@ -964,8 +974,14 @@ The CLU database consists of a file archive connected to a relational metadata d
 The current size of the database is about 25 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. However, there will be a significant increase in volume when the planned move to multi-peak and spectral products is undertaken; this is in addition to a slight increase arising through the creation of new products. The CLU infrastructure is maintained by FMI with long-term commitment for archiving and preservation. Publication of QA datasets will aid dataset preservation.
 
 ### 6.4 Archiving and preservation of GRES data
+For the GRES unit, data are stored on disk on a server in Paris. As new data are provided once a year, a full backup is made yearly and stored on tape. We plan to have soon a second copy on tape in Palaiseau, France. The distance between both sites will be about 20km.
+
+The GRES infrastructure is maintained by AERIS with long-term commitment for archiving and preservation.
 
 ### 6.5 Archiving and preservation of ASC data
+Since the Eurochamp H2020 project, data from simulation chambers are managed by AERIS. It consists of a file archive connected to a MondoDB metadata database. Data files are stored on disk on a server located in Toulouse, France. A full daily backup is made automatically and stored on another site (in Tarbes, France). The distance between the database and the backup site is about 120km. We plan to have soon a copy on tape in Paris.
+
+The ASC infrastructure is maintained by AERIS with long-term commitment for archiving and preservation.
 
 ### 6.6 Archiving and preservation of ACCESS data
 
@@ -1022,7 +1038,9 @@ Table 25: *Workflow Tasks Short Specification*
 ![ACTRIS Cloud remote sensing data centre unit workflow diagram](img/CLU_workflow.png)
 
 ### Appendix 6: ACTRIS trace gases remote sensing data centre unit (GRES) data life cycle and workflow diagram
-![ACTRIS trace gases remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/workflow_gres.png)
+![ACTRIS trace gases remote sensing data centre unit workflow diagram (ftir data)](img/workflows/gres_ftir_wf.png)
+![ACTRIS trace gases remote sensing data centre unit workflow diagram (lidar data)](img/workflows/gres_lidar_wf.png)
+![ACTRIS trace gases remote sensing data centre unit workflow diagram (uvvis data)](img/workflows/gres_uv-vis_wf.png)
 
 ### Appendix 7: ACTRIS Atmospheric simulation chamber data centre unit (ASC) data life cycle and workflow diagram
 ![ACTRIS Atmospheric simulation chamber data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/atm_simulation_chamber_workflow.png)
