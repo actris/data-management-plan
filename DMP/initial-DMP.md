@@ -69,7 +69,7 @@ Laboratory platforms and mobile platforms that perform dedicated experiments and
 atmospheric constituents, processes, events or regions by following common ACTRIS standards are considered ACTRIS exploratory platform. In addition to these,atmospheric simulation chambers are ACTRIS exploratory platforms too. These chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models. Atmospheric simulation chamber data contribute to better predict the behavior of the atmosphere over all time scales through a detailed understanding of the physical and chemical processes, which affect air quality and climate change. Atmospheric simulation chambers are among the most advanced tools for studying and quantifying atmospheric processes and are used to provide many of the parameters incorporated in air quality and climate models.
 
 ![Architecture of the ACTRIS Data Centre](img/section1/Exp_Obs_NF.jpg)
-* Figure 1: Overview of the types of National Facilities providing data to ACTRIS Data Centre*
+*Figure 1: Overview of the types of National Facilities providing data to ACTRIS Data Centre*
 
 ACTRIS is a unique RI improving both the quality of and access to atmospheric observations, developing new methods and protocols, and harmonizing existing observations of the atmospheric variables listed in [Appendix 1](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_I_ACTRIS-RI_variables_21February2018.xlsx). Appendix 1 includes an updated list of all ACTRIS variables associated to recommended measurement methodology.
 
