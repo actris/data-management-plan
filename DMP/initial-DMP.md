@@ -171,12 +171,12 @@ ACTRIS will produce data and data products essential to a wide range of communit
 
 ### 3.1 ACTRIS In situ data centre unit (In-Situ)
 
-The In-Situ data centre unit provides data curation service for aerosol, cloud and trace gas in situ data and inclusion of data in EBAS database. This includes tools for harmonized data submission and meta data templates, inclusion of data and meta data in the data base, traceability, harmonization and data versioning, quality control, archiving, documentation and data provision. Training and online tools for QA, QC is offered. The activity enables RRT and NRT data compilation and delivery and provides tutorial activities. Furthermore, support for centralized data processing, harmonization, and data product generation, both level 2 and level 3 is offered and further implemented during the implementation phase.
+The In-Situ data centre unit provides data curation service for aerosol, cloud and trace gas in situ data, as well as archiving of tihis data using the EBAS database. This comprises tools for harmonized data submission and meta data templates, inclusion of data and meta data in the data base, traceability, harmonization and data versioning, quality control, archiving, documentation and data provision. Training and online tools for QA, QC are offered. The activity enables RRT and NRT data compilation and delivery and provides tutorial activities. Furthermore, support for centralized data processing, harmonization, and data product generation, both level 2 and level 3 is offered and further implemented during the implementation phase.
 
 #### The types and formats of data generated/collected
-The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format (ASCII file) by the data originator, and there are exsisting [instructions and templates](https://ebas-submit.nilu.no/) for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
+The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format (ASCII file) by the data originator. There are exsisting [instructions and templates](https://ebas-submit.nilu.no/) for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
 
-ACTRIS in situ data is also available in the netCDF 4 format through the [EBAS Thredds Server](https://thredds.nilu.no/thredds/catalog.html), following the [CF 1.7 convention](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html) and the [Attribute Convention for Data Discovery 1-3 (ACDD)](http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery_1-3).
+ACTRIS in situ data is also available in netCDF 4 format through the [EBAS Thredds Server](https://thredds.nilu.no/thredds/catalog.html), following the [CF 1.7 convention](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html) and the [Attribute Convention for Data Discovery 1-3 (ACDD)](http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery_1-3).
 
 #### Re-use of existing data
 
@@ -206,8 +206,14 @@ Table 3: *Data volume*
 
 #### Data utility
 
+According to [IPCC AR5](https://www.ipcc.ch/site/assets/uploads/2018/02/SYR_AR5_FINAL_full.pdf), aerosol particles in the atmosphere are the most prominent source of uncertainty of climate predictions. Depending on their properties, they can have a warming as well as cooling effect on climate by scattering and absorbing solar radiation, and they can extend brightness and lifetime of clouds. Volatile organic compunds (VOCs) are one source of precursors for aerosol particles by forming condensable vapours during oxidation and decay in the atmosphere. By interaction with nitrogen oxides (NO_x), themselves a pollutant emitted by combustion, decaying VOCs form ozone (O_3), another pollutant. All of these, particulate matter, VOCs, NO_x, and ozone, have adverse effects on human health. Data on concentrations and properties of these compounds stored in the ACTRIS DC In Situ unit address all of the named effects:
+* **In Situ** data feed into the IPCC assessment reports in order to quantify and reduce the uncertainty of climate change.
+* **In Situ** data are the basis of national and international assessment reports of air quality.
+* **In Situ** data feed into and validate operational air quality prediction products, e.g. by Copernicus.
+
 #### Outline of data life cycle (workflow and workflow diagram)
 Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle-and-workflow-diagram).
+
 
 ### 3.2 ACTRIS Aerosol remote sensing data centre unit (ARES)
 
