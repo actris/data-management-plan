@@ -1038,8 +1038,14 @@ Table 25: *Workflow Tasks Short Specification*
 ![ACTRIS Cloud remote sensing data centre unit workflow diagram](img/CLU_workflow.png)
 
 ### Appendix 6: ACTRIS trace gases remote sensing data centre unit (GRES) data life cycle and workflow diagram
+
+#### ftir data
 ![ACTRIS trace gases remote sensing data centre unit workflow diagram (ftir data)](img/workflows/gres_ftir_wf.png)
+
+#### lidar data
 ![ACTRIS trace gases remote sensing data centre unit workflow diagram (lidar data)](img/workflows/gres_lidar_wf.png)
+
+#### uvvis data
 ![ACTRIS trace gases remote sensing data centre unit workflow diagram (uvvis data)](img/workflows/gres_uv-vis_wf.png)
 
 ### Appendix 7: ACTRIS Atmospheric simulation chamber data centre unit (ASC) data life cycle and workflow diagram
