@@ -546,16 +546,18 @@ As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCE
 
 ##### Overview of when data is made available (level 2 data)
 
+
 |        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |		Comment						    |
 |---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
 | In Situ                   |              31th of May  |               31th of June                      |			hourly	     |										|
 | GRES                      |     Within 4 months after measurement        |      Within 4 months after measurement                              |  					 |	There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
-| ARES                      |                           |                                                 |                      |										|
+| ARES                      |      Not applicable       |                 Not applicable                  |                      |										|
 | ASC                       |                           |                                                 |  Not applicable      |										|
 | CLU                       |                           |                                                 |                      |										|
 
 *Table 14: Overview of when data is made available*
 
+For ARES, there is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. Once QCs both at TC and DC level are passed, Level 2 data are available in ARES DC.  
 
 #### 4.2.2 In-Situ dataflow and data management
 
@@ -712,18 +714,33 @@ Again, the content of workflow tasks and the responsibilities for them are speci
 
 #### 4.2.3 ARES dataflow and data management
 
-The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with the centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data centre automatically produces Level 2 and Level 3 climatological products.
+At the present, the ACTRIS aerosol remote sensing component is a highly inhomogeneous in terms of instrumentations: most of the lidar systems are home-made or highly customized. In cases like that, the implementation of a standard, centralized and quality assured scheme for the analysis of raw data is the most efficient solution to provide FAIR and quality assured data at RI level. 
 
-|        Product Type       |                                  Availability (Typical)                                          | 
-|---------------------------|--------------------------------------------------------------------------------------------------|
-| Level 1                   |                                          RRT / NRT                                               |
+The SCC (EARLINET Single Calculus Chain) is the solution adopted by the ACTRIS (Aerosol, Clouds and Trace gases Research InfraStructure Network) aerosol remote data center to ensure homogenous, traceable and quality controlled data. Main concepts at the base of the SCC are automatization and full traceability of quality-assured aerosol optical products.
+
+The ARES DC also compile aerosol optical and physical properties (profile and column) from combined lidar + photometer observations collected at NFs. The GARRLiC (Generalized Aerosol Retrieval from Radiometer and Lidar Combined data) retrieval will be used for this, which synergistically inverts coincident lidar and radiometer observations, starting from SCC products and AERONET-ACTRIS processing stream products. These processing streams are fully controlled by ACTRIS. 
+
+The data curation workflow is suitable for the provision in NRT and RRT, following the same steps and procedures of the standard processing. NRT/RRT delivery of not fully quality assured data can be possible as long as a NF provides raw data to the DC in NRT/RRT.
+
+Raw data collected at the NF in the original acquisition data format are transcribed in a homogeneous and agreed netCDF data format to the aerosol remote sensing processing suite at the ACTRIS DC, being the ARES Level 0 data. All information needed for the steps forward in the processing chain is annotated into the file or in a dedicated database (SCC database).  It is recommended that raw data should be centrally stored and it should be under the responsibility of the NF to keep a local backup.
+
+Level 0 data are centrally progressed at ACTRIS ARES DC level, generating Level 1 (not-fully QC data) preprocessed signals and optical properties products. On-the-fly QC procedures guarantees basic quality control on Level 1 data. 
+
+Off-line QC procedures are run systematically after the outcomes from related TC (namely CARS) are available and transferred to the ARES DC unit.  The data originator and the CARS TC units receives feedback of the outcome of the QC. This feedback mechanism potentially allows to discover and address instrumental issues, with links to the TC.  All the data compliant to all the QC requirements (both pre-processed and processed data) are made available as Level 2 data. 
+
+ARES DC offers also products resulting from the processing at DC itself of Level 2 lidar and photometer data collected at the aerosol remote sensing NFs. Finally, Level 3 climatological products are produced at ARES DC from lidar Level 2 optical property products. 
+
+
+|        Product Type       |                                  Availability (Typical)                             | 
+|---------------------------|-------------------------------------------------------------------------------------|
+| Level 1                   |                                           RRT / NRT                                 |
 | Level 2                   |                                             1 year                                  |  
 | Level 3                   |                                             1 year                                  | 
 
 *Table 15: ARES Data Products Availability*
 
-![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
-*Figure 9: ARES Data Products Availability*
+![ARES Data Products and Services](img/section4/Current_View_of_ARES_Unit_rev.jpg)
+*Figure 9: ARES Data Products and Services*
 
 #### 4.2.4 CLU dataflow and data management
 
@@ -747,7 +764,7 @@ hosted by the ACCESS unit. All of our metadata is available as a JSON format via
 The actual metadata standard is yet to be decided, but it must comply with the netCDF conventions because
 we use the netCDF file format. All data files encounter regular back-ups.
 
-A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure 9.
+A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure 10.
 ![CLU services](img/section4/clu_data_flow.png)
 *Figure 10: CLU data products and services*
 
