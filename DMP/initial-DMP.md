@@ -193,7 +193,7 @@ The origin of the data is derived from instrument raw data, either through onlin
 | ACTRIS in situ cloud data     |           0                                              |       35                                |   105                                   |
 | ACTRIS in situ trace gas data |           27                                             |       30                                |   60		                               |
 
-Table 2: *Number of annual datasets*
+*Table 2: Number of annual datasets*
 
 | Type                          |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025) |
 |-------------------------------|-----------------------------------------------------------|------------------------------------------|------------------------------------------|
@@ -201,7 +201,7 @@ Table 2: *Number of annual datasets*
 | ACTRIS in situ cloud data     |           0 MB                                            |       1 GB                               |   3 GB                                   |
 | ACTRIS in situ trace gas data |           300 MB                                          |       200 MB                             |   400 MB	                              |
 
-Table 3: *Data volume*
+*Table 3: Data volume*
 
 #### Data utility
 
@@ -246,13 +246,13 @@ The origin of the data is derived from instrument raw data provided by the data 
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                    |
  GRASP/GARRLiC      |                        6          |             30        |    52                
-Table 4: *Number of annual datasets*
+*Table 4: Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
 | ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                    |
 | GRASP/GARRLiC     |                            3.2 GB                         |     40 GB                   |           50 GB            
-Table 5: *Data volume*
+*Table 5: Data volume*
 
 #### Data utility
 
@@ -290,13 +290,13 @@ Data is derived from instrument raw data, coupled with thermodynamic profiles fr
 |-----------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS cloud remote sensing data  |       11                                                 |      15                                 |   25                                    |
 
-Table 6: *Number of annual datasets*
+*Table 6: Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                     | Data volume (min by 2025)             | Data volume (max by 2025)             |
 |------------------------------------|------------------------------------------------------|---------------------------------------|---------------------------------------|
 | ACTRIS cloud remote sensing data   |           15 TB                                      |       50 TB                           |   150 TB                              |
 
-Table 7: *Data volume*
+*Table 7: Data volume*
 
 #### Data utility
 
@@ -344,7 +344,7 @@ The L2 data are derived from instrument raw data, through offline observations. 
 | ACTRIS-GRES PANDORA                 |             37230                                          |          7665                            |             10220                         |
 | ACTRIS-GRES LIDAR DIAL              |                  400                                |          100                            |            200                          |
 
-Table 8: *Number of annual datasets*
+*Table 8: Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
@@ -354,7 +354,7 @@ Table 8: *Number of annual datasets*
   ACTRIS-GRES PANDORA  |                     1,7 TB                                  |              6 TB                         |          10 TB               |
 | ACTRIS-GRES LIDAR DIAL |                     0,4 GB                                |              1 GB                      |          2 GB            |
 
-Table 9: *Data volume*
+*Table 9: Data volume*
 
 #### Data utility
 
@@ -398,7 +398,7 @@ Data provided in DASCS and LAR pillars are derived from instrument raw data and 
 | ACTRIS-ASC LADP              |                   70                                     |          50                             |             200                |
 
 
- Table 10: _Number of annual datasets
+ *Table 10: Number of annual datasets*
 
 |  Type                                |Data volume (end 2019)                          | Data volumes (min by 2025) | Data volume (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-------------------------------|
@@ -406,7 +406,7 @@ Data provided in DASCS and LAR pillars are derived from instrument raw data and 
 | ACTRIS-ASC LAR                 |                   67 MB                                  |          76 MB                        |            120 MB               |
 | ACTRIS-ASC LADP              |                   26 KB                                     |          200 KB                             |             500 KB                |
 
-Table 11: _Data volume_
+*Table 11: Data volume*
 
 **Data utility**
 
@@ -455,7 +455,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 |    GRASP-AOD          |                        0          |             30                          |    1500                                 |
 |    ReOBS              |                        1          |             15                          |    30                                    |
 
-Table 12: *Number of annual datasets*
+*Table 12: Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
@@ -463,7 +463,7 @@ Table 12: *Number of annual datasets*
 | GRASP-AOD         |                              0 GB                         |      50 GB               |        20 TB             |
 | ReOBS             |                              2 GB                         |        30 GB                |                100 GB        |
 
-Table 13: *Data volume*
+*Table 13: Data volume*
 
 
 ##### Generated (on-demand services)
@@ -876,7 +876,7 @@ The access protocol will be clearly described in the metadata. If direct access 
 
 Currently all data centre units maintain the access to the data, either directly through the unit specific repository or through the ACTRIS data portal.
 
-The table shows the data access protocols July 2019.
+The table shows the data access protocols.
 
 
 | DC unit                  | data format                  | Repository URL                                                                                                                                                       |           Protocol           | Authentication and authorization needed  | 
