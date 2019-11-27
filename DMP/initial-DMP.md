@@ -546,14 +546,13 @@ As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCE
 
 ##### Overview of when data is made available (level 2 data)
 
-
 |        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |		Comment						    |
 |---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
 | In Situ                   |              31th of May  |               31th of June                      |			hourly	     |										|
 | GRES                      |     Within 4 months after measurement        |      Within 4 months after measurement                              |  					 |	There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
 | ARES                      |      Not applicable       |                 Not applicable                  |                      |										|
 | ASC                       |                           |                                                 |  Not applicable      |										|
-| CLU                       |                           |                                                 |                      |										|
+| CLU                       |     Automatic             |   1 day after submission                        |                      |										|
 
 *Table 14: Overview of when data is made available*
 
