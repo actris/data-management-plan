@@ -716,16 +716,16 @@ Again, the content of workflow tasks and the responsibilities for them are speci
 
 The submission of the data to ACTRIS ARES requires that level 0 data are in a specified format compliant with the centralized processing suite. Level 0 data have to be formatted in such a format and submitted to the centralized processing suite by the data originator. Processed data level 1 produced by the processing tools have to be submitted to the database by the data originator through devoted available tool. Finally, the ACTRIS ARES data centre automatically produces Level 2 and Level 3 climatological products.
 
-|        Product Type       |                                  Availability (Typical)                                          | 
-|---------------------------|--------------------------------------------------------------------------------------------------|
-| Level 1                   |                                          RRT / NRT                                               |
+|        Product Type       |                                  Availability (Typical)                             | 
+|---------------------------|-------------------------------------------------------------------------------------|
+| Level 1                   |                                           RRT / NRT                                 |
 | Level 2                   |                                             1 year                                  |  
 | Level 3                   |                                             1 year                                  | 
 
 *Table 15: ARES Data Products Availability*
 
-![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
-*Figure 9: ARES Data Products Availability*
+![ARES Data Products and Services](img/section4/Current_View_of_ARES_Unit_rev.jpg)
+*Figure 9: ARES Data Products and Services*
 
 #### 4.2.4 CLU dataflow and data management
 
@@ -749,7 +749,7 @@ hosted by the ACCESS unit. All of our metadata is available as a JSON format via
 The actual metadata standard is yet to be decided, but it must comply with the netCDF conventions because
 we use the netCDF file format. All data files encounter regular back-ups.
 
-A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure 9.
+A general overview of the links between national facilities, CLU, and the corresponding topical centre, CCRES, are illustrated in Figure 10.
 ![CLU services](img/section4/clu_data_flow.png)
 *Figure 10: CLU data products and services*
 
