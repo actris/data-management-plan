@@ -303,6 +303,13 @@ Table 7: *Data volume*
 
 #### Data utility
 
+Clouds are highly variable in time, space, and in their macro- and microphysical aspects. This variability directly impacts radiative transfer and the hydrological cycle, and the accurate representation of clouds is fundamental to climate and numerical weather prediction.
+CLU products are particular valuable for investigating the response of cloud microphysical processes to changes in other atmospheric variables (aerosol-cloud-precipitation interaction), evaluating and developing the parametrization schemes used to represent cloud in climate and numerical weather prediction models, and for validating satellite products used in data assimilation.
+
+CLU level 2 data are utilised by a large community of atmospheric scientists and operational agencies, with products permitting both process studies and model parametrization
+CLU level 3 comprises climatological products for climate and forecast model evaluation, together with seasonal and diurnal composites enabling the characterisation of cloud properties across Europe.
+
+
 #### Outline of data life cycle (workflow and workflow diagram)
 
 Details on the data life cycle and workflow (workflow diagrams for data production) for remote sensing observations can be found in [Appendix 5: ACTRIS cloud remote sensing  data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-5-actris-cloud-remote-sensing-data-centre-unit-clu-data-life-cycle-and-workflow-diagram).
