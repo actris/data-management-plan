@@ -211,7 +211,7 @@ According to [IPCC AR5](https://www.ipcc.ch/site/assets/uploads/2018/02/SYR_AR5_
 * **In Situ** data feed into and validate operational air quality prediction products, e.g. by Copernicus.
 
 #### Outline of data life cycle (workflow and workflow diagram)
-Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle-and-workflow-diagram).
+Detail on the data life cycle and workflow (workflow diagrams for data production) for in situ observations can be found in [*Appendix 3: ACTRIS in situ aerosol, cloud and trace gas data lifecycle and workflow (draft)*](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-3-actris-in-situ-data-centre-unit-in-situ-data-life-cycle).
 
 
 ### 3.2 ACTRIS Aerosol remote sensing data centre unit (ARES)
@@ -243,15 +243,17 @@ The origin of the data is derived from instrument raw data provided by the data 
 #### The expected size of the data
 
 | Type                                |Number of annual datasets (end 2019)                          | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
-|-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
-| ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                    |
- GRASP/GARRLiC      |                        6          |             30        |    52                
+|-------------------------------------|----------------------------------------------------------|-----------------------------------------|---------------------------------------------|
+| ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                        |
+ GRASP/GARRLiC                        |                        6                                 |             30                          |    52                                       |
+
 *Table 4: Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
-|------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
-| ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                    |
-| GRASP/GARRLiC     |                            3.2 GB                         |     40 GB                   |           50 GB            
+|------------------------------------|-----------------------------------------------------------|------------------------------------------|---------------------------------|
+| ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                         |
+| GRASP/GARRLiC                      |                            3.2 GB                         |     40 GB                                |           50 GB                 |
+
 *Table 5: Data volume*
 
 #### Data utility
@@ -266,7 +268,7 @@ Atmospheric aerosols are considered one of the major uncertainties in climate fo
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
-Details of the data life cycle and workflow (workflow diagrams for data production) for aerosol remote sensing observations can be found in [Appendix 4: ACTRIS aerosol remote sensing data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-4-actris-aerosol-remote-sensing-data-centre-unit-ares-data-life-cycle-and-workflow-diagram).
+Details of the data life cycle and workflow (workflow diagrams for data production) for aerosol remote sensing observations can be found in [Appendix 4: ACTRIS aerosol remote sensing data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-4-actris-aerosol-remote-sensing-data-centre-unit-ares-data-life-cycle-and-workflow-diagram).
 
 ### 3.3 ACTRIS Cloud remote sensing data centre unit (CLU)
 
@@ -309,7 +311,7 @@ CLU level 3 comprises climatological products for climate and forecast model eva
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
-Details on the data life cycle and workflow (workflow diagrams for data production) for remote sensing observations can be found in [Appendix 5: ACTRIS cloud remote sensing  data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-5-actris-cloud-remote-sensing-data-centre-unit-clu-data-life-cycle-and-workflow-diagram).
+Details on the data life cycle and workflow (workflow diagrams for data production) for remote sensing observations can be found in [Appendix 5: ACTRIS cloud remote sensing  data lifecycle and workflow (draft)](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-5-actris-cloud-remote-sensing-data-centre-unit-clu-data-life-cycle-and-workflow-diagram).
 
 ### 3.4 ACTRIS trace gases remote sensing data centre unit (GRES)
 
@@ -361,7 +363,7 @@ The L2 data are derived from instrument raw data, through offline observations. 
 The data of GRES could be used to monitoring the evolution of key stratospheric gas trace such ozone under the effect of anthropogenic emissions, climate change and natural events. The retrieval of previous data by GRES will allow homogeneous data series to compute trends. Data could be also used in support of validation of satellite measurements deployed by international space agencies as well as models simulations.
 
 #### Outline of data life cycle (workflow and workflow diagram)
-Detail on the data life cycle and workflow (workflow diagrams for data production) for trace gases remote sensing data can be found in [Appendix 6](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-6-actris-trace-gases-remote-sensing-data-centre-unit-gres-data-life-cycle-and-workflow-diagram).
+Detail on the data life cycle and workflow (workflow diagrams for data production) for trace gases remote sensing data can be found in [Appendix 6](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-6-actris-trace-gases-remote-sensing-data-centre-unit-gres-data-life-cycle-and-workflow-diagram).
 
 ### 3.5 ACTRIS Atmospheric simulation chamber data centre unit (ASC)
 
@@ -371,7 +373,7 @@ The ASC data centre unit provides data curation service for data obtained from e
 
 * The Library of Analytical Resources (LAR) provides quantitative analytical resources that include infrared spectra and mass spectra of molecules and derivatives (level 3 data).
 
-* The Library of Advanced Data Products (LADP) provides different types of mature data products (level 3 data): rate constants of reactions, quantum yields and photolysis frequencies of trace gas compounds, secondary organic aerosol (SOA) yields, mass extinction/absorption/scattering coefficients and complex refractive index of aerosols, growth factors of aerosols and modelling tools. The detailed list of ACTRIS level 3 data products is given in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
+* The Library of Advanced Data Products (LADP) provides different types of mature data products (level 3 data): rate constants of reactions, quantum yields and photolysis frequencies of trace gas compounds, secondary organic aerosol (SOA) yields, mass extinction/absorption/scattering coefficients and complex refractive index of aerosols, growth factors of aerosols and modelling tools. The detailed list of ACTRIS level 3 data products is given in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
     
 **The types and formats of data generated/collected**
 
@@ -421,7 +423,7 @@ communities. Many of these parameters are incorporated in air quality and climat
 
 **Outline of data life cycle (workflow and workflow diagram)**
 
-Detail on the data life cycle andA preliminary version of the data workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in [Appendix 7](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram). The definition of this workflow is still under progress and a finalized version will be available in 2020.   
+Detail on the data life cycle andA preliminary version of the data workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in [Appendix 7](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram). The definition of this workflow is still under progress and a finalized version will be available in 2020.   
 
 ### 3.6 ACTRIS data and services (ACCESS)
 ACTRIS Data Center is a distributed data centre, and ACTRIS data and services access unit (ACCESS) is responsible for organising access to measurement data from the topic data centre units, and documentation of procedures as support to observational and exploratory NFs. The ACCESS unit provides the ACTRIS web interface for data download, services and digital tools as well as performing data production of Level 3 data, and synergy data products.
@@ -458,10 +460,9 @@ The origin of the data is derived from ground-based and satellite observations, 
 *Table 12: Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
-|-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
-|   |
-| GRASP-AOD         |                              0 GB                         |      50 GB               |        20 TB             |
-| ReOBS             |                              2 GB                         |        30 GB                |                100 GB        |
+|-------------------|----------------------------------------------------------------|----------------------------|----------------------------|
+| GRASP-AOD         |                              0 GB                              |      50 GB                 |        20 TB               |
+| ReOBS             |                              2 GB                              |        30 GB               |                100 GB      |
 
 *Table 13: Data volume*
 
@@ -486,7 +487,7 @@ The ACCESS unit utilize data from all the 5 topical DC units, and produce level 
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
-Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in [Appendix 8](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
+Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in [Appendix 8](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
 
 ## 4. Data Management at the ACTRIS data centre
 
@@ -542,7 +543,7 @@ The current setup is a web portal with a database that collects metadata from In
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
 *Figure 7: Technical architecture of the ACTRIS meta data portal*
 
-As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
+As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
 ##### Overview of when data is made available (level 2 data)
 
@@ -578,7 +579,7 @@ ACTRIS In situ concretises the ACTRIS data levels as follows:
 
 ##### 4.2.2.1 General Characteristics of In Situ Data Production
 
-All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these ([Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables)).
+All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these ([Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables)).
 
 As a general rule in ACTRIS in situ data QC, only data subject to instrument malfunctions are flagged as invalid. Data with episodes, local contamination, etc. are flagged as such, but not as invalid, to avoid limiting data use only to certain use cases. Data level designations are used to distinguish between data having received automatic QC, and data having undergone manual QC. When calculating time averages in data production, any non-invalidating flags occurring in the source data during the averaging period are copied to the average result, while invalid data points in the source data are excluded from the average. Temporal coverage flags are applied to the average.
 
@@ -983,7 +984,7 @@ The complete data system is backed up regularly. This includes incremental back 
  
 A dedicated ftp area is allocated to incoming files, and all activities herein are logged on a separate log file, and backed up on 2 hour frequency.
 
-Ca 385 separate new comprehensive files including meta data with annual time series of medium to high time resolution (seconds to week) is expected per year. A significant growth in this number is not expected on annual scale. For more detail, see [Table 2](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#the-expected-size-of-the-data) and [Table 3](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#the-expected-size-of-the-data)
+Ca 385 separate new comprehensive files including meta data with annual time series of medium to high time resolution (seconds to week) is expected per year. A significant growth in this number is not expected on annual scale. For more detail, see [Table 2](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#the-expected-size-of-the-data) and [Table 3](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#the-expected-size-of-the-data)
 
 EBAS is based on data management over more than 40 years. Last 10 years there has been a European project-type cooperation from FP5 to Horizon2020, with and EMEP and GAW programmes since 1970’s as the fundament. Sharing visions and goals with the supporting long-term policy driven frameworks have ensured long-term funding for the core data base infrastructure. A long-term strategy for providing access to all ACTRIS data and other related services are in progress through the establishment of ACTRIS as a RI. ACTRIS is on the ESFRI (European Strategy Forum on Research Infrastructures) roadmap for Research Infrastructures, and a preparatory phase project is ongoing.
 
