@@ -1,8 +1,3 @@
-<center>
-<img src="https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/new-draft-logo.png" alt="draft">
-<img src="https://www.actris.eu/Portals/46/Images/Logos/logo-actris_new_140.png?ver=2015-06-08-141001-817" alt="ACTRIS logo">
-</center>
-
 # Data Management plan for ACTRIS - Aerosol, Clouds and Trace Gases Research InfraStructure
 
 # Table of contents
@@ -19,24 +14,26 @@
   * [3.5. ACTRIS Atmospheric simulation chamber data centre unit (ASC)](#35-actris-atmospheric-simulation-chamber-data-centre-unit-asc)
   * [3.6. ACTRIS data and services (ACCESS)](#36-actris-data-and-services-access)
 * [4. Data Management at the ACTRIS data centre](#4-Data-Management-at-the-ACTRIS-data-centre)
-  * [4.1 Introduction and overview of ACTRIS Data Management architecture](#41-introduction-and-overview-of-actris-data-management-architecture)
-    * [4.1.1 ACCESS role and data management](#411-access-role-and-data-management)
-	* [4.1.2 In-Situ dataflow and data management](#412-in-situ-dataflow-and-data-management)
-	  * [4.1.2.1 Online In Situ Data Production](#412-in-situ-dataflow-and-data-management)
-	  * [4.1.2.2 Offline In Situ Data Production](#4122-offline-in-situ-data-production)
-	* [4.1.3 ARES dataflow and data management](#413-ares-dataflow-and-data-management)
-	* [4.1.4 CLU dataflow and data management](#414-clu-dataflow-and-data-management)
-	* [4.1.5 GRES dataflow and data management](#415-gres-dataflow-and-data-management)
-	* [4.1.6 ASC dataflow and data management](#416-asc-dataflow-and-data-management)
-  * [4.2 Findable: Making data findable, including provisions for metadata [FAIR data]](#42-findable-making-data-findable-including-provisions-for-metadata-fair-data)
-	* [4.2.1 ACTRIS variable names and implementation of vocabulary](#421-actris-variable-names-and-implementation-of-vocabulary)
-	* [4.2.2 Metadata standards and meta data services](#422-metadata-standards-and-meta-data-services)
-	* [4.2.3 Traceability of ACTRIS data](#423-traceability-of-actris-data)
-	* [4.2.4: Version control of ACTRIS (meta)data](#424-version-control-of-actris-metadata)
-  * [4.3 Accessible: Making data openly accessible [FAIR data]](#43-accessible-making-data-openly-accessible-fair-data)
-	* [4.3.1 ACTRIS data access and access protocols](#431-actris-data-access-and-access-protocols)
-  * [4.4 Interoperable: Making data interoperable [FAIR data]](#44-interoperable-making-data-interoperable-fair-data)
-  * [4.5 Reuseable: Increase data re-use [FAIR data]](#45-reuseable-increase-data-re-use-fair-data)
+  * [4.1 ACTRIS access and service policy](#41-actris-access-and-service-policy)
+  * [4.2 Introduction and overview of ACTRIS Data Management architecture](#42-introduction-and-overview-of-actris-data-management-architecture)
+    * [4.2.1 ACCESS role and data management](#421-access-role-and-data-management)
+	* [4.2.2 In-Situ dataflow and data management](#422-in-situ-dataflow-and-data-management)
+	  * [4.2.2.1 General Characteristics of In Situ Data Production](#4221-general-characteristics-of-in-situ-data-production)
+	  * [4.2.2.2 Online In Situ Data Production](#4222-online-in-situ-data-production)
+	  * [4.2.2.3 Offline In Situ Data Production](#4223-offline-in-situ-data-production)
+	* [4.2.3 ARES dataflow and data management](#423-ares-dataflow-and-data-management)
+	* [4.2.4 CLU dataflow and data management](#424-clu-dataflow-and-data-management)
+	* [4.2.5 GRES dataflow and data management](#425-gres-dataflow-and-data-management)
+	* [4.2.6 ASC dataflow and data management](#426-asc-dataflow-and-data-management)
+  * [4.3 Findable: Making data findable, including provisions for metadata [FAIR data]](#43-findable-making-data-findable-including-provisions-for-metadata-fair-data)
+	* [4.3.1 ACTRIS variable names and implementation of vocabulary](#431-actris-variable-names-and-implementation-of-vocabulary)
+	* [4.3.2 Metadata standards and meta data services](#432-metadata-standards-and-meta-data-services)
+	* [4.3.3 Traceability of ACTRIS data](#433-traceability-of-actris-data)
+	* [4.3.4: Version control of ACTRIS (meta)data](#434-version-control-of-actris-metadata)
+  * [4.4 Accessible: Making data openly accessible [FAIR data]](#44-accessible-making-data-openly-accessible-fair-data)
+	* [4.4.1 ACTRIS data access and access protocols](#441-actris-data-access-and-access-protocols)
+  * [4.5 Interoperable: Making data interoperable [FAIR data]](#45-interoperable-making-data-interoperable-fair-data)
+  * [4.6 Reuseable: Increase data re-use [FAIR data]](#46-reuseable-increase-data-re-use-fair-data)
 * [5. Allocation of resources](#5-Allocation-of-resources)
 * [6. Data security](#6-data-security)
   * [6.1 Archiving and preservation of In-Situ data](#61-archiving-and-preservation-of-in-situ-data)
@@ -57,6 +54,8 @@
   * [Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit](#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
   * [Appendix 9: Format and external data sources for level 3 variables](#appendix-9-format-and-external-data-sources-for-level-3-variables)
   * [Appendix 10: ReOBS workflow diagram](#appendix-10-ReOBS-workflow-diagram)
+
+
 ## 1.  Introduction to The ACTRIS Data Centre and ACTRIS Data Management Plan
 
 The Aerosol, Clouds and Trace Gases Research Infrastructure (ACTRIS) focuses on producing high-quality data for the understanding of short-lived atmospheric constituents and their interactions. These constituents have a residence time in the atmosphere from hours to weeks. The short lifetimes make their concentrations highly variable in time and space and involve processes occurring on very short timescales. These considerations separate the short-lived atmospheric constituents from long-lived greenhouse gases, and calls for a four dimensional distributed observatory. The Research Infrastructure (RI) ACTRIS is the pan-European RI that consolidates activities amongst European partners for observations of aerosols, clouds, and trace gases and for understanding of the related atmospheric processes, as well as to provide RI services to wide user groups (See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/2018/ACTRIS%20Stakeholder%20Handbook%202018.pdf?ver=2019-03-08-140842-873) for more information). 
@@ -194,7 +193,7 @@ The origin of the data is derived from instrument raw data, either through onlin
 | ACTRIS in situ cloud data     |           0                                              |       35                                |   105                                   |
 | ACTRIS in situ trace gas data |           27                                             |       30                                |   60		                               |
 
-Table 2: *Number of annual datasets*
+*Table 2: Number of annual datasets*
 
 | Type                          |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025) |
 |-------------------------------|-----------------------------------------------------------|------------------------------------------|------------------------------------------|
@@ -202,7 +201,7 @@ Table 2: *Number of annual datasets*
 | ACTRIS in situ cloud data     |           0 MB                                            |       1 GB                               |   3 GB                                   |
 | ACTRIS in situ trace gas data |           300 MB                                          |       200 MB                             |   400 MB	                              |
 
-Table 3: *Data volume*
+*Table 3: Data volume*
 
 #### Data utility
 
@@ -247,13 +246,13 @@ The origin of the data is derived from instrument raw data provided by the data 
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                    |
  GRASP/GARRLiC      |                        6          |             30        |    52                
-Table 4: *Number of annual datasets*
+*Table 4: Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
 | ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                    |
 | GRASP/GARRLiC     |                            3.2 GB                         |     40 GB                   |           50 GB            
-Table 5: *Data volume*
+*Table 5: Data volume*
 
 #### Data utility
 
@@ -291,15 +290,22 @@ Data is derived from instrument raw data, coupled with thermodynamic profiles fr
 |-----------------------------------|----------------------------------------------------------|-----------------------------------------|-----------------------------------------|
 | ACTRIS cloud remote sensing data  |       11                                                 |      15                                 |   25                                    |
 
-Table 6: *Number of annual datasets*
+*Table 6: Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                     | Data volume (min by 2025)             | Data volume (max by 2025)             |
 |------------------------------------|------------------------------------------------------|---------------------------------------|---------------------------------------|
 | ACTRIS cloud remote sensing data   |           15 TB                                      |       50 TB                           |   150 TB                              |
 
-Table 7: *Data volume*
+*Table 7: Data volume*
 
 #### Data utility
+
+Clouds are highly variable in time, space, and in their macro- and microphysical aspects. This variability directly impacts radiative transfer and the hydrological cycle, and the accurate representation of clouds is fundamental to climate and numerical weather prediction.
+CLU products are particular valuable for investigating the response of cloud microphysical processes to changes in other atmospheric variables (aerosol-cloud-precipitation interaction), evaluating and developing the parametrization schemes used to represent cloud in climate and numerical weather prediction models, and for validating satellite products used in data assimilation.
+
+CLU level 2 data are utilised by a large community of atmospheric scientists and operational agencies, with products permitting both process studies and model parametrization
+CLU level 3 comprises climatological products for climate and forecast model evaluation, together with seasonal and diurnal composites enabling the characterisation of cloud properties across Europe.
+
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
@@ -338,7 +344,7 @@ The L2 data are derived from instrument raw data, through offline observations. 
 | ACTRIS-GRES PANDORA                 |             37230                                          |          7665                            |             10220                         |
 | ACTRIS-GRES LIDAR DIAL              |                  400                                |          100                            |            200                          |
 
-Table 8: *Number of annual datasets*
+*Table 8: Number of annual datasets*
 
 | Type                               |Data volume (end 2019)                                          | Data volume (min by 2025)                | Data volume (max by 2025)  |
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|----------------------------|
@@ -348,7 +354,7 @@ Table 8: *Number of annual datasets*
   ACTRIS-GRES PANDORA  |                     1,7 TB                                  |              6 TB                         |          10 TB               |
 | ACTRIS-GRES LIDAR DIAL |                     0,4 GB                                |              1 GB                      |          2 GB            |
 
-Table 9: *Data volume*
+*Table 9: Data volume*
 
 #### Data utility
 
@@ -392,7 +398,7 @@ Data provided in DASCS and LAR pillars are derived from instrument raw data and 
 | ACTRIS-ASC LADP              |                   70                                     |          50                             |             200                |
 
 
- Table 10: _Number of annual datasets
+ *Table 10: Number of annual datasets*
 
 |  Type                                |Data volume (end 2019)                          | Data volumes (min by 2025) | Data volume (max by 2025) |
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|-------------------------------|
@@ -400,7 +406,7 @@ Data provided in DASCS and LAR pillars are derived from instrument raw data and 
 | ACTRIS-ASC LAR                 |                   67 MB                                  |          76 MB                        |            120 MB               |
 | ACTRIS-ASC LADP              |                   26 KB                                     |          200 KB                             |             500 KB                |
 
-Table 11: _Data volume_
+*Table 11: Data volume*
 
 **Data utility**
 
@@ -449,7 +455,7 @@ The origin of the data is derived from ground-based and satellite observations, 
 |    GRASP-AOD          |                        0          |             30                          |    1500                                 |
 |    ReOBS              |                        1          |             15                          |    30                                    |
 
-Table 12: *Number of annual datasets*
+*Table 12: Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|-----------------------------------------------------------|----------------------------|----------------------------|
@@ -457,7 +463,7 @@ Table 12: *Number of annual datasets*
 | GRASP-AOD         |                              0 GB                         |      50 GB               |        20 TB             |
 | ReOBS             |                              2 GB                         |        30 GB                |                100 GB        |
 
-Table 13: *Data volume*
+*Table 13: Data volume*
 
 
 ##### Generated (on-demand services)
@@ -490,10 +496,10 @@ ACTRIS data and products should be findable, accessible, interoperable and reusa
 ### 4.1 ACTRIS access and service policy
 
 ACTRIS is offering access to a large variety of high-quality services offered by ACTRIS facilities, to a wide range of users and needs, for scientific, technological and innovation-oriented usage. Accordingly, ACTRIS has developed an [access strategy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467) to give clear guidelines and describe the general principles for access provided by ACTRIS to Users.
-When the ACTRIS services are in operation, the Users will access the ACTRIS services through a single entry point, as shown in Figure XX below.
+When the ACTRIS services are in operation, the Users will access the ACTRIS services through a single entry point, as shown in Figure 4 below.
 
 ![Overview of ACTRIS Access strategy](img/section4/ACTRIS_IAC09_principles_access_to_NF_draft.jpg)
-Figure 4: Overview of ACTRIS Access strategy
+*Figure 4: Overview of ACTRIS Access strategy*
 
 Virtual access is wide access to ACTRIS data and digital tools and does not require a selection process. Virtual access to ACTRIS data and digital tools is free access, and is given in compliance with the [ACTRIS data policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.3_M30.pdf?ver=2018-10-29-152439-550) for data from ACTRIS labelled NFs. Competitive access is Physical or Remote access to the ACTRIS Facilities, including access to specific services offered by the Data Centre and shall be managed by the SAMU and requires a selection process. This can e.g. be data centre services for comprehensiv research campaigns or large volume data delivery tailored for specific purposes.   
 
@@ -513,7 +519,7 @@ ACTRIS Data Management is handled by the individual data centre unit:
 An overview of the elements in the data flow is shown in Figure 5.
 
 ![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components_v3.jpg)
-Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units
+*Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units*
 
 
 #### 4.2.1 ACCESS role and data management
@@ -531,26 +537,27 @@ All data centre units are providing metadata, and interfaces for access to data 
 The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom web services, but currentyl machine-to-machine access is not possible. Implementation of ASC is under development and will be ready during 2020, and in the future, the aim is to harvest all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data using ISO19115 with the WIS metadata profile enabling machine-to-machine access of ACTRIS metadata. 
 
 ![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg)
-Figure 6: Overview of the tasks of the ACCESS unit 
+*Figure 6: Overview of the tasks of the ACCESS unit*
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
-Figure 7: Technical architecture of the ACTRIS meta data portal
+*Figure 7: Technical architecture of the ACTRIS meta data portal*
 
 As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
 ##### Overview of when data is made available (level 2 data)
 
-|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |
-|---------------------------|---------------------------|-------------------------------------------------|----------------------|
-| In Situ                   |              31th of May  |               31th of June                      |			hourly	     |
-| GRES                      |                           |                                                 |  					 |
-| ARES                      |            Not applicable  |      Not applicable                            |                      |
-| ASC                       |                           |                                                 |  Not applicable      |
-| CLU                       |                           |                                                 |                      |
+
+|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |		Comment						    |
+|---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
+| In Situ                   |              31th of May  |               31th of June                      |			hourly	     |										|
+| GRES                      |     Within 4 months after measurement        |      Within 4 months after measurement                              |  					 |	There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
+| ARES                      |      Not applicable       |                 Not applicable                  |                      |										|
+| ASC                       |                           |                                                 |  Not applicable      |										|
+| CLU                       |                           |                                                 |                      |										|
 
 *Table 14: Overview of when data is made available*
 
-For ARES, there is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. If submitted Level 1 data pass QCs at TC level, they are classified as Level 2 data and are made available by ARES DC.  
+For ARES, there is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. Once QCs both at TC and DC level are passed, Level 2 data are available in ARES DC.  
 
 #### 4.2.2 In-Situ dataflow and data management
 
@@ -559,7 +566,7 @@ The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (l
 * **Offline observations**: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
 
 ![ACTRIS In Situ Simplified Workflow](img/workflows/20191126b_ACTRIS_EBAS_Data_Flowchart_simplified.png)
-Figure 7: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.
+*Figure 8: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.*
 
 
 If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow.
@@ -718,7 +725,7 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 *Table 15: ARES Data Products Availability*
 
 ![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
-* Figure 9: ARES Data Products Availability*
+*Figure 9: ARES Data Products Availability*
 
 #### 4.2.4 CLU dataflow and data management
 
@@ -757,15 +764,15 @@ Data provided in GRES unit are L2 and L3 data produced from L0 and L1 data proce
       - developping quicklooks for level 2 and 3 data in order to a more comprehensible understanding of the data,
       - offering  links to EVDC-ESA Atmospheric Validation Data Centre),
       -  assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow,
- ![GRES services](img/section4/gres_data_flow.png)
+ ![GRES services](img/section4/gres_data_flow_v2.png)
 *Figure 11: GRES data products and services*
 
 #### 4.2.6 ASC dataflow and data management
 
-Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure XX). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
+Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure 12). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
-*Figure 11: current overview of ASC unit*
+*Figure 12: current overview of ASC unit*
 
 ### 4.3 Findable: Making data findable, including provisions for metadata [FAIR data]
 
@@ -779,14 +786,14 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 | Data centre unit         | Vocabulary name               |          Comment            |
 |--------------------------|-------------------------------|-----------------------------|
-|         In Situ		   | IUPAC, CF-1.7, WMO category codes?  |                             |
-|         ARES     		   | CF1.7      |                             |
-|         CLU              |          CF-1.7        |                             |
+|         In Situ		   | IUPAC, CF-1.7                 |                             |
+|         ARES     		   | CF-1.7                        |                             |
+|         CLU              |          CF-1.7               |                             |
 |		  ACCESS           | Defined by primary repository |                             |
-|         ASC              | 		?				       |  			                 |
-|		  GRES             | 		?				   |  				             |
+|         ASC              | 		CF-1.7				   |  			                 |
+|		  GRES             | 		CF-1.7				   |  				             |
 
-*Table 16: List of vocabularies used July 2019*
+*Table 16: List of vocabularies*
 
 #### 4.3.2 Metadata standards and meta data services
 
@@ -871,7 +878,7 @@ The access protocol will be clearly described in the metadata. If direct access 
 
 Currently all data centre units maintain the access to the data, either directly through the unit specific repository or through the ACTRIS data portal.
 
-The table shows the data access protocols July 2019.
+The table shows the data access protocols.
 
 
 | DC unit                  | data format                  | Repository URL                                                                                                                                                       |           Protocol           | Authentication and authorization needed  | 
@@ -881,7 +888,7 @@ The table shows the data access protocols July 2019.
 |         CLU              |          netCDF              |                 http://cloudnet.fmi.fi                                                                                                                               |              HTTP               | No                                    |
 |		  ACCESS (data portal)          | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |               HTTP      	       | For some data                         |
 |         ASC              | netCDF (data conversion by 2020)			      |  				https://data.eurochamp.org/																	                                                         |       		 HTTP		       | For some data                         |
-|		  GRES             | netCDF (data conversion by 2021)			  |  				https://en.aeris-data.fr/																	                                                         |       				 FTP      | No                                     |
+|		  GRES             | netCDF (data conversion by 2021)			  |  				https://gres.aeris-data.fr																	                                                         |       				 FTP      | No                                     |
 |		  ACCESS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa																                                                         |       				 FTP      | No                                     |
 
 *Table 20: Data formats and access protocols*
@@ -923,8 +930,6 @@ As regards ARES unit, all the characteristics of the LIDAR instrument configurat
 
 Availability of data can vary between the different data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
-The table shows the data and software usage licence July 2019.
-
 | Data centre unit         |          Data licence                 |  Comment     |
 |--------------------------|---------------------------------------|--------------|
 |         In Situ		   |          To be decided                |              |
@@ -934,15 +939,17 @@ The table shows the data and software usage licence July 2019.
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
 
-*Table 21: Licences*
+*Table 21: Data licences*
 
 | Responsible data centre unit         |          Software licence    |  Software link                                                        |
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
 |         In Situ		               |       None                   |     [EBAS IO](https://git.nilu.no/ebas/ebas-io/wikis/home)            |
 |         ARES     		               |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
 |	CLU					|	MIT		|	[CloudnetPy](https://github.com/tukiains/cloudnetpy) 		|
+|	ASC					|	None		|	None 		|
+|	GRES				|	None		|	None 		|
 
-*Table 22: Software*
+*Table 22: Software licences*
 
 ## 5. Allocation of resources
 
@@ -1022,11 +1029,11 @@ The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data port
 
 ![ACTRIS In situ data centre unit workflow diagram](img/workflows/20191126_ACTRIS_EBAS_Data_Flowchart_full.png)
 
-*Figure XX: ACTRIS In Situ DC unit data workflow, describing the interaction between NFs, TCs, and DC In Situ in data production.*
+*Figure 13: ACTRIS In Situ DC unit data workflow, describing the interaction between NFs, TCs, and DC In Situ in data production.*
 
 ![ACTRIS In situ data review workflow](img/workflows/20191126_ACTRIS_EBAS_Data_Flowchart_data_QC_review.png)
 
-*Figure XX: ACTRIS In Situ DC unit data review workflow, a sub-workflow to the In Situ main data production workflow.*
+*Figure 14: ACTRIS In Situ DC unit data review workflow, a sub-workflow to the In Situ main data production workflow.*
 
 #### A3.2 Workflow Implementation Tables, by instrument type
 
