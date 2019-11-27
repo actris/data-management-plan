@@ -738,7 +738,7 @@ ARES DC offers also products resulting from the processing at DC itself of Level
 
 *Table 15: ARES Data Products Availability*
 
-![ARES Data Products and Services](img/section4/Current_View_of_ARES_Unit_rev.jpg)
+![ARES Data Products and Services](img/section4/Current_View_of_ARES_Unit.JPG)
 *Figure 9: ARES Data Products and Services*
 
 #### 4.2.4 CLU dataflow and data management
