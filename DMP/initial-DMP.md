@@ -540,13 +540,15 @@ As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCE
 
 ##### Overview of when data is made available (level 2 data)
 
-|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |
-|---------------------------|---------------------------|-------------------------------------------------|----------------------|
-| In Situ                   |              31th of May  |               31th of June                      |			hourly	     |
-| GRES                      |                           |                                                 |  					 |
-| ARES                      |                           |                                                 |                      |
-| ASC                       |                           |                                                 |  Not applicable      |
-| CLU                       |                           |                                                 |                      |
+|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |		Comment						    |
+|---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
+| In Situ                   |              31th of May  |               31th of June                      |			hourly	     |										|
+| GRES                      |               Not applicable            |      Not applicable                                           |  					 |	There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit.
+
+								|
+| ARES                      |                           |                                                 |                      |										|
+| ASC                       |                           |                                                 |  Not applicable      |										|
+| CLU                       |                           |                                                 |                      |										|
 
 *Table 14: Overview of when data is made available*
 
@@ -756,7 +758,7 @@ Data provided in GRES unit are L2 and L3 data produced from L0 and L1 data proce
       - developping quicklooks for level 2 and 3 data in order to a more comprehensible understanding of the data,
       - offering  links to EVDC-ESA Atmospheric Validation Data Centre),
       -  assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow,
- ![GRES services](img/section4/gres_data_flow.png)
+ ![GRES services](img/section4/gres_data_flow_v2.png)
 *Figure 11: GRES data products and services*
 
 #### 4.2.6 ASC dataflow and data management
@@ -778,14 +780,14 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 | Data centre unit         | Vocabulary name               |          Comment            |
 |--------------------------|-------------------------------|-----------------------------|
-|         In Situ		   | IUPAC, CF-1.7, WMO category codes?  |                             |
-|         ARES     		   | CF1.7      |                             |
-|         CLU              |          CF-1.7        |                             |
+|         In Situ		   | IUPAC, CF-1.7                 |                             |
+|         ARES     		   | CF-1.7                        |                             |
+|         CLU              |          CF-1.7               |                             |
 |		  ACCESS           | Defined by primary repository |                             |
-|         ASC              | 		?				       |  			                 |
-|		  GRES             | 		?				   |  				             |
+|         ASC              | 		CF-1.7				   |  			                 |
+|		  GRES             | 		CF-1.7				   |  				             |
 
-*Table 16: List of vocabularies used July 2019*
+*Table 16: List of vocabularies*
 
 #### 4.3.2 Metadata standards and meta data services
 
@@ -880,7 +882,7 @@ The table shows the data access protocols July 2019.
 |         CLU              |          netCDF              |                 http://cloudnet.fmi.fi                                                                                                                               |              HTTP               | No                                    |
 |		  ACCESS (data portal)          | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |               HTTP      	       | For some data                         |
 |         ASC              | netCDF (data conversion by 2020)			      |  				https://data.eurochamp.org/																	                                                         |       		 HTTP		       | For some data                         |
-|		  GRES             | netCDF (data conversion by 2021)			  |  				https://en.aeris-data.fr/																	                                                         |       				 FTP      | No                                     |
+|		  GRES             | netCDF (data conversion by 2021)			  |  				https://gres.aeris-data.fr																	                                                         |       				 FTP      | No                                     |
 |		  ACCESS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa																                                                         |       				 FTP      | No                                     |
 
 *Table 20: Data formats and access protocols*
@@ -922,8 +924,6 @@ As regards ARES unit, all the characteristics of the LIDAR instrument configurat
 
 Availability of data can vary between the different data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
-The table shows the data and software usage licence July 2019.
-
 | Data centre unit         |          Data licence                 |  Comment     |
 |--------------------------|---------------------------------------|--------------|
 |         In Situ		   |          To be decided                |              |
@@ -933,15 +933,17 @@ The table shows the data and software usage licence July 2019.
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
 
-*Table 21: Licences*
+*Table 21: Data licences*
 
 | Responsible data centre unit         |          Software licence    |  Software link                                                        |
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
 |         In Situ		               |       None                   |     [EBAS IO](https://git.nilu.no/ebas/ebas-io/wikis/home)            |
 |         ARES     		               |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
 |	CLU					|	MIT		|	[CloudnetPy](https://github.com/tukiains/cloudnetpy) 		|
+|	ASC					|	None		|	None 		|
+|	GRES				|	None		|	None 		|
 
-*Table 22: Software*
+*Table 22: Software licences*
 
 ## 5. Allocation of resources
 
