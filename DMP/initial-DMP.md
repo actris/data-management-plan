@@ -1,8 +1,3 @@
-<center>
-<img src="https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/new-draft-logo.png" alt="draft">
-<img src="https://www.actris.eu/Portals/46/Images/Logos/logo-actris_new_140.png?ver=2015-06-08-141001-817" alt="ACTRIS logo">
-</center>
-
 # Data Management plan for ACTRIS - Aerosol, Clouds and Trace Gases Research InfraStructure
 
 # Table of contents
@@ -19,24 +14,26 @@
   * [3.5. ACTRIS Atmospheric simulation chamber data centre unit (ASC)](#35-actris-atmospheric-simulation-chamber-data-centre-unit-asc)
   * [3.6. ACTRIS data and services (ACCESS)](#36-actris-data-and-services-access)
 * [4. Data Management at the ACTRIS data centre](#4-Data-Management-at-the-ACTRIS-data-centre)
-  * [4.1 Introduction and overview of ACTRIS Data Management architecture](#41-introduction-and-overview-of-actris-data-management-architecture)
-    * [4.1.1 ACCESS role and data management](#411-access-role-and-data-management)
-	* [4.1.2 In-Situ dataflow and data management](#412-in-situ-dataflow-and-data-management)
-	  * [4.1.2.1 Online In Situ Data Production](#412-in-situ-dataflow-and-data-management)
-	  * [4.1.2.2 Offline In Situ Data Production](#4122-offline-in-situ-data-production)
-	* [4.1.3 ARES dataflow and data management](#413-ares-dataflow-and-data-management)
-	* [4.1.4 CLU dataflow and data management](#414-clu-dataflow-and-data-management)
-	* [4.1.5 GRES dataflow and data management](#415-gres-dataflow-and-data-management)
-	* [4.1.6 ASC dataflow and data management](#416-asc-dataflow-and-data-management)
-  * [4.2 Findable: Making data findable, including provisions for metadata [FAIR data]](#42-findable-making-data-findable-including-provisions-for-metadata-fair-data)
-	* [4.2.1 ACTRIS variable names and implementation of vocabulary](#421-actris-variable-names-and-implementation-of-vocabulary)
-	* [4.2.2 Metadata standards and meta data services](#422-metadata-standards-and-meta-data-services)
-	* [4.2.3 Traceability of ACTRIS data](#423-traceability-of-actris-data)
-	* [4.2.4: Version control of ACTRIS (meta)data](#424-version-control-of-actris-metadata)
-  * [4.3 Accessible: Making data openly accessible [FAIR data]](#43-accessible-making-data-openly-accessible-fair-data)
-	* [4.3.1 ACTRIS data access and access protocols](#431-actris-data-access-and-access-protocols)
-  * [4.4 Interoperable: Making data interoperable [FAIR data]](#44-interoperable-making-data-interoperable-fair-data)
-  * [4.5 Reuseable: Increase data re-use [FAIR data]](#45-reuseable-increase-data-re-use-fair-data)
+  * [4.1 ACTRIS access and service policy](#41-actris-access-and-service-policy)
+  * [4.2 Introduction and overview of ACTRIS Data Management architecture](#42-introduction-and-overview-of-actris-data-management-architecture)
+    * [4.2.1 ACCESS role and data management](#421-access-role-and-data-management)
+	* [4.2.2 In-Situ dataflow and data management](#422-in-situ-dataflow-and-data-management)
+	  * [4.2.2.1 General Characteristics of In Situ Data Production](#4221-general-characteristics-of-in-situ-data-production)
+	  * [4.2.2.2 Online In Situ Data Production](#4222-online-in-situ-data-production)
+	  * [4.2.2.3 Offline In Situ Data Production](#4223-offline-in-situ-data-production)
+	* [4.2.3 ARES dataflow and data management](#423-ares-dataflow-and-data-management)
+	* [4.2.4 CLU dataflow and data management](#424-clu-dataflow-and-data-management)
+	* [4.2.5 GRES dataflow and data management](#425-gres-dataflow-and-data-management)
+	* [4.2.6 ASC dataflow and data management](#426-asc-dataflow-and-data-management)
+  * [4.3 Findable: Making data findable, including provisions for metadata [FAIR data]](#43-findable-making-data-findable-including-provisions-for-metadata-fair-data)
+	* [4.3.1 ACTRIS variable names and implementation of vocabulary](#431-actris-variable-names-and-implementation-of-vocabulary)
+	* [4.3.2 Metadata standards and meta data services](#432-metadata-standards-and-meta-data-services)
+	* [4.3.3 Traceability of ACTRIS data](#433-traceability-of-actris-data)
+	* [4.3.4: Version control of ACTRIS (meta)data](#434-version-control-of-actris-metadata)
+  * [4.4 Accessible: Making data openly accessible [FAIR data]](#44-accessible-making-data-openly-accessible-fair-data)
+	* [4.4.1 ACTRIS data access and access protocols](#441-actris-data-access-and-access-protocols)
+  * [4.5 Interoperable: Making data interoperable [FAIR data]](#45-interoperable-making-data-interoperable-fair-data)
+  * [4.6 Reuseable: Increase data re-use [FAIR data]](#46-reuseable-increase-data-re-use-fair-data)
 * [5. Allocation of resources](#5-Allocation-of-resources)
 * [6. Data security](#6-data-security)
   * [6.1 Archiving and preservation of In-Situ data](#61-archiving-and-preservation-of-in-situ-data)
@@ -499,10 +496,10 @@ ACTRIS data and products should be findable, accessible, interoperable and reusa
 ### 4.1 ACTRIS access and service policy
 
 ACTRIS is offering access to a large variety of high-quality services offered by ACTRIS facilities, to a wide range of users and needs, for scientific, technological and innovation-oriented usage. Accordingly, ACTRIS has developed an [access strategy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467) to give clear guidelines and describe the general principles for access provided by ACTRIS to Users.
-When the ACTRIS services are in operation, the Users will access the ACTRIS services through a single entry point, as shown in Figure XX below.
+When the ACTRIS services are in operation, the Users will access the ACTRIS services through a single entry point, as shown in Figure 4 below.
 
 ![Overview of ACTRIS Access strategy](img/section4/ACTRIS_IAC09_principles_access_to_NF_draft.jpg)
-Figure 4: Overview of ACTRIS Access strategy
+*Figure 4: Overview of ACTRIS Access strategy*
 
 Virtual access is wide access to ACTRIS data and digital tools and does not require a selection process. Virtual access to ACTRIS data and digital tools is free access, and is given in compliance with the [ACTRIS data policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.3_M30.pdf?ver=2018-10-29-152439-550) for data from ACTRIS labelled NFs. Competitive access is Physical or Remote access to the ACTRIS Facilities, including access to specific services offered by the Data Centre and shall be managed by the SAMU and requires a selection process. This can e.g. be data centre services for comprehensiv research campaigns or large volume data delivery tailored for specific purposes.   
 
@@ -522,7 +519,7 @@ ACTRIS Data Management is handled by the individual data centre unit:
 An overview of the elements in the data flow is shown in Figure 5.
 
 ![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components_v3.jpg)
-Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units
+*Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units*
 
 
 #### 4.2.1 ACCESS role and data management
@@ -540,10 +537,10 @@ All data centre units are providing metadata, and interfaces for access to data 
 The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom web services, but currentyl machine-to-machine access is not possible. Implementation of ASC is under development and will be ready during 2020, and in the future, the aim is to harvest all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data using ISO19115 with the WIS metadata profile enabling machine-to-machine access of ACTRIS metadata. 
 
 ![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg)
-Figure 6: Overview of the tasks of the ACCESS unit 
+*Figure 6: Overview of the tasks of the ACCESS unit*
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
-Figure 7: Technical architecture of the ACTRIS meta data portal
+*Figure 7: Technical architecture of the ACTRIS meta data portal*
 
 As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/initial-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
@@ -567,7 +564,7 @@ The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (l
 * **Offline observations**: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
 
 ![ACTRIS In Situ Simplified Workflow](img/workflows/20191126b_ACTRIS_EBAS_Data_Flowchart_simplified.png)
-Figure 7: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.
+*Figure 8: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.*
 
 
 If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow.
@@ -726,7 +723,7 @@ The submission of the data to ACTRIS ARES requires that level 0 data are in a sp
 *Table 15: ARES Data Products Availability*
 
 ![ARES Data Products Availability](img/section4/Current_View_of_ARES_Unit_rev.jpg)
-* Figure 9: ARES Data Products Availability*
+*Figure 9: ARES Data Products Availability*
 
 #### 4.2.4 CLU dataflow and data management
 
@@ -770,10 +767,10 @@ Data provided in GRES unit are L2 and L3 data produced from L0 and L1 data proce
 
 #### 4.2.6 ASC dataflow and data management
 
-Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure XX). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
+Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure 12). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
-*Figure 11: current overview of ASC unit*
+*Figure 12: current overview of ASC unit*
 
 ### 4.3 Findable: Making data findable, including provisions for metadata [FAIR data]
 
@@ -1030,11 +1027,11 @@ The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data port
 
 ![ACTRIS In situ data centre unit workflow diagram](img/workflows/20191126_ACTRIS_EBAS_Data_Flowchart_full.png)
 
-*Figure XX: ACTRIS In Situ DC unit data workflow, describing the interaction between NFs, TCs, and DC In Situ in data production.*
+*Figure 13: ACTRIS In Situ DC unit data workflow, describing the interaction between NFs, TCs, and DC In Situ in data production.*
 
 ![ACTRIS In situ data review workflow](img/workflows/20191126_ACTRIS_EBAS_Data_Flowchart_data_QC_review.png)
 
-*Figure XX: ACTRIS In Situ DC unit data review workflow, a sub-workflow to the In Situ main data production workflow.*
+*Figure 14: ACTRIS In Situ DC unit data review workflow, a sub-workflow to the In Situ main data production workflow.*
 
 #### A3.2 Workflow Implementation Tables, by instrument type
 
