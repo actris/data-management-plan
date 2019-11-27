@@ -57,6 +57,8 @@
   * [Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit](#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
   * [Appendix 9: Format and external data sources for level 3 variables](#appendix-9-format-and-external-data-sources-for-level-3-variables)
   * [Appendix 10: ReOBS workflow diagram](#appendix-10-ReOBS-workflow-diagram)
+
+
 ## 1.  Introduction to The ACTRIS Data Centre and ACTRIS Data Management Plan
 
 The Aerosol, Clouds and Trace Gases Research Infrastructure (ACTRIS) focuses on producing high-quality data for the understanding of short-lived atmospheric constituents and their interactions. These constituents have a residence time in the atmosphere from hours to weeks. The short lifetimes make their concentrations highly variable in time and space and involve processes occurring on very short timescales. These considerations separate the short-lived atmospheric constituents from long-lived greenhouse gases, and calls for a four dimensional distributed observatory. The Research Infrastructure (RI) ACTRIS is the pan-European RI that consolidates activities amongst European partners for observations of aerosols, clouds, and trace gases and for understanding of the related atmospheric processes, as well as to provide RI services to wide user groups (See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/2018/ACTRIS%20Stakeholder%20Handbook%202018.pdf?ver=2019-03-08-140842-873) for more information). 
@@ -543,7 +545,7 @@ As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCE
 |        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |		Comment						    |
 |---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
 | In Situ                   |              31th of May  |               31th of June                      |			hourly	     |										|
-| GRES                      |     Not applicable        |      Not applicable                             |  					 |	There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
+| GRES                      |     Within 4 months after measurement        |      Within 4 months after measurement                              |  					 |	There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
 | ARES                      |                           |                                                 |                      |										|
 | ASC                       |                           |                                                 |  Not applicable      |										|
 | CLU                       |                           |                                                 |                      |										|
