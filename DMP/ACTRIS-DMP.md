@@ -1205,6 +1205,7 @@ Meteorological Base Parameters workflow implementation tables to be added.
 
 ### Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit
 ![ACTRIS ACCESS data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section3/DMP-DataAccess-MetNo-BSC.png)
+These will be further developed in the implementation phase, and more level 3 data will be added to the ACCESS unit.
 
 ### Appendix 9: Format and external data sources for level 3 variables
 
