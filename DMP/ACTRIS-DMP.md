@@ -16,7 +16,7 @@
 * [4. Data Management at the ACTRIS data centre](#4-Data-Management-at-the-ACTRIS-data-centre)
   * [4.1 ACTRIS access and service policy](#41-actris-access-and-service-policy)
   * [4.2 Introduction and overview of ACTRIS Data Management architecture](#42-introduction-and-overview-of-actris-data-management-architecture)
-    * [4.2.1 DVAS role and data management](#421-dvas-role-and-data-managementt)
+    * [4.2.1 DVAS role and data management](#421-dvas-role-and-data-management)
 	* [4.2.2 In-Situ dataflow and data management](#422-in-situ-dataflow-and-data-management)
 	  * [4.2.2.1 General Characteristics of In Situ Data Production](#4221-general-characteristics-of-in-situ-data-production)
 	  * [4.2.2.2 Online In Situ Data Production](#4222-online-in-situ-data-production)
