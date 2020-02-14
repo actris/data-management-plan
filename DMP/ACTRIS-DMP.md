@@ -12,11 +12,11 @@
   * [3.3. ACTRIS Cloud remote sensing data centre unit (CLU)](#33-actris-cloud-remote-sensing-data-centre-unit-clu)
   * [3.4. ACTRIS trace gases remote sensing data centre unit (GRES)](#34-actris-trace-gases-remote-sensing-data-centre-unit-gres)
   * [3.5. ACTRIS Atmospheric simulation chamber data centre unit (ASC)](#35-actris-atmospheric-simulation-chamber-data-centre-unit-asc)
-  * [3.6. ACTRIS data and services (ACCESS)](#36-actris-data-and-services-access)
+  * [3.6. ACTRIS Data Discovery, Virtual Access and Services (DVAS)](#36-actris-data-and-services-access)
 * [4. Data Management at the ACTRIS data centre](#4-Data-Management-at-the-ACTRIS-data-centre)
   * [4.1 ACTRIS access and service policy](#41-actris-access-and-service-policy)
   * [4.2 Introduction and overview of ACTRIS Data Management architecture](#42-introduction-and-overview-of-actris-data-management-architecture)
-    * [4.2.1 ACCESS role and data management](#421-access-role-and-data-management)
+    * [4.2.1 DVAS role and data management](#421-access-role-and-data-management)
 	* [4.2.2 In-Situ dataflow and data management](#422-in-situ-dataflow-and-data-management)
 	  * [4.2.2.1 General Characteristics of In Situ Data Production](#4221-general-characteristics-of-in-situ-data-production)
 	  * [4.2.2.2 Online In Situ Data Production](#4222-online-in-situ-data-production)
@@ -41,7 +41,7 @@
   * [6.3 Archiving and preservation of CLU data](#63-archiving-and-preservation-of-clu-data)
   * [6.4 Archiving and preservation of GRES data](#64-archiving-and-preservation-of-gres-data)
   * [6.5 Archiving and preservation of ASC data](#65-archiving-and-preservation-of-asc-data)
-  * [6.6 Archiving and preservation of ACCESS data](#66-archiving-and-preservation-of-access-data)
+  * [6.6 Archiving and preservation of DVAS metadata](#66-archiving-and-preservation-of-dvas-metadata)
 * [7. Ethical aspects](#7-Ethical-aspects)
 * [8. Appendix](#8-Appendix)
   * [Appendix 1: List of ACTRIS variables from observational platforms and associated recommended methodology](#appendix-1-list-of-actris-variables-from-observational-platforms-and-associated-recommended-methodology)
@@ -51,7 +51,7 @@
   * [Appendix 5: ACTRIS Cloud remote sensing data centre unit (CLU) data life cycle and workflow diagram](#appendix-5-actris-cloud-remote-sensing-data-centre-unit-clu-data-life-cycle-and-workflow-diagram)
   * [Appendix 6: ACTRIS trace gases remote sensing data centre unit (GRES) data life cycle and workflow diagram](#appendix-6-actris-trace-gases-remote-sensing-data-centre-unit-gres-data-life-cycle-and-workflow-diagram)
   * [Appendix 7: ACTRIS Atmospheric simulation chamber data centre unit (ASC) data life cycle and workflow diagram](#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram)
-  * [Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit](#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
+  * [Appendix 8: Data lifecycle and workflow for DVAS Data Centre Unit](#appendix-8-data-lifecycle-and-workflow-for-DVAS-data-centre-unit)
   * [Appendix 9: Format and external data sources for level 3 variables](#appendix-9-format-and-external-data-sources-for-level-3-variables)
   * [Appendix 10: ReOBS workflow diagram](#appendix-10-ReOBS-workflow-diagram)
 
@@ -76,9 +76,9 @@ ACTRIS is a unique RI improving both the quality of and access to atmospheric ob
 
 > The mission of the ACTRIS Data Centre (DC) is to compile, archive and provide access to well documented and traceable ACTRIS measurement data and data products, including digital tools for data quality control, analysis, visualisation, and research. As a tool for science, the highest priorities for the ACTRIS DC are to maintain and increase the availability of ACTRIS data and data products relevant to climate and air quality research for all interested users.
 
-The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and other user groups with free and open access to all ACTRIS  data, complemented with access to innovative and mature data products, together with tools for quality assurance (QA), data analysis and research. ACTRIS data and products should be **f**indable, **a**ccessible, **i**nteroperable and **r**eusable (FAIR), and the data centre work towards fulfilling the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples). The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC will be organized in 6 Units, with clear links and procedures for interaction between the data centre Units, National Facilities (NFs) and topical centres (TCs). The ACTRIS DC will be coordinated by the ACCESS unit leader and all data is linked through the [ACTRIS data portal](http://actris.nilu.no/) serving as the access point to all data and related information. The units and short names are:
+The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and other user groups with free and open access to all ACTRIS  data, complemented with access to innovative and mature data products, together with tools for quality assurance (QA), data analysis and research. ACTRIS data and products should be **f**indable, **a**ccessible, **i**nteroperable and **r**eusable (FAIR), and the data centre work towards fulfilling the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples). The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC will be organized in 6 Units, with clear links and procedures for interaction between the data centre Units, National Facilities (NFs) and topical centres (TCs). The ACTRIS DC will be coordinated by the DVAS unit leader and all data is linked through the [ACTRIS data portal](http://actris.nilu.no/) serving as the access point to all data and related information. The units and short names are:
 
-* [ACTRIS data and services access unit (ACCESS)](http://actris.nilu.no/)
+* [ACTRIS Data Discovery, Virtual Access and Services unit (DVAS)](http://actris.nilu.no/)
 * [ACTRIS In situ data centre unit (In-Situ)](http://ebas.nilu.no/)
 * [ACTRIS Aerosol remote sensing data centre unit (ARES)](https://data.earlinet.org/)
 * [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)
@@ -92,7 +92,7 @@ During the ACTRIS implementation phase (expected 2020-2024), the Central Facilit
 
 | Name of Central Facility and associated Unit                                | Hosting institution and contribution | Main activities                                                   |
 |--------------------------------------------------------------|--------------------------------------|--------------------------------------------------------------------|                                    
-| [ACTRIS data and services access unit (ACCESS)](http://actris.nilu.no/)                | NILU (lead), CNRS, MetNo, BSC        | ACTRIS web interface for data, services and tools, called “The ACTRIS Data Centre”. Main activities are discovery and access to ACTRIS data and data products, digital tools provided by the topical centres and the data centre units, documentation, access to software and tools for data production. Offer visualisation of ACTRIS data products. Data production of selected Level 3 data and synergy data products. The data centre will offer bridge to external data bases and sources.|
+| [ACTRIS Data Discovery, Virtual Access and Services unit (DVAS)](http://actris.nilu.no/)                | NILU (lead), CNRS, MetNo, BSC        | ACTRIS web interface for data, services and tools, called “The ACTRIS Data Centre”. Main activities are discovery and access to ACTRIS data and data products, digital tools provided by the topical centres and the data centre units, documentation, access to software and tools for data production. Offer visualisation of ACTRIS data products. Data production of selected Level 3 data and synergy data products. The data centre will offer bridge to external data bases and sources.|
 | [ACTRIS In-Situ data centre unit (In-Situ)](http://ebas.nilu.no/)                   | NILU                                 | Data curation service for in situ data: all aerosol, cloud and trace gas in situ data. This comprises inclusion of data in the data base EBAS, archiving and documentation. Support for centralized data processing, harmonization, traceability, quality control and data product generation. Training and online tools for QA, QC. The activity enables RRT and NRT delivery.|
 | [ACTRIS Aerosol remote sensing data centre unit (ARES)](https://data.earlinet.org/)		   | CNR (lead), CNRS					  |	Aerosol remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data archiving in EARLINET DB, data provision and documentation. The activity enables RRT and NRT delivery. Tutorial activities. Production of level 3 data for climatological analysis and new products. |	
 | [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)		   | FMI								  |	Data curation service for cloud remote sensing data. Support for centralized cloud remote sensing data processing, traceability, harmonization, automated quality control and product generation, and data archiving. Enables RRT and NRT delivery. Production of level 3 data for NWP model evaluation. | 
@@ -425,12 +425,12 @@ communities. Many of these parameters are incorporated in air quality and climat
 
 Detail on the data life cycle andA preliminary version of the data workflow (workflow diagrams for data production) for Atmospheric Simulation chamber data can be found in [Appendix 7](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-7-actris-atmospheric-simulation-chamber-data-centre-unit-asc-data-life-cycle-and-workflow-diagram). The definition of this workflow is still under progress and a finalized version will be available in 2020.   
 
-### 3.6 ACTRIS data and services (ACCESS)
-ACTRIS Data Center is a distributed data centre, and ACTRIS data and services access unit (ACCESS) is responsible for organising access to measurement data from the topic data centre units, and documentation of procedures as support to observational and exploratory NFs. The ACCESS unit provides the ACTRIS web interface for data download, services and digital tools as well as performing data production of Level 3 data, and synergy data products.
+### 3.6 ACTRIS Data Discovery, Virtual Access and Services (DVAS)
+ACTRIS Data Center is a distributed data centre, and ACTRIS Data Discovery, Virtual Access and Services unit (DVAS) is responsible for organising access to measurement data from the topic data centre units, and documentation of procedures as support to observational and exploratory NFs. The DVAS unit provides the ACTRIS web interface for data download, services and digital tools as well as performing data production of Level 3 data, and synergy data products.
 
-The ACTRIS access web interface is called “The ACTRIS Data Centre” and incldues a meta data catalogue. The main activities are **Discovery and access** to ACTRIS data and data products, overview of digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data and synergy data products. The data centre also offers **bridge to external data bases and sources**.
+The ACTRIS Data Discovery, Virtual Access and Services (DVAS) web interface is called “The ACTRIS Data Centre” and incldues a searchable metadata catalogue as well as other services. The main activities are **Discovery and access** to ACTRIS data and data products, overview of digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data and synergy data products. The data centre also offers **bridge to external data bases and sources**.
 
-The ACTRIS ACCESS unit offer acecss to elaborated aerosol, cloud and trace gas data products, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources. These can be produced within the ACCESS unit, topic data centre units, topic centres, or extrnal contributions. The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx), and consiste of three main categories:
+The ACTRIS DVAS unit offer acecss to elaborated aerosol, cloud and trace gas data products, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources. These can be produced within the DVAS unit, topic data centre units, topic centres, or extrnal contributions. The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx), and consiste of three main categories:
 
 	I. Level 3 data solely based on data from ACTRIS observational platforms
 
@@ -482,12 +482,12 @@ Data from ACTRIS is contributing to better prediction of the behavior of the atm
 
 ACTRIS data are very diverse, covering numerous measurement methodologies resulting in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC is organized in 6 Units.
 
-The ACCESS unit utilize data from all the 5 topical DC units, and produce level 3 products combining various data and also models prodcuibf new and value added data producst. Accordingly, the ACCESS data utility can cover all the more specific data utility sections described in sections 3.1 – 3.5. 
+The DVAS unit utilize data from all the 5 topical DC units, and produce level 3 products combining various data and also models prodcuibf new and value added data producst. Accordingly, the DVAS data utility can cover all the more specific data utility sections described in sections 3.1 – 3.5. 
 
 
 #### Outline of data life cycle (workflow and workflow diagram)
 
-Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in [Appendix 8](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-8-data-lifecycle-and-workflow-for-access-data-centre-unit)
+Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in Detail on the data life cycle and workflow (workflow diagrams for data production) for level 3 data can be found in [Appendix 8](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-8-data-lifecycle-and-workflow-for-dvas-data-centre-unit)
 
 ## 4. Data Management at the ACTRIS data centre
 
@@ -515,7 +515,7 @@ ACTRIS Data Management is handled by the individual data centre unit:
 * ACTRIS Cloud remote sensing data centre unit - CLU
 * ACTRIS Trace gases remote sensing data centre unit - GRES
 * ACTRIS Atmospheric simulation chamber data centre unit – ASC
-* ACTRIS data and service access unit - ACCESS
+* ACTRIS Data Discovery, Virtual Access and Services unit - DVAS
 
 An overview of the elements in the data flow is shown in Figure 5.
 
@@ -523,27 +523,27 @@ An overview of the elements in the data flow is shown in Figure 5.
 *Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units*
 
 
-#### 4.2.1 ACCESS role and data management
+#### 4.2.1 DVAS role and data management
 
-Access to quality controlled data from the topic data centre units is organised by the ACTRIS data and service access unit (ACCESS). The ACCESS unit includes a frequently updated metadata catalogue for identification of data, and links to measurement data stored by the topical data centre units. ACCESS also produces level 3 data, and organizes the catalogue of ACTRIS level 3 data, produced either by the topical data centre units or within ACCESS. ACCESS is structuring and compiling access to services, tools and documentation, and maintaining and further developing the web interface called “ACTRIS Data Centre” (currently https://actris.nilu.no). 
+Access to quality controlled data from the topic data centre units is organised by the ACTRIS Data Discovery, Virtual Access and Services unit (DVAS). The DVAS unit includes a frequently updated metadata catalogue for identification of data, and links to measurement data stored by the topical data centre units. DVAS also produces level 3 data, and organizes the catalogue of ACTRIS level 3 data, produced either by the topical data centre units or within DVAS. DVAS is structuring and compiling access to services, tools and documentation, and maintaining and further developing the web interface called “ACTRIS Data Centre” (currently https://actris.nilu.no). 
 
 The tasks are summarized in [Figure 5](img/section4/overview_of_actris_data_centre_components_v3.jpg) above and include the organization of ACTRIS level 3 data. 
 
 All data centre units are providing metadata, and interfaces for access to data and metadata indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2020. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The metadata catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
 
-[Figure 7](img/section4/overview_current_architecture_v2.png) shows the current technical architecture and the interface used between the topical data center units, as well as ACCESS and the ACTRIS Data Centre web interface with access for users. 
-
-- We use ISO19115 with WIS profile as starting point for metadata exchange. The profile will be extended with ACTRIS specific metadata.
+[Figure 7](img/section4/overview_current_architecture_v2.png) shows the current technical architecture and the interface used between the topical data center units, as well as DVAS and the ACTRIS Data Centre web interface with access for users.
 
 The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom web services, but currentyl machine-to-machine access is not possible. Implementation of ASC is under development and will be ready during 2020, and in the future, the aim is to harvest all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data using ISO19115 with the WIS metadata profile enabling machine-to-machine access of ACTRIS metadata. 
 
+There is also a new version of the ACTRIS [metadata catalog](https://dev-actris-md.nilu.no/version) being implemented, with import and access to metadata via a REST API, which allows for machine-to-machine access of data and metadata. The ISO 19115 with [WIS profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf) is used a starting point for metadata exchange. The schema is also extended with ACTRIS specific metadata. Currently it will be serving "discovery" metadata, but in the future the aim is to work on expanding this to "use" metadata. Documention for the new REST API and metadata catalog is [here](https://github.com/actris/actris-api-docs/blob/master/docs/api-docs.md).
+
 ![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg)
-*Figure 6: Overview of the tasks of the ACCESS unit*
+*Figure 6: Overview of the tasks of the DVAS unit*
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
 *Figure 7: Technical architecture of the ACTRIS meta data portal*
 
-As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), ACCESS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
+As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), DVAS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
 ##### Overview of when data is made available (level 2 data)
 
@@ -579,7 +579,7 @@ ACTRIS In situ concretises the ACTRIS data levels as follows:
 
 ##### 4.2.2.1 General Characteristics of In Situ Data Production
 
-All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through ACCESS. In Situ produces selected level 3 products from these ([Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables)).
+All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived in the In Situ data repository, hosted in NILU’s EBAS database, and made available through DVAS. In Situ produces selected level 3 products from these ([Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables)).
 
 As a general rule in ACTRIS in situ data QC, only data subject to instrument malfunctions are flagged as invalid. Data with episodes, local contamination, etc. are flagged as such, but not as invalid, to avoid limiting data use only to certain use cases. Data level designations are used to distinguish between data having received automatic QC, and data having undergone manual QC. When calculating time averages in data production, any non-invalidating flags occurring in the source data during the averaging period are copied to the average result, while invalid data points in the source data are excluded from the average. Temporal coverage flags are applied to the average.
 
@@ -760,7 +760,7 @@ processed elsewhere. FMI only receives the calibrated and processed Level 2 MWR 
 After receiving and processing the raw data (and receiving MWR files), we generate all Level 2 cloud products with our in-house
 processing suite. All processed data are stored in netCDF files, which are archived on FMIs data servers. From the
 processed files, we generate a metadata database which is synchronized with the master metadata repository
-hosted by the ACCESS unit. All of our metadata is available as a JSON format via restful http API.
+hosted by the DVAS unit. All of our metadata is available as a JSON format via restful http API.
 The actual metadata standard is yet to be decided, but it must comply with the netCDF conventions because
 we use the netCDF file format. All data files encounter regular back-ups.
 
@@ -793,18 +793,18 @@ Data provided in ASC unit are L2 and L3 data produced These data are produced fr
 
 #### 4.3.1 ACTRIS variable names and implementation of vocabulary
 
-Generally, ACTRIS data set names aims to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the ACCESS unit (ACTRIS Data Centre web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
+Generally, ACTRIS data set names aims to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the DVAS unit (ACTRIS Data Centre web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
 
 ASC unit has developed a user-friendly web interface which includes searching tools based on the metadata catalogue for the three pillars, DASCS, LAR and LADP. Relevant searching criteria have been defined for each pillar. 
 
-Standard vocabulary might not always be used, but in all cases they should be mapped to standard vocabulary if existing by the DC ACCESS unit.
+Standard vocabulary might not always be used, but in all cases they should be mapped to standard vocabulary if existing by the DC DVAS unit.
 
 | Data centre unit         | Vocabulary name               |          Comment            |
 |--------------------------|-------------------------------|-----------------------------|
 |         In Situ		   | IUPAC, CF-1.7                 |                             |
 |         ARES     		   | CF-1.7                        |                             |
 |         CLU              |          CF-1.7               |                             |
-|		  ACCESS           | Defined by primary repository |                             |
+|		  DVAS           | Defined by primary repository |                             |
 |         ASC              | 		CF-1.7				   |  			                 |
 |		  GRES             | 		CF-1.7				   |  				             |
 
@@ -812,13 +812,13 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 #### 4.3.2 Metadata standards and meta data services
 
-ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The ACCESS unit aims at providing discovery metadata in a common format for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. A decision about the standard is not taken, and under consideration. In any case, exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data. The present situation is shown in Table (refer to the one at the end of the section). 
+ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The DVAS unit aims at providing discovery metadata in a common format for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. A decision about the standard is not taken, and under consideration. In any case, exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data. The present situation is shown in Table (refer to the one at the end of the section). 
 
-Future efforts will further develop the system shown in Figure 7 and make it possible for the ACCESS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data centre unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
+Future efforts will further develop the system shown in Figure 7 and make it possible for the DVAS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data centre unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
 
 There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Centre will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
-ACTRIS aiming at following the INSPIRE directive for metadata formatting. Present standard(s) for metadata is at the ACCESS unit level. A decision is needed if data centre units should provide metadata according to specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
+ACTRIS aiming at following the INSPIRE directive for metadata formatting. Present standard(s) for metadata is at the DVAS unit level. A decision is needed if data centre units should provide metadata according to specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
 
 Tables below show the status by July 2019.
 
@@ -827,7 +827,7 @@ Tables below show the status by July 2019.
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
 |         CLU              |          JSON via REST API     |  http://devcloudnet.fmi.fi/api/                                                                 |       To be decided                      |
-|	  ACCESS           	   | To be decided              |  None																		              |       To be decided             |
+|	  DVAS           	   | To be decided              |  None																		              |       To be decided             |
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
 
@@ -863,7 +863,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 |         In Situ          | To be decided                  |                                                                                         |                                 |
 |         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
 |         CLU              | To be decided                  |  None                                                                                   |       To be decided             |
-|	      ACCESS           | Defined by primary repository  |  None																		              |       To be decided             |
+|	      DVAS           | Defined by primary repository  |  None																		              |       To be decided             |
 |         ASC              | To be decided					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
 
@@ -901,10 +901,10 @@ The table shows the data access protocols.
 |         In Situ		   |          netCDF, NasaAmes, CSV, XML              |                 http://ebas.nilu.no/                                                                                                                                 |              HTTP               | No                                    | 
 |         ARES     		   |          netCDF              |                 http://data.earlinet.org/                                                                                                                          |              HTTP               | Yes                                   |
 |         CLU              |          netCDF              |                 http://cloudnet.fmi.fi                                                                                                                               |              HTTP               | No                                    |
-|		  ACCESS (data portal)          | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |               HTTP      	       | For some data                         |
+|		  DVAS (data portal)          | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |               HTTP      	       | For some data                         |
 |         ASC              | netCDF (data conversion by 2020)			      |  				https://data.eurochamp.org/																	                                                         |       		 HTTP		       | For some data                         |
 |		  GRES             | netCDF (data conversion by 2021)			  |  				https://gres.aeris-data.fr																	                                                         |       				 FTP      | No                                     |
-|		  ACCESS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa																                                                         |       				 FTP      | No                                     |
+|		  DVAS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa																                                                         |       				 FTP      | No                                     |
 
 *Table 20: Data formats and access protocols*
 
@@ -916,7 +916,7 @@ In general, for all data that requires username and password, a Single-Sign-On s
 
 In all cases where access is restricted, information on how to access the data should be available through the metadata, in order to facilitate machine to machine interaction.
 
-If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) will be available through open access repositories like GitHub. *A open source licence for software should be encouraged and applied when possible. All software related to ACTRIS data should aim at following the practice of open access if possible. For software related to access of level 2 data, the ACCESS unit is responsible together with the data centre units. To be discussed: For level 0 and 1, the topical centres and/or data centre unit are responsible for providing access to software related to ACTRIS level 0 and level 1.*
+If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) will be available through open access repositories like GitHub. *A open source licence for software should be encouraged and applied when possible. All software related to ACTRIS data should aim at following the practice of open access if possible. For software related to access of level 2 data, the DVAS unit is responsible together with the data centre units. To be discussed: For level 0 and 1, the topical centres and/or data centre unit are responsible for providing access to software related to ACTRIS level 0 and level 1.*
 
 There are valuable and contributing networks to ACTRIS e.g. EMEP, GAW, EARLINET, and level 3 products covering bridge to external data bases and use of these data in combined products. The implementation and strategic and technical contributions of this is under development.
 
@@ -950,7 +950,7 @@ Availability of data can vary between the different data centre units. As an exa
 |         In Situ		   |          To be decided                |              |
 |         ARES     		   |          To be decided                |              |
 |         CLU              |          To be decided                |              |                                                          
-|		  ACCESS           | Will be defined by primary repository |              | 
+|		  DVAS           | Will be defined by primary repository |              | 
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
 
@@ -1018,9 +1018,9 @@ Since the Eurochamp H2020 project, data from simulation chambers are managed by 
 
 The ASC infrastructure is maintained by AERIS with long-term commitment for archiving and preservation.
 
-### 6.6 Archiving and preservation of ACCESS data
+### 6.6 Archiving and preservation of DVAS metadata
 
-The ACCESS unit is providing access to ACTRIS data through the [ACTRIS data portal](https://actris.nilu.no/) using the ASP.NET (Web Forms) Framework 4.5 and Internet Information Services (ISS) web-server. The metadata is harvested from each individual data center unit, currently In Situ (EBAS), ARES (EARLINET), CLU (CLOUDNET) and GRES (NDACC), using custom harvesting routines triggered by cronjobs on an Ubuntu server running custom scripts written in Perl/Python. The metadata itself is stored on a Oracle database server, version 11.2.0.4. Versioning and revision control is managed using subversion (SVN). 
+The DVAS unit is providing access to ACTRIS data through the [ACTRIS data portal](https://actris.nilu.no/) using the ASP.NET (Web Forms) Framework 4.5 and Internet Information Services (ISS) web-server. The metadata is harvested from each individual data center unit, currently In Situ (EBAS), ARES (EARLINET), CLU (CLOUDNET) and GRES (NDACC), using custom harvesting routines triggered by cronjobs on an Ubuntu server running custom scripts written in Perl/Python. The metadata itself is stored on a Oracle database server, version 11.2.0.4. Versioning and revision control is managed using subversion (SVN). 
 
 ## 7. Ethical aspects
 
@@ -1203,9 +1203,9 @@ Meteorological Base Parameters workflow implementation tables to be added.
 ### Appendix 7: ACTRIS Atmospheric simulation chamber data centre unit (ASC) data life cycle and workflow diagram
 ![ACTRIS Atmospheric simulation chamber data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/atm_simulation_chamber_workflow.png)
 
-### Appendix 8: Data lifecycle and workflow for ACCESS Data Centre Unit
-![ACTRIS ACCESS data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section3/DMP-DataAccess-MetNo-BSC.png)
-These will be further developed in the implementation phase, and more level 3 data will be added to the ACCESS unit.
+### Appendix 8: Data lifecycle and workflow for DVAS Data Centre Unit
+![ACTRIS DVAS data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section3/DMP-DataAccess-MetNo-BSC.png)
+These will be further developed in the implementation phase, and more level 3 data will be added to the DVAS unit.
 
 ### Appendix 9: Format and external data sources for level 3 variables
 
