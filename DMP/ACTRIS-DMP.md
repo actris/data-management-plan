@@ -85,7 +85,7 @@ The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and oth
 * [ACTRIS trace gases remote sensing data centre unit (GRES)](https://en.aeris-data.fr/)
 * [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
-![Architecture of the ACTRIS Data Centre](img/ACTRIS_data_centre_elements_phase2_v2.jpg)
+![Architecture of the ACTRIS Data Centre](img/figures/figure2.png)
 *Figure 2: Architecture of the ACTRIS Data Centre*
 
 During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities will be constructed and their services tested. The ACTRIS Central Facilities host selection was a part of ACTRIS PPP, and the following consortium is selected to host the ACTRIS Data Centre, and the various units with services to data producers and data users.
@@ -519,7 +519,7 @@ ACTRIS Data Management is handled by the individual data centre unit:
 
 An overview of the elements in the data flow is shown in Figure 5.
 
-![ACTRIS Data Centre elements](img/section4/overview_of_actris_data_centre_components_v3.jpg)
+![ACTRIS Data Centre elements](img/figures/figure5.png)
 *Figure 5: Overview of ACTRIS Data Centre components, links and main activities for the various units*
 
 
@@ -527,7 +527,7 @@ An overview of the elements in the data flow is shown in Figure 5.
 
 Access to quality controlled data from the topic data centre units is organised by the ACTRIS Data Discovery, Virtual Access and Services unit (DVAS). The DVAS unit includes a frequently updated metadata catalogue for identification of data, and links to measurement data stored by the topical data centre units. DVAS also produces level 3 data, and organizes the catalogue of ACTRIS level 3 data, produced either by the topical data centre units or within DVAS. DVAS is structuring and compiling access to services, tools and documentation, and maintaining and further developing the web interface called “ACTRIS Data Centre” (currently https://actris.nilu.no). 
 
-The tasks are summarized in [Figure 5](img/section4/overview_of_actris_data_centre_components_v3.jpg) above and include the organization of ACTRIS level 3 data. 
+The tasks are summarized in [Figure 5](img/figures/figure5.png) above and include the organization of ACTRIS level 3 data. 
 
 All data centre units are providing metadata, and interfaces for access to data and metadata indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2020. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The metadata catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
 
@@ -537,13 +537,13 @@ The current setup is a web portal with a database that collects metadata from In
 
 There is also a new version of the ACTRIS [metadata catalog](https://dev-actris-md.nilu.no/version) being implemented, with import and access to metadata via a REST API, which allows for machine-to-machine access of data and metadata. The ISO 19115 with [WIS profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf) is used a starting point for metadata exchange. The schema is also extended with ACTRIS specific metadata. Currently it will be serving "discovery" metadata, but in the future the aim is to work on expanding this to "use" metadata. Documention for the new REST API and metadata catalog is [here](https://github.com/actris/actris-api-docs/blob/master/docs/api-docs.md).
 
-![ACTRIS Data Centre elements](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg)
+![ACTRIS Data Centre elements](img/figures/figure6.png)
 *Figure 6: Overview of the tasks of the DVAS unit*
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
 *Figure 7: Technical architecture of the ACTRIS meta data portal*
 
-As visualized in [figure 6](img/section4/ACTRIS_data_centre_ACCESS_v2.jpg), DVAS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
+As visualized in [figure 6](img/figures/figure6.png), DVAS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
 ##### Overview of when data is made available (level 2 data)
 
