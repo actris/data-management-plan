@@ -1247,7 +1247,8 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 | Metop/IASI       | BUFR    | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/IASI/index.html) |                     |                       |
 | MSG/SEVIRI       | NetCDF4 | AERIS     | [https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html](https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Meteosat/index.html)                             |                     |                       |
 | AeroCom          | NetCDF4 | METNO     | https://aerocom.met.no/                                                                                                                                                                                      |                     |                       |
-| NWP Model data   | NetCDF4 | NWP Centres    |                                                                                                                                                                                                         |                     |                       |
+| NWP Model data   | NetCDF4 | NWP Centres  |                                                                                                                                                                                                           |                     |                       |
+| SDS-WAS          | NetCDF4 |   BSC        | https://sds-was.aemet.es/                                                                                                                                                                                 |                     |                       |
 
 ##### Generated (systematic production)
 
