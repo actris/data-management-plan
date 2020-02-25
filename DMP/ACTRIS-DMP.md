@@ -317,7 +317,7 @@ Details on the data life cycle and workflow (workflow diagrams for data producti
 
 ### 3.4 ACTRIS trace gases remote sensing data centre unit (GRES)
 
-The ACTRIS trace gases remote sensing data centre unit (GRES) is supported by the AERIS data base (https://gres.aeris-data.fr). The GRES data centre unit provides data curation service for reactive trace gases remote sensing data. This includes data conversion processing, standardized process for data submission, quality control, inclusion of data in the data base, search metadata creation, data provision and archiving. In addition, data product generation of level 3 for climatological analysis and added values products (quicklooks, links to EVDC-ESA Atmospheric Validation Data Centre) is offered and implemented during the implementation phase. 
+The GRES data centre unit provides data curation service for reactive trace gases remote sensing data. This includes standardized process for metadata and data submission, traceability, data versioning, quality control, inclusion of data in the data base, data provision and archiving, and documentation. In addition, it offers production of level 3 for climatological analysis and added values products (quicklooks, links to EVDC-ESA Atmospheric Validation Data Centre). 
 
 The ACTRIS-GRES unit is structured in one unique database including measurements issued from five types of instruments:
 -   FTIR: Fourier Transform Infra-Red Spectrometry,  
@@ -326,6 +326,8 @@ The ACTRIS-GRES unit is structured in one unique database including measurements
 	- UVVIS MAX-DOAS (Multi-AXis Differential Optical Absorption Spectroscopy instruments),
 	- PANDORA instruments.
 -   LIDAR DIAL: Differential Absorption Lidar.
+
+All data are stored in the GRES database which is hosted by the French data center for atmospheric data AERIS. 
 
 #### The types and formats of data generated/collected
 
@@ -369,7 +371,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 3.5 ACTRIS Atmospheric simulation chamber data centre unit (ASC)
 
-The ASC data centre unit provides data curation service for data obtained from experiments in atmospheric simulation chambers (ACTRIS exploratory platforms). This includes tools for harmonized data submission and meta data templates, inclusion of data and metadata in the database, traceability, harmonization and data versioning, quality control, archiving, documentation and data provision. The ASC unit is structured in three pillars:
+The ASC data centre unit provides data curation service for data obtained from experiments in atmospheric simulation chambers (ACTRIS exploratory platforms). This includes tools for harmonized data and metadata submission, inclusion of data and metadata in the database, traceability, harmonization and data versioning, quality control, archiving, documentation and data provision. The ASC unit is structured in three pillars:
 
 * The Database of Atmospheric Simulation Chamber Studies (DASCS) provides access to experimental data (level 2 data), typically time-series of measured parameters during an experiment in a simulation chamber.
 
@@ -770,23 +772,34 @@ A general overview of the links between national facilities, CLU, and the corres
 
 #### 4.2.5 GRES dataflow and data management
 
-Data provided in GRES unit are L2 and L3 data produced from L0 and L1 data processing performed at NFs level (see Figure 10). These data have to be provided by NFs in GEOMS HDF format then converted within GRES DC in NetCDF format in order  to be disseminated through ACTRIS DC, These data have to be completed  with rich metadata.  NFs are also in charge of providing tools to facilitate the generation and the handling of the data. The GRES unit is in charge of:
-      - creating and maintening the metadata catalogue,
-      - providing a free and open access to metadata, data and tools developed by NFs through user-friendly web interfaces,
-      - providing an open access to documents about description of algorithm retrieval by types of data and  description of data quality assurance and control procedures using in NF's for the data production,
-      - developping tools to convert L2 and L3 data into NetCDF format and to ensure the completeness of data provision process, 
-      - developping quicklooks for level 2 and 3 data in order to a more comprehensible understanding of the data,
-      - offering  links to EVDC-ESA Atmospheric Validation Data Centre),
-      -  assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow,
+Data provided in GRES unit are L2 and L3 data produced from L0 and L1 data processing performed at NFs level. These data have to be provided by NFs in a standard format (GEOMS HDF) and to be documented with rich metadata. Data will be converted in NetCDF within the GRES unit in order to be disseminated through ACTRIS DC. NFs are also in charge of providing tools to facilitate the generation and the handling of the data. The GRES unit is in charge of: 
+- Creating and maintaining the metadata catalogue
+- Providing a standardized process for data submission, quality control and inclusion of data in the database
+- Providing a free and open access to metadata, data and tools developed by NFs through user-friendly web interfaces
+- Providing an open access to documentation produced by the CF and NFs (description of algorithms, data quality, control procedures…)
+- Producing level 3 data for climatological analysis and added values products (quicklooks, links to EVDC - ESA Atmospheric Validation Data Centre)
+- Assuring long-term archiving of L2 and L3 data
+Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
+      
  ![GRES services](img/section4/gres_data_flow_v2.png)
 *Figure 11: GRES data products and services*
 
+All data are stored in the GRES database which is hosted by the French data center for atmospheric data AERIS. Only metadata for discovery will be provided to the DVAS unit.
+
 #### 4.2.6 ASC dataflow and data management
 
-Data provided in ASC unit are L2 and L3 data produced These data are produced from L0 and L1 data processing performed at NFs level (see Figure 12). These Datadata have to be provided by NFs in a standard formats and to be completed with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data.  The ASC unit is in charge of i) providing a free and open access to data and tools developed by NFs through user-friendly web interfaces, ii) developing data visualization tools, iii) developing tools to ensure the quality and the completeness of the data provision process, iv) creating and maintaining the metadata catalogue, and finally v) assuring long-term archiving of L2 and L3 data. Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
+Data provided in ASC unit are L2 and L3 data produced from L0 and L1 data processing performed at NFs level (see Figure 12). These data have to be provided by NFs in a standard format and to be documented with rich metadata (see section 3.5). NFs are also in charge of providing tools to facilitate the generation and the handling of the data. The ASC unit is in charge of:
+- Providing a free and open access to data and tools developed by NFs through user-friendly web interfaces,
+- Developing data visualization tools
+- Developing tools to ensure the quality and the completeness of the data provision process
+- Creating and maintaining the metadata catalogue
+- Assuring long-term archiving of L2 and L3 data
+Jointly with NFs and TCs, it also contributes to the elaboration of the data workflow.
 
 ![ACTRIS ASC Unit:](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/section2/overview_ASC_unit.png)
 *Figure 12: current overview of ASC unit*
+
+The ASC unit is making use of EUROCHAMP database (https://data.eurochamp.org/) which is hosted by AERIS infrastructure. Only metadata for discovery will be provided to the DVAS unit.
 
 ### 4.3 Findable: Making data findable, including provisions for metadata [FAIR data]
 
