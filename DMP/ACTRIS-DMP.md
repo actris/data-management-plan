@@ -96,8 +96,8 @@ During the ACTRIS implementation phase (expected 2020-2024), the Central Facilit
 | [ACTRIS In-Situ data centre unit (In-Situ)](http://ebas.nilu.no/)                   | NILU                                 | Data curation service for in situ data: all aerosol, cloud and trace gas in situ data. This comprises inclusion of data in the data base EBAS, archiving and documentation. Support for centralized data processing, harmonization, traceability, quality control and data product generation. Training and online tools for QA, QC. The activity enables RRT and NRT delivery.|
 | [ACTRIS Aerosol remote sensing data centre unit (ARES)](https://data.earlinet.org/)		   | CNR (lead), CNRS					  |	Aerosol remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data archiving in EARLINET DB, data provision and documentation. The activity enables RRT and NRT delivery. Tutorial activities. Production of level 3 data for climatological analysis and new products. |	
 | [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)		   | FMI								  |	Data curation service for cloud remote sensing data. Support for centralized cloud remote sensing data processing, traceability, harmonization, automated quality control and product generation, and data archiving. Enables RRT and NRT delivery. Production of level 3 data for NWP model evaluation. | 
-| [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/) | CNRS                                 | Data curation service for atmospheric simulation chamber data. This includes standardized process for metadata and data submission, quality control, inclusion of data in the AERIS data base, data provision and archiving.|
-| [ACTRIS trace gases remote sensing data centre unit (GRES)](https://gres.aeris-data.fr/)    | CNRS                                 | Data curation service for reactive trace gases remote sensing data. This includes standardized process for data and metadata submission, quality control, inclusion of data in the AERIS data base, data provision and archiving. It also offers production of level 3 data for climatological analysis and added values products (quicklooks, links to EVDC - ESA Atmospheric Validation Data Centre).|
+| [ACTRIS trace gases remote sensing data centre unit (GRES)](https://gres.aeris-data.fr/)    | CNRS                                 | Data curation service for reactive trace gases remote sensing data. This comprises standardized process for data submission, quality control, inclusion of data in the AERIS data base, metadata creation and provision and archiving. Production of level 3 data for climatological analysis, and added values products (quicklooks, links to EVDC - ESA Atmospheric Validation Data Centre).|
+| [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/) | CNRS                                 | Data curation service for atmospheric simulation chamber data. This includes standardized process for data submission, quality control, inclusion of data in the AERIS data base, search metadata creation and provision and archiving.|
 
 *Table 1: Short description of the ACTRIS DC units and the research performing organizations leading and contributing to the units.*
 
@@ -246,6 +246,7 @@ The origin of the data is derived from instrument raw data provided by the data 
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|---------------------------------------------|
 | ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                        |
  GRASP/GARRLiC                        |                        6                                 |             30                          |    52                                       |
+|    GRASP-AOD          |                        0          |             30                          |    1500                                 |
 
 *Table 4: Number of annual datasets*
 
@@ -253,6 +254,7 @@ The origin of the data is derived from instrument raw data provided by the data 
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|---------------------------------|
 | ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                         |
 | GRASP/GARRLiC                      |                            3.2 GB                         |     40 GB                                |           50 GB                 |
+|    GRASP-AOD          |                        0          |             30                          |    1500                                 |
 
 *Table 5: Data volume*
 
@@ -455,15 +457,12 @@ The origin of the data is derived from ground-based and satellite observations, 
 
 | Type                  |Number of annual datasests (end 2019)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
 |-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
-|   |
-|    GRASP-AOD          |                        0          |             30                          |    1500                                 |
 |    ReOBS              |                        1          |             15                          |    30                                    |
 
 *Table 12: Number of annual datasets*
 
 | Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
 |-------------------|----------------------------------------------------------------|----------------------------|----------------------------|
-| GRASP-AOD         |                              0 GB                              |      50 GB                 |        20 TB               |
 | ReOBS             |                              2 GB                              |        30 GB               |                100 GB      |
 
 *Table 13: Data volume*
@@ -720,7 +719,7 @@ At the present, the ACTRIS aerosol remote sensing component is a highly inhomoge
 
 The SCC (EARLINET Single Calculus Chain) is the solution adopted by the ACTRIS (Aerosol, Clouds and Trace gases Research InfraStructure Network) aerosol remote data center to ensure homogenous, traceable and quality controlled data. Main concepts at the base of the SCC are automatization and full traceability of quality-assured aerosol optical products.
 
-The ARES DC also compile aerosol optical and physical properties (profile and column) from combined lidar + photometer observations collected at NFs. The GARRLiC (Generalized Aerosol Retrieval from Radiometer and Lidar Combined data) retrieval will be used for this, which synergistically inverts coincident lidar and radiometer observations, starting from SCC products and AERONET-ACTRIS processing stream products. These processing streams are fully controlled by ACTRIS. 
+The ARES DC also compile aerosol optical and physical properties (profile and column) from combined lidar + photometer observations collected at NFs. The GARRLiC (Generalized Aerosol Retrieval from Radiometer and Lidar Combined data) retrieval will be used for this, which synergistically inverts coincident lidar and radiometer observations, starting from SCC products and AERONET-ACTRIS processing stream products. Another declination of the GRASP (Generalized Retrieval of Atmosphere and Surface Properties) algorithm is also operated : GRASP-AOD. It derives aerosol size properties from the AERONET-ACTRIS aerosol optical depths. These processing streams are fully controlled by ACTRIS.
 
 The data curation workflow is suitable for the provision in NRT and RRT, following the same steps and procedures of the standard processing. NRT/RRT delivery of not fully quality assured data can be possible as long as a NF provides raw data to the DC in NRT/RRT.
 
@@ -1267,7 +1266,6 @@ Below is a list of all lev3 variables that are listed in Annex II and the checkb
 
 | Product                                             | format               | description                                                                                                                                                                                  |
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GRASP-AOD                                           | NetCDF-CF            | Aerosol size distribution retrieval from optical depth                                                                                                                                       |
 | ReOBS                                               | NetCDF-CF            | The ReOBS project proposes an advanced method to aggregate, quality-control and harmonize in one single NetCDF file as many available geophysical variables from a NF at hourly scale for the whole data record spanned by this ensemble of variables. This file allows to easily perform multiannual and multi-variable studies combining atmospheric dynamics and thermodynamics, radiation, clouds and aerosols, from ground-based observations associated to a NF. |
 | Aerosol and Gas trend assessment                                    | NetCDF-CF                            | Estimate of long term trends @ACTRIS sites, combining observations with models, interactive web visualization,  automated assessment report                                                                      |
 | Data Interpretation and Outlier Identification Tool                 | NetCDF-CF                            | Quicklooks for time series data, compared to Copernicus Analysis and Reanalysis model products                                                                                                                   |
