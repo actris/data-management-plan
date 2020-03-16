@@ -85,7 +85,7 @@ The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and oth
 * [ACTRIS trace gases remote sensing data centre unit (GRES)](https://en.aeris-data.fr/)
 * [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
-![Architecture of the ACTRIS Data Centre](img/figures/figure2.png)
+![Architecture of the ACTRIS Data Centre](img/figures/figure2.jpg)
 *Figure 2: Architecture of the ACTRIS Data Centre*
 
 During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities will be constructed and their services tested. The ACTRIS Central Facilities host selection was a part of ACTRIS PPP, and the following consortium is selected to host the ACTRIS Data Centre, and the various units with services to data producers and data users.
@@ -538,7 +538,7 @@ The current setup is a web portal with a database that collects metadata from In
 
 There is also a new version of the ACTRIS [metadata catalog](https://dev-actris-md.nilu.no/version) being implemented, with import and access to metadata via a REST API, which allows for machine-to-machine access of data and metadata. The ISO 19115 with [WIS profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf) is used a starting point for metadata exchange. The schema is also extended with ACTRIS specific metadata. Currently it will be serving "discovery" metadata, but in the future the aim is to work on expanding this to "use" metadata. Documention for the new REST API and metadata catalog is [here](https://github.com/actris/actris-api-docs/blob/master/docs/api-docs.md).
 
-![ACTRIS Data Centre elements](img/figures/figure6.png)
+![ACTRIS Data Centre elements](img/figures/figure6.jpg)
 *Figure 6: Overview of the tasks of the DVAS unit*
 
 ![Current overview of topical databases](img/section4/overview_current_architecture_v2.png)
