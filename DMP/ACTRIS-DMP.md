@@ -868,7 +868,7 @@ Currently, ARES unit assigns two different types of local persistent identifier 
 * **Data Processing PIDs.** These PIDs identify unequivocally the characteristics of the instrument (including all its subparts) used to collect the Level 0 data. In particular, to each submitted Level 0 product it is assigned an alphanumeric ID which allows to retrieve all the details about the instrument configuration used to perform the measurement as well as the data processing configuration used to compute the corresponding Level 1 data products.    
 * **Dataset PIDs.** An internal PID generation system based on an alphanumerical "prefix"/"suffix" pattern identifies univocally each dataset downloaded through the ARES interfaces.
 
-ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status by July 2019.
+ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status by July 2019, and decisions on are pending
 
 | Data centre unit         | PID service                    | Description                                                                             |                        Standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
