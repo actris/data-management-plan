@@ -216,7 +216,7 @@ Detail on the data life cycle and workflow (workflow diagrams for data productio
 
 ### 3.2 ACTRIS Aerosol remote sensing data centre unit (ARES)
 
-The ARES data centre unit provides a data curation and data processing service for aerosol remote sensing data coming frm lidar and photometer obsrevations. This includes centralized data processing, data storage, recording of metadata in a dedicated RDBMS, traceability, harmonization and data versioning, quality control, documentation and data provision. The unit allows for RRT and NRT data provisioning and offers support and training activities. Furthermore, level 3 data production for climatological analysis and the delivery of new data products will be further implemented and offered during the implementation phase.
+The ARES data centre unit provides data curation and data processing service for aerosol remote sensing data coming frm lidar and photometer obsrevations. This includes centralized data processing, data storage, recording of metadata in a dedicated RDBMS, traceability, harmonization and data versioning, quality control, documentation and data provision. The unit allows for RRT and NRT data provisioning and offers support and training activities. Furthermore, level 3 data production for climatological analysis and the delivery of new data products will be further implemented and offered during the implementation phase.
 
 The main goal is providing access of high quality and document datasets of the aerosol optical properties vertical distribution in the whole troposphere and upper stratosphere with short time resolution.
 This long term dataset collected at continental scale allows:
@@ -231,7 +231,7 @@ The ACTRIS ARES data centre unit is built on the heritage of the EARLINET Data b
 
 * ARES Level 2 data products contain fully quality assured aerosol extinction, backscatter, lidar ratio, Angstrom exponent and depolarization ratio vertical profiles and full quality controlled columnar information and aerosol microphysical properties profiles.
 
-* ARES Level 3 data products are retrieved from the level 2 data and provide statistical analysis (including seasonality and annuality) of the most important aerosol optical parameters. Additional Level 3 data products are derived from combined analysis of ground based aerosol lidar profiles and satellite data. 
+* ARES Level 3 data products are retrieved from the level 2 data and provide statistical analysis (including seasonality and annuality) of the most important aerosol optical parameters.
 
 #### Re-use of existing data
 The ACTRIS data user interface will include access to aerosol remote sensing legacy data resulting from ACTRIS pre-projects (for ARES [EARLINET, EARLINET-ASOS](https://www.actris.eu/About/ACTRIS/Heritage.aspx)). These will also be included as a part of the ACTRIS ARES data centre unit. Legacy data resulting from ACTRIS pre-projects will be available in the same format as current products.
@@ -432,19 +432,19 @@ Detail on the data life cycle andA preliminary version of the data workflow (wor
 ### 3.6 ACTRIS Data Discovery, Virtual Access and Services (DVAS)
 ACTRIS Data Center is a distributed data centre, and ACTRIS Data Discovery, Virtual Access and Services unit (DVAS) is responsible for organising access to measurement data from the topic data centre units, and documentation of procedures as support to observational and exploratory NFs. The DVAS unit provides the ACTRIS web interface for data download, services and digital tools as well as performing data production of Level 3 data, and synergy data products.
 
-The ACTRIS Data Discovery, Virtual Access and Services (DVAS) web interface is called “The ACTRIS Data Centre” and incldues a searchable metadata catalogue as well as other services. The main activities are **Discovery and access** to ACTRIS data and data products, overview of digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data and synergy data products. The data centre also offers **bridge to external data bases and sources**.
+The ACTRIS Data Discovery, Virtual Access and Services (DVAS) web interface is called “The ACTRIS Data Centre” and incldues a searchable metadata catalogue as well as other services. The main activities are **Discovery and access** to ACTRIS data and data products, overview of digital tools provided by the topical centres and the data centre units, documentation, software and tools for data production. **Visualisation** of ACTRIS data products. **Data production** of Level 3 data using synergistic and integrated data. The data centre also offers **bridge to external data bases and sources**.
 
 The ACTRIS DVAS unit offer acecss to elaborated aerosol, cloud and trace gas data products, issued of advanced multi-instrument synergistic algorithms, long term reanalysis, modelling and satellite data and sources. These can be produced within the DVAS unit, topic data centre units, topic centres, or extrnal contributions. The list of ACTRIS level 3 data products is detailed in the [Appendix II](https://folk.nilu.no/~richard/actris-ri-variables/Appendix_II_ACTRIS-RI_level3_variables_21February2018.xlsx), and consiste of three main categories:
 
-	I. Level 3 data solely based on data from ACTRIS observational platforms
+	a. Level 3 data solely based on data from ACTRIS observational platforms
 
-	II. Level 3 data and tools from multi-source data integration services, employing external ground based measurement data
+	b. Level 3 data and tools from multi-source data integration services, employing external ground based measurement data
 
-	III. Level 3 data products involving regional and global model data
+	c. Level 3 data products involving regional and global model data
 
 #### The types and formats of data generated/collected
 
-The objective is that most of the level 3 data generated will be in [NetCDF data format](https://www.unidata.ucar.edu/software/netcdf/) and have metadata compliant to the [NetCDF CF Metadata Conventions](http://cfconventions.org). This format and metadata are widely used in the atmospheric science community, and is supported by a lot of standard visualization and analysis tools. Nevertheless, the collected data can come from external sources accordingly, non standard formats may also be used. In these cases, they will be rather kept in their original format.
+The objective is that most of the level 3 data generated will be in [NetCDF data format](https://www.unidata.ucar.edu/software/netcdf/) and have metadata compliant to the [NetCDF CF Metadata Conventions](http://cfconventions.org). This format and metadata are widely used in the atmospheric science community, and is supported by a lot of standard visualization and analysis tools. Nevertheless, the collected data can come also from external sources accordingly, non standard formats may also be used. In these cases, they will be rather kept in their original format.
 
 ### Re-use of existing data
 
@@ -483,7 +483,7 @@ Data from ACTRIS is contributing to better prediction of the behavior of the atm
 
 ACTRIS data are very diverse, covering numerous measurement methodologies resulting in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC is organized in 6 Units.
 
-The DVAS unit utilize data from all the 5 topical DC units, and produce level 3 products combining various data and also models prodcuibf new and value added data producst. Accordingly, the DVAS data utility can cover all the more specific data utility sections described in sections 3.1 – 3.5. 
+The DVAS unit utilizes data from all the 5 topical DC units, and produces level 3 products combining various data and also models products new and value added data products. Accordingly, the DVAS data utility can cover all the more specific data utility sections described in sections 3.1 – 3.5. 
 
 
 #### Outline of data life cycle (workflow and workflow diagram)
@@ -552,13 +552,11 @@ As visualized in [figure 6](img/figures/figure6.png), DVAS organizes the level 3
 |---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
 | In Situ                   |              31th of May  |               31th of June                      |			hourly	     |										|
 | GRES                      |     Within 4 months after measurement        |      Within 4 months after measurement                              |  					 |	There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
-| ARES                      |      Not applicable       |                 Not applicable                  |                      |										|
+| ARES                      |      Not applicable       |                 There is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. Once QCs both at TC and DC level are passed, Level 2 data are available in ARES DC. The NRT provision (within 3 days) will be implemented in the implementation phase.                   |                      |										|
 | ASC                       |                           |                                                 |  Not applicable      |										|
 | CLU                       |     Automatic             |   1 day after submission                        |                      |										|
 
-*Table 14: Overview of when data is made available*
-
-For ARES, there is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. Once QCs both at TC and DC level are passed, Level 2 data are available in ARES DC.  
+*Table 14: Overview of when data is made available* 
 
 #### 4.2.2 In-Situ dataflow and data management
 
