@@ -741,6 +741,36 @@ ARES DC offers also products resulting from the processing at DC itself of Level
 ![ARES Data Products and Services](img/section4/Current_View_of_ARES_Unit.JPG)
 *Figure 9: ARES Data Products and Services*
 
+Broadening the concept, the ARES-CNR activities can be grouped according to the following thematic areas:
+
+* **Centralized Data Processing.** This is provided through the common standardized automatic analysis software developed in previous projects toward the ACTRIS RI, the Single Calculus Chain (SCC). The Single Calculus Chain (SCC) is an open-source software for analyzing aerosol lidar data to obtain aerosol optical property profiles from raw data. Main concepts at the base of the SCC are automatization and full traceability of quality-assured aerosol optical products. 
+
+* **Data Archive and Storage.** Data archive service of ACTRIS aerosol profile level 1, 2 & 3 data, including off-site backup, documenting provenance, and providing a link to QA / QC data is given. Moreover, the data, the metadata database, the user interface, the web applications, the data curation tasks, including the data ingestion, the SCC (database, calculus modules, web interface) are all hosted on dedicated servers.
+ 
+* **Recording of metadata in a dedicated RDBMS.** The data archive for level 1 and level 2 data is suited for a relational database system keeping all metadata and measurement data in one database. The database supports historic storage of data.
+ 
+* **Traceability.** All data products, pre-products, and sample handling protocols, as well as all software and algorithms used in production steps, are version controlled, archived following long-term archive standards, and identified through Persistent Identifiers (PIDs) in each version. Moreover, the provenance throughout all ACTRIS aerosol remote sensingworkflows if provided by the use of standardised provenance scheme, facilitating attribution of entities involved in workflow execution.
+ 
+* **Harmonization and Data Versioning.** ARES Unit ensures that all instances of a specific data production step operated in the ACTRIS network uses the same identified version at any given time. Moreover,  ARES relational database is version controlled database and is suitable for reprocessing of the data and updates with new quality control procedures if needed.
+ 
+* **Quality Control.** When the data are submitted to the ACTRIS aerosol remote sensing DC database, on-the-fly QC procedures are performed directly during the submission phase. These procedures control that the file content compyl with the correct file structure. Additional scientific controls check all mandatory products reported into the files in terms of scientific content. These are typically delayed taking into account the outcome of the quality assurance procedures at TC level.The data originator receives feedback of the outcome of the QC.
+
+* **Data Access.** Access to ACTRIS level 0-1-2-3 data, Access to ACTRIS level 2 legacy data archived in the ACTRIS data repositories via the ACTRIS web entry point, Access to Software, digital tools and user support for processing of ACTRIS data tailored for analysis and research
+
+* **Documentation.** Documentation, procedures, tutorials and tools, guidance and helpdesk are available to NFs.
+
+* **Data attribution and traceability.** Provision of documentation of QA measure results throughout ACTRIS, setup of infrastructure, and standards of operation, including identification of documents, ACTRIS Data provenance, attribution, and traceability 
+
+* **Support and Training Activities.** Workshops, schools, forums, training events for data submitters to ARES data centre units are planned. Documentation, procedures, tutorials and tools, guidance and helpdesk are available to NFs.
+ 
+* **Level 3 Data Production.** Climatological Level 3 data for aerosol vertical profile are produced in ARES. A first dataset has been released in 2019 and new release even advanced in content are planned for each one of the NF, providing a reference dataset for climatological studies at continental scale. 
+
+* **Campaign service.** Provision of digital tools and data services for aerosol remote sensing data processing, QC and curation during observation campaigns to external users, input for campaign dashboard 
+
+* **User Community support and services.** Access to the  Single Calculus Chain (SCC) tool for aerosol lidar data processing, On-demand distribution of not-ACTRIS aerosol lidar data products processed through ACTRIS SCC, Link to international bodies for the use of aerosol remote sensing observations, Support to regional and global networks and related initiatives (like GAW-GALION). Interoperability and link to other RIs and initiatives.
+
+All data are stored in the ARES database which is hosted by the CNR ARES data center. Photometer-only data are stored by the French data center for atmospheric data AERIS. Only metadata for discovery will be provided to the DVAS unit. 
+
 #### 4.2.4 CLU dataflow and data management
 
 Modern cloud remote sensing instruments can produce vast amounts of raw data. This data first need to be stored locally
