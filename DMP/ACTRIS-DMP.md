@@ -16,7 +16,7 @@
 * [4. Data Management at the ACTRIS data centre](#4-Data-Management-at-the-ACTRIS-data-centre)
   * [4.1 ACTRIS access and service policy](#41-actris-access-and-service-policy)
   * [4.2 Introduction and overview of ACTRIS Data Management architecture](#42-introduction-and-overview-of-actris-data-management-architecture)
-    * [4.2.1 DVAS role and data management](#421-dvas-role-and-data-management)
+    	* [4.2.1 DVAS role and data management](#421-dvas-role-and-data-management)
 	* [4.2.2 In-Situ dataflow and data management](#422-in-situ-dataflow-and-data-management)
 	  * [4.2.2.1 General Characteristics of In Situ Data Production](#4221-general-characteristics-of-in-situ-data-production)
 	  * [4.2.2.2 Online In Situ Data Production](#4222-online-in-situ-data-production)
@@ -134,7 +134,7 @@ See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACT
 
 #### The relation to the objectives of the project as stated in [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217)
 
-The primary goal of ACTRIS is to produce high quality integrated datasets in the area of atmospheric sciences and provide services, including access to instrumented platforms, tailored for scientific and technological usage. The main objectives of ACTRIS are:
+The main objectives of ACTRIS are:
 
 * to provide information on the 4D-compositon and variability and of the physical, optical and chemical properties of short-lived atmospheric constituents, from the surface throughout the troposphere to the stratosphere, with the required level of precision, coherence and integration;
 * to provide information and understanding on the atmospheric processes driving the formation, transformation and removal of short-lived atmospheric constituents;
@@ -455,15 +455,17 @@ The origin of the data is derived from ground-based and satellite observations, 
 
 #### The expected size of the data
 
-| Type                  |Number of annual datasests (end 2019)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |
-|-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|
-|    ReOBS              |                        1          |             15                          |    30                                    |
+| Type                  |Number of annual datasests (end 2019)   | Number of annual datasets (min by 2025) | Number of annual datasets (max by 2025) |   Comments     |
+|-----------------------|-----------------------------------|-----------------------------------------|-----------------------------------------|-----------------|
+|    ReOBS              |                        1          |             15                          |    30                                    |			|
+|    Combined analysis of ground based aerosol lidar profiles and satellite data              |                        1          |             4                          |    5                                   | An experimental dataset is available on legacy data. First release in 2021 with partial implementation, then updates. Annual datasets in the third column include the data from all NFs |
 
 *Table 12: Number of annual datasets*
 
-| Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  |
-|-------------------|----------------------------------------------------------------|----------------------------|----------------------------|
-| ReOBS             |                              2 GB                              |        30 GB               |                100 GB      |
+| Type              |Data volume (end 2019)                                          | Data volume (min by 2025)  | Data volume (max by 2025)  | Comments      |
+|-------------------|----------------------------------------------------------------|----------------------------|----------------------------|---------------|
+| ReOBS             |                              2 GB                              |        30 GB               |                100 GB      |	       |
+| Combined analysis of ground based aerosol lidar profiles and satellite data             |                              0,5 GB                              |        To be defined               |               To be defined      |  An experimental dataset is available on legacy data. First release in 2021 with partial implementation, then updates	|
 
 *Table 13: Data volume*
 
@@ -1316,13 +1318,15 @@ Some products will be generated through on-line services, and will generate data
 
 | Product                                             | format               | description                                                                                                                                                                                  |
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                                     |                      |                                                                                                                                                                                              |
+|    ACTRIS aerosol remote sensing profile  climatological data                                                   |     NetCDF                 |             These Level 3 data are the climatological products obtained from the fully quality controlled (Level 2) data for providing useful aggregated information to the users. 
+The Level 3 data are centrally obtained by the ACTRIS aerosol remote sensing Data Center node of the CNR in Potenza. This allows the harmonization and reproducibility of the products.                                                                                                                                                                                 |
 
 #### Production of ACTRIS level 3 data and tools through multi-source data integration services, employing external ground based measurement data
 
 | Product                                             | format               | description                                                                                                                                                                                  |
 | --------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                                     |                      |                                                                                                                                                                                              |
+|              Combined analysis of ground based aerosol lidar profiles and satellite data                                       |         To be defined             |       This product will be implemented in the first years of the implementation phase. A first release is expected in 2021. The product (based on previous experience in 2010) will combine the lidar observations and satellite aerosol measurements for investigating differences as a function of time and space, and other parameters (like aerosol typing). This dataset will be essential for representativeness studies.
+The first experimental product was a relational database. The possibility of implementing the product as NetCDF files is under investigation.                                                                                                                                                                                        |
 
 #### Production of ACTRIS level 3 data products involving regional and global model data
 
