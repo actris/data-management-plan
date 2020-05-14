@@ -54,6 +54,8 @@
   * [Appendix 8: Data lifecycle and workflow for DVAS Data Centre Unit](#appendix-8-data-lifecycle-and-workflow-for-DVAS-data-centre-unit)
   * [Appendix 9: Format and external data sources for level 3 variables](#appendix-9-format-and-external-data-sources-for-level-3-variables)
   * [Appendix 10: ReOBS workflow diagram](#appendix-10-ReOBS-workflow-diagram)
+  * [Appendix 11: Satellite data subsets workflow diagram](#appendix-11-Satellite-data-subsets-workflow-diagram)
+  * [Appendix 12: Combined  analysis of GB lidar and satellite data workflow diagram](#appendix-12-Combined-analysis-of-GB-lidar-and-satellite-data-workflow-diagram)
 
 
 ## 1.  Introduction to The ACTRIS Data Centre and ACTRIS Data Management Plan
