@@ -1340,3 +1340,6 @@ Some products will be generated through on-line services, and will generate data
 
 ![Satellite data subsets workflow diagram](img/workflows/ACTRIS-DC_ACCESS_satellite_extraction_workflow_v1-00.png)
 
+### Appendix 12: Combined  analysis of GB lidar and satellite data workflow diagram
+
+![Combined  analysis of GB lidar and satellite data workflow diagram](img/workflows/ACTRIS_DVAS_CNR.jpg)
