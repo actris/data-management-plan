@@ -1078,7 +1078,7 @@ The DVAS unit is providing access to ACTRIS data through the [ACTRIS data portal
 *Additional information:* During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilizing these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available.
 
 ### Appendix 2: List of ACTRIS level 3 data products
-[List of ACTRIS level 3 data products](docs/Appendix_II_ACTRIS_level3_variables_5May2020.xlsx)
+[List of ACTRIS level 3 data products](docs/Appendix_II_ACTRIS_level3_variables_27May2020.xlsx)
 
 ### Appendix 3: ACTRIS In situ data centre unit (In-Situ) data life cycle
 
