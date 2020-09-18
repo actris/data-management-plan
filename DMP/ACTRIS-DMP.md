@@ -16,7 +16,7 @@
 * [4. Data Management at the ACTRIS data centre](#4-Data-Management-at-the-ACTRIS-data-centre)
   * [4.1 ACTRIS access and service policy](#41-actris-access-and-service-policy)
   * [4.2 Introduction and overview of ACTRIS Data Management architecture](#42-introduction-and-overview-of-actris-data-management-architecture)
-    	* [4.2.1 DVAS role and data management](#421-dvas-role-and-data-management)
+	* [4.2.1 DVAS role and data management](#421-dvas-role-and-data-management)
 	* [4.2.2 In-Situ dataflow and data management](#422-in-situ-dataflow-and-data-management)
 	  * [4.2.2.1 General Characteristics of In Situ Data Production](#4221-general-characteristics-of-in-situ-data-production)
 	  * [4.2.2.2 Online In Situ Data Production](#4222-online-in-situ-data-production)
@@ -552,13 +552,11 @@ Access to quality controlled data from the topic data centre units is organised 
 
 The tasks are summarized in [Figure 5](img/figures/figure5.png) above and include the organization of ACTRIS level 3 data. 
 
-All data centre units are providing metadata, and interfaces for access to data and metadata indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2020. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The metadata catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
+All data centre units are providing metadata, and interfaces for access to data and metadata indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2021. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The metadata catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
 
 [Figure 7](img/section4/overview_current_architecture_v2.png) shows the current technical architecture and the interface used between the topical data center units, as well as DVAS and the ACTRIS Data Centre web interface with access for users.
 
-The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom web services, but currentyl machine-to-machine access is not possible. Implementation of ASC is under development and will be ready during 2020, and in the future, the aim is to harvest all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data using ISO19115 with the WIS metadata profile enabling machine-to-machine access of ACTRIS metadata. 
-
-There is also a new version of the ACTRIS [metadata catalog](https://dev-actris-md.nilu.no/version) being implemented, with import and access to metadata via a REST API, which allows for machine-to-machine access of data and metadata. The ISO 19115 with [WIS profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf) is used a starting point for metadata exchange. The schema is also extended with ACTRIS specific metadata. Currently it will be serving "discovery" metadata, but in the future the aim is to work on expanding this to "use" metadata. Documention for the new REST API and metadata catalog is [here](https://github.com/actris/actris-api-docs/blob/master/docs/api-docs.md).
+The current setup is a web portal with a database that is harvesting metadata from In Situ, ARES, CLU and GRES via custom web services. Currently, machine-to-machine access is not possible for all ACTRIS data and metadata. The aim is to provide all ACTRIS metadata through a single metadata catalogue and REST API, providing discovery metadata for all ACTRIS data using ISO19115 with the [WIS metadata profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf). The schema is also extended with ACTRIS specific metadata. The latest version of the [metadata catalog](https://dev-actris-md.nilu.no/version) is under development, with import and access to metadata via a REST API. Documention for the new REST API and metadata catalog is [here](https://dev-actris-md.nilu.no/index.html). The aim is to expose the API to external users by January 2021.
 
 ![ACTRIS Data Centre elements](img/figures/figure6.jpg)
 *Figure 6: Overview of the tasks of the DVAS unit*
@@ -889,7 +887,7 @@ Tables below show the status by July 2019.
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
 |         CLU              |          JSON via REST API     |  http://devcloudnet.fmi.fi/api/                                                                 |       To be decided                      |
-|	  DVAS           	   | To be decided              |  None																		              |       To be decided             |
+|	  DVAS             | REST API                       | https://dev-actris-md.nilu.no/swagger/v1/swagger.json 				              |        openapi (3.0.1)            |
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
 
