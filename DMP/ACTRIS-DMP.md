@@ -870,7 +870,7 @@ Tables below show the status by July 2019.
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
-|         CLU              |          JSON via REST API     |  http://devcloudnet.fmi.fi/api/                                                                 |       To be decided                      |
+|         CLU              |          JSON via REST API     |  https://cloudnet.fmi.fi/api/                                                                 |      Custom, see [documentation](https://actris-cloudnet.github.io/dataportal/)                      |
 |	  DVAS           	   | To be decided              |  None																		              |       To be decided             |
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
