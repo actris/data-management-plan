@@ -906,7 +906,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          | To be decided                  |                                                                                         |                                 |
 |         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
-|         CLU              | To be decided                  |  None                                                                                   |       To be decided             |
+|         CLU              | EPIC                  |  EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)                                                                                   |                    |
 |	      DVAS           | Defined by primary repository  |  None																		              |       To be decided             |
 |         ASC              | To be decided					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
