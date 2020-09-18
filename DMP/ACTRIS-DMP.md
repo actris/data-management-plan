@@ -78,7 +78,25 @@ ACTRIS is a unique RI improving both the quality of and access to atmospheric ob
 
 > The mission of the ACTRIS Data Centre (DC) is to compile, archive and provide access to well documented and traceable ACTRIS measurement data and data products, including digital tools for data quality control, analysis, visualisation, and research. As a tool for science, the highest priorities for the ACTRIS DC are to maintain and increase the availability of ACTRIS data and data products relevant to climate and air quality research for all interested users.
 
-The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and other user groups with free and open access to all ACTRIS  data, complemented with access to innovative and mature data products, together with tools for quality assurance (QA), data analysis and research. ACTRIS data and products should be **f**indable, **a**ccessible, **i**nteroperable and **r**eusable (FAIR), and the data centre work towards fulfilling the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples). The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC will be organized in 6 Units, with clear links and procedures for interaction between the data centre Units, National Facilities (NFs) and topical centres (TCs). The ACTRIS DC will be coordinated by the DVAS unit leader and all data is linked through the [ACTRIS data portal](http://actris.nilu.no/) serving as the access point to all data and related information. The units and short names are:
+The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and other user groups with free and open access to all ACTRIS  data, complemented with access to innovative and mature data products, together with tools for quality assurance (QA), data analysis and research. ACTRIS data and products should be **f**indable, **a**ccessible, **i**nteroperable and **r**eusable (FAIR), and the data centre work towards fulfilling the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples). The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC will be organized in 6 Units, with clear links and procedures for interaction between the data centre Units, National Facilities (NFs) and topical centres (TCs). The ACTRIS DC will be coordinated by the DVAS unit leader and all data is linked through the [ACTRIS data portal](http://actris.nilu.no/) serving as the access point to all data and related information. Furthermore, the data center is organized in the ACTRIS data management board and the ACTRIS data expert team. The role of the ACTRIS DC Management Board isto ensure that the ACTRIS DC as a whole operates in a coordinated and coherent manner. 
+
+The Management Board is responsible for: 
+* 1. The  development  of  the  Data  Centre  strategy  together  with  Head  Office  (HO)  and  Topic Centers (TCs) 
+* 2. Implementing the agreed strategy, 
+* 3. Establishing and monitoring the implementation of the Data Centre Work Programme, and
+* 4. Undertaking evaluation and monitoring of operations, 
+* 5. Serving as the link to and interact with the contributing RPOs
+
+The ACTRIS DC comprises 6 units. These are 5 units with complementary topic expertise and 1 unit with integrating activities (DVAS). Its Management Board will respond to the needs of a diverse and distributed central facility and resolve conflicts of interest.
+
+The ACTRIS Data Expert Team which is a transversal technical group with representatives of all the DC topic units. 
+
+The ACTRIS Data Expert team has 3 main roles:
+* 1.Facilitate  and  ensure  technical  discussions  and  information  flow  across  the data  centre,exploiting and taking advantage ofthe expertise available to the benefit of all units
+* 2.Ensure   the   necessary   interaction   on   common   technical   topics   and   issues   (standards, interoperability,  user  feedback...).  In  particular,  this  group  will  be  in  charge  of  the  technical specification  of  the  ACTRIS  DC  portal,  metadata  catalogue  and  common  machine-to-machine access interfaces. It will make surethat technical solutions are implemented in such a way  that all data hosted and managed in the topic units are visible and accessible through the portal. It will plan new developments of the data centre, and monitor the progress. 
+* 3.Proposechanges  and  further developmentofACTRIS  Data ManagementPlan,  for discussionsand approval by ACTRIS DC managementboardbefore implementation
+
+The units and short names are:
 
 * [ACTRIS Data Discovery, Virtual Access and Services unit (DVAS)](http://actris.nilu.no/)
 * [ACTRIS In situ data centre unit (In-Situ)](http://ebas.nilu.no/)
