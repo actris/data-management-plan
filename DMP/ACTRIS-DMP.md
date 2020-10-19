@@ -16,7 +16,7 @@
 * [4. Data Management at the ACTRIS data centre](#4-Data-Management-at-the-ACTRIS-data-centre)
   * [4.1 ACTRIS access and service policy](#41-actris-access-and-service-policy)
   * [4.2 Introduction and overview of ACTRIS Data Management architecture](#42-introduction-and-overview-of-actris-data-management-architecture)
-    	* [4.2.1 DVAS role and data management](#421-dvas-role-and-data-management)
+	* [4.2.1 DVAS role and data management](#421-dvas-role-and-data-management)
 	* [4.2.2 In-Situ dataflow and data management](#422-in-situ-dataflow-and-data-management)
 	  * [4.2.2.1 General Characteristics of In Situ Data Production](#4221-general-characteristics-of-in-situ-data-production)
 	  * [4.2.2.2 Online In Situ Data Production](#4222-online-in-situ-data-production)
@@ -78,7 +78,25 @@ ACTRIS is a unique RI improving both the quality of and access to atmospheric ob
 
 > The mission of the ACTRIS Data Centre (DC) is to compile, archive and provide access to well documented and traceable ACTRIS measurement data and data products, including digital tools for data quality control, analysis, visualisation, and research. As a tool for science, the highest priorities for the ACTRIS DC are to maintain and increase the availability of ACTRIS data and data products relevant to climate and air quality research for all interested users.
 
-The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and other user groups with free and open access to all ACTRIS  data, complemented with access to innovative and mature data products, together with tools for quality assurance (QA), data analysis and research. ACTRIS data and products should be **f**indable, **a**ccessible, **i**nteroperable and **r**eusable (FAIR), and the data centre work towards fulfilling the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples). The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC will be organized in 6 Units, with clear links and procedures for interaction between the data centre Units, National Facilities (NFs) and topical centres (TCs). The ACTRIS DC will be coordinated by the DVAS unit leader and all data is linked through the [ACTRIS data portal](http://actris.nilu.no/) serving as the access point to all data and related information. The units and short names are:
+The overall goal of the ACTRIS Data Centre (DC) is to provide scientists and other user groups with free and open access to all ACTRIS  data, complemented with access to innovative and mature data products, together with tools for quality assurance (QA), data analysis and research. ACTRIS data and products should be **f**indable, **a**ccessible, **i**nteroperable and **r**eusable (FAIR), and the data centre work towards fulfilling the [FAIR principles](https://www.force11.org/group/fairgroup/fairprinciples). The numerous measurement methodologies applied in ACTRIS result in a considerable diversity of the data collected. In accordance with these requirements, the ACTRIS DC will be organized in 6 Units, with clear links and procedures for interaction between the data centre Units, National Facilities (NFs) and topical centres (TCs). The ACTRIS DC will be coordinated by the DVAS unit leader and all data is linked through the [ACTRIS data portal](http://actris.nilu.no/) serving as the access point to all data and related information. Furthermore, the data center is organized in the ACTRIS data management board and the ACTRIS data expert team. The role of the ACTRIS DC Management Board isto ensure that the ACTRIS DC as a whole operates in a coordinated and coherent manner. 
+
+The Management Board is responsible for: 
+* 1. The  development  of  the  Data  Centre  strategy  together  with  Head  Office  (HO)  and  Topic Centers (TCs) 
+* 2. Implementing the agreed strategy, 
+* 3. Establishing and monitoring the implementation of the Data Centre Work Programme, and
+* 4. Undertaking evaluation and monitoring of operations, 
+* 5. Serving as the link to and interact with the contributing RPOs
+
+The ACTRIS DC comprises 6 units. These are 5 units with complementary topic expertise and 1 unit with integrating activities (DVAS). Its Management Board will respond to the needs of a diverse and distributed central facility and resolve conflicts of interest.
+
+The ACTRIS Data Expert Team which is a transversal technical group with representatives of all the DC topic units. 
+
+The ACTRIS Data Expert team has 3 main roles:
+* 1.Facilitate  and  ensure  technical  discussions  and  information  flow  across  the data  centre,exploiting and taking advantage ofthe expertise available to the benefit of all units
+* 2.Ensure   the   necessary   interaction   on   common   technical   topics   and   issues   (standards, interoperability,  user  feedback...).  In  particular,  this  group  will  be  in  charge  of  the  technical specification  of  the  ACTRIS  DC  portal,  metadata  catalogue  and  common  machine-to-machine access interfaces. It will make surethat technical solutions are implemented in such a way  that all data hosted and managed in the topic units are visible and accessible through the portal. It will plan new developments of the data centre, and monitor the progress. 
+* 3.Proposechanges  and  further developmentofACTRIS  Data ManagementPlan,  for discussionsand approval by ACTRIS DC managementboardbefore implementation
+
+The units and short names are:
 
 * [ACTRIS Data Discovery, Virtual Access and Services unit (DVAS)](http://actris.nilu.no/)
 * [ACTRIS In situ data centre unit (In-Situ)](http://ebas.nilu.no/)
@@ -534,11 +552,11 @@ Access to quality controlled data from the topic data centre units is organised 
 
 The tasks are summarized in [Figure 5](img/figures/figure5.png) above and include the organization of ACTRIS level 3 data. 
 
-All data centre units are providing metadata, and interfaces for access to data and metadata indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2020. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The metadata catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
+All data centre units are providing metadata, and interfaces for access to data and metadata indexed in the current ACTRIS metadata catalogue, except for ASC. Index to ASC data is under implementation, and with the aim to be ready within first part of 2021. The metadata is used to identify and access data through the ACTRIS Data Centre web portal. The metadata catalogue is regularly updated, at least every night through automatic procedures. ASC unit has developed their own metadata catalogue and data and metadata is currently available through [EUROCHAMP Data Centre portal]( https://www.eurochamp.org/DataCenter.aspx).
 
 [Figure 7](img/section4/overview_current_architecture_v2.png) shows the current technical architecture and the interface used between the topical data center units, as well as DVAS and the ACTRIS Data Centre web interface with access for users.
 
-The current setup is a web portal with a database that collects metadata from In Situ, ARES, CLU and GRES via custom web services, but currentyl machine-to-machine access is not possible. Implementation of ASC is under development and will be ready during 2020, and in the future, the aim is to harvest all ACTRIS metadata in to a single metadata catalogue, providing discovery metadata for all ACTRIS data using ISO19115 with the WIS metadata profile enabling machine-to-machine access of ACTRIS metadata. 
+The current setup is a web portal with a database that is harvesting metadata from In Situ, ARES, CLU and GRES via custom web services. Currently, machine-to-machine access is not possible for all ACTRIS data and metadata. The aim is to provide all ACTRIS metadata through a single metadata catalogue and REST API, providing discovery metadata for all ACTRIS data using ISO19115 with the [WIS metadata profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf). The schema is also extended with ACTRIS specific metadata. The latest version of the [metadata catalog](https://dev-actris-md.nilu.no/version) is under development, with import and access to metadata via a REST API. Documention for the new REST API and metadata catalog is [here](https://dev-actris-md.nilu.no/index.html). The aim is to expose the API to external users by January 2021.
 
 There is also a new version of the ACTRIS [metadata catalog](https://dev-actris-md.nilu.no/version) being implemented, with import and access to metadata via a REST API, which allows for machine-to-machine access of data and metadata. The ISO 19115 with [WIS profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf) is used as a starting point for metadata exchange. A full list of metadata elements supporter could be found [here](https://github.com/actris/actris-api-docs/blob/master/docs/metadata-description.md). The schema is also extended with ACTRIS specific metadata. Currently it will be serving "discovery" metadata, but in the future the aim is to work on expanding this to "use" metadata. Documention for the new REST API and metadata catalog is [here](https://github.com/actris/actris-api-docs/blob/master/docs/api-docs.md).
 
@@ -871,7 +889,7 @@ Tables below show the status by July 2019.
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
 |         CLU              |          JSON via REST API     |  http://devcloudnet.fmi.fi/api/                                                                 |       To be decided                      |
-|	  DVAS           	   | To be decided              |  None																		              |       To be decided             |
+|	  DVAS             | REST API                       | https://dev-actris-md.nilu.no/swagger/v1/swagger.json 				              |        openapi (3.0.1)            |
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
 
