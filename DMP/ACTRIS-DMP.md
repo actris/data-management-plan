@@ -101,7 +101,7 @@ The units and short names are:
 * [ACTRIS Data Discovery, Virtual Access and Services unit (DVAS)](http://actris.nilu.no/)
 * [ACTRIS In situ data centre unit (In-Situ)](http://ebas.nilu.no/)
 * [ACTRIS Aerosol remote sensing data centre unit (ARES)](https://data.earlinet.org/)
-* [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)
+* [ACTRIS Cloud remote sensing data centre unit (CLU)](https://cloudnet.fmi.fi/)
 * [ACTRIS trace gases remote sensing data centre unit (GRES)](https://en.aeris-data.fr/)
 * [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/)
 
@@ -115,7 +115,7 @@ During the ACTRIS implementation phase (expected 2020-2024), the Central Facilit
 | [ACTRIS Data Discovery, Virtual Access and Services unit (DVAS)](http://actris.nilu.no/)                | NILU (lead), CNRS, CNR, FMI, BSC        | ACTRIS web interface for data, services and tools, called “The ACTRIS Data Centre”. Main activities are discovery and access to ACTRIS data and data products, digital tools provided by the topical centres and the data centre units, documentation, access to software and tools for data production. Offer visualisation of ACTRIS data products. Data production of selected Level 3 data and synergy data products. The data centre will offer bridge to external data bases and sources.|
 | [ACTRIS In-Situ data centre unit (In-Situ)](http://ebas.nilu.no/)                   | NILU                                 | Data curation service for in situ data: all aerosol, cloud and trace gas in situ data. This comprises inclusion of data in the data base EBAS, archiving and documentation. Support for centralized data processing, harmonization, traceability, quality control and data product generation. Training and online tools for QA, QC. The activity enables RRT and NRT delivery.|
 | [ACTRIS Aerosol remote sensing data centre unit (ARES)](https://data.earlinet.org/)		   | CNR (lead), CNRS					  |	Aerosol remote sensing data processing and curation. This includes centralized processing, traceability, harmonization and data versioning, quality control, data archiving in EARLINET DB, data provision and documentation. The activity enables RRT and NRT delivery. Production of level 3 data for climatological analysis and new products. Support and training. Tutorial activities. |	
-| [ACTRIS Cloud remote sensing data centre unit (CLU)](http://cloudnet.fmi.fi/)		   | FMI								  |	Data curation service for cloud remote sensing data. Support for centralized cloud remote sensing data processing, traceability, harmonization, automated quality control and product generation, and data archiving. Enables RRT and NRT delivery. Production of level 3 data for NWP model evaluation. | 
+| [ACTRIS Cloud remote sensing data centre unit (CLU)](https://cloudnet.fmi.fi/)		   | FMI								  |	Data curation service for cloud remote sensing data. Support for centralized cloud remote sensing data processing, traceability, harmonization, automated quality control and product generation, and data archiving. Enables RRT and NRT delivery. Production of level 3 data for NWP model evaluation. | 
 | [ACTRIS trace gases remote sensing data centre unit (GRES)](https://gres.aeris-data.fr/)    | CNRS                                 | Data curation service for reactive trace gases remote sensing data. This comprises standardized process for data submission, quality control, inclusion of data in the AERIS data base, metadata creation and provision and archiving. Production of level 3 data for climatological analysis, and added values products (quicklooks, links to EVDC - ESA Atmospheric Validation Data Centre).|
 | [ACTRIS Atmospheric simulation chamber data centre unit (ASC)](https://data.eurochamp.org/) | CNRS                                 | Data curation service for atmospheric simulation chamber data. This includes standardized process for data submission, quality control, inclusion of data in the AERIS data base, search metadata creation and provision and archiving.|
 
@@ -888,8 +888,8 @@ Tables below show the status by July 2019.
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
-|         CLU              |          JSON via REST API     |  http://devcloudnet.fmi.fi/api/                                                                 |       To be decided                      |
 |	  DVAS             | REST API                       | https://dev-actris-md.nilu.no/swagger/v1/swagger.json 				              |        openapi (3.0.1)            |
+|         CLU              |          JSON via REST API     |  https://cloudnet.fmi.fi/api/                                                                 |      Custom, see [documentation](https://actris-cloudnet.github.io/dataportal/)                      |
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
 
@@ -924,7 +924,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          | To be decided                  |                                                                                         |                                 |
 |         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
-|         CLU              | To be decided                  |  None                                                                                   |       To be decided             |
+|         CLU              | EPIC                  |  EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)                                                                                   |                    |
 |	      DVAS           | Defined by primary repository  |  None																		              |       To be decided             |
 |         ASC              | To be decided					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
@@ -962,7 +962,7 @@ The table shows the data access protocols.
 |--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|------------------------------------------|
 |         In Situ		   |          netCDF, NasaAmes, CSV, XML              |                 http://ebas.nilu.no/                                                                                                                                 |              HTTP               | No                                    | 
 |         ARES     		   |          netCDF              |                 http://data.earlinet.org/                                                                                                                          |              HTTP               | Yes                                   |
-|         CLU              |          netCDF              |                 http://cloudnet.fmi.fi                                                                                                                               |              HTTP               | No                                    |
+|         CLU              |          netCDF              |                 https://cloudnet.fmi.fi                                                                                                                               |              HTTP               | No                                    |
 |		  DVAS (data portal)          | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |               HTTP      	       | For some data                         |
 |         ASC              | netCDF (data conversion by 2020)			      |  				https://data.eurochamp.org/																	                                                         |       		 HTTP		       | For some data                         |
 |		  GRES             | netCDF (data conversion by 2021)			  |  				https://gres.aeris-data.fr																	                                                         |       				 FTP      | No                                     |
@@ -1011,7 +1011,7 @@ Availability of data can vary between the different data centre units. As an exa
 |--------------------------|---------------------------------------|--------------|
 |         In Situ		   |          To be decided                |              |
 |         ARES     		   |          To be decided                |              |
-|         CLU              |          To be decided                |              |                                                          
+|         CLU              |          [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)                |              |                                                          
 |		  DVAS           | Will be defined by primary repository |              | 
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
@@ -1022,7 +1022,7 @@ Availability of data can vary between the different data centre units. As an exa
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
 |         In Situ		               |       None                   |     [EBAS IO](https://git.nilu.no/ebas/ebas-io/wikis/home)            |
 |         ARES     		               |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
-|	CLU					|	MIT		|	[CloudnetPy](https://github.com/tukiains/cloudnetpy) 		|
+|	CLU					|	MIT		|	[CloudnetPy](https://github.com/actris-cloudnet/cloudnetpy) 		|
 |	ASC					|	None		|	None 		|
 |	GRES				|	None		|	None 		|
 
@@ -1066,9 +1066,21 @@ The ARES infrastructure is maintained by the National Research Council of Italy 
 
 ### 6.3 Archiving and preservation of CLU data
 
-The CLU database consists of a file archive connected to a relational metadata database, due to the nature of the typical use-case and data volume. The infrastructure comprises a webserver, an FTP server for incoming data streams, web and rsync server for outgoing data streams, processing servers, with data storage distributed across a series of virtual filesystems including incremental backups. Due to the data volume, most sites also hold an archive of their own Level 0 and Level 1 data, effectively acting as a second distributed database and additional backup.
+The CLU database consists of a file archive connected to a relational metadata database, due to the
+nature of the typical use-case and data volume. The infrastructure comprises a webserver, an FTP server
+and HTTP API for incoming data streams, processing servers, with data storage distributed across a series
+of virtual filesystems including incremental backups.
+All data files and metadata can be accessed via HTTP API.
+Each digital object (i.e., file) has its own metadata landing page with a PID. 
+Due to the data volume, most sites also hold an archive of their own Level 0 and Level 1 data,
+effectively acting as an additional backup. 
 
-The current size of the database is about 25 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. However, there will be a significant increase in volume when the planned move to multi-peak and spectral products is undertaken; this is in addition to a slight increase arising through the creation of new products. The CLU infrastructure is maintained by FMI with long-term commitment for archiving and preservation. Publication of QA datasets will aid dataset preservation.
+The current size of the database is about 25 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. Most of this data is currently legacy but will be reprocessed and
+migrated to the new Cloudnet data portal (https://cloudnet.fmi.fi) as much as possible.
+There will be a significant increase in volume when the planned move to multi-peak and spectral products is
+undertaken; this is in addition to a slight increase arising through the creation of new products.
+The CLU infrastructure is maintained by FMI with long-term commitment for archiving and preservation.
+Publication of QA datasets will aid dataset preservation.
 
 ### 6.4 Archiving and preservation of GRES data
 For the GRES unit, data are stored on disk on a server in Paris. As new data are provided once a year, a full backup is made yearly and stored on tape. We plan to have soon a second copy on tape in Palaiseau, France. The distance between both sites will be about 20km.
