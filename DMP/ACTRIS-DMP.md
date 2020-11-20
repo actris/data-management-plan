@@ -556,9 +556,9 @@ All data centre units are providing metadata, and interfaces for access to data 
 
 [Figure 7](img/section4/overview_current_architecture_v2.png) shows the current technical architecture and the interface used between the topical data center units, as well as DVAS and the ACTRIS Data Centre web interface with access for users.
 
-The current setup is a web portal with a database that is harvesting metadata from In Situ, ARES, CLU and GRES via custom web services. Currently, machine-to-machine access is not possible for all ACTRIS data and metadata. The aim is to provide all ACTRIS metadata through a single metadata catalogue and REST API, providing discovery metadata for all ACTRIS data using ISO19115 with the [WIS metadata profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf). The schema is also extended with ACTRIS specific metadata. The latest version of the [metadata catalog](https://dev-actris-md.nilu.no/version) is under development, with import and access to metadata via a REST API. Documention for the new REST API and metadata catalog is [here](https://dev-actris-md.nilu.no/index.html). The aim is to expose the API to external users by January 2021.
+The current setup is a web portal with a database that is harvesting metadata from In Situ, ARES, CLU and GRES via custom web services. Currently, machine-to-machine access is not possible for all ACTRIS data and metadata. The aim is to provide all ACTRIS metadata through a single metadata catalogue and REST API, providing discovery metadata for all ACTRIS data using ISO19115 with the [WIS metadata profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf). The schema is also extended with ACTRIS specific metadata. The latest version of the [metadata catalog](https://prod-actris-md.nilu.no/version) is under development, with import and access to metadata via a REST API. Documention for the new REST API and metadata catalog is [here](https://dev-prod-md.nilu.no/index.html). The aim is to expose the API to external users by January 2021.
 
-There is also a new version of the ACTRIS [metadata catalog](https://dev-actris-md.nilu.no/version) being implemented, with import and access to metadata via a REST API, which allows for machine-to-machine access of data and metadata. The ISO 19115 with [WIS profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf) is used as a starting point for metadata exchange. A full list of metadata elements supporter could be found [here](https://github.com/actris/actris-api-docs/blob/master/docs/metadata-description.md). The schema is also extended with ACTRIS specific metadata. Currently it will be serving "discovery" metadata, but in the future the aim is to work on expanding this to "use" metadata. Documention for the new REST API and metadata catalog is [here](https://github.com/actris/actris-api-docs/blob/master/docs/api-docs.md).
+There is also a new version of the ACTRIS [metadata catalog](https://prod-actris-md.nilu.no/version) being implemented, with import and access to metadata via a REST API, which allows for machine-to-machine access of data and metadata. The ISO 19115 with [WIS profile](https://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf) is used as a starting point for metadata exchange. A full list of metadata elements supporter could be found [here](https://github.com/actris/actris-api-docs/blob/master/docs/metadata-description.md). The schema is also extended with ACTRIS specific metadata. Currently it will be serving "discovery" metadata, but in the future the aim is to work on expanding this to "use" metadata. Documention for the new REST API and metadata catalog is [here](https://github.com/actris/actris-api-docs/blob/master/docs/api-docs.md).
 
 ![ACTRIS Data Centre elements](img/figures/figure6.jpg)
 *Figure 6: Overview of the tasks of the DVAS unit*
@@ -888,7 +888,7 @@ Tables below show the status by July 2019.
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
-|	  DVAS             | REST API                       | https://dev-actris-md.nilu.no/swagger/v1/swagger.json 				              |        openapi (3.0.1)            |
+|	  DVAS             | REST API                       | https://prod-actris-md.nilu.no/swagger/v1/swagger.json 				              |        openapi (3.0.1)            |
 |         CLU              |          JSON via REST API     |  https://cloudnet.fmi.fi/api/                                                                 |      Custom, see [documentation](https://actris-cloudnet.github.io/dataportal/)                      |
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
@@ -899,12 +899,12 @@ ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 
 | Metadata catalogs           | Description               | ACTRIS DC unit indexed                                                                    |
 |-----------------------------|---------------------------|-------------------------------------------------------------------------------------------|
-|         GISC Offenbach          |                           |                                                                                       |
-|         NextGEOSS             |                           |                                                                                         |
-|         WIGOS              |          NaN              |  None                                                                                      |
+|         GISC Offenbach          |          https://gisc.dwd.de/wisportal/#                 |   In Situ                                                                                    |
+|         NextGEOSS             |    https://catalogue.nextgeoss.eu/                       |     In Situ                                                                             |
+|         WIGOS              |          N/A              |  Test phase                                                                                      |
 |	      Copernicus           | Defined by primary repository  |  None																		          |
-|         re3data              | To be defined					|  None																			      |
-|         EOSC             | To be decided					|  None																					      |  
+|         re3data              | https://www.re3data.org					| DVAS None																			      |
+|         EOSC             | N/A					|  None																					      |  
 
 *Table 18: ACTRIS metadata registered or indexed in relevant metadata catalogs.*
 
@@ -925,7 +925,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 |         In Situ          | To be decided                  |                                                                                         |                                 |
 |         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
 |         CLU              | EPIC                  |  EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)                                                                                   |                    |
-|	      DVAS           | Defined by primary repository  |  None																		              |       To be decided             |
+|	      DVAS           | Defined by primary repository  |  None																		              |       None             |
 |         ASC              | To be decided					|  None																					  |       To be decided				|
 |         GRES             | To be decided					|  None																					  |       To be decided				|
 
