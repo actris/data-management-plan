@@ -867,8 +867,8 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 |         ARES     		   | CF-1.7                        |                             |
 |         CLU              |          CF-1.7               |                             |
 |		  DVAS           | Defined by primary repository |                             |
-|         ASC              | 		CF-1.7				   |  			                 |
-|		  GRES             | 		CF-1.7				   |  				             |
+|         ASC              | 		GCMD, CF-1.7				   |  			                 |
+|		  GRES             | 		GCMD, CF-1.7				   |  				             |
 
 *Table 16: List of vocabularies*
 
@@ -890,8 +890,8 @@ Tables below show the status by July 2019.
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
 |	  DVAS             | REST API                       | https://prod-actris-md.nilu.no/swagger/v1/swagger.json 				              |        openapi (3.0.1)            |
 |         CLU              |          JSON via REST API     |  https://cloudnet.fmi.fi/api/                                                                 |      Custom, see [documentation](https://actris-cloudnet.github.io/dataportal/)                      |
-|         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
-|         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
+|         ASC              | JSON via REST API				|  [https://eurochamp.ipsl.upmc.fr/eurochamp-datacenter-rest/rest/](https://eurochamp.ipsl.upmc.fr/eurochamp-datacenter-rest/rest/)	(api documentation with swagger under implementation)																			  |      Custom JSON metadata format, compliant with ISO 19115 and Datacite schemas. CF and ACDD conventions.				|
+|         GRES             | JSON via REST API					|   																					  |       Custom JSON metadata format, compliant with ISO 19115 and Datacite schemas. CF and ACDD conventions. |
 
 *Table 17: List of metadata standards and services implemented by July 2019*
 
@@ -926,8 +926,10 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 |         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
 |         CLU              | EPIC                  |  EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)                                                                                   |                    |
 |	      DVAS           | Defined by primary repository  |  None																		              |       None             |
-|         ASC              | To be decided					|  None																					  |       To be decided				|
-|         GRES             | To be decided					|  None																					  |       To be decided				|
+|         ASC              | EPIC					|  Handle service provided by AERIS using an ePIC prefix (service starts January 2021).																					  |       				|
+|                       | DOI					|  All datasets already have DOIs provided by AERIS. 																					  |       				|
+|         GRES             | EPIC					|  Handle service provided by AERIS using an ePIC prefix (service starts January 2021).																					  |       				|
+|                       | DOI					|  All datasets will have a DOI attributed either by AERIS or by NDACC (under discussion). 																					  |       				|
 
 *Table 19: ACTRIS PID handlers*
 
