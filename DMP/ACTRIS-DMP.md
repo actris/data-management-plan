@@ -882,7 +882,6 @@ There might be instances where standards do not cover the need for describing th
 
 ACTRIS aiming at following the INSPIRE directive for metadata formatting. Present standard(s) for metadata is at the DVAS unit level. A decision is needed if data centre units should provide metadata according to specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
 
-Tables below show the status by July 2019.
 
 | Data centre unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
@@ -893,7 +892,7 @@ Tables below show the status by July 2019.
 |         ASC              | CSW, geonetwork				|  [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																			  |      ISO 19139				|
 |         GRES             | CSW, geonetwork					|   [http://catalogue2.sedoo.fr/geonetwork/srv](http://catalogue2.sedoo.fr/geonetwork/srv)	(implementation on going)																					  |       ISO 19139 |
 
-*Table 17: List of metadata standards and services implemented by July 2019*
+*Table 17: List of metadata standards and services*
 
 ACTRIS metadata should be registered or indexed in relevant metadata catalogs
 
