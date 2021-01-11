@@ -874,14 +874,8 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 #### 4.3.2 Metadata standards and meta data services
 
-ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The DVAS unit aims at providing discovery metadata in a common format for all ACTRIS level 2 data, using a common standard that is WIS compliant such as ISO19139 or ISO19115. A decision about the standard is not taken, and under consideration. In any case, exceptions may occur in cases where the selected metadata standards do not meet the need to describe the data. The present situation is shown in Table (refer to the one at the end of the section). 
-
-Future efforts will further develop the system shown in Figure 7 and make it possible for the DVAS unit to harvest all metadata from the different data centre units and collect this in a central ACTRIS metadata catalog and provide this through a commonly used protocol for Metadata harvesting like OAI-PMH or similar. A decision about the standard is not taken, and under consideration. The present situation is shown in Table (refer to the one at the end of the section). ACTRIS data should be described with rich metadata. Currently metadata services are offered on data centre unit level, but the aim is to offer all ACTRIS level 2 data through a centralized metadata service.
-
+ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The DVAS unit provides discovery metadata in a common format for all ACTRIS level 2 data, using a modified version of the ISO19139 WIS profile. The present situation is shown in Table 17. The aim is to offer all ACTRIS level 2 data through a centralized metadata service.
 There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Centre will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
-
-ACTRIS aiming at following the INSPIRE directive for metadata formatting. Present standard(s) for metadata is at the DVAS unit level. A decision is needed if data centre units should provide metadata according to specific standards, as well as providing metadata from the ACTRIS DC to the ENVRI cluster, EOSC etc.
-
 
 | Data centre unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
@@ -1096,6 +1090,8 @@ The ASC infrastructure is maintained by AERIS with long-term commitment for arch
 ### 6.6 Archiving and preservation of DVAS metadata
 
 The DVAS unit is providing access to ACTRIS data through the [ACTRIS data portal](https://actris.nilu.no/) using the ASP.NET (Web Forms) Framework 4.5 and Internet Information Services (ISS) web-server. The metadata is harvested from each individual data center unit, currently In Situ (EBAS), ARES (EARLINET), CLU (CLOUDNET) and GRES (NDACC), using custom harvesting routines triggered by cronjobs on an Ubuntu server running custom scripts written in Perl/Python. The metadata itself is stored on a Oracle database server, version 11.2.0.4. Versioning and revision control is managed using subversion (SVN). 
+
+From February 2021, a harmonized version of ACTRIS metadata will be stored in parallel with the current solution in a Postgre database. This solution will form the basis for new services to be produced in DVAS.
 
 ## 7. Ethical aspects
 
