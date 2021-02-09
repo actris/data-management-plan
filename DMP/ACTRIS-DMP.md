@@ -873,32 +873,22 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 #### 4.3.2 Metadata standards and meta data services
 
-ACTRIS will harvest metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The DVAS unit provides discovery metadata in a common format for all ACTRIS level 2 data, using a modified version of the ISO19139 WIS profile. The present situation is shown in Table 17. The aim is to offer all ACTRIS level 2 data through a centralized metadata service.
+The ACTRIS Data Centre will collect metadata from a large range of observations employing methodologies provided by multiple data centre units covering different types of data both in terms of size, time coverage and metadata. The DVAS unit provides discovery metadata in a common format for all ACTRIS level 2 data through a public available API. The ACTRIS metadata is using a modified version of the ISO19139 WIS profile. The present situation is shown in Table 17, also including the individual APIs and metadata services provided by individual data center units. 
+
 There might be instances where standards do not cover the need for describing the data at the data centre unit. In this case, ACTRIS Data Centre will still try to provide metadata in a way that is similar to the agreed formats and standards and at the same time push for an extension of the specified standard.
 
 | Data centre unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
-|         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
-|         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
 |	  DVAS             | REST API                       | https://prod-actris-md.nilu.no/swagger/v1/swagger.json 				              |        openapi (3.0.1)            |
+|         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
+|         In Situ          |          Thredds               |  https://thredds.nilu.no/thredds/catalog.html |       ISO 19115-2, NetCDF CF-1.7,ACDD  |
+|         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
 |         CLU              |          JSON via REST API     |  https://cloudnet.fmi.fi/api/                                                                 |      Custom, see [documentation](https://actris-cloudnet.github.io/dataportal/)                      |
 |         ASC              | JSON via REST API				|  [https://eurochamp.ipsl.upmc.fr/eurochamp-datacenter-rest/rest/](https://eurochamp.ipsl.upmc.fr/eurochamp-datacenter-rest/rest/)	(api documentation with swagger under implementation)																			  |      Custom JSON metadata format, compliant with ISO 19115 and Datacite schemas. CF and ACDD conventions.				|
 |         GRES             | JSON via REST API					|   																					  |       Custom JSON metadata format, compliant with ISO 19115 and Datacite schemas. CF and ACDD conventions. |
 
 *Table 17: List of metadata standards and services*
 
-ACTRIS metadata should be registered or indexed in relevant metadata catalogs
-
-| Metadata catalogs           | Description               | ACTRIS DC unit indexed                                                                    |
-|-----------------------------|---------------------------|-------------------------------------------------------------------------------------------|
-|         GISC Offenbach          |          https://gisc.dwd.de/wisportal/#                 |   In Situ                                                                                    |
-|         NextGEOSS             |    https://catalogue.nextgeoss.eu/                       |     In Situ                                                                             |
-|         WIGOS              |          N/A              |  Test phase                                                                                      |
-|	      Copernicus           | Defined by primary repository  |  None																		          |
-|         re3data              | https://www.re3data.org					| DVAS None																			      |
-|         EOSC             | N/A					|  None																					      |  
-
-*Table 18: ACTRIS metadata registered or indexed in relevant metadata catalogs.*
 
 #### 4.3.3 Traceability of ACTRIS data
 
@@ -923,7 +913,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 |         GRES             | EPIC					|  Handle service provided by AERIS using an ePIC prefix (service starts January 2021).																					  |       				|
 |                       | DOI					|  All datasets will have a DOI attributed either by AERIS or by NDACC (under discussion). 																					  |       				|
 
-*Table 19: ACTRIS PID handlers*
+*Table 18: ACTRIS PID handlers*
 
 #### 4.3.4: Version control of ACTRIS (meta)data
 
@@ -943,26 +933,25 @@ There might also be data available through the ACTRIS Data Centre that is not di
 
 #### 4.4.1 ACTRIS data access and access protocols
 
+ACTRIS Data is available through DVAS and the [ACTRIS portal](https://actris.nilu.no/). Machine-to-machine access is available through the [ACTRIS DC REST API](https://prod-actris-md.nilu.no/index.html). All of the data is provide through the primary repositories at the individual data centre units.
+
 General guidelines for access to ACTRIS data and services are available in the current [ACTRIS access and service policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467). Conditions of use should be indicated in section 3.4, and is covered by the attached licence, unless stated otherwise.
 
-The access protocol will be clearly described in the metadata. If direct access is limited due to size of data or sensitive data, contact information on institutional and/or personal level will be included. The data format and access protocol must be available as machine readable metadata.
+The access protocol will be clearly described in the metadata. If direct access is limited due to size of data or sensitive data, contact information on institutional and/or personal level will be included.
 
-Currently all data centre units maintain the access to the data, either directly through the unit specific repository or through the ACTRIS data portal.
-
-The table shows the data access protocols.
-
+The table shows the data access points and protocols for DVAS and data access at unit level.
 
 | DC unit                  | data format                  | Repository URL                                                                                                                                                       |           Protocol           | Authentication and authorization needed  | 
 |--------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|------------------------------------------|
-|         In Situ		   |          netCDF, NasaAmes, CSV, XML              |                 http://ebas.nilu.no/                                                                                                                                 |              HTTP               | No                                    | 
+|		  DVAS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa, https://prod-actris-md.nilu.no/index.html 																                                                         |       				 FTP      | No                                     |
+|         In Situ		   |          netCDF, NasaAmes, CSV, XML              |                 http://ebas.nilu.no/, https://thredds.nilu.no/thredds/catalog.html                                                                                                                                  |              HTTP               | No                                    | 
 |         ARES     		   |          netCDF              |                 http://data.earlinet.org/                                                                                                                          |              HTTP               | Yes                                   |
 |         CLU              |          netCDF              |                 https://cloudnet.fmi.fi                                                                                                                               |              HTTP               | No                                    |
 |		  DVAS (data portal)          | Defined by primary repository|  				http://actris.nilu.no/														                                                                         |               HTTP      	       | For some data                         |
 |         ASC              | netCDF (data conversion by 2020)			      |  				https://data.eurochamp.org/																	                                                         |       		 HTTP		       | For some data                         |
 |		  GRES             | netCDF (data conversion by 2021)			  |  				https://gres.aeris-data.fr																	                                                         |       				 FTP      | No                                     |
-|		  DVAS             | varies				  |  					http://actris.nilu.no/Content/?pageid=226809f7a0ac49538914eeafb4448afa																                                                         |       				 FTP      | No                                     |
 
-*Table 20: Data formats and access protocols*
+*Table 19: Data formats and access protocols*
 
 For In-Situ, CLU, GRES and and ASC unit, all data, metadata, tools and documentation are provided with free and fully open access to all users without authentication with username and password.
 
@@ -1010,7 +999,7 @@ Availability of data can vary between the different data centre units. As an exa
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
 
-*Table 21: Data licences*
+*Table 20: Data licences*
 
 | Responsible data centre unit         |          Software licence    |  Software link                                                        |
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
@@ -1020,7 +1009,7 @@ Availability of data can vary between the different data centre units. As an exa
 |	ASC					|	None		|	None 		|
 |	GRES				|	None		|	None 		|
 
-*Table 22: Software licences*
+*Table 21: Software licences*
 
 ## 5. Allocation of resources
 
