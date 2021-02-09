@@ -112,7 +112,9 @@ The ACTRIS Data Expert Team which is a transversal technical group with represen
 ![Architecture of the ACTRIS Data Centre](img/figures/figure2.jpg)
 *Figure 2: Architecture of the ACTRIS Data Centre*
 
-During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities will be constructed and their services tested. The following consortium is selected to host the ACTRIS Data Centre, and the various units with services to data producers and data users.
+During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities will be constructed and their services tested. 
+
+The following consortium is selected to host the ACTRIS Data Centre, and the various units with services to data producers and data users.
 
 | Name of Central Facility and associated Unit                                | Hosting institution and contribution | Main activities                                                   |
 |--------------------------------------------------------------|--------------------------------------|--------------------------------------------------------------------|                                    
@@ -127,9 +129,10 @@ During the ACTRIS implementation phase (expected 2020-2024), the Central Facilit
 
 ### 1.2 The overall goal and structure of ACTRIS Data Management Plan
 
-The ACTRIS Data Management Plan (DMP) should document the key elements of the ACTRIS data management life cycle, and the plans for the data collected, processed and/or generated. The goal of the DMP is to describe the present situation and the operational ACTRIS data center. Furthermore the DMP should also describe the technical solutions agreed, that are currently under implementation, and outline the strategy and development needed towards making ACTRIS data FAIR at ACTRIS Data Centre Level.
+The ACTRIS Data Management Plan (DMP) document the key elements of the ACTRIS data management life cycle, and the plans for the data collected, processed and/or generated. The goal of the DMP is to describe the present situation and the operational ACTRIS data center. Furthermore the DMP should also describe the technical solutions agreed, that are currently under implementation, and outline the strategy and development needed towards making ACTRIS data FAIR at ACTRIS Data Centre Level.
 
-The ACTRIS DMP is a "living" online document which is set up to be machine-actionable as a part of the FAIR data ecosystem. The DMP should be a hub of information on ACTRIS FAIR digital objects. The goal is to make the ACTRIS DMP accessible for all stakeholders (repository operators, funders, researchers, publishers, infrastructure providers etc.) by making it available and accessible for both humans and machines. We currently use GitHub as the platform for collaboration on the DMP, this enables all actors working with or within ACTRIS to directly contribute and suggest changes to the document. Furthermore, the ACTRIS Data Management Plan should follow the glossary of terminology and definitions used in ACTRIS.
+The DMP will be updated regularly in accordance with the development, at least 4 times per year. The ACTRIS DMP is an online document which is set up to be machine-actionable as a part of the FAIR data ecosystem. The DMP should be a hub of information on ACTRIS FAIR digital objects. The goal is to make the ACTRIS DMP accessible for all stakeholders (repository operators, funders, researchers, publishers, infrastructure providers etc.) by making it available and accessible for both humans and machines. We currently use GitHub as the platform for collaboration on the DMP, this enables all actors working with or within ACTRIS to directly contribute and suggest changes to the document. Furthermore, the ACTRIS Data Management Plan should follow the glossary of terminology and definitions used in ACTRIS.
+
 
 ## 2. ACTRIS data and ACTRIS data levels
 
