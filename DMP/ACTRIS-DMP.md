@@ -157,9 +157,9 @@ The list of ACTRIS variables are expected to increase during the progress of ACT
 
 Primary goal of ACTRIS is to produce high quality integrated datasets in the area of atmospheric sciences and provide services, including access to instrumented platforms, tailored for scientific and technological usage. The purpose of the data collection and generation of data products in ACTRIS is to provide open access to aerosol, cloud and trace gas in situ and remote sensing measurements of high quality, benefiting a large community of scientists involved in atmospheric science and related areas as well as policy makers, the private sector, educators and the general public. 
 
-See the [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217) for more information.
+See the [Stakeholder Handbook](hhttps://www.actris.eu/sites/default/files/2021-01/stakeholder%20handbook.pdf) for more information.
 
-#### The relation to the objectives of the project as stated in [Stakeholder Handbook](http://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Stakeholder%20Handbook/high_res_version.pdf?ver=2018-06-04-080105-217)
+#### The relation to the objectives of the project as stated in [Stakeholder Handbook](https://www.actris.eu/sites/default/files/2021-01/stakeholder%20handbook.pdf)
 
 The main objectives of ACTRIS are:
 
