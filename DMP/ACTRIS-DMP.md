@@ -112,7 +112,7 @@ The ACTRIS Data Expert Team which is a transversal technical group with represen
 ![Architecture of the ACTRIS Data Centre](img/figures/figure2.jpg)
 *Figure 2: Architecture of the ACTRIS Data Centre*
 
-During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities will be constructed and their services tested. The ACTRIS Central Facilities host selection was a part of ACTRIS PPP, and the following consortium is selected to host the ACTRIS Data Centre, and the various units with services to data producers and data users.
+During the ACTRIS implementation phase (expected 2020-2024), the Central Facilities will be constructed and their services tested. The following consortium is selected to host the ACTRIS Data Centre, and the various units with services to data producers and data users.
 
 | Name of Central Facility and associated Unit                                | Hosting institution and contribution | Main activities                                                   |
 |--------------------------------------------------------------|--------------------------------------|--------------------------------------------------------------------|                                    
