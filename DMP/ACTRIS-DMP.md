@@ -305,11 +305,17 @@ The CLU data centre unit provides data curation and data processing service of c
 
 #### The types and formats of data generated/collected
 
-The ACTRIS CLU data centre unit is making use of the Cloudnet database infrastructure. Cloud remote sensing data submitted to ACTRIS need to be in a specified format compliant with the centralized processing suite. CLU provides data compliant with netCDF 3 and netCDF4 formats as much as possible, and following CF 1.7 convention. Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite. All further data levels are produced by the CLU processing suite.
+The ACTRIS CLU data centre unit is making use of the so-called Cloudnet processing and archiving infrastructure,
+operated at the Finnish Meteorological Institute, Helsinki, Finland.
+Level 0 data submitted to ACTRIS CLU are required to be in a specified format compliant with the centralized processing suite.
+All further data levels are produced by the CLU processing suite and provided for users. CLU provides harmonized data products
+compliant with netCDF4 format, following CF 1.7 convention as much as possible.
 
 #### Re-use of existing data
 
-The ACTRIS data user interface will include access to cloud remote sensing legacy data resulting from ACTRIS pre-projects (for CLU [Cloudnet](https://www.actris.eu/About/ACTRIS/Heritage.aspx)). These will also be included as a part of the ACTRIS CLU data centre unit. Legacy data resulting from ACTRIS preprojects will be available in the same format as current products.
+The ACTRIS data portal will include access to cloud remote sensing legacy data resulting from ACTRIS pre-projects.
+The CLU legacy data will be available in the same format as the current products but including
+no provenance information and less quality control.
 
 #### The origin of the data
 
@@ -577,13 +583,13 @@ As visualized in [figure 6](img/figures/figure6.png), DVAS organizes the level 3
 
 ##### Overview of when data is made available (level 2 data)
 
-|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provsion of NRT data |		Comment						    |
+|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provision of NRT data |		Comment						    |
 |---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
 | In Situ                   |              31th of May  |               31th of June                      |			hourly	     |										|
 | GRES                      |     Within 4 months after measurement        |      Within 4 months after measurement                              |  					 |	There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
 | ARES                      |      Not applicable       |                 There is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. Once QCs both at TC and DC level are passed, Level 2 data are available in ARES DC. The NRT provision (within 3 days) will be implemented in the implementation phase.                   |                      |										|
 | ASC                       |                           |                                                 |  Not applicable      |										|
-| CLU                       |     Automatic             |   1 day after submission                        |                      |										|
+| CLU                       |     Automatic             |   1-3 days after submission (stable NRT data with PID) | 1-6 hours (volatile) | Curated, fully quality controlled data will be provided approximately after 6-12 months.|
 
 *Table 14: Overview of when data is made available* 
 
@@ -804,7 +810,7 @@ All data are stored in the ARES database which is hosted by the CNR ARES data ce
 
 Modern cloud remote sensing instruments can produce vast amounts of raw data. This data first need to be stored locally
 at the measurement site. Then, the data are transferred to FMI servers for processing and archiving. Currently, FMI offers
-an FTP access point to establish the file transfer, but it is site operators responsibility to maintain regular data flow to FMI.
+an HTTP API to establish the file transfer, but it is site operators responsibility to maintain regular data flow to FMI.
 
 It should be noted that, technically, it is also possible to execute the first processing step already on site, and
 only transfer the processed measurement files, that are much smaller, to FMI for further processing.
@@ -816,9 +822,9 @@ This first processing step is applied to cloud radar and lidar measurements, but
 processed elsewhere. FMI only receives the calibrated and processed Level 2 MWR files needed in the further processing steps.
 
 After receiving and processing the raw data (and receiving MWR files), we generate all Level 2 cloud products with our in-house
-processing suite. All processed data are stored in netCDF files, which are archived on FMIs data servers. From the
+processing suite. All processed data are stored in netCDF files, which are archived on FMIs on-premises S3 cloud storage. From the
 processed files, we generate a metadata database which is synchronized with the master metadata repository
-hosted by the DVAS unit. All of our metadata is available as a JSON format via restful http API.
+hosted by the DVAS unit. All of our metadata is available as a JSON format via restful HTTP API.
 The actual metadata standard is yet to be decided, but it must comply with the netCDF conventions because
 we use the netCDF file format. All data files encounter regular back-ups.
 
@@ -1058,16 +1064,18 @@ The ARES infrastructure is maintained by the National Research Council of Italy 
 ### 6.3 Archiving and preservation of CLU data
 
 The CLU database consists of a file archive connected to a relational metadata database, due to the
-nature of the typical use-case and data volume. The infrastructure comprises a webserver, an FTP server
-and HTTP API for incoming data streams, processing servers, with data storage distributed across a series
-of virtual filesystems including incremental backups.
+nature of the typical use-case and data volume. The infrastructure comprises a webserver
+and HTTP API for incoming data streams and processing servers. All data files are stored in
+the FMIs on-premises S3 cloud storage, physically located in Helsinki, Finland.
 All data files and metadata can be accessed via HTTP API.
-Each digital object (i.e., file) has its own metadata landing page with a PID. 
+Each digital object (i.e., file) has its own metadata landing page with a PID.
 Due to the data volume, most sites also hold an archive of their own Level 0 and Level 1 data,
-effectively acting as an additional backup. 
+effectively acting as an additional backup.
 
-The current size of the database is about 25 TB and the volume is expected to grow by close to 0.5 TB per year with the current set of stations and the standard products. Most of this data is currently legacy but will be reprocessed and
-migrated to the new Cloudnet data portal (https://cloudnet.fmi.fi) as much as possible.
+The current size of the database is about 25 TB and the volume is expected to grow by close to 0.5 TB
+per year with the current set of stations and the standard products.
+Most of this data is currently legacy but will be reprocessed and
+migrated to the Cloudnet data portal (https://cloudnet.fmi.fi) as much as possible.
 There will be a significant increase in volume when the planned move to multi-peak and spectral products is
 undertaken; this is in addition to a slight increase arising through the creation of new products.
 The CLU infrastructure is maintained by FMI with long-term commitment for archiving and preservation.
