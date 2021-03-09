@@ -780,7 +780,7 @@ Broadening the concept, the ARES-CNR activities can be grouped according to the 
  
 * **Traceability.** All data products, pre-products, and sample handling protocols, as well as all software and algorithms used in production steps, are version controlled, archived following long-term archive standards, and identified through Persistent Identifiers (PIDs) in each version. Moreover, the provenance throughout all ACTRIS aerosol remote sensingworkflows if provided by the use of standardised provenance scheme, facilitating attribution of entities involved in workflow execution.
  
-* **Harmonization and Data Versioning.** ARES Unit ensures that all instances of a specific data production step operated in the ACTRIS network uses the same identified version at any given time. Moreover,  ARES relational database is version controlled database and is suitable for reprocessing of the data and updates with new quality control procedures if needed.
+* **Harmonization and Data Versioning.** ARES Unit ensures that all instances of a specific data production step operated in the ACTRIS network uses the same identified version at any given time. Moreover,  ARES relational database is version controlled database and is suitable for reprocessing of the data and updates with new quality control procedures if needed. A Versioning System has been implemented at ARES directly in the RDBMS by using DML (Data Manipulation Language) triggers. A new version of a file is produced when a user tries to modify data through a DML event. New versions will be centrally produced if new QC procedures and new processing features are released. Additionally new versions of the files will be allowed and centrally handled for fixing file bugs in particular for legacy data.
  
 * **Quality Control.** When the data are submitted to the ACTRIS aerosol remote sensing DC database, on-the-fly QC procedures are performed directly during the submission phase. These procedures control that the file content compyl with the correct file structure. Additional scientific controls check all mandatory products reported into the files in terms of scientific content. These are typically delayed taking into account the outcome of the quality assurance procedures at TC level.The data originator receives feedback of the outcome of the QC.
 
@@ -927,9 +927,8 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 
 The ACTRIS DC aims at providing clear versioning of its data and metadata. Due to the decentralised nature of the Data Centre, this varies between the different data centre units, and implementation will be done on unit level.
 
-As a guiding principle, all data submitted to ACTRIS passing quality assurance should be uniquely identified. In case of updates, a ID-number is generated, and previous data versions should be identifiable and kept available upon request while the latest version is served through the ACTRIS Data Centre.
+As a guiding principle, all data submitted to ACTRIS passing quality assurance should be uniquely identified. In case of updates, a ID-number is generated, and previous data versions should be identifiable and kept available upon request while the latest version is served through the ACTRIS Data Centre. More details on this is in the sections for DC units. 
 
-A Versioning System has been implemented at ARES directly in the RDBMS by using DML (Data Manipulation Language) triggers. A new version of a file is produced when a user tries to modify data through a DML event. New versions will be centrally produced if new QC procedures and new processing features are released. Additionally new versions of the files will be allowed and centrally handled for fixing file bugs in particular for legacy data. 
 
 ### 4.4 Accessible: Making data openly accessible [FAIR data]
 
