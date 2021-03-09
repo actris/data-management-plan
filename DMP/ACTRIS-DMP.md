@@ -934,7 +934,7 @@ As a guiding principle, all data submitted to ACTRIS passing quality assurance s
 
 The purpose of the data collection and generation of data products in ACTRIS is to provide open access to aerosol, cloud and trace gas in situ and remote sensing measurements of high quality (see section 1).
 
-A guiding principle is that all ACTRIS data should be readable for both humans and machines using protocols that offer no limitations to access. ACTRIS Data Centre is organized as a distributed network of centralized repositories (see Figure 6). The ACTRIS data will be offered through the [ACTRIS Data Centre portal](http://actris.nilu.no/), a web portal that allows the user to search, analyses and download data produced within ACTRIS (see Figure 7). Access to data and metadata will also be made possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. Currently, machine-to-machine access of ACTRIS data varies between the different data units and their associated repositories.
+A guiding principle is that all ACTRIS data should be readable for both humans and machines using protocols that offer no limitations to access. ACTRIS Data Centre is organized as a distributed network of centralized repositories (see Figure 6). The ACTRIS data will be offered through the [ACTRIS Data Centre portal](http://actris.nilu.no/), a web portal that allows the user to search, analyses and download data produced within ACTRIS (see Figure 7). Access to data and metadata are also possible by machine-to-machine interaction, enabling harvesting of metadata from the ACTRIS metadata catalog. 
 
 There might also be data available through the ACTRIS Data Centre that is not directly ACTRIS data, but used in the production and interpretation of ACTRIS data.
 
@@ -987,15 +987,11 @@ CLU is currently working on a RESTful API with similar services as ARES in devel
 
 The guiding principle is free and open access to ACTRIS data and ACTRIS data products, and the ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the [ACTRIS access and service policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467) and the open research data initiative of the European Commission.
 
-As a result, the ACTRIS DC will implement one or multiple licenses for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to acknowledge ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably end of 2020 or early 2021). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
+As a result, the ACTRIS DC will implement one or multiple licenses for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to acknowledge ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably early 2022). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
 
 Several features have been implemented by In-Situ, ARES, CLU (or more) units to ensure reusability and traceability, in particular traceable data flow and version control of data products, see section 4.3.
 
-In order to increase the reusability of data in ASC unit, these data are completed with rich metadata which are in open access from the website. These metadata provide detailed technical description of the chambers (size, volume, walls, irradiation system ...), experimental protocols used for the generation of the data, and an “auxiliary mechanism” which provides the chamber-dependent parameters affecting the observations. This last one is very useful for modelers who aim at simulating experiments performed in simulation chambers.
-
-As regards ARES unit, all the characteristics of the LIDAR instrument configuration (laser, telescope, acquisition and detection system, processing configuration, ...) are reported as metadata in each ARES data product. 
-
-Availability of data can vary between the different data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
+Availability of data after the measurements are completed, can vary between the data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
 | Data centre unit         |          Data licence                 |  Comment     |
 |--------------------------|---------------------------------------|--------------|
@@ -1022,7 +1018,7 @@ Availability of data can vary between the different data centre units. As an exa
 
 ACTRIS Data Center is a distributed data center with scientific and data expert contributions as well as funding contributions from many institutions and sources. All host countries are contributing significantly to the operation and implementation through both national and international projects, in addition to considerable support from the institutions involved. Furthermore, there is large ongoing activity of making ACTRIS data FAIR, in particular this is the core of the work within the H2020 project [ENVRI-FAIR]( https://envri.eu/home-envri-fair/). The ACTRIS DC budget in ENVRI-FAIR is ca 890 kEuro which leaves this project as one if the main funder of making ACTRIS data FAIR.
 
-Details on costs of the various units is available upon request, and a part of the work within [ACTRIS-PPP]( https://www.actris.eu/Projects/ACTRISPPP(2017-2019).aspx)  and ACTRIS-IMP (starting 1 January 2020). 
+Details on costs of the various units is available upon request, and a part of the work within ACTRIS-PPP (ended December 2019) and ACTRIS-IMP (started 1 January 2020). 
 
 ## 6. Data security
 
