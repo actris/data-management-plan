@@ -526,13 +526,13 @@ ACTRIS data and products should be findable, accessible, interoperable and reusa
 
 ### 4.1 ACTRIS access and service policy
 
-ACTRIS is offering access to a large variety of high-quality services offered by ACTRIS facilities, to a wide range of users and needs, for scientific, technological and innovation-oriented usage. Accordingly, ACTRIS has developed an [access strategy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467) to give clear guidelines and describe the general principles for access provided by ACTRIS to Users.
+ACTRIS is offering access to a large variety of high-quality services offered by ACTRIS facilities, to a wide range of users and needs, for scientific, technological and innovation-oriented usage. Accordingly, ACTRIS has developed an [access strategy](https://www.actris.eu/sites/default/files/Documents/ACTRIS%20PPP/Deliverables/ACTRIS%20PPP_WP2_D2.6_ACTRIS%20access%20and%20service%20policy.pdf) to give clear guidelines and describe the general principles for access provided by ACTRIS to Users.
 When the ACTRIS services are in operation, the Users will access the ACTRIS services through a single entry point, as shown in Figure 4 below.
 
 ![Overview of ACTRIS Access strategy](img/section4/ACTRIS_IAC09_principles_access_to_NF_draft.jpg)
 *Figure 4: Overview of ACTRIS Access strategy*
 
-Virtual access is wide access to ACTRIS data and digital tools and does not require a selection process. Virtual access to ACTRIS data and digital tools is free access, and is given in compliance with the [ACTRIS data policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.3_M30.pdf?ver=2018-10-29-152439-550) for data from ACTRIS labelled NFs. Competitive access is Physical or Remote access to the ACTRIS Facilities, including access to specific services offered by the Data Centre and shall be managed by the SAMU and requires a selection process. This can e.g. be data centre services for comprehensiv research campaigns or large volume data delivery tailored for specific purposes.   
+Virtual access is wide access to ACTRIS data and digital tools and does not require a selection process. Virtual access to ACTRIS data and digital tools is free access, and is given in compliance with the [ACTRIS data policy](https://www.actris.eu/sites/default/files/Documents/ACTRIS%20PPP/Deliverables/ACTRIS%20PPP_WP2_D2.3_ACTRIS%20Data%20policy.pdf) for data from ACTRIS labelled NFs. Competitive access is Physical or Remote access to the ACTRIS Facilities, including access to specific services offered by the Data Centre and shall be managed by the SAMU and requires a selection process. This can e.g. be data centre services for comprehensiv research campaigns or large volume data delivery tailored for specific purposes.   
 
 
 
@@ -985,7 +985,7 @@ CLU is currently working on a RESTful API with similar services as ARES in devel
 
 ### 4.6 Reuseable: Increase data re-use [FAIR data]
 
-The guiding principle is free and open access to ACTRIS data and ACTRIS data products, and the ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the [ACTRIS access and service policy](https://www.actris.eu/Portals/46/Documentation/ACTRIS%20PPP/Deliverables/Public/WP2_D2.6_M32.pdf?ver=2018-10-29-152442-467) and the open research data initiative of the European Commission.
+The guiding principle is free and open access to ACTRIS data and ACTRIS data products, and the ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the [ACTRIS access and service policy](https://www.actris.eu/sites/default/files/Documents/ACTRIS%20PPP/Deliverables/ACTRIS%20PPP_WP2_D2.6_ACTRIS%20access%20and%20service%20policy.pdf) and the open research data initiative of the European Commission.
 
 As a result, the ACTRIS DC will implement one or multiple licenses for all ACTRIS level 2 data and NRT data that is available through the ACTRIS metadata catalog. Furthermore, the ACTRIS DC might also consider issuing a licence on the use of metadata, in order to acknowledge ACTRIS when large amounts of metadata is harvested by third party application/services. ACTRIS aims to implement a license from the time ACTRIS becomes an ERIC (probably early 2022). Until ACTRIS has decided upon and implemented one or more licenses, the current [ACTRIS data policy](http://actris.nilu.no/Content/Documents/DataPolicy.pdf) will apply.
 
