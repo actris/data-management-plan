@@ -692,7 +692,9 @@ Already at the station, the raw data stream from the instrument is transcribed t
    
 All fully QCed data are to be submitted to the In Situ DC unit on an annual basis by 31 May of the year following the calendar year to be reported. If the TC review option is used, NFs need to submit their initial QCed version to the review process by 31 March of that year, where the review process is typically supervised by the TC.
 
-The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. The following responsibilities specific to online observations are distributed between NF, TC, and DC as such:
+The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. As hybrid workflow with automatic and manual tasks, the In-Situ online data production uses [Apache Airflow](https://en.wikipedia.org/wiki/Apache_Airflow) for organizing the automatic tasks, coupled to the [Mantis Bug Tracker](https://en.wikipedia.org/wiki/Mantis_Bug_Tracker) issue tracker as interface for the manual workflow steps.
+
+The following responsibilities specific to online observations are distributed between NF, TC, and DC as such:
 
 **NF**:
 * Operates the instrument according to TC recommendations.
