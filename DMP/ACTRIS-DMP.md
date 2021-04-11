@@ -735,7 +735,9 @@ In the offline workflow for ACTRIS in situ data, data production is centred arou
 * **Sample Preparation:** Weighing out, Sample medium extraction, Sample medium apportioning.
 * **Sample analysis.**
 
-Again, the content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ offline instrument type. The following responsibilities specific to offline observations are distributed between NF, TC, and DC as such:
+Again, the content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ offline instrument type. Each step in handling a sample medium for offline observations is documented by an identified, machine-actionable protocol, formulated in a data serialization format. The infrastructure to archive and identify the protocols is shared with the infrastructure for archiving QC/QA measure protocols (see section [4.2.2.1](#4221-general-characteristics-of-in-situ-data-production)
+
+The following responsibilities specific to offline observations are distributed between NF, TC, and DC as such:
 
 **NF:**
 * Conduct sample medium pre-treatment, sample medium exposure, sample preparation, and sample analysis in accordance with procedures defined by TC.
