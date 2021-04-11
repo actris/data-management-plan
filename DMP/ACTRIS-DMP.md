@@ -1009,6 +1009,17 @@ In addition to this, ARES provides a REST API for machine-to-machine interaction
 
 CLU is currently working on a RESTful API with similar services as ARES in development.
 
+| DC unit                  | metadata endpoint                                               | data endpoint                                        |
+|--------------------------|-----------------------------------------------------------------|------------------------------------------------------|
+| In-Situ                  | https://ebas-oai-pmh.nilu.no/oai/                               | https://thredds.nilu.no                              |
+| ARES                     |                                                                 |                                                      |
+| CLU                      |                                                                 |                                                      |
+| DVAS                     |                                                                 |                                                      |
+| ASC                      |                                                                 |                                                      |
+| GRES                     |                                                                 |                                                      |
+
+*Table 20: Metadata and data end-points for machine access for all ACTRIS DC units*
+
 ### 4.6 Reuseable: Increase data re-use [FAIR data]
 
 The guiding principle is free and open access to ACTRIS data and ACTRIS data products, and the ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the [ACTRIS access and service policy](https://www.actris.eu/sites/default/files/Documents/ACTRIS%20PPP/Deliverables/ACTRIS%20PPP_WP2_D2.6_ACTRIS%20access%20and%20service%20policy.pdf) and the open research data initiative of the European Commission.
@@ -1028,7 +1039,7 @@ Availability of data after the measurements are completed, can vary between the 
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
 
-*Table 20: Data licences*
+*Table 21: Data licences*
 
 | Responsible data centre unit         |          Software licence    |  Software link                                                        |
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
@@ -1038,7 +1049,7 @@ Availability of data after the measurements are completed, can vary between the 
 |	ASC					|	None		|	None 		|
 |	GRES				|	None		|	None 		|
 
-*Table 21: Software licences*
+*Table 22: Software licences*
 
 ## 5. Allocation of resources
 
