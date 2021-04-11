@@ -612,7 +612,24 @@ All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived 
 
 As a general rule in ACTRIS in situ data QC, only data subject to instrument malfunctions are flagged as invalid. Data with episodes, local contamination, etc. are flagged as such, but not as invalid, to avoid limiting data use only to certain use cases. Data level designations are used to distinguish between data having received automatic QC, and data having undergone manual QC. When calculating time averages in data production, any non-invalidating flags occurring in the source data during the averaging period are copied to the average result, while invalid data points in the source data are excluded from the average. Temporal coverage flags are applied to the average.
 
-The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. Certain responsibilities common to both online and offline observations are by default distributed between NF, TC, and DC as follows:
+In the ACTRIS In-Situ data production workflow, the tasks and the responsibilities for them are specified in Appendix 3, separately for each In-Situ instrument type. The tools used to organise In-Situ data production are chosen according to the following aspects:
+* Suitable to handle the entities contained in the workflow (well-formatted data or protocols, software, humans, instruments, calibration standards)
+* The type of handling agents involved (software and humans for online workflow, humans for offline workflow, humans (machine assited) for QC/QA measures)
+* Location of workflow execution (DC, TCs, NFs, distributed over Europe)
+* The need to document provenance of data production
+* The need to identify entities involved in the workflow.
+* The ambition to re-use standard solutions, so they exist.
+* The ambition to use widely-used standard technologies for developing custom solutions if needed.
+* Preference of open-source technologies with a large user base to minimise costs while maintaining sustainability.
+
+Both, online and offline data production workflows of ACTRIS In-Situ, are accompanied by a common workflow for documenting QC/QA measures. These cover:
+* (regular routine) calibrations of instruments at the NFs.
+* (intermittent) calibrations of instruments at TCs.
+* (intermittent) round-robin lab intercomparisons for offline observations organised by the responsible TC.
+
+Each QC/QA measure is documented by an identified, machine-actionable protocol, formulated in a data serialization format. The schema of the protocol is specific to type and purpose of the QC/QA measure, as well as the type of observation. Data serializations formats currently considered include [XML](https://en.wikipedia.org/wiki/XML) and [JSON](https://en.wikipedia.org/wiki/JSON). The protocols are archived in a database suitable for the chosen data serialization format. Due to a common need between ACTRIS DC units, the archive for QC/QA measure protocols will be implemented as infrastructure spanning several units. Besides In-Situ, current candidate participants include ASC and CLU. 
+
+Certain responsibilities common to both online and offline observations are by default distributed between NF, TC, and DC as follows:
 
 **NF:**
 * Conducts / participates in on-site, off-site QA measures, and round robin exercises as specified by TC.
