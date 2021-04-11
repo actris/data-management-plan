@@ -884,7 +884,9 @@ The ASC unit is making use of EUROCHAMP database (https://data.eurochamp.org/) w
 
 #### 4.3.1 ACTRIS variable names and implementation of vocabulary
 
-Generally, ACTRIS data set names aims to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the DVAS unit (ACTRIS Data Centre web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
+ACTRIS aims at using standardised, well-documented, and machine-actionable vocabulary for denoting data and metadata entities, in particular for variable names. While no single commonly accepted variable vocabulary exists for the atmospheric domain, widely used vocabularies include the [standard names of the Climate Forecast (CF) converntion](https://cfconventions.org/standard-names.html), and the [Global Change Master Directory (GCMD) keywords](https://earthdata.nasa.gov/earth-observation-data/find-data/idn/gcmd-keywords). ACTRIS collaborates with the other European Research Infrastructure of the atmospheric domain organised in the [Environmental Research Infrastructures (ENVRI)](https://envri.eu/) framework to come up with a commonly accepted variable vocabulary for the domain by contributing to maintaining and completing the CF standard name and GCMD keywords vocabularies. Further, ACTRIS collaborates with the [RDA InteroperAble Descriptions of Observable Property Terminology WG (I-ADOPT WG)](https://www.rd-alliance.org/groups/interoperable-descriptions-observable-property-terminology-wg-i-adopt-wg) in order to come up with and use a vocabulary framework for describing observations across domains. The ultimate aim is to make ACTRIS' variable vocabulary machine-actionable by serving it through a [SPARQL](https://en.wikipedia.org/wiki/SPARQL) endpoint. Canditate technologies include an [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) triple-store with SPARQL server, together with a [SKOSMOS](https://skosmos.org/) [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) browser and publishing tool.
+
+Generally, ACTRIS data set names aim to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the DVAS unit (ACTRIS Data Centre web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
 
 ASC unit has developed a user-friendly web interface which includes searching tools based on the metadata catalogue for the three pillars, DASCS, LAR and LADP. Relevant searching criteria have been defined for each pillar. 
 
@@ -892,12 +894,12 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 | Data centre unit         | Vocabulary name               |          Comment            |
 |--------------------------|-------------------------------|-----------------------------|
-|         In Situ		   | IUPAC, CF-1.7                 |                             |
-|         ARES     		   | CF-1.7                        |                             |
-|         CLU              |          CF-1.7               |                             |
-|		  DVAS           | Defined by primary repository |                             |
-|         ASC              | 		GCMD, CF-1.7				   |  			                 |
-|		  GRES             | 		GCMD, CF-1.7				   |  				             |
+|         In Situ          | IUPAC, CF-1.7                 |                             |
+|         ARES             | CF-1.7                        |                             |
+|         CLU              | CF-1.7                        |                             |
+|         DVAS             | Defined by primary repository |                             |
+|         ASC              | GCMD, CF-1.7                  |                             |
+|         GRES             | GCMD, CF-1.7                  |  	                         |
 
 *Table 16: List of vocabularies*
 
