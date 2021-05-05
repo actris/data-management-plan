@@ -1282,7 +1282,8 @@ Meteorological Base Parameters workflow implementation tables to be added.
 
 
 ### Appendix 4: ACTRIS Aerosol remote sensing data centre unit (ARES) data life cycle and workflow diagram
-**Link to seperate document describing the workflow in more detail.**
+The following diagram shows the structure of the ARES workflow as discussed and agreed with the relevant TC (CARS) and the aerosol remote sensing NFs. Some parts of the workflow are still partially implemented, and others will be implemented accordingly to the implementation plan in the few years. In particular, data products different from aerosol optical property profiles are currently not integrated into the DB.
+
 ![ACTRIS Aerosol remote sensing data centre unit workflow diagram](https://raw.githubusercontent.com/actris/data-management-plan/master/DMP/img/ACTRIS_Aerosol_Remote_Sensing_workflow.jpg)
 
 ### Appendix 5: ACTRIS Cloud remote sensing data centre unit (CLU) data life cycle and workflow diagram
