@@ -197,12 +197,12 @@ ACTRIS will produce data and data products essential to a wide range of communit
 
 ### 3.1 ACTRIS In situ data centre unit (In-Situ)
 
-The In-Situ data centre unit provides data curation service for aerosol, cloud and trace gas in situ data, as well as archiving of tihis data using the EBAS database. This comprises tools for harmonized data submission and meta data templates, inclusion of data and meta data in the data base, traceability, harmonization and data versioning, quality control, archiving, documentation and data provision. Training and online tools for QA, QC are offered. The activity enables RRT and NRT data compilation and delivery and provides tutorial activities. Furthermore, support for centralized data processing, harmonization, and data product generation, both level 2 and level 3 is offered and further implemented during the implementation phase.
+The In-Situ data centre unit provides data curation service for aerosol, cloud and trace gas in situ data, as well as archiving of this data using the EBAS database. This comprises tools for harmonized data submission and meta data templates, inclusion of data and meta data in the data base, documenting (meta)data traceability and provenance, harmonization and data versioning, quality control, archiving, documentation, data identification, and data provision. Training and online tools for QA/QC are offered. The activity enables RRT and NRT data collection, compilation and delivery, and provides tutorial activities. Furthermore, support for centralized data processing, harmonization, and data product generation, both level 2 and level 3 are offered and further implemented during the implementation phase.
 
 #### The types and formats of data generated/collected
-The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format (ASCII file) by the data originator. There are exsisting [instructions and templates](https://ebas-submit.nilu.no/) for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but contains additional metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
+The ACTRIS In-situ data centre unit is supported by the [EBAS database infrastructure](http://ebas.nilu.no/ResourcesATMOS/AboutEBAS.pdf). In situ data submitted to ACTRIS need to be formatted in the EBAS NASA-Ames format (ASCII file) by the data originator. There are exsisting [instructions and templates](https://ebas-submit.nilu.no/) for each instrument/group of instruments. [The EBAS NASA-Ames format](https://projects.nilu.no//ccc/tfmm/kjeller_2016/EBAS_Data_Format_2016-10.pdf) is based on the ASCII text NASA-Ames 1001 format, but uses an additional profile with metadata specifications ensuring proper documentation from the [EBAS-Submit documentation](https://ebas-submit.nilu.no/) website as well as tools for [file-generation](http://dev-ebas-file-generation-tool.nilu.no/) (*beta*) and [file-submission](https://ebas-submit-tool.nilu.no/).
 
-ACTRIS in situ data is also available in netCDF 4 format through the [EBAS Thredds Server](https://thredds.nilu.no/thredds/catalog.html), following the [CF 1.7 convention](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html) and the [Attribute Convention for Data Discovery 1-3 (ACDD)](http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery_1-3).
+ACTRIS in situ data are also available in netCDF 4 format through the [EBAS Thredds Server](https://thredds.nilu.no/thredds/catalog.html), following the [CF 1.7 convention](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html) and the [Attribute Convention for Data Discovery 1-3 (ACDD)](http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery_1-3). EBAS metadata are available through an [OAI-PMH metadata endpoint serving](https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115) serving metadata with a profile meeting ISO 19115-2, CF-1.7, and ACDD specifications.
 
 #### Re-use of existing data
 
@@ -210,7 +210,7 @@ The ACTRIS data user interface will include access to aerosol and trace gas in s
 
 #### The origin of the data
 
-The origin of the data is derived from instrument raw data, either through online or offline observations.
+The data are derived from instrument raw data, either through online or offline observations.
 
 #### The expected size of the data
 
@@ -594,15 +594,16 @@ The data management of ACTRIS in situ aerosol, cloud, and trace gas variables (l
 * **Offline observations**: Measurement done on sample medium in which sample is collected. Sample analysis usually disconnected from sample collection in time and location. Sample handling is documented by a series of reports, leading to final data product. QA on sample handling (e.g. field blanks) and analysis (e.g. round-robin). Rapid delivery for data possible.
 
 ![ACTRIS In Situ Simplified Workflow](img/workflows/20191126b_ACTRIS_EBAS_Data_Flowchart_simplified.png)
+
 *Figure 8: Simplified workflow of the ACTRIS In Situ data centre unit, focussing on distribution of responsibilities and services to users.*
 
 
-If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow.
+If an offline analysis process has been sufficiently streamlined, it may be described by the online workflow. Both, online and offline branches of the workflow, are accompanied by a common workflow branch for QC/QA measures. QC/QA measures cover calibrations of online instruments at the NFs, calibrations of online instruments at the TCs, and round-robin calibrations of offline measurements administred by the TCs. Each execution of a QC/QA measure is documented by a machine-readable protocol, stored centrally at the In Situ DC unit, and linked to the pertaining field observations.
 
 ACTRIS In situ concretises the ACTRIS data levels as follows:
-* **Level 0**: by default, raw data as produced by the instrument, all main and instrument status parameters provided by instrument, brought to a well-defined data format. If needed to limit raw data volume, level 0 may be a condensed version of instrument raw data. Discovery, use, provenance, and configuration metadata attached, including all information needed for further data production, as far as known at stations level (e.g. QC metadata). Instrument model specific, time resolution native to instrument, temperature and pressure conditions as provided by instrument.
-* **Level 1**: Contains physical property observed, including measures of uncertainty. Instrument status parameters, QC measurements and invalid data removed, quality control and post-calibrations applied. Time resolution native to instrument. Content specific for measured property, standard conditions of temperature and pressure.
-* **Level 2**: Contains data averaged to a homogeneous time resolution, typically 1 h. Includes measure of atmospheric variability, content specific for measured property.
+* **Level 0 / 0a / 0b**: by default, raw data as produced by the instrument, all main and instrument status parameters provided by instrument, brought to a well-defined data format. If needed to limit raw data volume, level 0 / 0a / 0b may be a condensed version of instrument raw data. Discovery, use, provenance, and configuration metadata attached, including all information needed for further data production, as far as known at stations level (e.g. QC metadata). Instrument model specific, time resolution native to instrument, temperature and pressure conditions as provided by instrument. Level 0 contains raw data as provided by the instrument, level 0a has received full manual QC, level 0b has received automatic QC (near-real-time branch). Levels 0 / 0a / 0b use the same data format.
+* **Level 1a / 1b**: Contains physical property observed, including measures of uncertainty. Instrument status parameters, QC measurements and invalid data removed, quality control and post-calibrations applied. Time resolution native to instrument. Content specific for measured property, standard conditions of temperature and pressure. Level 1a is derived from manually QCed level 0a data, level 1b is derived from automatically QCed level 0b data.
+* **Level 2a / 2b(1.5)**: Contains data averaged to a homogeneous time resolution, typically 1 h. Includes measure of atmospheric variability, content specific for measured property. Level 2a is derived from manually QCed level 1a data, level 2b(1.5) is derived from automatically QCed level 1b data. Level 2b and level 1.5 denote the same data product, depending on the context (level 1.5 is commonly used for the NRT data product in the satellite community).
 
 
 ##### 4.2.2.1 General Characteristics of In Situ Data Production
@@ -611,7 +612,24 @@ All In Situ data products, level 1 (RRT) and level 2 (fully QCed), are archived 
 
 As a general rule in ACTRIS in situ data QC, only data subject to instrument malfunctions are flagged as invalid. Data with episodes, local contamination, etc. are flagged as such, but not as invalid, to avoid limiting data use only to certain use cases. Data level designations are used to distinguish between data having received automatic QC, and data having undergone manual QC. When calculating time averages in data production, any non-invalidating flags occurring in the source data during the averaging period are copied to the average result, while invalid data points in the source data are excluded from the average. Temporal coverage flags are applied to the average.
 
-The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. Certain responsibilities common to both online and offline observations are by default distributed between NF, TC, and DC as follows:
+In the ACTRIS In-Situ data production workflow, the tasks and the responsibilities for them are specified in Appendix 3, separately for each In-Situ instrument type. The tools used to organise In-Situ data production are chosen according to the following aspects:
+* Suitable to handle the entities contained in the workflow (well-formatted data or protocols, software, humans, instruments, calibration standards)
+* The type of handling agents involved (software and humans for online workflow, humans for offline workflow, humans (machine assited) for QC/QA measures)
+* Location of workflow execution (DC, TCs, NFs, distributed over Europe)
+* The need to document provenance of data production
+* The need to identify entities involved in the workflow.
+* The ambition to re-use standard solutions, so they exist.
+* The ambition to use widely-used standard technologies for developing custom solutions if needed.
+* Preference of open-source technologies with a large user base to minimise costs while maintaining sustainability.
+
+Both, online and offline data production workflows of ACTRIS In-Situ, are accompanied by a common workflow for documenting QC/QA measures. These cover:
+* (regular routine) calibrations of instruments at the NFs.
+* (intermittent) calibrations of instruments at TCs.
+* (intermittent) round-robin lab intercomparisons for offline observations organised by the responsible TC.
+
+Each QC/QA measure is documented by an identified, machine-actionable protocol, formulated in a data serialization format. The schema of the protocol is specific to type and purpose of the QC/QA measure, as well as the type of observation. Data serializations formats currently considered include [XML](https://en.wikipedia.org/wiki/XML) and [JSON](https://en.wikipedia.org/wiki/JSON). The protocols are archived in a database suitable for the chosen data serialization format. Due to a common need between ACTRIS DC units, the archive for QC/QA measure protocols will be implemented as infrastructure spanning several units. Besides In-Situ, current candidate participants include ASC and CLU. 
+
+Certain responsibilities common to both online and offline observations are by default distributed between NF, TC, and DC as follows:
 
 **NF:**
 * Conducts / participates in on-site, off-site QA measures, and round robin exercises as specified by TC.
@@ -674,7 +692,9 @@ Already at the station, the raw data stream from the instrument is transcribed t
    
 All fully QCed data are to be submitted to the In Situ DC unit on an annual basis by 31 May of the year following the calendar year to be reported. If the TC review option is used, NFs need to submit their initial QCed version to the review process by 31 March of that year, where the review process is typically supervised by the TC.
 
-The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. The following responsibilities specific to online observations are distributed between NF, TC, and DC as such:
+The content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ instrument type. As hybrid workflow with automatic and manual tasks, the In-Situ online data production uses [Apache Airflow](https://en.wikipedia.org/wiki/Apache_Airflow) for organizing the automatic tasks, coupled to the [Mantis Bug Tracker](https://en.wikipedia.org/wiki/Mantis_Bug_Tracker) issue tracker as interface for the manual workflow steps.
+
+The following responsibilities specific to online observations are distributed between NF, TC, and DC as such:
 
 **NF**:
 * Operates the instrument according to TC recommendations.
@@ -715,7 +735,9 @@ In the offline workflow for ACTRIS in situ data, data production is centred arou
 * **Sample Preparation:** Weighing out, Sample medium extraction, Sample medium apportioning.
 * **Sample analysis.**
 
-Again, the content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ offline instrument type. The following responsibilities specific to offline observations are distributed between NF, TC, and DC as such:
+Again, the content of workflow tasks and the responsibilities for them are specified in Appendix 3, separately for each In Situ offline instrument type. Each step in handling a sample medium for offline observations is documented by an identified, machine-actionable protocol, formulated in a data serialization format. The infrastructure to archive and identify the protocols is shared with the infrastructure for archiving QC/QA measure protocols (see section [4.2.2.1](#4221-general-characteristics-of-in-situ-data-production)).
+
+The following responsibilities specific to offline observations are distributed between NF, TC, and DC as such:
 
 **NF:**
 * Conduct sample medium pre-treatment, sample medium exposure, sample preparation, and sample analysis in accordance with procedures defined by TC.
@@ -862,7 +884,9 @@ The ASC unit is making use of EUROCHAMP database (https://data.eurochamp.org/) w
 
 #### 4.3.1 ACTRIS variable names and implementation of vocabulary
 
-Generally, ACTRIS data set names aims to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the DVAS unit (ACTRIS Data Centre web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
+ACTRIS aims at using standardised, well-documented, and machine-actionable vocabulary for denoting data and metadata entities, in particular for variable names. While no single commonly accepted variable vocabulary exists for the atmospheric domain, widely used vocabularies include the [standard names of the Climate Forecast (CF) converntion](https://cfconventions.org/standard-names.html), and the [Global Change Master Directory (GCMD) keywords](https://earthdata.nasa.gov/earth-observation-data/find-data/idn/gcmd-keywords). ACTRIS collaborates with the other European Research Infrastructure of the atmospheric domain organised in the [Environmental Research Infrastructures (ENVRI)](https://envri.eu/) framework to come up with a commonly accepted variable vocabulary for the domain by contributing to maintaining and completing the CF standard name and GCMD keywords vocabularies. Further, ACTRIS collaborates with the [RDA InteroperAble Descriptions of Observable Property Terminology WG (I-ADOPT WG)](https://www.rd-alliance.org/groups/interoperable-descriptions-observable-property-terminology-wg-i-adopt-wg) in order to come up with and use a vocabulary framework for describing observations across domains. The ultimate aim is to make ACTRIS' variable vocabulary machine-actionable by serving it through a [SPARQL](https://en.wikipedia.org/wiki/SPARQL) endpoint. Canditate technologies include an [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) triple-store with SPARQL server, together with a [SKOSMOS](https://skosmos.org/) [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) browser and publishing tool.
+
+Generally, ACTRIS data set names aim to be compliant with CF (Climate and Forecast) metadata conventions. In the case where no standard CF names are defined, an application will be sent to establish these. The names used are in Annex I. Currently there is no search model used by the DVAS unit (ACTRIS Data Centre web interface). Still search keywords are implemented to varying degrees on the individual data centre unit level (e.g. search keywords are used for the EBAS ISO19115 records). The ACTRIS data centre will in the future use a controlled set of vocabularies for search keywords like Global Change Master Directory (GCMD) or similar, and semantic search will be implemented to facilitate use of ACTRIS variable across scientific disciplines and domains.
 
 ASC unit has developed a user-friendly web interface which includes searching tools based on the metadata catalogue for the three pillars, DASCS, LAR and LADP. Relevant searching criteria have been defined for each pillar. 
 
@@ -870,12 +894,12 @@ Standard vocabulary might not always be used, but in all cases they should be ma
 
 | Data centre unit         | Vocabulary name               |          Comment            |
 |--------------------------|-------------------------------|-----------------------------|
-|         In Situ		   | IUPAC, CF-1.7                 |                             |
-|         ARES     		   | CF-1.7                        |                             |
-|         CLU              |          CF-1.7               |                             |
-|		  DVAS           | Defined by primary repository |                             |
-|         ASC              | 		GCMD, CF-1.7				   |  			                 |
-|		  GRES             | 		GCMD, CF-1.7				   |  				             |
+|         In Situ          | IUPAC, CF-1.7                 |                             |
+|         ARES             | CF-1.7                        |                             |
+|         CLU              | CF-1.7                        |                             |
+|         DVAS             | Defined by primary repository |                             |
+|         ASC              | GCMD, CF-1.7                  |                             |
+|         GRES             | GCMD, CF-1.7                  |  	                         |
 
 *Table 16: List of vocabularies*
 
@@ -900,9 +924,11 @@ There might be instances where standards do not cover the need for describing th
 
 #### 4.3.3 Traceability of ACTRIS data
 
-The term measurement traceability is used to refer to an unbroken chain of comparisons relating an instrument's measurements to a known standard, time, processing, software etc. Calibration to a traceable standard can be used to determine an instrument's bias, precision, and accuracy. The ability to trace a measurements back to its origin is important for several reasons; It increase the quality by facilitating back-out or reprocess bad data, and conversely, it allows reward and boost good data sources and processing techniques. This is also to ensure that proper attribution is given to data originators adequately reflecting their contributions through the data production chain.
+The term measurement traceability is used to refer to an unbroken chain of comparisons relating an instrument's measurements to a known standard, time, processing, software etc. Calibration to a traceable standard can be used to determine an instrument's bias, precision, and accuracy. The ability to trace a measurement back to its origin is important for several reasons; It increase the quality by facilitating back-out or reprocess bad data, and conversely, it allows reward and boost good data sources and processing techniques. 
 
-ACTRIS works towards establishing traceability for all variables using persistent identifiers (PIDs). This work is in development, and need close interaction with the topical centres as well as National Facilities. Currently ACTRIS is using digital object identifiers (DOIs) for some level 3 datasets though the [Data Cite Metadata Store API](https://mds.datacite.org/), and more will be implemented.
+Related to traceability is the term [data provenance](https://blog.diffbot.com/knowledge-graph-glossary/data-provenance/), i.e. documenting the production history of a (data) product by identifying all entities involved in data production, and the relations between them. ACTRIS will use the [PROV-O](https://www.w3.org/TR/prov-o/) framework to document provenance. Documenting data provenance ensures that proper attribution is given to data originators adequately reflecting their contributions through the data production chain.
+
+In order to document provenance, all entities involved in data production need to be identified by persistent identifiers (PIDs). ACTRIS works towards PID identification. So far, ACTRIS will use [Digital Object Identifiers (DOIs)](https://en.wikipedia.org/wiki/Digital_object_identifier) to identify all level 2 and 3 products, [ePIC persistent identifiers (PIDs)](https://www.pidconsortium.net/) to identify level 0 and 1 data pre-products, and [ORCID PIDs](https://orcid.org/) to identify humans. 
 
 Currently, ARES unit assigns two different types of local persistent identifier (PID): 
 * **Data Processing PIDs.** These PIDs identify unequivocally the characteristics of the instrument (including all its subparts) used to collect the Level 0 data. In particular, to each submitted Level 0 product it is assigned an alphanumeric ID which allows to retrieve all the details about the instrument configuration used to perform the measurement as well as the data processing configuration used to compute the corresponding Level 1 data products.    
@@ -912,7 +938,7 @@ ACTRIS data will be assigned PIDs that are available through the metadata, the t
 
 | Data centre unit         | PID service                    | Description                                                                             |                        Standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
-|         In Situ          | To be decided                  |                                                                                         |                                 |
+|         In Situ          | DOI, ePIC                      | DOIs provided by DataCite, EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)|                                 |
 |         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
 |         CLU              | EPIC                  |  EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)                                                                                   |                    |
 |	      DVAS           | Defined by primary repository  |  None																		              |       None             |
@@ -983,6 +1009,17 @@ In addition to this, ARES provides a REST API for machine-to-machine interaction
 
 CLU is currently working on a RESTful API with similar services as ARES in development.
 
+| DC unit                  | metadata endpoint                                               | data endpoint                                        |
+|--------------------------|-----------------------------------------------------------------|------------------------------------------------------|
+| In-Situ                  | https://ebas-oai-pmh.nilu.no/oai/                               | https://thredds.nilu.no                              |
+| ARES                     |                                                                 |                                                      |
+| CLU                      |                                                                 |                                                      |
+| DVAS                     |                                                                 |                                                      |
+| ASC                      |                                                                 |                                                      |
+| GRES                     |                                                                 |                                                      |
+
+*Table 20: Metadata and data end-points for machine access for all ACTRIS DC units*
+
 ### 4.6 Reuseable: Increase data re-use [FAIR data]
 
 The guiding principle is free and open access to ACTRIS data and ACTRIS data products, and the ACTRIS DC will facilitate data re-use by providing free and open access to ACTRIS data following the [ACTRIS access and service policy](https://www.actris.eu/sites/default/files/Documents/ACTRIS%20PPP/Deliverables/ACTRIS%20PPP_WP2_D2.6_ACTRIS%20access%20and%20service%20policy.pdf) and the open research data initiative of the European Commission.
@@ -1002,7 +1039,7 @@ Availability of data after the measurements are completed, can vary between the 
 |         ASC              | To be decided			               |              |
 |		  GRES             | To be decided				           |              |
 
-*Table 20: Data licences*
+*Table 21: Data licences*
 
 | Responsible data centre unit         |          Software licence    |  Software link                                                        |
 |--------------------------------------|------------------------------|-----------------------------------------------------------------------|
@@ -1012,7 +1049,7 @@ Availability of data after the measurements are completed, can vary between the 
 |	ASC					|	None		|	None 		|
 |	GRES				|	None		|	None 		|
 
-*Table 21: Software licences*
+*Table 22: Software licences*
 
 ## 5. Allocation of resources
 
@@ -1022,17 +1059,17 @@ Details on costs of the various units is available upon request, and a part of t
 
 ## 6. Data security
 
-The main structure and installations of the ACTRIS Data Centre is located at NILU - Norwegian Institute for Air Research, Kjeller, Norway. NILU hosts EBAS archiving all in situ data sets, in addition to the ACTRIS Data Portal. The other installations are the EARLINET DB at National Research Council - Institute of Environmental Analysis (CNR), Tito Scalo, Potenza, Italy, the satellite data components at the University of Lille, Villeneuve d'Ascq, France, and the cloud profile data in the Cloudnet DB at the Finnish Meteorological Institute in Helsinki, Finland.
+The main structure and installations of the ACTRIS Data Centre are located at NILU - Norwegian Institute for Air Research, Kjeller, Norway. NILU hosts EBAS archiving all in situ data sets, in addition to the ACTRIS Data Portal. The other installations are the EARLINET DB at National Research Council - Institute of Environmental Analysis (CNR), Tito Scalo, Potenza, Italy, the satellite data components at the University of Lille, Villeneuve d'Ascq, France, and the cloud profile data in the Cloudnet DB at the Finnish Meteorological Institute in Helsinki, Finland.
 
 ### 6.1 Archiving and preservation of In-Situ data
 
-EBAS is a relational database (Sybase) developed in the mid-1990s. Data from primary projects and programmes, such as ACTRIS, GAW-WDCA, EMEP, AMAP, are physically stored in EBAS. All data in EBAS are, in addition, stored at a dedicated disk in the file tree at NILU. This include the levels 0-1-2 of data.
+EBAS is a relational database (Sybase) developed in the mid-1990s. Data from primary projects and programmes, such as ACTRIS, GAW-WDCA, EMEP, AMAP, are physically stored in EBAS. All data in EBAS are, in addition, stored at a dedicated disk in the file tree at NILU. This includes the levels 0-1-2 of data.
 
 The complete data system is backed up regularly. This includes incremental back up of the data base 4 times per week, and two weekly back ups of the full data base to a server in a neighbour building to ensure as complete as possible storage of all data for future use in case of e.g. fires or other damages to the physical construction. File submission is conducted by a web application which checks files for syntactic and semantic validity before uploading. As an alternative submission method, especially for regular submission or submission of many files at once, ftp upload is possible.
  
 A dedicated ftp area is allocated to incoming files, and all activities herein are logged on a separate log file, and backed up on 2 hour frequency.
 
-Ca 385 separate new comprehensive files including meta data with annual time series of medium to high time resolution (seconds to week) is expected per year. A significant growth in this number is not expected on annual scale. For more detail, see [Table 2](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#the-expected-size-of-the-data) and [Table 3](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#the-expected-size-of-the-data)
+Ca 385 separate new comprehensive files including meta data with annual time series of medium to high time resolution (seconds to week) are expected per year. A significant growth in this number is not expected on annual scale. For more detail, see [Table 2](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#the-expected-size-of-the-data) and [Table 3](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#the-expected-size-of-the-data). The annual file submission will be superceeded by hourly near-real-time data submissions directly rom each instrument at the NFs. Since these hourly submissions will be aggregated to annual files, the total amount of data won't increase by this transition.
 
 EBAS is based on data management over more than 40 years. Last 10 years there has been a European project-type cooperation from FP5 to Horizon2020, with and EMEP and GAW programmes since 1970’s as the fundament. Sharing visions and goals with the supporting long-term policy driven frameworks have ensured long-term funding for the core data base infrastructure. A long-term strategy for providing access to all ACTRIS data and other related services are in progress through the establishment of ACTRIS as a RI. ACTRIS is on the ESFRI (European Strategy Forum on Research Infrastructures) roadmap for Research Infrastructures, and a preparatory phase project is ongoing.
 
