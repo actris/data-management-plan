@@ -1018,7 +1018,7 @@ CLU is currently working on a RESTful API with similar services as ARES in devel
 | DC unit                  | metadata endpoint                                               | data endpoint                                        |
 |--------------------------|-----------------------------------------------------------------|------------------------------------------------------|
 | In-Situ                  | https://ebas-oai-pmh.nilu.no/oai/                               | https://thredds.nilu.no                              |
-| ARES                     |                                                                 |                                                      |
+| ARES                     | https://data.earlinet.org/api/services/restapi?_wadl                                                                 |https://data.earlinet.org/api/services/restapi?_wadl , https://login.earlinet.org:8443/thredds/catalog.html                                                     |
 | CLU                      |                                                                 |                                                      |
 | DVAS                     |                                                                 |                                                      |
 | ASC                      |                                                                 |                                                      |
