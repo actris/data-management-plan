@@ -1013,13 +1013,13 @@ By many of the DC units the Thredds Data Server (TDS) is used for serving data a
 
 In addition to this, ARES provides a REST API for machine-to-machine interaction. The API serves metadata (info, provenance, versions, quality controls, etc.) in JSON format and data (specific files or datasets previously generated) in NetCDF format. 
 
-CLU is currently working on a RESTful API with similar services as ARES in development.
+CLU has implemented a RESTful API serving both metadata and data. The CLU API is documented at https://actris-cloudnet.github.io/dataportal/.
 
 | DC unit                  | metadata endpoint                                               | data endpoint                                        |
 |--------------------------|-----------------------------------------------------------------|------------------------------------------------------|
 | In-Situ                  | https://ebas-oai-pmh.nilu.no/oai/                               | https://thredds.nilu.no                              |
-| ARES                     | https://data.earlinet.org/api/services/restapi?_wadl                                                                 |https://data.earlinet.org/api/services/restapi?_wadl , https://login.earlinet.org:8443/thredds/catalog.html                                                     |
-| CLU                      |                                                                 |                                                      |
+| ARES                     | https://data.earlinet.org/api/services/restapi?_wadl            | https://data.earlinet.org/api/services/restapi?_wadl , https://login.earlinet.org:8443/thredds/catalog.html                                                     |
+| CLU                      | https://cloudnet.fmi.fi/api/files                               | https://cloudnet.fmi.fi/api/files                    |
 | DVAS                     |                                                                 |                                                      |
 | ASC                      |                                                                 |                                                      |
 | GRES                     |                                                                 |                                                      |
