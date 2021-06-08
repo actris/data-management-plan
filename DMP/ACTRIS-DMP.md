@@ -1101,17 +1101,19 @@ and HTTP API for incoming data streams and processing servers. All data files ar
 the FMIs on-premises S3 cloud storage, physically located in Helsinki, Finland.
 All data files and metadata can be accessed via HTTP API.
 Each digital object (i.e., file) has its own metadata landing page with a PID.
+A back up and restoring solution of all files and database is currently under development. 
 Due to the data volume, most sites also hold an archive of their own Level 0 and Level 1 data,
 effectively acting as an additional backup.
 
-The current size of the database is about 25 TB and the volume is expected to grow by close to 0.5 TB
-per year with the current set of stations and the standard products.
-Most of this data is currently legacy but will be reprocessed and
-migrated to the Cloudnet data portal (https://cloudnet.fmi.fi) as much as possible.
-There will be a significant increase in volume when the planned move to multi-peak and spectral products is
-undertaken; this is in addition to a slight increase arising through the creation of new products.
-The CLU infrastructure is maintained by FMI with long-term commitment for archiving and preservation.
-Publication of QA datasets will aid dataset preservation.
+The current size of the CLU file archive is about 8T containing 7T of raw data and 1T products. 
+The data volume is estimated to grow up to 10T per year with the expected set of stations
+and instruments. Around 95% of this data will be raw measurement data.
+Most of the current 1T product files are legacy but will be reprocessed 
+and migrated to the Cloudnet data portal (https://cloudnet.fmi.fi) as much as possible.
+There will be a significant increase in volume of product files when the planned move to multi-peak 
+and spectral products is undertaken; this is in addition to a slight increase arising through the
+creation of new products. The CLU infrastructure is maintained by FMI with long-term commitment
+for archiving and preservation. Publication of QA datasets will aid dataset preservation.
 
 ### 6.4 Archiving and preservation of GRES data
 For the GRES unit, data are stored on disk on a server in Paris. As new data are provided once a year, a full backup is made yearly and stored on tape. We plan to have soon a second copy on tape in Palaiseau, France. The distance between both sites will be about 20km.
