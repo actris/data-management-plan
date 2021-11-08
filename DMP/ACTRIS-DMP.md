@@ -1045,7 +1045,7 @@ CLU is currently working on a RESTful API with similar services as ARES in devel
 | In-Situ                  | https://ebas-oai-pmh.nilu.no/oai/                               | https://thredds.nilu.no                              |
 | ARES                     | https://data.earlinet.org/api/services/restapi?_wadl                                                                 |https://data.earlinet.org/api/services/restapi?_wadl , https://login.earlinet.org:8443/thredds/catalog.html                                                     |
 | CLU                      |                                                                 |                                                      |
-| DVAS                     |                                                                 |                                                      |
+| DVAS                     |      https://prod-actris-md.nilu.no/                                                           |                     Data is only available at the primary repository                                 |
 | ASC                      |                                                                 |                                                      |
 | GRES                     |                                                                 |                                                      |
 
