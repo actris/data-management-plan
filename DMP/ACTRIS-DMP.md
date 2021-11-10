@@ -959,11 +959,27 @@ The term measurement traceability is used to refer to an unbroken chain of compa
 
 Related to traceability is the term [data provenance](https://blog.diffbot.com/knowledge-graph-glossary/data-provenance/), i.e. documenting the production history of a (data) product by identifying all entities involved in data production, and the relations between them. ACTRIS will use the [PROV-O](https://www.w3.org/TR/prov-o/) framework to document provenance. Documenting data provenance ensures that proper attribution is given to data originators adequately reflecting their contributions through the data production chain.
 
-In order to document provenance, all entities involved in data production need to be identified by persistent identifiers (PIDs). ACTRIS works towards PID identification. So far, ACTRIS will use [Digital Object Identifiers (DOIs)](https://en.wikipedia.org/wiki/Digital_object_identifier) to identify all level 2 and 3 products, [ePIC persistent identifiers (PIDs)](https://www.pidconsortium.net/) to identify level 0 and 1 data pre-products, and [ORCID PIDs](https://orcid.org/) to identify humans.
+In order to document provenance, all entities involved in data production need to be identified by persistent identifiers (PIDs). In accordance with recommendations by the [ENVRI community of infrastructures](https://envri.eu/), ACTRIS will use the following PID types to identify entities in data production:
 
-Currently, ARES unit assigns two different types of local persistent identifier (PID):
-* **Data Processing PIDs.** These PIDs identify unequivocally the characteristics of the instrument (including all its subparts) used to collect the Level 0 data. In particular, to each submitted Level 0 product it is assigned an alphanumeric ID which allows to retrieve all the details about the instrument configuration used to perform the measurement as well as the data processing configuration used to compute the corresponding Level 1 data products.
-* **Dataset PIDs.** An internal PID generation system based on an alphanumerical "prefix"/"suffix" pattern identifies univocally each dataset downloaded through the ARES interfaces.
+|Identified entity	   | PID type	                                                                     | metadata schema                     |
+|---------------------|-------------------------------------------------------------------------------|----------------------------------------------|
+| humans             	| [ORCiD](https://orcid.org/)                                                  	| [ORCID record schema](https://info.orcid.org/documentation/integration-guide/orcid-record/) |
+| organisations       |	[Research Organisation Registry (ROR)](https://ror.org/)                      |                           |	
+| instruments	        | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/)	| [Persistent Identification of Instruments (PIDINST)](https://www.rd-alliance.org/group/persistent-identification-instruments/case-statement/persistent-identification-instruments) |
+| data products	      | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) | 	RI schema, complete metadata |
+|	                    | [Digital Object Identifier (DOI)](https://www.doi.org/) __(mandatory)__       |	[DataCite](https://schema.datacite.org/) |
+| data pre-products	  | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/)	| RI schema |
+| physical samples	   | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) |	RI schema |
+|                    	| [International Geo Sample Number (IGSN)](https://www.igsn.org/)	              | [IGSN schema](https://igsn.github.io/metadata/) |
+| software	           | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) |  	RI schema, complete metadata |
+|	                    | [Digital Object Identifier (DOI)](https://www.doi.org/)                       |	[DataCite](https://schema.datacite.org/) |
+
+
+ACTRIS works towards PID identification. More precisely, ACTRIS will use [Digital Object Identifiers (DOIs)](https://en.wikipedia.org/wiki/Digital_object_identifier) to identify all level 2 and 3 products, and [ePIC persistent identifiers (PIDs)](https://www.pidconsortium.net/) to identify level 0 and 1 data pre-products. In addition. ACTRIS uses ePIC PIDs, for  identification of QA / QC documents. 
+
+Since the DC units serve as primary data repository for ACTRIS data products in their thematic area, the DOIs for thes products will be issued at the DC unit level. To facilitate homogeneous accounting of data provision and use, all ACTRIS DC units will offer at least one common granularity of data product DOIs, one DOI per annual dataset for each individually identified instrument.
+
+For identification of RRT / NRT data, ACTRIS will use constant DOIs with continuously updated content, quoted by including an access date. Options for the granularity of RRT/NRT data DOIs include one DOI for the whole NRT product per variable provided by the DC unit, and one DOI for each RRT/NRT data stream coming from an individually identified instrument.
 
 ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status.
 
@@ -1019,9 +1035,9 @@ The table shows the data access points and protocols for DVAS and data access at
 
 For In-Situ, CLU, GRES and and ASC unit, all data, metadata, tools and documentation are provided with free and fully open access to all users without authentication with username and password.
 
-A Sign-On authentication system has been implemented at ARES unit. It is based on [CAS (Central Authentication Service) project](https://www.apereo.org/projects/cas) which implements natively multiple authentication protocols (CAS, SAML, OAuth, OpenID) and provides both authentication via username and password and via Google credentials. In order to gain access to ARES products (apart from Quicklooks, simple plots of Level 1 data) a user authentication (free and open to all users) is needed. Such authentication process has been implemented with the only purpose to allow feedback to the end user in case of software or data products updates.
+In the ACTRIS Data Centre (DC) as distributed data centre, the authentication schemes need to be aligned with national policies and infrastructures of the contributing partners. In this setting, ACTRIS will focus on ORCiD as common a authentication solution across the RI, with authorisation handled decentrally. 
 
-In general, for all data that requires username and password, a Single-Sign-On service will be implemented, and used by all Data Centre units.
+A Sign-On authentication system has been implemented at ARES unit. It is based on [CAS (Central Authentication Service) project](https://www.apereo.org/projects/cas) which implements natively multiple authentication protocols (CAS, SAML, OAuth, OpenID) and provides both authentication via username and password and via Google credentials. In order to gain access to ARES products (apart from Quicklooks, simple plots of Level 1 data) a user authentication (free and open to all users) is needed. Such authentication process has been implemented with the only purpose to allow feedback to the end user in case of software or data products updates. The authentication scheme will be made compatible with the overall ACTRIS authentication solution.
 
 In all cases where access is restricted, information on how to access the data should be available through the metadata, in order to facilitate machine to machine interaction.
 
