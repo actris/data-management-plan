@@ -32,6 +32,7 @@
         * [4.3.4: Version control of ACTRIS (meta)data](#434-version-control-of-actris-metadata)
   * [4.4 Accessible: Making data openly accessible [FAIR data]](#44-accessible-making-data-openly-accessible-fair-data)
         * [4.4.1 ACTRIS data access and access protocols](#441-actris-data-access-and-access-protocols)
+        * [4.4.2 ACTRIS Metadata Longevity Plan](#442-actris-metadata-longevity-plan)
   * [4.5 Interoperable: Making data interoperable [FAIR data]](#45-interoperable-making-data-interoperable-fair-data)
   * [4.6 Reuseable: Increase data re-use [FAIR data]](#46-reuseable-increase-data-re-use-fair-data)
 * [5. Allocation of resources](#5-Allocation-of-resources)
