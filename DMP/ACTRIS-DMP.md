@@ -1045,6 +1045,10 @@ If specific software tools are need to access the data, documentation about the 
 
 There are valuable and contributing networks to ACTRIS e.g. EMEP, GAW, EARLINET, and level 3 products covering bridge to external data bases and use of these data in combined products. The implementation and strategic and technical contributions of this is under development.
 
+#### 4.4.2 ACTRIS Metadata Longevity Plan
+
+ACTRIS as a European Research Infrastructure is designed as a long-term commitment by the member countries towards monitoring of short-lived components in the atmosphere. The history of the data centre units comprising the ACTRIS DC date back years, partially over 5 decades, before ACTRIS was founded. ACTRIS RI has a time horizon of at least 10 years. With this background, the ACTRIS DC units commit to maintaining metadata records for at least 5 years after initial creation.
+
 ### 4.5 Interoperable: Making data interoperable [FAIR data]
 
 As a guiding principle, ACTRIS should make sure that metadata and data use a formal, accessible, shared and broadly applicable language for knowledge representation in order to facilitate interoperability. Still, work remains to see if a common solution could be agreed upon. The intricate nature of the data and metadata might require the use of different solutions to suit the needs of different data centre units. As mention in section 4.3 metadata standard and vocabularies commonly used in the atmospheric domain should be applied, unless the common solutions do not address the specific need for the DC unit.
