@@ -963,18 +963,25 @@ In order to document provenance, all entities involved in data production need t
 
 ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status.
 
-| Data centre unit         | PID service                    | Description                                                                             |                        Standard |
-|--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
-|         In Situ          | DOI, ePIC                      | DOIs provided by DataCite, EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)|                                 |
-|         ARES             | DOI, Handle                 |DOIs provided by DataCite, Handle PIDs provided through a Local Handle Server (LHS) within ARES infrastructure which communicates with Global Handle Registries (GHS), according to [Handle System](https://www.handle.net/)                                                                                         |                              |
-|         CLU              | EPIC                  |  EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)                                                                                   |                    |
-|             DVAS           | Defined by primary repository  |  None                                                                                                                       |       None             |
-|         ASC              | EPIC                                       |  Handle service provided by AERIS using an ePIC prefix (service starts January 2021).                 |                                      |
-|                       | DOI                                   |  All datasets already have DOIs provided by AERIS.                                                            |                                      |
-|         GRES             | EPIC                                       |  Handle service provided by AERIS using an ePIC prefix (service starts January 2021).                 |                                      |
-|                       | DOI                                   |  All datasets will have a DOI attributed either by AERIS or by NDACC (under discussion).                      |                                      |
-
+|Identified entity	   | PID type	                                                                     | metadata schema                     |
+|---------------------|-------------------------------------------------------------------------------|----------------------------------------------|
+| humans             	| [ORCiD](https://orcid.org/)                                                  	| [ORCID record schema](https://info.orcid.org/documentation/integration-guide/orcid-record/) |
+| organisations       |	[Research Organisation Registry (ROR)](https://ror.org/)                      |                           |	
+| instruments	        | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/)	| [Persistent Identification of Instruments (PIDINST)](https://www.rd-alliance.org/group/persistent-identification-instruments/case-statement/persistent-identification-instruments) |
+| data products	      | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) | 	RI schema, complete metadata |
+|	                    | [Digital Object Identifier (DOI)](https://www.doi.org/) __(mandatory)__       |	[DataCite](https://schema.datacite.org/) |
+| data pre-products	  | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/)	| RI schema |
+| physical samples	   | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) |	RI schema |
+|                    	| [International Geo Sample Number (IGSN)](https://www.igsn.org/)	              | [IGSN schema](https://igsn.github.io/metadata/) |
+| software	           | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) |  	RI schema, complete metadata |
+|	                    | [Digital Object Identifier (DOI)](https://www.doi.org/)                       |	[DataCite](https://schema.datacite.org/) |
 *Table 18: ACTRIS PID handlers*
+
+ACTRIS works towards PID identification. More precisely, ACTRIS will use [Digital Object Identifiers (DOIs)](https://en.wikipedia.org/wiki/Digital_object_identifier) to identify all level 2 and 3 products, and [ePIC persistent identifiers (PIDs)](https://www.pidconsortium.net/) to identify level 0 and 1 data pre-products. In addition. ACTRIS uses ePIC PIDs, for  identification of QA / QC documents. 
+
+Since the DC units serve as primary data repository for ACTRIS data products in their thematic area, the DOIs for thes products will be issued at the DC unit level. To facilitate homogeneous accounting of data provision and use, all ACTRIS DC units will offer at least one common granularity of data product DOIs, one DOI per annual dataset for each individually identified instrument.
+
+For identification of RRT / NRT data, ACTRIS will use constant DOIs with continuously updated content, quoted by including an access date. Options for the granularity of RRT/NRT data DOIs include one DOI for the whole NRT product per variable provided by the DC unit, and one DOI for each RRT/NRT data stream coming from an individually identified instrument.
 
 #### 4.3.4: Version control of ACTRIS (meta)data
 
