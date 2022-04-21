@@ -32,6 +32,7 @@
         * [4.3.4: Version control of ACTRIS (meta)data](#434-version-control-of-actris-metadata)
   * [4.4 Accessible: Making data openly accessible [FAIR data]](#44-accessible-making-data-openly-accessible-fair-data)
         * [4.4.1 ACTRIS data access and access protocols](#441-actris-data-access-and-access-protocols)
+        * [4.4.2 ACTRIS Metadata Longevity Plan](#442-actris-metadata-longevity-plan)
   * [4.5 Interoperable: Making data interoperable [FAIR data]](#45-interoperable-making-data-interoperable-fair-data)
   * [4.6 Reuseable: Increase data re-use [FAIR data]](#46-reuseable-increase-data-re-use-fair-data)
 * [5. Allocation of resources](#5-Allocation-of-resources)
@@ -957,7 +958,8 @@ The term measurement traceability is used to refer to an unbroken chain of compa
 
 Related to traceability is the term [data provenance](https://blog.diffbot.com/knowledge-graph-glossary/data-provenance/), i.e. documenting the production history of a (data) product by identifying all entities involved in data production, and the relations between them. ACTRIS will use the [PROV-O](https://www.w3.org/TR/prov-o/) framework to document provenance. Documenting data provenance ensures that proper attribution is given to data originators adequately reflecting their contributions through the data production chain.
 
-In order to document provenance, all entities involved in data production need to be identified by persistent identifiers (PIDs). ACTRIS works towards PID identification. So far, ACTRIS will use [Digital Object Identifiers (DOIs)](https://en.wikipedia.org/wiki/Digital_object_identifier) to identify all level 2 and 3 products, [ePIC persistent identifiers (PIDs)](https://www.pidconsortium.net/) to identify level 0 and 1 data pre-products, and [ORCID PIDs](https://orcid.org/) to identify humans.
+In order to document provenance, all entities involved in data production need to be identified by persistent identifiers (PIDs). In accordance with recommendations by the [ENVRI community of infrastructures](https://envri.eu/), ACTRIS will use the following PID types to identify entities in data production:
+
 
 ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status.
 
@@ -1013,15 +1015,19 @@ The table shows the data access points and protocols for DVAS and data access at
 
 For In-Situ, CLU, GRES and and ASC unit, all data, metadata, tools and documentation are provided with free and fully open access to all users without authentication with username and password.
 
-A Sign-On authentication system has been implemented at ARES unit. It is based on [CAS (Central Authentication Service) project](https://www.apereo.org/projects/cas) which implements natively multiple authentication protocols (CAS, SAML, OAuth, OpenID) and provides both authentication via username and password and via Google credentials. In order to gain access to ARES products (apart from Quicklooks, simple plots of Level 1 data) a user authentication (free and open to all users) is needed. Such authentication process has been implemented with the only purpose to allow feedback to the end user in case of software or data products updates.
+In the ACTRIS Data Centre (DC) as distributed data centre, the authentication schemes need to be aligned with national policies and infrastructures of the contributing partners. In this setting, ACTRIS will focus on ORCiD as common a authentication solution across the RI, with authorisation handled decentrally. 
 
-In general, for all data that requires username and password, a Single-Sign-On service will be implemented, and used by all Data Centre units.
+A Sign-On authentication system has been implemented at ARES unit. It is based on [CAS (Central Authentication Service) project](https://www.apereo.org/projects/cas) which implements natively multiple authentication protocols (CAS, SAML, OAuth, OpenID) and provides both authentication via username and password and via Google credentials. In order to gain access to ARES products (apart from Quicklooks, simple plots of Level 1 data) a user authentication (free and open to all users) is needed. Such authentication process has been implemented with the only purpose to allow feedback to the end user in case of software or data products updates. The authentication scheme will be made compatible with the overall ACTRIS authentication solution.
 
 In all cases where access is restricted, information on how to access the data should be available through the metadata, in order to facilitate machine to machine interaction.
 
 If specific software tools are need to access the data, documentation about the software and how to access it should be included, preferably in the metadata. Furthermore, ACTRIS digital tools (software etc.) will be available through open access repositories like GitHub. *A open source licence for software should be encouraged and applied when possible. All software related to ACTRIS data should aim at following the practice of open access if possible. For software related to access of level 2 data, the DVAS unit is responsible together with the data centre units. To be discussed: For level 0 and 1, the topical centres and/or data centre unit are responsible for providing access to software related to ACTRIS level 0 and level 1.*
 
 There are valuable and contributing networks to ACTRIS e.g. EMEP, GAW, EARLINET, and level 3 products covering bridge to external data bases and use of these data in combined products. The implementation and strategic and technical contributions of this is under development.
+
+#### 4.4.2 ACTRIS Metadata Longevity Plan
+
+ACTRIS as a European Research Infrastructure is designed as a long-term commitment by the member countries towards monitoring of short-lived components in the atmosphere. The history of the data centre units comprising the ACTRIS DC date back years, partially over 5 decades, before ACTRIS was founded. ACTRIS RI has a time horizon of at least 10 years. With this background, the ACTRIS DC units commit to maintaining metadata records for at least 5 years after initial creation.
 
 ### 4.5 Interoperable: Making data interoperable [FAIR data]
 
