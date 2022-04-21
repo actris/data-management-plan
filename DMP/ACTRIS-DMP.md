@@ -771,22 +771,20 @@ The following responsibilities specific to offline observations are distributed 
 
 #### 4.2.3 ARES dataflow and data management
 
-At the present, the ACTRIS aerosol remote sensing component is a highly inhomogeneous in terms of instrumentations: most of the lidar systems are home-made or highly customized. In cases like that, the implementation of a standard, centralized and quality assured scheme for the analysis of raw data is the most efficient solution to provide FAIR and quality assured data at RI level.
+At the present, the ACTRIS aerosol remote sensing component is highly inhomogeneous in terms of instrumentations: most of the lidar systems are home-made or highly customized. In cases like that, the implementation of a standard, centralized and quality assured scheme for the analysis of raw data is the most efficient solution to provide FAIR and quality assured data at RI level.
 
 The SCC (EARLINET Single Calculus Chain) is the solution adopted by the ACTRIS (Aerosol, Clouds and Trace gases Research InfraStructure Network) aerosol remote data center to ensure homogenous, traceable and quality controlled data. Main concepts at the base of the SCC are automatization and full traceability of quality-assured aerosol optical products.
 
-The ARES DC also compiles aerosol optical and physical properties (profile and column) from combined lidar + photometer observations collected at NFs. The GARRLiC (Generalized Aerosol Retrieval from Radiometer and Lidar Combined data) retrieval will be used for this, which synergistically inverts coincident lidar and radiometer observations, starting from SCC products and AERONET-ACTRIS processing stream products. Another declination of the GRASP (Generalized Retrieval of Atmosphere and Surface Properties) algorithm is also operated : GRASP-AOD. It derives aerosol size properties from the AERONET-ACTRIS aerosol optical depths. These processing streams are fully controlled by ACTRIS.
+The ARES DC also compiles aerosol optical and physical properties (profile and column) from combined lidar + photometer observations collected at NFs. The GARRLiC (Generalized Aerosol Retrieval from Radiometer and Lidar Combined data) retrieval will be used for this, which synergistically inverts coincident lidar and radiometer observations, starting from SCC products and AERONET-ACTRIS processing stream products. Another declination of the GRASP (Generalized Retrieval of Atmosphere and Surface Properties) algorithm is also operated: GRASP-AOD. It derives aerosol size properties from the AERONET-ACTRIS aerosol optical depths. These processing streams are fully controlled by ACTRIS.
 
-The data curation workflow is suitable for the provision in NRT and RRT, following the same steps and procedures of the standard processing. NRT/RRT delivery of not fully quality assured data can be possible as long as a NF provides raw data to the DC in NRT/RRT.
+The data curation workflow is suitable for the provision in NRT and RRT, following the same steps and procedures of the standard processing. NRT/RRT delivery of not fully quality assured data can be possible as long as a NF provides raw data to the DC in NRT/RRT. 
+Raw data collected at the NFs in the original acquisition data format are transcribed in a homogeneous and agreed netCDF data format to the aerosol remote sensing processing suite at the ACTRIS DC, being the ARES Level 0 data. All information needed for the steps forward in the processing chain is annotated into the file or in a dedicated database (SCC database). It is recommended that raw data should be centrally stored, and it should be under the responsibility of the NF to keep a local backup.
 
-Raw data collected at the NFs in the original acquisition data format are transcribed in a homogeneous and agreed netCDF data format to the aerosol remote sensing processing suite at the ACTRIS DC, being the ARES Level 0 data. All information needed for the steps forward in the processing chain is annotated into the file or in a dedicated database (SCC database).  It is recommended that raw data should be centrally stored and it should be under the responsibility of the NF to keep a local backup.
+Level 0 data are centrally progressed at ACTRIS ARES DC level, generating Level 1 preprocessed signals and (not-fully QC data) optical properties products. On-the-fly QC procedures guarantees basic quality control on Level 1 optical properties data. Aerosol optical properties data passing also the physical quality control procedures are labelled as Level2 data.
 
-Level 0 data are centrally progressed at ACTRIS ARES DC level, generating Level 1 (not-fully QC data) preprocessed signals and optical properties products. On-the-fly QC procedures guarantees basic quality control on Level 1 data.
+Among the physical content QC procedures, a specific procedure checks that the SCC configuration used for processing the data is approved as Operational configuration from the related TC (namely CARS). The data originator and the CARS TC units receives feedback of the outcome of the QC. This feedback mechanism potentially allows to discover and address instrumental issues, with links to the TC. All the optical properties data compliant to all the QC requirements are made available as Level 2 data.
 
-Off-line QC procedures are run systematically after the outcomes from related TC (namely CARS) are available and transferred to the ARES DC unit.  The data originator and the CARS TC units receives feedback of the outcome of the QC. This feedback mechanism potentially allows to discover and address instrumental issues, with links to the TC.  All the data compliant to all the QC requirements (both pre-processed and processed data) are made available as Level 2 data.
-
-ARES DC offers also products resulting from the processing at DC itself of Level 2 lidar and photometer data collected at the aerosol remote sensing NFs. Finally, Level 3 climatological products are produced at ARES DC from lidar Level 2 optical property products.
-
+ARES DC will offer also products resulting from the processing at DC itself of Level 2 lidar and photometer data collected at the aerosol remote sensing NFs (this feature is currently in implementation phase). Finally, Level 3 climatological products are produced at ARES DC from lidar Level 2 optical property products.
 
 |        Product Type       |                                  Availability (Typical)                             |
 |---------------------------|-------------------------------------------------------------------------------------|
@@ -962,32 +960,13 @@ Related to traceability is the term [data provenance](https://blog.diffbot.com/k
 
 In order to document provenance, all entities involved in data production need to be identified by persistent identifiers (PIDs). In accordance with recommendations by the [ENVRI community of infrastructures](https://envri.eu/), ACTRIS will use the following PID types to identify entities in data production:
 
-|Identified entity	   | PID type	                                                                     | metadata schema                     |
-|---------------------|-------------------------------------------------------------------------------|----------------------------------------------|
-| humans             	| [ORCiD](https://orcid.org/)                                                  	| [ORCID record schema](https://info.orcid.org/documentation/integration-guide/orcid-record/) |
-| organisations       |	[Research Organisation Registry (ROR)](https://ror.org/)                      |                           |	
-| instruments	        | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/)	| [Persistent Identification of Instruments (PIDINST)](https://www.rd-alliance.org/group/persistent-identification-instruments/case-statement/persistent-identification-instruments) |
-| data products	      | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) | 	RI schema, complete metadata |
-|	                    | [Digital Object Identifier (DOI)](https://www.doi.org/) __(mandatory)__       |	[DataCite](https://schema.datacite.org/) |
-| data pre-products	  | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/)	| RI schema |
-| physical samples	   | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) |	RI schema |
-|                    	| [International Geo Sample Number (IGSN)](https://www.igsn.org/)	              | [IGSN schema](https://igsn.github.io/metadata/) |
-| software	           | [Persistent Identifiers for eResearch (ePIC)](https://www.pidconsortium.net/) |  	RI schema, complete metadata |
-|	                    | [Digital Object Identifier (DOI)](https://www.doi.org/)                       |	[DataCite](https://schema.datacite.org/) |
-
-
-ACTRIS works towards PID identification. More precisely, ACTRIS will use [Digital Object Identifiers (DOIs)](https://en.wikipedia.org/wiki/Digital_object_identifier) to identify all level 2 and 3 products, and [ePIC persistent identifiers (PIDs)](https://www.pidconsortium.net/) to identify level 0 and 1 data pre-products. In addition. ACTRIS uses ePIC PIDs, for  identification of QA / QC documents. 
-
-Since the DC units serve as primary data repository for ACTRIS data products in their thematic area, the DOIs for thes products will be issued at the DC unit level. To facilitate homogeneous accounting of data provision and use, all ACTRIS DC units will offer at least one common granularity of data product DOIs, one DOI per annual dataset for each individually identified instrument.
-
-For identification of RRT / NRT data, ACTRIS will use constant DOIs with continuously updated content, quoted by including an access date. Options for the granularity of RRT/NRT data DOIs include one DOI for the whole NRT product per variable provided by the DC unit, and one DOI for each RRT/NRT data stream coming from an individually identified instrument.
 
 ACTRIS data will be assigned PIDs that are available through the metadata, the table below show the status.
 
 | Data centre unit         | PID service                    | Description                                                                             |                        Standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 |         In Situ          | DOI, ePIC                      | DOIs provided by DataCite, EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)|                                 |
-|         ARES             | Internal                 |Internal generation system of alphanumerical PIDs for data processing,  Internal generation system of alphanumerical PIDs based on [Handle System](https://www.handle.net/)'s pattern for datasets                                                                                         | [RFCs 3650](http://www.rfc-editor.org/rfc/rfc3650.txt), [RFCs 3651](http://www.rfc-editor.org/rfc/rfc3651.txt), [RFCs 3652](http://www.rfc-editor.org/rfc/rfc3652.txt)                                |
+|         ARES             | DOI, Handle                 |DOIs provided by DataCite, Handle PIDs provided through a Local Handle Server (LHS) within ARES infrastructure which communicates with Global Handle Registries (GHS), according to [Handle System](https://www.handle.net/)                                                                                         |                              |
 |         CLU              | EPIC                  |  EPIC PIDs provided by [SURFsara](https://userinfo.surfsara.nl/)                                                                                   |                    |
 |             DVAS           | Defined by primary repository  |  None                                                                                                                       |       None             |
 |         ASC              | EPIC                                       |  Handle service provided by AERIS using an ePIC prefix (service starts January 2021).                 |                                      |
@@ -1138,6 +1117,8 @@ The current size of the PostgresSQL EARLINET database is about 1GB. The total am
 The SCC is part of the ARES infrastructure and it is the standard EARLINET tool for the automatic analysis of lidar data. Three additional servers are needed to provide this further service: a calculus server where all the SCC calculus modules are installed and ran, a MySQL database where all the analysis metadata are stored in a fully traceable way and finally a web interface allowing the users to access to the SCC.
 
 The ARES infrastructure is maintained by the National Research Council of Italy with long term commitment for archiving and preservation. The archiving on CERA database is a further measure for assuring the availability of the data through redundancy of the archive.
+
+A secondary backup system at the CNR headquarters in Rome is being implemented. Secondary backup involves ARES database, ARES data and SCC data.
 
 ### 6.3 Archiving and preservation of CLU data
 
