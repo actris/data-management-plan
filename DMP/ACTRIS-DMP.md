@@ -584,31 +584,25 @@ As visualized in [figure 6](img/figures/figure6.png), DVAS organizes the level 3
 
 ##### Overview of when data is made available, including access mechanisms
 
-|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provision of NRT data |             Comment                           |
-|---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
-| In Situ                   |              31th of May  |               31th of June                      |                     hourly       |                                |
-| GRES                      |     Within 4 months after measurement        |      Within 4 months after measurement                              |                             |       There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
-| ARES                      |      Not applicable       |                 There is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. Once QCs both at TC and DC level are passed, Level 2 data are available in ARES DC. The NRT provision (within 3 days) will be implemented in the implementation phase.                   |                      |                                                                               |
-| ASC                       |                           |                                                 |  Not applicable      |                                            |
-| CLU                       |     Automatic             |   1-3 days after submission (stable NRT data with PID) | 1-6 hours (volatile) | Curated, fully quality controlled data will be provided approximately after 6-12 months.|
+| DC unit | Data level <sup>#</sup> | Primary archive |  Submission timeliness | Internal access mechanism |              Internal access timeliness |                             External access timeliness | Liscense |
+|---------|------------|-----------------|------------------------|---------------------------|-----------------------------------------|--------------------------------------------------------|----------|
+| IN-SITU |          0 | DC unit         | 3 months               |  database access (read)   | 3 month                                 | half year embargo                                      | CCBY 4.0 |
+| IN-SITU |          1 | DC unit         | 3 months               |  database access (read)   | 3 month                                 | 3 months                                               | CCBY 4.0 |
+| IN-SITU |          2 | DC unit         | 6 months, max 1 year   |  OPeNDAP / OGC services   | 6 month                                 | 6 months, max 1 year                                   | CCBY 4.0 |
+| ARES    |          0 | NF              | 1h (RT) / 3 days (NRT) |  scc database access      | 1h (RT) / 3 days (NRT)                  | Upon request                                           | CCBY 4.0 |
+| ARES    |          1 | DC unit         | 1h (RT) / 3 days (NRT) |  database access (read)   | 1h (RT) / 3 days (NRT)                  | 1h (RT) / 3 days (NRT)                                 | CCBY 4.0 |
+| ARES    |          2 | DC unit         | 1h (RT) / 3 days (NRT) |  database access (read)   | 1h (RT) / 3 days (NRT), max 1 y full QC | 1h (RT) / 3 days (NRT), max 6 month to 1 year fully QC | CCBY 4.0 |
+| CLU     |          0 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT)                  | half year embargo                                      | CCBY 4.0 |
+| CLU     |          1 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT)                  | 1h (RT) / 3 days (NRT),                                | CCBY 4.0 |
+| CLU     |          2 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT), max 1 y full QC | 1h (RT) / 3 days (NRT), max 1 y full QC                | CCBY 4.0 |
+| GRES    |          0 | NF              | 3 months               |  sFTP / webDAV            | to be decided                           | embargo time to be decided                             | CCBY 4.0 |
+| GRES    |          1 | NF              | 3 months               |  sFTP / webDAV            | to be decided                           | embargo time to be decided                             | CCBY 4.0 |
+| GRES    |          2 | DC unit         | 1 month                |  Thredds DS               | 1 month                                 | 1 month                                                | CCBY 4.0 |
+| ASC     |          0 | NF              | not relevant           |  not relevant             | not relevant                            | Not relevant                                           | CCBY 4.0 |
+| ASC     |          1 | NF              | not relevant           |  not relevant             | not relevant                            | Not relevant                                           | CCBY 4.0 |
+| ASC     |          2 | NF + DC unit    | 1 year                 |  not relevant             | not relevant                            | 1 year                                                 | CCBY 4.0 |
 
-| DC unit | Data level | Primary archive |  Submission timeliness | Internal access mechanism |                Internal access timeliness |                               External access timeliness | Liscense |
-|---------|------------|-----------------|------------------------|---------------------------|-------------------------------------------|----------------------------------------------------------|----------|
-| IN-SITU |          0 | DC unit         | 3 months               |  database   access (read) | 3 month                                   | half   year embargo                                      | CCBY 4.0 |
-| IN-SITU |          1 | DC unit         | 3 months               |  database access (read)   | 3 month                                   | 3 months                                                 | CCBY 4.0 |
-| IN-SITU |          2 | DC unit         | 6 months, max 1 year   |  OPeNDAP / OGC services   | 6 month                                   | 6 months, max 1 year                                     | CCBY 4.0 |
-| ARES    |          0 | NF              | 1h (RT) / 3 days (NRT) |  scc database access      | 1h (RT) / 3 days (NRT)                    | Upon request                                             | CCBY 4.0 |
-| ARES    |          1 | DC unit         | 1h (RT) / 3 days (NRT) |  database access (read)   | 1h (RT) / 3 days (NRT)                    | 1h (RT) / 3 days (NRT)                                   | CCBY 4.0 |
-| ARES    |          2 | DC unit         | 1h (RT) / 3 days (NRT) |  database access (read)   | 1h (RT) / 3 days (NRT), max 1   y full QC | 1h (RT) / 3 days (NRT), max 6   month to 1 year fully QC | CCBY 4.0 |
-| CLU     |          0 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT)                    | half year embargo                                        | CCBY 4.0 |
-| CLU     |          1 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT)                    | 1h (RT) / 3 days (NRT),                                  | CCBY 4.0 |
-| CLU     |          2 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT), max 1   y full QC | 1h (RT) / 3 days (NRT), max 1   y full QC                | CCBY 4.0 |
-| GRES    |          0 | NF              | 3 months               |  sFTP / webDAV            | to be decided                             | embargo time to be decided                               | CCBY 4.0 |
-| GRES    |          1 | NF              | 3 months               |  sFTP / webDAV            | to be decided                             | embargo time to be decided                               | CCBY 4.0 |
-| GRES    |          2 | DC unit         | 1 month                |  Thredds DS               | 1 month                                   | 1 month                                                  | CCBY 4.0 |
-| ASC     |          0 | NF              | not relevant           |  not relevant             | not relevant                              | Not relevant                                             | CCBY 4.0 |
-| ASC     |          1 | NF              | not relevant           |  not relevant             | not relevant                              | Not relevant                                             | CCBY 4.0 |
-| ASC     |          2 | NF + DC unit    | 1 year                 |  not relevant             | not relevant                              | 1 year                                                   | CCBY 4.0 |
+<sup>#</sup>Data levels are used only internally in the ACTRIS RI to denote steps in the data production workflow. Since they are used slightly differently between the ACTRIS components, they aren't used when communicating to external users to avoid confusion.
 
 *Table 14: Overview of when data is made available*
 
