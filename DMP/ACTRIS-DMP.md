@@ -941,7 +941,7 @@ There might be instances where standards do not cover the need for describing th
 
 | Data centre unit                  | metadata service               | end-point                                                                               |                        standard |
 |--------------------------|--------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
-|         DVAS             | REST API                       | https://prod-actris-md.nilu.no/swagger/v1/swagger.json                                          |        openapi (3.0.1)            |
+|         DVAS             | REST API                       | https://prod-actris-md.nilu.no                                          |        openapi            |
 |         In Situ          |          OAI-PMH               |  https://ebas-oai-pmh.nilu.no/oai/provider?verb=ListIdentifiers&metadataPrefix=iso19115 |       ISO 19115-2, CF-1.7,ACDD  |
 |         In Situ          |          Thredds               |  https://thredds.nilu.no/thredds/catalog.html |       ISO 19115-2, NetCDF CF-1.7,ACDD  |
 |         ARES             |          ISO via Thredds server, JSON via REST API, HTTP via Apache Server|  https://login.earlinet.org:8443/thredds/catalog/earlinedbscan/catalog.html , https://data.earlinet.org/api/services/ , https://data.earlinet.org/           |       ISO 19115-2 , ECMA262-3, CF-1.7, NCML, RFC2616               |
