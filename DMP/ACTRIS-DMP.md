@@ -584,7 +584,7 @@ As visualized in [figure 6](img/figures/figure6.png), DVAS organizes the level 3
 
 ##### Overview of when data is made available, including access mechanisms
 
-| DC unit | Data level <sup>#</sup> | Primary archive |  Submission timeliness                            |                             External access timeliness | Liscense |
+| DC unit | Data level <sup>#</sup> | Primary archive |  Submission timeliness                            |                             External access timeliness | License  |
 |---------|-------------------------|-----------------|---------------------------------------------------|--------------------------------------------------------|----------|
 | IN-SITU |                       0 | DC unit         | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC) | half year embargo                                      | CCBY 4.0 |
 | IN-SITU |                       1 | DC unit         | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC) | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC)      | CCBY 4.0 |
