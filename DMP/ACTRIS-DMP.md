@@ -1080,26 +1080,26 @@ Several features have been implemented by In-Situ, ARES, CLU (or more) units to 
 
 Availability of data after the measurements are completed, can vary between the data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
-| Data centre unit         |          Data licence                 |  Comment     |
-|--------------------------|---------------------------------------|--------------|
-|         In Situ                  |          To be decided                |              |
-|         ARES                     |          To be decided                |              |
-|         CLU              |          [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)                |              |
-|                 DVAS           | Will be defined by primary repository |              |
-|         ASC              | To be decided                                     |              |
-|                 GRES             | To be decided                                         |              |
+
+| Data level     | Licence               | Comment |
+|----------------|-----------------------|---------|
+|        Level 0 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
+|        Level 1 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
+|        Level 2 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
+|        Level 3 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) recommended | Open from case to cas, will depend on product, needs agreement with the collaborating data producer. The recommendation is to use the same as for level 2 data. |
+| Legacy Level 2 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) recommended | Open for the NF to decide, when the contract with ACTRIS ERIC is signed. RI Committee strongly recommends CC BY 4.0 to facilitate homogeneous use of time series, also back in time.|
 
 *Table 21: Data licences*
 
-| Responsible data centre unit         |          Software licence    |  Software link                                                        |
-|--------------------------------------|------------------------------|-----------------------------------------------------------------------|
-|         In Situ                              |       None                   |     [EBAS IO](https://git.nilu.no/ebas/ebas-io/wikis/home)            |
-|         ARES                                 |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
-|       CLU                                     |       MIT             |       [CloudnetPy](https://github.com/actris-cloudnet/cloudnetpy)             |
-|       ASC                                     |       None            |       None            |
-|       GRES                            |       None            |       None            |
 
-*Table 22: Software licences*
+| Item           |     Licence                                               | Comment |
+|----------------|-----------------------------------------------------------|---------|
+| Metadata       | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
+| Software       | [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.html)    | Takes use of web services into account. |
+| ACTRIS vocabulary | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | Vocabulary is a concept for the whole community. It is a goal that the ACTRIS vocabulary is used as broad as possible, e.g. within other networks.  |
+
+*Table 22: Software and other licences*
+
 
 ## 5. Allocation of resources
 
