@@ -584,23 +584,23 @@ As visualized in [figure 6](img/figures/figure6.png), DVAS organizes the level 3
 
 ##### Overview of when data is made available, including access mechanisms
 
-| DC unit | Data level <sup>#</sup> | Primary archive |  Submission timeliness | Internal access mechanism |              Internal access timeliness |                             External access timeliness | Liscense |
-|---------|------------|-----------------|------------------------|---------------------------|-----------------------------------------|--------------------------------------------------------|----------|
-| IN-SITU |          0 | DC unit         | 3 months               |  database access (read)   | 3 month                                 | half year embargo                                      | CCBY 4.0 |
-| IN-SITU |          1 | DC unit         | 3 months               |  database access (read)   | 3 month                                 | 3 months                                               | CCBY 4.0 |
-| IN-SITU |          2 | DC unit         | 6 months, max 1 year   |  OPeNDAP / OGC services   | 6 month                                 | 6 months, max 1 year                                   | CCBY 4.0 |
-| ARES    |          0 | NF              | 1h (RT) / 3 days (NRT) |  scc database access      | 1h (RT) / 3 days (NRT)                  | Upon request                                           | CCBY 4.0 |
-| ARES    |          1 | DC unit         | 1h (RT) / 3 days (NRT) |  database access (read)   | 1h (RT) / 3 days (NRT)                  | 1h (RT) / 3 days (NRT)                                 | CCBY 4.0 |
-| ARES    |          2 | DC unit         | 1h (RT) / 3 days (NRT) |  database access (read)   | 1h (RT) / 3 days (NRT), max 1 y full QC | 1h (RT) / 3 days (NRT), max 6 month to 1 year fully QC | CCBY 4.0 |
-| CLU     |          0 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT)                  | half year embargo                                      | CCBY 4.0 |
-| CLU     |          1 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT)                  | 1h (RT) / 3 days (NRT),                                | CCBY 4.0 |
-| CLU     |          2 | DC unit         | 1h (RT) / 3 days (NRT) |  API                      | 1h (RT) / 3 days (NRT), max 1 y full QC | 1h (RT) / 3 days (NRT), max 1 y full QC                | CCBY 4.0 |
-| GRES    |          0 | NF              | 3 months               |  sFTP / webDAV            | to be decided                           | embargo time to be decided                             | CCBY 4.0 |
-| GRES    |          1 | NF              | 3 months               |  sFTP / webDAV            | to be decided                           | embargo time to be decided                             | CCBY 4.0 |
-| GRES    |          2 | DC unit         | 1 month                |  Thredds DS               | 1 month                                 | 1 month                                                | CCBY 4.0 |
-| ASC     |          0 | NF              | not relevant           |  not relevant             | not relevant                            | Not relevant                                           | CCBY 4.0 |
-| ASC     |          1 | NF              | not relevant           |  not relevant             | not relevant                            | Not relevant                                           | CCBY 4.0 |
-| ASC     |          2 | NF + DC unit    | 1 year                 |  not relevant             | not relevant                            | 1 year                                                 | CCBY 4.0 |
+| DC unit | Data level <sup>#</sup> | Primary archive |  Submission timeliness                            |                             External access timeliness | Liscense |
+|---------|-------------------------|-----------------|---------------------------------------------------|--------------------------------------------------------|----------|
+| IN-SITU |                       0 | DC unit         | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC) | half year embargo                                      | CCBY 4.0 |
+| IN-SITU |                       1 | DC unit         | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC) | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC)      | CCBY 4.0 |
+| IN-SITU |                       2 | DC unit         | 6 - 12 months                                     | 6 - 12 months                                          | CCBY 4.0 |
+| ARES    |                       0 | NF              | 1h (RT) / 3 days (NRT)                            | Upon request                                           | CCBY 4.0 |
+| ARES    |                       1 | DC unit         | 1h (RT) / 3 days (NRT)                            | 1h (RT) / 3 days (NRT)                                 | CCBY 4.0 |
+| ARES    |                       2 | DC unit         | 1h (RT) / 3 days (NRT)                            | 1h (RT) / 3 days (NRT), max 6 month to 1 year fully QC | CCBY 4.0 |
+| CLU     |                       0 | DC unit         | 1h (RT) / 3 days (NRT)                            | half year embargo                                      | CCBY 4.0 |
+| CLU     |                       1 | DC unit         | 1h (RT) / 3 days (NRT)                            | 1h (RT) / 3 days (NRT),                                | CCBY 4.0 |
+| CLU     |                       2 | DC unit         | 1h (RT) / 3 days (NRT)                            | 1h (RT) / 3 days (NRT), max 1 y full QC                | CCBY 4.0 |
+| GRES    |                       0 | NF              | 3 months                                          | embargo time to be decided                             | CCBY 4.0 |
+| GRES    |                       1 | NF              | 3 months                                          | embargo time to be decided                             | CCBY 4.0 |
+| GRES    |                       2 | DC unit         | 1 month                                           | 1 month                                                | CCBY 4.0 |
+| ASC     |                       0 | NF              | not relevant                                      | Not relevant                                           | CCBY 4.0 |
+| ASC     |                       1 | NF              | not relevant                                      | Not relevant                                           | CCBY 4.0 |
+| ASC     |                       2 | NF + DC unit    | 1 year                                            | 1 year                                                 | CCBY 4.0 |
 
 <sup>#</sup>Data levels are used only internally in the ACTRIS RI to denote steps in the data production workflow. Since they are used slightly differently between the ACTRIS components, they aren't used when communicating to external users to avoid confusion.
 
