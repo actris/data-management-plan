@@ -1086,7 +1086,7 @@ Availability of data after the measurements are completed, can vary between the 
 |        Level 0 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
 |        Level 1 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
 |        Level 2 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
-|        Level 3 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) recommended | Open from case to cas, will depend on product, needs agreement with the collaborating data producer. The recommendation is to use the same as for level 2 data. |
+|        Level 3 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) recommended | Open from case to case, will depend on product, needs agreement with the collaborating data producer. The recommendation is to use the same as for level 2 data. |
 | Legacy Level 2 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) recommended | Open for the NF to decide, when the contract with ACTRIS ERIC is signed. RI Committee strongly recommends CC BY 4.0 to facilitate homogeneous use of time series, also back in time.|
 
 *Table 21: Data licences*
