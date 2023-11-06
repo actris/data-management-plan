@@ -1087,7 +1087,7 @@ Availability of data after the measurements are completed, can vary between the 
 |       ASC                                     |       None            |       None            |
 |       GRES                            |       None            |       None            |
 
-*Table 22: Software licences*
+*Table 22: Software and other licences approved at 1st ACTRIS GA June 2023.*
 
 ## 5. Allocation of resources
 
