@@ -604,7 +604,7 @@ As visualized in [figure 6](img/figures/figure6.png), DVAS organizes the level 3
 
 <sup>#</sup>Data levels are used only internally in the ACTRIS RI to denote steps in the data production workflow. Since they are used slightly differently between the ACTRIS components, they aren't used when communicating to external users to avoid confusion.
 
-*Table 14: Overview of when data is made available. The [full version](https://github.com/actris/data-management-plan/blob/Nov-2023---ACTRIS-IMP-updates/access_timeliness_06Nov2023.xlsx) of this abbreviated table is available.*
+*Table 14: Overview of when data is made available. The [full version](docs/access_timeliness_06Nov2023.xlsx) of this abbreviated table is available.*
 
 #### 4.2.2 In-Situ dataflow and data management
 
