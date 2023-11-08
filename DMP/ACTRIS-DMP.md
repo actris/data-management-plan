@@ -582,17 +582,29 @@ There is also a new version of the ACTRIS [metadata catalog](https://prod-actris
 
 As visualized in [figure 6](img/figures/figure6.png), DVAS organizes the level 3 data. The collected and generated level 3 datasets will be extended during the implementation phase, and the complete list of variables under implementation is included in Appendix 2. Details of the level 3 data production in operation is included in [Appendix 9](https://github.com/actris/data-management-plan/blob/master/DMP/ACTRIS-DMP.md#appendix-9-format-and-external-data-sources-for-level-3-variables).
 
-##### Overview of when data is made available (level 2 data)
+##### Overview of when data is made available, including access mechanisms
 
-|        DC unit            |  Submission deadline      | Date when data is made available by the DC unit | Provision of NRT data |             Comment                           |
-|---------------------------|---------------------------|-------------------------------------------------|----------------------|--------------------------------------|
-| In Situ                   |              31th of May  |               31th of June                      |                     hourly       |                                |
-| GRES                      |     Within 4 months after measurement        |      Within 4 months after measurement                              |                             |       There is not a specific date for data submission and availablility for GRES and ASC unit. Example: for FTIR data, NF will deliver data every 1 to 3 month; and 15 days later the data will be available by the DC unit. |
-| ARES                      |      Not applicable       |                 There is not a specified time window in which to submit data. NFs can always submit/upload Level 1 data to the Data Centre. Once QCs both at TC and DC level are passed, Level 2 data are available in ARES DC. The NRT provision (within 3 days) will be implemented in the implementation phase.                   |                      |                                                                               |
-| ASC                       |                           |                                                 |  Not applicable      |                                            |
-| CLU                       |     Automatic             |   1-3 days after submission (stable NRT data with PID) | 1-6 hours (volatile) | Curated, fully quality controlled data will be provided approximately after 6-12 months.|
+| DC unit | Data level <sup>#</sup> | Primary archive |  Submission timeliness                            |                             External access timeliness | Licence  |
+|---------|-------------------------|-----------------|---------------------------------------------------|--------------------------------------------------------|----------|
+| IN-SITU |                       0 | DC unit         | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC) | half year embargo                                      | CCBY 4.0 |
+| IN-SITU |                       1 | DC unit         | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC) | 1h (RRT) / 3 days (NRT) / 6 - 12 months (full QC)      | CCBY 4.0 |
+| IN-SITU |                       2 | DC unit         | 6 - 12 months                                     | 6 - 12 months                                          | CCBY 4.0 |
+| ARES    |                       0 | NF              | 1h (RT) / 3 days (NRT)                            | Upon request                                           | CCBY 4.0 |
+| ARES    |                       1 | DC unit         | 1h (RT) / 3 days (NRT)                            | 1h (RT) / 3 days (NRT)                                 | CCBY 4.0 |
+| ARES    |                       2 | DC unit         | 1h (RT) / 3 days (NRT)                            | 1h (RT) / 3 days (NRT), max 6 month to 1 year fully QC | CCBY 4.0 |
+| CLU     |                       0 | DC unit         | 1h (RT) / 3 days (NRT)                            | half year embargo                                      | CCBY 4.0 |
+| CLU     |                       1 | DC unit         | 1h (RT) / 3 days (NRT)                            | 1h (RT) / 3 days (NRT),                                | CCBY 4.0 |
+| CLU     |                       2 | DC unit         | 1h (RT) / 3 days (NRT)                            | 1h (RT) / 3 days (NRT), max 1 y full QC                | CCBY 4.0 |
+| GRES    |                       0 | NF              | 3 months                                          | embargo time to be decided                             | CCBY 4.0 |
+| GRES    |                       1 | NF              | 3 months                                          | embargo time to be decided                             | CCBY 4.0 |
+| GRES    |                       2 | DC unit         | 1 month                                           | 1 month                                                | CCBY 4.0 |
+| ASC     |                       0 | NF              | not relevant                                      | Not relevant                                           | CCBY 4.0 |
+| ASC     |                       1 | NF              | not relevant                                      | Not relevant                                           | CCBY 4.0 |
+| ASC     |                       2 | NF + DC unit    | 1 year                                            | 1 year                                                 | CCBY 4.0 |
 
-*Table 14: Overview of when data is made available*
+<sup>#</sup>Data levels are used only internally in the ACTRIS RI to denote steps in the data production workflow. Since they are used slightly differently between the ACTRIS components, they aren't used when communicating to external users to avoid confusion.
+
+*Table 14: Overview of when data is made available. The [full version](docs/access_timeliness_06Nov2023.xlsx) of this abbreviated table is available.*
 
 #### 4.2.2 In-Situ dataflow and data management
 
@@ -1068,26 +1080,26 @@ Several features have been implemented by In-Situ, ARES, CLU (or more) units to 
 
 Availability of data after the measurements are completed, can vary between the data centre units. As an example, in situ data is typically submitted on an annual basis, and are therefore available the subsequent year, but other data centre units may provide NRT delivery of data; in addition, there may be campaign-based data. ACTRIS legacy data should be kept available for users, but may have a different data policy to the current ACTRIS data policy. If this is the case, this information should be available in the metadata.
 
-| Data centre unit         |          Data licence                 |  Comment     |
-|--------------------------|---------------------------------------|--------------|
-|         In Situ                  |          To be decided                |              |
-|         ARES                     |          To be decided                |              |
-|         CLU              |          [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)                |              |
-|                 DVAS           | Will be defined by primary repository |              |
-|         ASC              | To be decided                                     |              |
-|                 GRES             | To be decided                                         |              |
+
+| Data level     | Licence               | Comment |
+|----------------|-----------------------|---------|
+|        Level 0 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
+|        Level 1 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
+|        Level 2 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
+|        Level 3 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) recommended | Open from case to case, will depend on product, needs agreement with the collaborating data producer. The recommendation is to use the same as for level 2 data. |
+| Legacy Level 2 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) recommended | Open for the NF to decide, when the contract with ACTRIS ERIC is signed. RI Committee strongly recommends CC BY 4.0 to facilitate homogeneous use of time series, also back in time.|
 
 *Table 21: Data licences*
 
-| Responsible data centre unit         |          Software licence    |  Software link                                                        |
-|--------------------------------------|------------------------------|-----------------------------------------------------------------------|
-|         In Situ                              |       None                   |     [EBAS IO](https://git.nilu.no/ebas/ebas-io/wikis/home)            |
-|         ARES                                 |       None                   |           [Single Calculus Chain](https://scc.imaa.cnr.it)            |
-|       CLU                                     |       MIT             |       [CloudnetPy](https://github.com/actris-cloudnet/cloudnetpy)             |
-|       ASC                                     |       None            |       None            |
-|       GRES                            |       None            |       None            |
+
+| Item           |     Licence                                               | Comment |
+|----------------|-----------------------------------------------------------|---------|
+| Metadata       | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |         |
+| Software       | [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.html)    | Takes use of web services into account. |
+| ACTRIS vocabulary | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | Vocabulary is a concept for the whole community. It is a goal that the ACTRIS vocabulary is used as broad as possible, e.g. within other networks.  |
 
 *Table 22: Software and other licences approved at 1st ACTRIS GA June 2023.*
+
 
 ## 5. Allocation of resources
 
