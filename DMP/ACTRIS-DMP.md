@@ -1098,7 +1098,7 @@ Availability of data after the measurements are completed, can vary between the 
 | Software       | [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.html)    | Takes use of web services into account. |
 | ACTRIS vocabulary | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | Vocabulary is a concept for the whole community. It is a goal that the ACTRIS vocabulary is used as broad as possible, e.g. within other networks.  |
 
-*Table 22: Software and other licences*
+*Table 22: Software and other licences approved at 1st ACTRIS GA June 2023.*
 
 
 ## 5. Allocation of resources
