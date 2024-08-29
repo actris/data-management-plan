@@ -1125,19 +1125,13 @@ EBAS is based on data management over more than 40 years. Last 10 years there ha
 
 ### 6.2 Archiving and preservation of ARES data
 
-The ARES infrastructure is composed by seven virtual servers and two different SAN (Storage Area Network).
+The ARES infrastructure is maintained in Italy by the National Research Council - Institute of Methodologies for Environmental Analysis (CNR-IMAA) with long term commitment for archiving and preservation. The ARES computational and storage infrastructure is based on a Virtualized Environment and Storage Area Network (SAN) redundant cluster. In addition to SAN, ARES have a high-performance Scale-Out Network Attached Storage (NAS).
+A secondary backup site system at the CNR headquarters in Rome is implemented (more than 300 Km from the principal ARES DC site). Secondary backup involves ARES database, ARES data and SCC data.
 
-One server hosts a PostgreSQL database, a second and a third one are used to interface the data originators and endusers respectively. ARES data products are safely stored on a primary SAN. A full daily back up is made automatically and it is stored on a second backup SAN.
+PostgreSQL database, and web interfaces for the data originators and end-users are hosted on the virtualization environment. ARES data products are safely stored on a SAN cluster with synchronous replication. A full daily back up is made automatically and it is stored on a second NAS e then in a secondary site (CNR headquarters in Rome).
+Another service is responsible for the provision of the whole database through REST-API.
 
-Another server is responsible for the provisioning of the whole database through THREDDS (Thematic Real-time Environmental Distributed Data Services). On the same server a CAS (Central Authentication Service) is configured to authenticate all ARES users centrally.
-
-The current size of the PostgresSQL EARLINET database is about 1GB. The total amount of data submitted (NetCDF EARLINET files) is about 1.3 GB. An estimation of the growing rate of the database is 100-200MB/year. However a significant growth in number of files to be collected is expected because of: the use of the SCC (Single Calculus Chain) for the data submission, the inclusion of new products (pre-processed data, NRT optical properties, profiles, aerosol layers properties and multiwavelength datasets), increases of the number of aerosol remote sensing NF and increase of NF operating 24/7. We estimate that during the Implementation Phase the ACTRIS aerosol profile database could grow at a rate of about 300 GB per year.
-
-The SCC is part of the ARES infrastructure and it is the standard EARLINET tool for the automatic analysis of lidar data. Three additional servers are needed to provide this further service: a calculus server where all the SCC calculus modules are installed and ran, a MySQL database where all the analysis metadata are stored in a fully traceable way and finally a web interface allowing the users to access to the SCC.
-
-The ARES infrastructure is maintained by the National Research Council of Italy with long term commitment for archiving and preservation. The archiving on CERA database is a further measure for assuring the availability of the data through redundancy of the archive.
-
-A secondary backup system at the CNR headquarters in Rome is being implemented. Secondary backup involves ARES database, ARES data and SCC data.
+The current size of the PostgresSQL EARLINET database is about 7 GB. The total amount of data submitted (NetCDF EARLINET files) is about 1.2 TB. An estimation of the growing rate of the database is 100-200MB/year. However, a significant growth in number of files to be collected is expected because of: the use of the SCC (Single Calculus Chain) for the data submission, the inclusion of new products (pre-processed data, NRT optical properties, profiles, aerosol layers properties and multiwavelength datasets), increases of the number of aerosol remote sensing NF and increase of NFs operating 24/7. We estimate that in the next period the ACTRIS aerosol profile database could grow at a rate of about 300 GB per year.
 
 ### 6.3 Archiving and preservation of CLU data
 
