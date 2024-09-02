@@ -274,7 +274,7 @@ The origin of the data is derived from instrument raw data provided by the data 
 |-------------------------------------|----------------------------------------------------------|-----------------------------------------|---------------------------------------------|
 | ACTRIS aerosol remote sensing data  |           28                                             |       30                                |   52                                        |
  GRASP/GARRLiC                        |                        6                                 |             30                          |    52                                       |
-|    GRASP-AOD          |                        0          |             30                          |    1500                                 |
+|    GRASP-AOD          |                        0          |             30                          |     400                                 |
 
 *Table 4: Number of annual datasets*
 
@@ -282,7 +282,7 @@ The origin of the data is derived from instrument raw data provided by the data 
 |------------------------------------|-----------------------------------------------------------|------------------------------------------|---------------------------------|
 | ACTRIS aerosol remote sensing data |           4 GB                                            |       2.5 TB                             |   20 TB                         |
 | GRASP/GARRLiC                      |                            3.2 GB                         |     40 GB                                |           50 GB                 |
-|    GRASP-AOD          |                        0          |             30                          |    1500                                 |
+|    GRASP-AOD          |                        0          |             50 GB                          |    750 GB                                 |
 
 *Table 5: Data volume*
 
