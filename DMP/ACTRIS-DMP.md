@@ -1179,7 +1179,7 @@ From February 2021, a harmonized version of ACTRIS metadata will be stored in pa
 ## 8. Appendix
 
 ### Appendix 1: List of ACTRIS variables from observational platforms and associated recommended methodology
-[List of ACTRIS variables and recommended methodology](docs/Appendix_I_ACTRIS-RI_variables_4May2023.xlsx)
+[List of ACTRIS variables and recommended methodology](docs/Appendix_I_ACTRIS-RI_variables_3Feb2025.xlsx)
 
 *Additional information:* During ACTRIS-2, e.g. the aerosol and cloud databases will be augmented with new classification products developed through the combination of existing sensors with additional instrumentation; and products providing information about aerosol layering and typing, together with advanced products derived from long term series or special case analyses. In addition, new parameters utilizing these products will also be prepared, and standardized pre processed lidar data and NRT optical property profiles will be available.
 
